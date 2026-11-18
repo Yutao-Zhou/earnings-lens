@@ -1,0 +1,594 @@
+{
+  "schema_version": "1.0",
+  "data_kind": "production",
+  "report_id": "0001045810-FY2027-Q3",
+  "revision": 2,
+  "revision_reason": "reanalysis",
+  "supersedes_revision": 1,
+  "validation_status": "passed",
+  "company": {
+    "id": "0001045810",
+    "cik": "0001045810",
+    "ticker": "NVDA",
+    "name": "NVIDIA"
+  },
+  "period": {
+    "fiscal_year": 2027,
+    "fiscal_period": "Q3",
+    "start": "2026-07-27",
+    "end": "2026-10-25"
+  },
+  "published_at": "2026-11-17T21:20:00.000Z",
+  "published_at_precision": "second",
+  "as_of": "2026-11-18T03:36:44.025Z",
+  "analyzed_at": "2026-11-18T03:36:58.355Z",
+  "coverage": {
+    "earnings_release": "available",
+    "regulatory_filing": "pending",
+    "transcript": "pending",
+    "cfo_commentary": "available",
+    "supplemental_financials": "available"
+  },
+  "metrics": [
+    {
+      "key": "revenue",
+      "label": "营业收入",
+      "value": 115844000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-27",
+      "period_end": "2026-10-25",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 57006000000,
+          "baseline_start": "2025-07-28",
+          "baseline_end": "2025-10-26",
+          "baseline_evidence_ids": [
+            "income",
+            "year-ago-period"
+          ],
+          "change_pct": 103.2136968038452,
+          "change_pp": null,
+          "unavailable_reason": null
+        },
+        {
+          "type": "qoq",
+          "baseline_value": 96221000000,
+          "baseline_start": "2026-04-27",
+          "baseline_end": "2026-07-26",
+          "baseline_evidence_ids": [
+            "income",
+            "previous-income"
+          ],
+          "change_pct": 20.393677055944124,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "gross_margin",
+      "label": "GAAP 毛利率",
+      "value": 74.8,
+      "unit": "percent",
+      "currency": null,
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-27",
+      "period_end": "2026-10-25",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "margin"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 73.4,
+          "baseline_start": "2025-07-28",
+          "baseline_end": "2025-10-26",
+          "baseline_evidence_ids": [
+            "margin",
+            "year-ago-period"
+          ],
+          "change_pct": null,
+          "change_pp": 1.3999999999999915,
+          "unavailable_reason": null
+        },
+        {
+          "type": "qoq",
+          "baseline_value": 75,
+          "baseline_start": "2026-04-27",
+          "baseline_end": "2026-07-26",
+          "baseline_evidence_ids": [
+            "margin",
+            "previous-income"
+          ],
+          "change_pct": null,
+          "change_pp": -0.20000000000000284,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "diluted_eps",
+      "label": "GAAP 摊薄每股收益",
+      "value": 2.7,
+      "unit": "currency_per_share",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-27",
+      "period_end": "2026-10-25",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "eps"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 1.3,
+          "baseline_start": "2025-07-28",
+          "baseline_end": "2025-10-26",
+          "baseline_evidence_ids": [
+            "eps",
+            "year-ago-period"
+          ],
+          "change_pct": 107.69230769230771,
+          "change_pp": null,
+          "unavailable_reason": null
+        },
+        {
+          "type": "qoq",
+          "baseline_value": 2.46,
+          "baseline_start": "2026-04-27",
+          "baseline_end": "2026-07-26",
+          "baseline_evidence_ids": [
+            "eps",
+            "previous-income"
+          ],
+          "change_pct": 9.756097560975618,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "free_cash_flow",
+      "label": "自由现金流（公司口径）",
+      "value": 43777000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "non-GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-27",
+      "period_end": "2026-10-25",
+      "missing_reason": null,
+      "definition": "经营现金流 − 购置物业、设备及无形资产 − 相关本金偿付；使用单季度披露值。",
+      "evidence_ids": [
+        "cash",
+        "cash-comparison"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 22089000000,
+          "baseline_start": "2025-07-28",
+          "baseline_end": "2025-10-26",
+          "baseline_evidence_ids": [
+            "cash",
+            "cash-comparison",
+            "year-ago-period"
+          ],
+          "change_pct": 98.18461677758161,
+          "change_pp": null,
+          "unavailable_reason": null
+        },
+        {
+          "type": "qoq",
+          "baseline_value": 21341000000,
+          "baseline_start": "2026-04-27",
+          "baseline_end": "2026-07-26",
+          "baseline_evidence_ids": [
+            "cash",
+            "cash-comparison",
+            "previous-income"
+          ],
+          "change_pct": 105.1309685581744,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "operating_cash_flow",
+      "label": "经营活动现金流",
+      "value": 48253000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-27",
+      "period_end": "2026-10-25",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "cash",
+        "cash-comparison"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 23750000000,
+          "baseline_start": "2025-07-28",
+          "baseline_end": "2025-10-26",
+          "baseline_evidence_ids": [
+            "cash",
+            "cash-comparison",
+            "year-ago-period"
+          ],
+          "change_pct": 103.17052631578947,
+          "change_pp": null,
+          "unavailable_reason": null
+        },
+        {
+          "type": "qoq",
+          "baseline_value": 24077000000,
+          "baseline_start": "2026-04-27",
+          "baseline_end": "2026-07-26",
+          "baseline_evidence_ids": [
+            "cash",
+            "cash-comparison",
+            "previous-income"
+          ],
+          "change_pct": 100.41118079494953,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "net_income",
+      "label": "GAAP 净利润",
+      "value": 65287000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-27",
+      "period_end": "2026-10-25",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "income",
+        "previous-income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 31910000000,
+          "baseline_start": "2025-07-28",
+          "baseline_end": "2025-10-26",
+          "baseline_evidence_ids": [
+            "income",
+            "previous-income",
+            "year-ago-period"
+          ],
+          "change_pct": 104.59730492008777,
+          "change_pp": null,
+          "unavailable_reason": null
+        },
+        {
+          "type": "qoq",
+          "baseline_value": 59688000000,
+          "baseline_start": "2026-04-27",
+          "baseline_end": "2026-07-26",
+          "baseline_evidence_ids": [
+            "income",
+            "previous-income"
+          ],
+          "change_pct": 9.380444980565606,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    }
+  ],
+  "guidance": [
+    {
+      "label": "营业收入",
+      "target_period": "FY2027 Q4",
+      "period_start": "2026-10-26",
+      "period_end": null,
+      "low": 126100000000,
+      "high": 133900000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "evidence_ids": [
+        "guidance",
+        "calendar"
+      ]
+    },
+    {
+      "label": "GAAP 毛利率",
+      "target_period": "FY2027 Q4",
+      "period_start": "2026-10-26",
+      "period_end": null,
+      "low": 71,
+      "high": 72,
+      "unit": "percent",
+      "currency": null,
+      "basis": "GAAP",
+      "evidence_ids": [
+        "guidance-margin"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "release",
+      "title": "NVIDIA Announces Financial Results for Third Quarter Fiscal 2027",
+      "type": "earnings_release",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027",
+      "published_at": "2026-11-17T21:20:00.000Z",
+      "published_at_precision": "second",
+      "fetched_at": "2026-11-18T03:36:43.339Z"
+    },
+    {
+      "id": "previous-release",
+      "title": "NVIDIA Announces Financial Results for Second Quarter Fiscal 2027",
+      "type": "earnings_release",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+      "published_at": "2026-08-26T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T03:36:43.621Z"
+    },
+    {
+      "id": "year-ago-release",
+      "title": "NVIDIA Announces Financial Results for Third Quarter Fiscal 2026",
+      "type": "earnings_release",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2026",
+      "published_at": "2025-11-19T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T03:36:43.730Z"
+    },
+    {
+      "id": "cfo",
+      "title": "CFO Commentary — Q3 Fiscal 2027",
+      "type": "cfo_commentary",
+      "url": "https://investor.nvidia.com/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf",
+      "published_at": "2026-11-17T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T03:36:43.810Z"
+    },
+    {
+      "id": "supplement",
+      "title": "Supplemental Financial Information — Q3 Fiscal 2027",
+      "type": "supplemental_financials",
+      "url": "https://investor.nvidia.com/files/doc_financials/2027/Q327/Supplemental-Financial-Information-NVDA-2027-Q3.pdf",
+      "published_at": "2026-11-17T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T03:36:43.828Z"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "income",
+      "source_id": "supplement",
+      "locator": "Page 1; condensed consolidated statements of income; three months ended; USD millions.",
+      "quote": "115844;57006;65287;31910"
+    },
+    {
+      "id": "margin",
+      "source_id": "release",
+      "locator": "GAAP reconciliation; current, preceding quarter, and prior-year quarter; gross margin.",
+      "quote": "74.8;75;73.4"
+    },
+    {
+      "id": "eps",
+      "source_id": "release",
+      "locator": "GAAP summary; diluted earnings per share; current, preceding quarter, prior-year quarter.",
+      "quote": "2.7;2.46;1.3"
+    },
+    {
+      "id": "previous-income",
+      "source_id": "previous-release",
+      "locator": "Income statement and reporting-period header; standalone preceding quarter.",
+      "quote": "96221;59688"
+    },
+    {
+      "id": "year-ago-period",
+      "source_id": "year-ago-release",
+      "locator": "Reporting-period header and reconciliation header; used to identify the standalone year-ago interval.",
+      "quote": "2025-10-26"
+    },
+    {
+      "id": "cash",
+      "source_id": "cfo",
+      "locator": "Page 8; non-GAAP reconciliation; current quarter, USD millions. Operating cash flow less purchases and related principal payments.",
+      "quote": "48253;4422;54;43777"
+    },
+    {
+      "id": "cash-comparison",
+      "source_id": "cfo",
+      "locator": "Page 8; non-GAAP reconciliation; preceding-quarter and prior-year-quarter operating cash flow and free cash flow, USD millions.",
+      "quote": "24077;23750;21341;22089"
+    },
+    {
+      "id": "guidance",
+      "source_id": "release",
+      "locator": "Outlook; next fiscal quarter; revenue midpoint and tolerance.",
+      "quote": "$130.0 billion, plus or minus 3%"
+    },
+    {
+      "id": "guidance-margin",
+      "source_id": "release",
+      "locator": "Outlook; next fiscal quarter GAAP and non-GAAP gross-margin range.",
+      "quote": "71.0% to 72.0%"
+    },
+    {
+      "id": "calendar",
+      "source_id": "release",
+      "locator": "Outlook; next-quarter duration differs from the current quarter.",
+      "quote": "additional week"
+    },
+    {
+      "id": "data-center",
+      "source_id": "cfo",
+      "locator": "Page 2; revenue by market platform; current, preceding and prior-year quarter; USD billions.",
+      "quote": "107.6;89.0;51.2"
+    },
+    {
+      "id": "working-capital",
+      "source_id": "cfo",
+      "locator": "Page 4; balance sheet and cash flow; DSO days (current/prior quarter), inventory USD billions (current/prior quarter).",
+      "quote": "64;60;39.7;31.6"
+    },
+    {
+      "id": "commitments",
+      "source_id": "cfo",
+      "locator": "Pages 3–4; multi-year supply commitments, USD billions; gross guarantees are contingent maximum exposure, not current-period expense.",
+      "quote": "390;279;118.0"
+    },
+    {
+      "id": "filing-status",
+      "source_id": "cfo",
+      "locator": "Page 2; filing status and interim supplemental document.",
+      "quote": "10-Q in the coming weeks"
+    }
+  ],
+  "summary": {
+    "text": "营业收入同比增长 103.21%，数据中心平台是核心业务。本季 GAAP 毛利率同比上升 1.4 个百分点、环比下降 0.2 个百分点；下一季指引中点较本季下降 3.3 个百分点。现金转化、库存占用及多年度承诺是后续重点。",
+    "evidence_ids": [
+      "income",
+      "data-center",
+      "cash",
+      "margin",
+      "guidance-margin",
+      "working-capital",
+      "commitments"
+    ]
+  },
+  "findings": [
+    {
+      "kind": "fact",
+      "text": "GAAP 毛利率 74.8%，同比上升 1.4 个百分点，环比下降 0.2 个百分点。同比与环比反映不同的比较基准，应分别解读。",
+      "evidence_ids": [
+        "margin"
+      ]
+    },
+    {
+      "kind": "risk",
+      "text": "多年度供应承诺由 2,790 亿美元 变为 3,900 亿美元。另披露担保最大总敞口 1,180 亿美元。供应采购承诺与或有担保的触发条件、期间和现金影响不同，不能相加当作当期费用或立即到期债务；需要继续跟踪客户融资和实际履约节奏。",
+      "evidence_ids": [
+        "commitments"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "经营现金流 482.53 亿美元，自由现金流 437.77 亿美元，后者同比增长 98.18%。经营现金流约为 GAAP 净利润的 73.91%；经营现金流与净利润的转换关系需要结合营运资本和非现金项目理解。自由现金流已扣除资本购置和相关本金偿付。",
+      "evidence_ids": [
+        "cash",
+        "cash-comparison",
+        "income"
+      ]
+    },
+    {
+      "kind": "management_expectation",
+      "text": "FY2027 Q4 收入指引为 1,261 亿美元—1,339 亿美元，GAAP 毛利率指引为 71%—72%，中点较本季下降 3.3 个百分点。下一季度包含额外一周，简单环比增速不代表按日历调整后的增长。该指引未计入中国数据中心计算收入。",
+      "evidence_ids": [
+        "guidance",
+        "guidance-margin",
+        "calendar"
+      ]
+    },
+    {
+      "kind": "risk",
+      "text": "应收账款周转天数由 60 天变为 64 天，库存由 316 亿美元 变为 397 亿美元。营收增长同时伴随营运资本占用，需要结合后续回款及库存周转验证增长质量；这些变化本身不能证明坏账或需求恶化。",
+      "evidence_ids": [
+        "working-capital",
+        "cash"
+      ]
+    },
+    {
+      "kind": "fact",
+      "text": "营业收入 1,158.44 亿美元，同比增长 103.21%、环比增长 20.39%。数据中心平台收入占总收入约 92.88%，仍是经营表现的核心观察对象。",
+      "evidence_ids": [
+        "income",
+        "previous-income",
+        "data-center"
+      ]
+    }
+  ],
+  "segments": [
+    {
+      "name": "数据中心：市场平台口径",
+      "text": "本季收入 1,076 亿美元，对比上季 890 亿美元 和上年同季 512 亿美元。按披露的十亿美元舍入值计算，同比约增长 110.16%、环比约增长 20.9%。该分类是市场平台，不是会计准则下的报告分部。",
+      "evidence_ids": [
+        "data-center",
+        "income"
+      ]
+    }
+  ],
+  "follow_ups": [
+    {
+      "id": "margin-pressure",
+      "question": "下一季毛利率回落是否只是产品爬坡阶段的影响？",
+      "status": "monitoring",
+      "update": "指引低于本季水平，现有材料不足以将影响精确拆分到各项因素。",
+      "next_check": "补充电话会材料及下一季度实际业绩披露时。",
+      "evidence_ids": [
+        "margin",
+        "guidance-margin"
+      ]
+    },
+    {
+      "id": "cash-conversion",
+      "question": "回款速度和库存占用能否随收入增长改善？",
+      "status": "monitoring",
+      "update": "结合已披露的应收账款周转天数及库存变化，继续跟踪实际现金回收。",
+      "next_check": "下一季度现金流量表、应收账款和存货披露时。",
+      "evidence_ids": [
+        "working-capital",
+        "cash"
+      ]
+    },
+    {
+      "id": "commitment-timing",
+      "question": "多年度承诺和担保将怎样转化为实际现金义务？",
+      "status": "open",
+      "update": "现有披露描述承诺总额与或有最大敞口，二者不等于当期现金支出。",
+      "next_check": "客户融资、项目交付或相关承诺披露更新时。",
+      "evidence_ids": [
+        "commitments"
+      ]
+    },
+    {
+      "id": "filing-coverage",
+      "question": "正式申报文件和电话会会增加哪些信息？",
+      "status": "open",
+      "update": "当前已取得业绩公告、CFO 解读及补充财务材料，正式季度申报文件与官方电话会材料尚未取得。",
+      "next_check": "正式季度申报文件及官方电话会材料可取得时。",
+      "evidence_ids": [
+        "filing-status"
+      ]
+    }
+  ],
+  "limitations": [
+    "当前材料为公司公告、CFO 解读和未经审计的补充财务信息；正式季度申报文件及官方电话会材料尚未取得。",
+    "没有保存披露前的市场一致预期快照，因此不判断相对市场预期的超出或低于。",
+    "下一季度起止日期未在已采集材料中明确列出，页面保留未知日期，不推测期末日。",
+    "数据中心金额以十亿美元舍入值披露，相关占比及增速是近似计算；市场平台不等同于会计报告分部。",
+    "历史趋势仅展示本站已有的报告；本版同比和环比基准来自已列明的官方材料。"
+  ]
+}
