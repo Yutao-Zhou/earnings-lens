@@ -1,0 +1,429 @@
+{
+  "schema_version": "1.0",
+  "data_kind": "production",
+  "report_id": "0002130357-FY2026-Q3",
+  "revision": 1,
+  "revision_reason": "initial",
+  "supersedes_revision": null,
+  "validation_status": "passed",
+  "company": {
+    "id": "0002130357",
+    "cik": "0002130357",
+    "ticker": "ANT",
+    "name": "Anthropic"
+  },
+  "period": {
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "start": "2026-07-01",
+    "end": "2026-09-30"
+  },
+  "published_at": "2026-11-17T00:00:00-05:00",
+  "published_at_precision": "date",
+  "as_of": "2026-11-18T16:40:24.714Z",
+  "analyzed_at": "2026-11-18T16:40:24.714Z",
+  "coverage": {
+    "earnings_release": "pending",
+    "regulatory_filing": "available",
+    "transcript": "pending",
+    "supplemental_financials": "available"
+  },
+  "sources": [
+    {
+      "id": "filing",
+      "title": "Anthropic S-1/A — period ended 2026-09-30",
+      "type": "regulatory_filing",
+      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+      "published_at": "2026-11-17T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T16:36:42.330Z"
+    },
+    {
+      "id": "facts",
+      "title": "Official quarterly financial tables",
+      "type": "supplemental_financials",
+      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+      "published_at": "2026-11-17T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T16:36:43.585Z"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "metric-revenue",
+      "source_id": "facts",
+      "locator": "Consolidated financial tables; revenue; 2026-07-01 to 2026-09-30; comparison 2025-07-01 to 2025-09-30",
+      "quote": "16,956"
+    },
+    {
+      "id": "metric-gross_margin",
+      "source_id": "facts",
+      "locator": "Consolidated financial tables; gross_margin; 2026-07-01 to 2026-09-30; comparison 2025-07-01 to 2025-09-30",
+      "quote": "Financial statements"
+    },
+    {
+      "id": "metric-diluted_eps",
+      "source_id": "facts",
+      "locator": "Consolidated financial tables; diluted_eps; 2026-07-01 to 2026-09-30; comparison 2025-07-01 to 2025-09-30",
+      "quote": "Financial statements"
+    },
+    {
+      "id": "metric-net_income",
+      "source_id": "facts",
+      "locator": "Consolidated financial tables; net_income; 2026-07-01 to 2026-09-30; comparison 2025-07-01 to 2025-09-30",
+      "quote": "-23,291"
+    },
+    {
+      "id": "metric-operating_income",
+      "source_id": "facts",
+      "locator": "Consolidated financial tables; operating_income; 2026-07-01 to 2026-09-30; comparison 2025-07-01 to 2025-09-30",
+      "quote": "-567"
+    },
+    {
+      "id": "metric-operating_cash_flow",
+      "source_id": "facts",
+      "locator": "Consolidated financial tables; operating_cash_flow; 2026-07-01 to 2026-09-30; comparison 2025-07-01 to 2025-09-30",
+      "quote": "Financial statements"
+    },
+    {
+      "id": "metric-cash_capex",
+      "source_id": "facts",
+      "locator": "Consolidated financial tables; cash_capex; 2026-07-01 to 2026-09-30; comparison 2025-07-01 to 2025-09-30",
+      "quote": "Financial statements"
+    },
+    {
+      "id": "metric-free_cash_flow",
+      "source_id": "facts",
+      "locator": "Consolidated financial tables; free_cash_flow; 2026-07-01 to 2026-09-30; comparison 2025-07-01 to 2025-09-30",
+      "quote": "Financial statements"
+    },
+    {
+      "id": "quarter",
+      "source_id": "filing",
+      "locator": "Management discussion, quarterly results of operations, three months ended September 30 and June 30, 2026 and September 30, 2025; USD millions.",
+      "quote": "Revenue 16,956 / 11,555 / 1,382; operating income (loss) (567) / 974 / (3,089); net loss (23,291) / (66,309) / (12,138); compute 9,863 / 5,558; other operating/admin 3,588 / 1,031; Q3 fair-value loss 21,936"
+    },
+    {
+      "id": "adjustments",
+      "source_id": "filing",
+      "locator": "Quarterly non-GAAP reconciliations; September 30, 2026; USD millions.",
+      "quote": "GAAP operating loss (567); stock compensation 1,070; non-cash charitable contributions 1,960; adjusted operating income 2,463; adjusted net income 3,167"
+    },
+    {
+      "id": "cash",
+      "source_id": "filing",
+      "locator": "Consolidated statement of cash flows, nine months ended September 30, 2026; cumulative USD millions, not standalone quarter.",
+      "quote": "OCF 6,569; purchases of property/equipment (925); prepayments for leased assets/equipment (1,955); finance-lease principal (88)"
+    },
+    {
+      "id": "commitments",
+      "source_id": "filing",
+      "locator": "Risk factors and liquidity: commitments as of September 30, 2026; USD billions; future obligations and maturity periods.",
+      "quote": "900.9 total commitments; 70.7 due in the following 12 months; 451.6 before December 31, 2030"
+    },
+    {
+      "id": "scope",
+      "source_id": "filing",
+      "locator": "Notes to consolidated financial statements, segment information and revenue recognition; RPO timing as of September 30, 2026.",
+      "quote": "One operating/reportable segment; RPO 13.8 billion; approximately 75% over the next 12 months"
+    }
+  ],
+  "metrics": [
+    {
+      "key": "revenue",
+      "label": "营业收入",
+      "value": 16956000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-revenue"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 1382000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-revenue"
+          ],
+          "change_pct": 1126.917510853835,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "gross_margin",
+      "label": "GAAP 毛利率",
+      "value": null,
+      "unit": "percent",
+      "currency": null,
+      "basis": "derived",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": "IPO 申报没有单独披露可比口径的单季 GAAP 毛利率；算力费用不等同于销售成本。",
+      "definition": "GAAP 毛利金额除以同季收入。",
+      "evidence_ids": [
+        "metric-gross_margin"
+      ],
+      "comparisons": []
+    },
+    {
+      "key": "diluted_eps",
+      "label": "GAAP 摊薄每股收益",
+      "value": null,
+      "unit": "currency_per_share",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": "尚未核验该单季普通股股东摊薄 EPS；不能用累计 EPS 相减。",
+      "definition": null,
+      "evidence_ids": [
+        "metric-diluted_eps"
+      ],
+      "comparisons": []
+    },
+    {
+      "key": "net_income",
+      "label": "归属股东净利润",
+      "value": -23291000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-net_income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": -12138000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-net_income"
+          ],
+          "change_pct": null,
+          "change_pp": null,
+          "unavailable_reason": "基期非正值，普通增长率不具可比意义。"
+        }
+      ]
+    },
+    {
+      "key": "operating_income",
+      "label": "GAAP 营业利润",
+      "value": -567000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-operating_income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": -3089000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-operating_income"
+          ],
+          "change_pct": null,
+          "change_pp": null,
+          "unavailable_reason": "基期非正值，普通增长率不具可比意义。"
+        }
+      ]
+    },
+    {
+      "key": "operating_cash_flow",
+      "label": "经营活动现金流",
+      "value": null,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": "尚未完成可比累计期间及投资分类的核验，暂不填入单季现金流。",
+      "definition": null,
+      "evidence_ids": [
+        "metric-operating_cash_flow"
+      ],
+      "comparisons": []
+    },
+    {
+      "key": "cash_capex",
+      "label": "现金资本购置",
+      "value": null,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": "尚未完成可比累计期间及投资分类的核验，暂不填入单季现金流。",
+      "definition": null,
+      "evidence_ids": [
+        "metric-cash_capex"
+      ],
+      "comparisons": []
+    },
+    {
+      "key": "free_cash_flow",
+      "label": "自由现金流（计算值）",
+      "value": null,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "derived",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": "尚未完成可比累计期间及投资分类的核验，暂不填入单季现金流。",
+      "definition": "单季经营现金流减现金资本购置。",
+      "evidence_ids": [
+        "metric-free_cash_flow"
+      ],
+      "comparisons": []
+    }
+  ],
+  "guidance": [],
+  "segments": [
+    {
+      "name": "合并业务范围",
+      "text": "Anthropic 披露一个经营及报告分部。Claude 产品与客户类别属于业务视角，不是已单独披露收入和利润的财务分部；本分析不编造消费者订阅、企业使用与 API 收入拆分。",
+      "evidence_ids": [
+        "scope"
+      ]
+    },
+    {
+      "name": "算力经济",
+      "text": "按披露季度金额计算，第三季度算力及基础设施费用约占收入 58.2%，第二季度约为 48.1%。该费用收入比有助于跟踪容量成本，但不是 GAAP 毛利率。训练投入、推理服务成本及利用率仍需进一步披露，才能评价单位利润。",
+      "evidence_ids": [
+        "quarter"
+      ]
+    },
+    {
+      "name": "已签约的未来需求",
+      "text": "截至 9 月 30 日，剩余履约义务为 138 亿美元，预计约 75% 在随后十二个月确认。RPO 不是本期收入，也不能代表未来全部用量。应比较其合同范围及时间与容量承诺，而不能直接把两个余额相除当作即期覆盖率。",
+      "evidence_ids": [
+        "scope",
+        "commitments"
+      ]
+    }
+  ],
+  "follow_ups": [
+    {
+      "id": "follow-up-1",
+      "question": "收入增长能否恢复 GAAP 营业盈利？",
+      "status": "monitoring",
+      "update": "跟踪季度收入、算力费用及完整经营费用调节，并分别保留 GAAP 与调整口径。",
+      "next_check": "下一次官方财务披露及相关补充材料更新时。",
+      "evidence_ids": [
+        "quarter",
+        "adjustments"
+      ]
+    },
+    {
+      "id": "follow-up-2",
+      "question": "服务及扩张容量需要多少现金承诺？",
+      "status": "monitoring",
+      "update": "在发布单季现金回报前，核对累计现金流分类、设备购置及租赁预付款。",
+      "next_check": "下一次官方财务披露及相关补充材料更新时。",
+      "evidence_ids": [
+        "cash",
+        "commitments"
+      ]
+    },
+    {
+      "id": "follow-up-3",
+      "question": "最终 IPO 条款及后续申报会改变什么？",
+      "status": "monitoring",
+      "update": "审阅最终招股书、转换安排、股数和首份上市公司财务申报；拟发行安排不等于已经取得的现金融资。",
+      "next_check": "下一次官方财务披露及相关补充材料更新时。",
+      "evidence_ids": [
+        "commitments",
+        "scope"
+      ]
+    }
+  ],
+  "limitations": [
+    "本分析基于 IPO 前 S-1/A，而非上市公司业绩公告。ANT 为拟用 Nasdaq 代码，最终发行及交易状态需后续官方确认。",
+    "季度利润表未经审计。尚未核验单季 GAAP 毛利率及普通股股东摊薄 EPS，保留空值；不把算力费用替代销售成本。",
+    "单季现金流尚未完成核验；分析中的九个月数字均明确标为累计值，不发布未经核对的投资分类相减结果。",
+    "业务视角不代表额外财务分部，公司仅披露一个分部。非 GAAP 调节及未来承诺保留各自范围。",
+    "未审阅官方电话会文字材料，也未保留披露前一致预期快照；未来承诺与拟 IPO 融资不等于已实现收入或现金。"
+  ],
+  "summary": {
+    "text": "IPO 申报分析：Anthropic 第三季度收入快速增长，但在第二季度营业盈利后重新录得 GAAP 营业亏损。融资相关公允价值变动主导了更大的净亏损，公司同时披露正的调整营业利润。需求、算力经济及长期容量承诺需要分别评价。ANT 是拟用的 Nasdaq 代码，本分析基于注册申报，而非上市后的业绩公告。",
+    "evidence_ids": [
+      "quarter",
+      "adjustments",
+      "cash",
+      "commitments",
+      "scope"
+    ]
+  },
+  "findings": [
+    {
+      "kind": "fact",
+      "text": "最新审阅的 S-1/A 披露第三季度收入 169.56 亿美元，上年同期 13.82 亿美元，第二季度 115.55 亿美元，约同比增长 1126.9%、环比增长 46.7%。这些是 2026 年 7 月 1 日至 9 月 30 日已确认的季度收入，不能用年化运行率、客户预订额或 IPO 估值标题替代。",
+      "evidence_ids": [
+        "quarter"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "GAAP 营业亏损 5.67 亿美元，第二季度营业盈利 9.74 亿美元，上年同期营业亏损 30.89 亿美元。算力及基础设施费用环比从 55.58 亿美元增至 98.63 亿美元，其他经营及行政费用从 10.31 亿美元增至 35.88 亿美元。因此收入增长并未延续第二季度的 GAAP 营业盈利。算力费用属于已披露经营费用结构，不能直接当作已核验的销售成本。",
+      "evidence_ids": [
+        "quarter"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "公司调整营业利润为 24.63 亿美元，GAAP 则亏损 5.67 亿美元。季度调节加回 10.70 亿美元股权薪酬及 19.60 亿美元非现金慈善捐赠。这解释了两种口径差额，但不意味着薪酬成本及稀释没有经济影响。公司还披露调整净利润 31.67 亿美元，必须与 GAAP 净亏损分开。",
+      "evidence_ids": [
+        "adjustments"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "GAAP 净亏损 232.91 亿美元，上年同期亏损 121.38 亿美元。其中可转债、衍生负债及 SAFE 公允价值损失 219.36 亿美元，明显大于营业亏损。这属于融资相关会计重估，不等于第三季度逐美元的现金消耗。由于营业利润和净利润的比较基期均为亏损，不展示普通盈利增长率。",
+      "evidence_ids": [
+        "quarter"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "前九个月经营现金流为 65.69 亿美元，同时发生设备购置 9.25 亿美元、租赁资产及设备预付款 19.55 亿美元、融资租赁本金支付 0.88 亿美元。这些是九个月累计值。仅用经营现金流减设备购置，会遗漏其他容量相关现金需求。在完成可比累计期间及分类变化的核对前，本站不填入单季第三季度现金流数值。",
+      "evidence_ids": [
+        "cash"
+      ]
+    },
+    {
+      "kind": "risk",
+      "text": "申报披露约 9009 亿美元承诺，几乎全部与算力及基础设施有关，其中约 707 亿美元将在 2026 年 9 月 30 日后的十二个月到期。这些未来义务与本期经营费用、现金流的期间和范围不同。容量扩张需要客户需求、利用率、融资可得性及稀释成本共同支撑；IPO 计划并不保证这些投资回报或最终发行条款。",
+      "evidence_ids": [
+        "commitments"
+      ]
+    }
+  ]
+}

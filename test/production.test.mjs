@@ -6,7 +6,7 @@ import {validateReport} from '../lib/validation.mjs';
 const dataset=await loadDataset();
 test('the active site contains real reports and the requested watchlist',()=>{
   assert.equal(dataset.mode,'production');
-  assert.deepEqual(dataset.companies.map(c=>c.ticker),['NVDA','MSFT','AAPL','AMZN','GOOGL','META','TSLA','SPCX','AMD','INTC','MU','ASML','GM','PLTR','ORCL']);
+  assert.deepEqual(dataset.companies.map(c=>c.ticker),['NVDA','MSFT','AAPL','AMZN','GOOGL','META','TSLA','SPCX','AMD','INTC','MU','ASML','GM','PLTR','ORCL','COST','ANT']);
   for(const company of dataset.companies)assert.ok(dataset.reports.some(r=>r.company.id===company.id));
   assert.ok(dataset.reports.length>=1);
   assert.ok(dataset.reports.every(report=>report.data_kind==='production'));
@@ -67,3 +67,6 @@ test('expanded coverage preserves issuer cash definitions, currency and loss bas
  assert.equal(metric('ORCL','free_cash_flow').value,-5396e6);
  assert.equal(metric('PLTR','revenue').value,2313411000);
 });
+
+test('Costco keeps its 16-week quarter, membership denominator and later cash-flow classification',()=>{const r=dataset.reports.find(r=>r.company.ticker==='COST'),m=key=>r.metrics.find(m=>m.key===key);assert.deepEqual(r.period,{fiscal_year:2026,fiscal_period:'Q4',start:'2026-05-11',end:'2026-08-30'});assert.equal(m('revenue').value,95723e6);assert.equal(m('diluted_eps').value,6.75);assert.equal(m('gross_margin').value,(93873-83531)/93873*100);assert.equal(m('operating_cash_flow').value,(15817-11133)*1e6);assert.equal(m('free_cash_flow').value,((15817-11133)-(6435-4228))*1e6);assert.ok(m('free_cash_flow').evidence_ids.includes('cash-prior'));assert.notEqual(m('operating_cash_flow').value,15825e6);});
+test('Anthropic uses the IPO quarterly statement and preserves unverified metrics and loss baselines',()=>{const r=dataset.reports.find(r=>r.company.ticker==='ANT'),m=key=>r.metrics.find(m=>m.key===key);assert.equal(r.period.start,'2026-07-01');assert.equal(m('revenue').value,16956e6);assert.equal(m('net_income').value,-23291e6);assert.equal(m('operating_income').value,-567e6);for(const key of ['gross_margin','diluted_eps','operating_cash_flow','cash_capex','free_cash_flow']){assert.equal(m(key).value,null);assert.ok(m(key).missing_reason);}assert.equal(m('net_income').comparisons[0].change_pct,null);assert.equal(r.coverage.earnings_release,'pending');assert.match(r.summary.text,/IPO/);assert.ok(r.findings.length>=5&&r.follow_ups.length>=3);});

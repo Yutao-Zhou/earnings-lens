@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-18-cost-ant",
+    "date": "2026-11-18",
+    "en": {
+      "title": "Costco and Anthropic added",
+      "text": "Coverage now includes Costco FY2026 Q4 and Anthropic FY2026 Q3. Anthropic research uses its IPO filing; unverified quarterly metrics remain explicit."
+    },
+    "zh": {
+      "title": "新增 Costco 与 Anthropic",
+      "text": "已加入 Costco FY2026 第四季度及 Anthropic FY2026 第三季度双语分析。Anthropic 依据 IPO 申报材料分析，并明确尚未核验的季度指标。"
+    }
+  },
+  {
     "id": "2026-11-18-deeper-analysis",
     "date": "2026-11-18",
     "en": {

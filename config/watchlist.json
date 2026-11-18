@@ -180,6 +180,30 @@
         "How do revenue, earnings and cash conversion compare?",
         "Can growth support cash returns after capital investment?"
       ]
+    },
+    {
+      "id": "0000909832",
+      "cik": "0000909832",
+      "ticker": "COST",
+      "name": "Costco Wholesale",
+      "enabled": true,
+      "ir_url": "https://investor.costco.com/",
+      "research_questions": [
+        "Can comparable demand and membership economics sustain profitable growth?",
+        "Will warehouse expansion preserve cash returns?"
+      ]
+    },
+    {
+      "id": "0002130357",
+      "cik": "0002130357",
+      "ticker": "ANT",
+      "name": "Anthropic",
+      "enabled": true,
+      "ir_url": "https://www.anthropic.com/",
+      "research_questions": [
+        "Can revenue growth support GAAP profitability and compute economics?",
+        "How will capacity commitments and financing affect cash returns?"
+      ]
     }
   ]
 }

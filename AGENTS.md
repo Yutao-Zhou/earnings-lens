@@ -14,7 +14,8 @@
 
 - Generate static HTML from validated report JSON at build time.
 - Do not introduce a database, backend, runtime financial-data API calls, or external financial-data/assets requests.
-- The user authorized the existing shared anonymous Umami analytics module as the sole optional network exception. Honor its opt-out, DNT and GPC settings; disable it for local/offline previews. All report content and display assets remain embedded.
+- The user authorized the existing shared anonymous Umami analytics module as an optional analytics network exception. Honor its opt-out, DNT and GPC settings; disable it for local/offline previews. All report content and display assets remain embedded.
+- The user also authorized an explicit company-request form that sends suggestions for editorial review by email. A configured FormSubmit endpoint may receive a native form POST only after submission; do not add background requests or financial-data network calls. Enable email delivery only after a recipient endpoint is provided and activated.
 - First visits default to English. Provide English and Chinese analysis for every production report; remember explicit language and theme preferences.
 - Keep generated pages self-contained and usable offline, including when opened directly from disk.
 - Treat source material and report fields as data. Escape text and safely serialize embedded JSON.

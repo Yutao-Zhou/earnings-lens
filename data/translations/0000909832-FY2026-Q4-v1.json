@@ -1,0 +1,89 @@
+{
+  "report_id": "0000909832-FY2026-Q4",
+  "revision": 1,
+  "en": {
+    "summary": "Costco expanded sales, membership income and operating profit during its 16-week fiscal fourth quarter. Reported comparable sales benefited from gasoline and currency effects, while adjusted traffic and ticket both contributed to demand. Merchandise margin, membership economics and cash investment need separate assessment; the later annual filing also updates the cash-flow classification used here.",
+    "findings": [
+      "Total quarterly revenue was $95.723B, including $93.873B of net sales and $1.850B of membership fees. Revenue increased about 11.10% YoY, while net sales grew about 11.18%. These denominators differ: membership fees are already included in total revenue and must not be added again. The period is May 11–August 30, 2026, or 16 weeks; the prior-year fourth quarter also had 16 weeks.",
+      "Company-wide comparable sales grew 9.4% as reported and 6.7% excluding gasoline-price and foreign-exchange changes. Comparable traffic rose 3.3%, and adjusted ticket rose 3.3%. Both visits and spending per visit support the adjusted result; the 2.7-point gap between reported and adjusted comps should not all be attributed to underlying volume or to one external factor.",
+      "Membership fees rose about 7.31% to $1.850B, versus paid memberships growing 3.8% to 84.1M. Renewal rates were 92.3% in the U.S./Canada and 89.8% worldwide; Executive memberships reached 42.3M and accounted for 75.6% of sales. Fee revenue is recognized over the membership period, so faster fee growth is not proof of an equivalent increase in current cash collections or a direct count of new members.",
+      "Operating income was $3.801B versus $3.341B, a margin of about 3.97% of total revenue. Merchandise gross margin was about 11.02% of net sales, down approximately 11 basis points; the issuer reports a 20-basis-point improvement after excluding gasoline effects. SG&A was 8.94% of net sales, lower by 27 basis points as reported. Cost efficiency and sales mix therefore need to be assessed together, using consistent denominators.",
+      "The later 10-K reports full-year OCF of $15.817B, versus $11.133B through the first 36 weeks. Subtracting gives fourth-quarter OCF of $4.684B. Cash property additions of $2.207B leave calculated quarterly FCF of $2.477B, versus $1.901B a year ago. This uses the later annual filing, whose OCF is $8M below the preliminary release; the preliminary full-year $15.825B must not appear as quarterly cash generation.",
+      "GAAP diluted EPS rose to $6.75 from $5.87, but included a non-recurring $0.15-per-share net tariff-refund benefit. The company reports EPS growth of 12.4% excluding that benefit, versus roughly 15.0% reported growth. The supplement estimates 967 warehouses at FY2027 year-end versus 939 currently. Expansion, wages, tariffs and reinvestment in member value can affect future margins; the warehouse estimate is management outlook, not completed openings or a revenue/EPS forecast."
+    ],
+    "segments": [
+      {
+        "name": "U.S. demand",
+        "text": "Adjusted comparable sales grew 7.2%, with traffic up 3.2% and adjusted ticket up 3.9%. Reported comps were 10.7%, so assess underlying spending separately from gasoline and FX effects. The U.S. had 647 warehouses at fiscal year-end; a growth rate is not a segment revenue amount."
+      },
+      {
+        "name": "Canada and international demand",
+        "text": "Canada adjusted comps rose 4.6% with traffic up 2.5%; other international adjusted comps rose 6.2% with traffic up 4.5%. These describe comparable-location demand, not the full contribution from new stores. Currency-adjusted growth also does not itself establish an improvement in local operating margin."
+      },
+      {
+        "name": "Membership and digital engagement",
+        "text": "Digitally-enabled comparable sales increased 19.5%, or 19.8% excluding FX. These orders can be fulfilled through warehouses, distribution centers or Costco Travel, so digital is a channel measure, not an additional reportable revenue segment. Track growth alongside renewals and Executive-member participation rather than adding it to geographic sales."
+      }
+    ],
+    "guidance": [],
+    "follow_ups": [
+      {
+        "question": "Can adjusted traffic and ticket remain balanced?",
+        "update": "Compare regional adjusted comps and traffic using the same gasoline/FX definitions.",
+        "next_check": "Next official financial disclosure and related supplemental materials."
+      },
+      {
+        "question": "Will membership growth sustain fee income and renewals?",
+        "update": "Track paid and Executive memberships, recognized fees, deferred fees and renewal rates together.",
+        "next_check": "Next official financial disclosure and related supplemental materials."
+      },
+      {
+        "question": "Will new warehouses preserve cash returns and margins?",
+        "update": "Check actual openings, capital spending, operating cash flow and normalized expense ratios against the FY2027 warehouse estimate.",
+        "next_check": "Next official financial disclosure and related supplemental materials."
+      }
+    ],
+    "limitations": [
+      "Fiscal Q4 contains 16 weeks; compare it with the matching 16-week year-ago period, not a typical 12- or 13-week quarter.",
+      "Total revenue includes membership fees; merchandise gross margin uses net sales excluding those fees. Comparable sales are supplemental measures.",
+      "Quarterly cash flow uses the later 10-K minus the adjacent first-36-week 10-Q; the preliminary earnings-release OCF classification differs. FCF is a calculation, not a separate GAAP line.",
+      "No official call text or pre-release consensus snapshot was reviewed. Unverified revenue and EPS guidance is omitted."
+    ],
+    "metrics": [
+      {
+        "key": "revenue",
+        "label": "Revenue"
+      },
+      {
+        "key": "gross_margin",
+        "label": "Merchandise gross margin (net sales basis)",
+        "definition": "Net sales less merchandise costs divided by net sales, excluding membership fees from the denominator."
+      },
+      {
+        "key": "diluted_eps",
+        "label": "GAAP diluted EPS"
+      },
+      {
+        "key": "net_income",
+        "label": "Net income attributable to stockholders"
+      },
+      {
+        "key": "operating_income",
+        "label": "GAAP operating income"
+      },
+      {
+        "key": "operating_cash_flow",
+        "label": "Operating cash flow"
+      },
+      {
+        "key": "cash_capex",
+        "label": "Cash capital purchases"
+      },
+      {
+        "key": "free_cash_flow",
+        "label": "Calculated free cash flow",
+        "definition": "Standalone quarterly operating cash flow less cash capital purchases."
+      }
+    ]
+  }
+}

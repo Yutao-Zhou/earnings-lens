@@ -1,0 +1,95 @@
+{
+  "report_id": "0002130357-FY2026-Q3",
+  "revision": 1,
+  "en": {
+    "summary": "IPO filing analysis: Anthropic reported rapid Q3 revenue growth but returned to a GAAP operating loss after a profitable Q2. Financing-related fair-value changes dominate the much larger net loss, while the company reports positive adjusted operating income. Evaluate demand, compute economics and long-term capacity commitments separately. ANT is the proposed Nasdaq symbol; this is registration-statement research, not a post-listing earnings release.",
+    "findings": [
+      "The latest reviewed S-1/A reports Q3 revenue of $16.956B, versus $1.382B a year earlier and $11.555B in Q2: approximately 1,126.9% YoY and 46.7% sequential growth. These are recognized quarterly revenues for July 1–September 30, 2026. They must not be substituted with annualized run-rate estimates, customer bookings or IPO valuation headlines.",
+      "GAAP operating loss was $567M, versus a $974M operating profit in Q2 and a $3.089B loss a year earlier. Compute and infrastructure expense rose to $9.863B from $5.558B sequentially, while other operating and administrative expense rose to $3.588B from $1.031B. Stronger sales therefore did not preserve Q2 GAAP profitability. Compute expense spans the disclosed operating cost structure and is not a verified cost-of-revenue measure.",
+      "Company-adjusted operating income was $2.463B, compared with the GAAP loss of $567M. The quarterly bridge adds back $1.070B of stock compensation and $1.960B of non-cash charitable contributions. This reconciliation explains the difference; it does not make compensation or dilution economically irrelevant. The quarter also had company-adjusted net income of $3.167B, which must remain distinct from GAAP net loss.",
+      "GAAP net loss was $23.291B, versus $12.138B a year earlier. A $21.936B fair-value loss on convertible notes, derivative liabilities and SAFEs is much larger than the operating loss. It is a financing-related accounting remeasurement, not a dollar-for-dollar statement of cash burned in Q3. Ordinary percentage earnings growth is omitted because both the operating and net-income comparison baselines are losses.",
+      "The first nine months produced $6.569B of operating cash flow, alongside $925M of equipment purchases, $1.955B of prepayments for leased assets/equipment and $88M of finance-lease principal. These are cumulative nine-month figures. OCF less equipment purchases alone omits other capacity-related cash requirements. Standalone Q3 cash values remain unfilled here until comparable cumulative periods and classification changes are reconciled.",
+      "The filing describes approximately $900.9B of commitments, substantially all tied to compute and infrastructure, including about $70.7B due in the twelve months after September 30, 2026. These future obligations have a different period and scope from current operating expenses or cash flow. Customer demand, utilization, financing availability and dilution must support the capacity build-out; an IPO plan does not guarantee those returns or the final terms of the offering."
+    ],
+    "segments": [
+      {
+        "name": "Consolidated business scope",
+        "text": "Anthropic reports one operating and reportable segment. Claude product and customer categories are business perspectives, not separately disclosed revenue/profit segments. No unsupported split between consumer subscriptions, enterprise use and API access is constructed in this analysis."
+      },
+      {
+        "name": "Compute economics",
+        "text": "Q3 compute and infrastructure expense was approximately 58.2% of revenue, versus about 48.1% in Q2, using the disclosed quarterly amounts. This expense-to-revenue ratio helps track capacity costs but is not a GAAP gross margin. Training investment, serving costs and utilization need further disclosure before making a unit-profit claim."
+      },
+      {
+        "name": "Contracted future demand",
+        "text": "Remaining performance obligations were $13.8B at September 30, with approximately 75% expected to be recognized over the following twelve months. RPO is neither current revenue nor a full measure of future consumption. Compare its contractual scope and timing with capacity commitments without treating the two balances as an immediately comparable coverage ratio."
+      }
+    ],
+    "guidance": [],
+    "follow_ups": [
+      {
+        "question": "Will revenue growth restore GAAP operating profitability?",
+        "update": "Track quarterly revenue, compute expense and the full operating expense bridge, preserving GAAP and adjusted views.",
+        "next_check": "Next official financial disclosure and related supplemental materials."
+      },
+      {
+        "question": "How much cash is committed to serving and expanding capacity?",
+        "update": "Reconcile cumulative cash-flow classifications, equipment and lease prepayments before publishing standalone cash returns.",
+        "next_check": "Next official financial disclosure and related supplemental materials."
+      },
+      {
+        "question": "What do final IPO terms and subsequent filings change?",
+        "update": "Review the final prospectus, conversions, share count and first public-company financial filings; proposed issuance is not completed cash funding.",
+        "next_check": "Next official financial disclosure and related supplemental materials."
+      }
+    ],
+    "limitations": [
+      "This is research on a pre-IPO S-1/A, not a listed-company earnings release. ANT is the proposed Nasdaq ticker; final offering and trading status require subsequent official confirmation.",
+      "The quarterly income statement is unaudited. A standalone GAAP gross margin and common-stockholder diluted EPS were not verified and remain null; compute expense is not substituted for cost of revenue.",
+      "Standalone cash flow remains unverified; all nine-month amounts in the analysis are labeled cumulative. No unsupported subtraction of mismatched investment classifications is published.",
+      "Business perspectives are not additional financial segments; the issuer reports one segment. Non-GAAP reconciliations and future commitments retain their own scopes.",
+      "No official earnings-call text or pre-release consensus snapshot was reviewed. Forward commitments and proposed IPO proceeds are not realized revenue or cash."
+    ],
+    "metrics": [
+      {
+        "key": "revenue",
+        "label": "Revenue"
+      },
+      {
+        "key": "gross_margin",
+        "label": "GAAP gross margin",
+        "definition": "GAAP gross profit divided by quarterly revenue.",
+        "missing_reason": "A comparable standalone GAAP gross margin was not separately disclosed; compute expense is not cost of revenue."
+      },
+      {
+        "key": "diluted_eps",
+        "label": "GAAP diluted EPS",
+        "missing_reason": "Standalone common-stockholder diluted EPS has not been verified; cumulative EPS must not be subtracted."
+      },
+      {
+        "key": "net_income",
+        "label": "Net income attributable to stockholders"
+      },
+      {
+        "key": "operating_income",
+        "label": "GAAP operating income"
+      },
+      {
+        "key": "operating_cash_flow",
+        "label": "Operating cash flow",
+        "missing_reason": "Comparable cumulative intervals and investment classifications have not been fully reconciled; standalone cash flow remains unverified."
+      },
+      {
+        "key": "cash_capex",
+        "label": "Cash capital purchases",
+        "missing_reason": "Comparable cumulative intervals and investment classifications have not been fully reconciled; standalone cash flow remains unverified."
+      },
+      {
+        "key": "free_cash_flow",
+        "label": "Calculated free cash flow",
+        "definition": "Standalone quarterly operating cash flow less cash capital purchases.",
+        "missing_reason": "Comparable cumulative intervals and investment classifications have not been fully reconciled; standalone cash flow remains unverified."
+      }
+    ]
+  }
+}

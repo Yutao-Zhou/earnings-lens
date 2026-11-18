@@ -1,0 +1,537 @@
+{
+  "schema_version": "1.0",
+  "data_kind": "production",
+  "report_id": "0000909832-FY2026-Q4",
+  "revision": 1,
+  "revision_reason": "initial",
+  "supersedes_revision": null,
+  "validation_status": "passed",
+  "company": {
+    "id": "0000909832",
+    "cik": "0000909832",
+    "ticker": "COST",
+    "name": "Costco Wholesale"
+  },
+  "period": {
+    "fiscal_year": 2026,
+    "fiscal_period": "Q4",
+    "start": "2026-05-11",
+    "end": "2026-08-30"
+  },
+  "published_at": "2026-09-24T00:00:00-04:00",
+  "published_at_precision": "date",
+  "as_of": "2026-11-18T16:40:24.056Z",
+  "analyzed_at": "2026-11-18T16:40:24.056Z",
+  "coverage": {
+    "earnings_release": "available",
+    "regulatory_filing": "available",
+    "transcript": "pending",
+    "supplemental_financials": "available"
+  },
+  "sources": [
+    {
+      "id": "filing",
+      "title": "Costco Wholesale 10-K — period ended 2026-08-30",
+      "type": "regulatory_filing",
+      "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000093/cost-20260830.htm",
+      "published_at": "2026-10-07T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T16:36:40.244Z"
+    },
+    {
+      "id": "facts",
+      "title": "Official quarterly financial tables",
+      "type": "supplemental_financials",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000909832.json",
+      "published_at": "2026-09-24T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T16:36:42.210Z"
+    },
+    {
+      "id": "cost-release",
+      "title": "Costco quarterly earnings release and financial statements",
+      "type": "earnings_release",
+      "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000084/costex9918-k92426.htm",
+      "published_at": "2026-09-24T00:00:00-04:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T16:36:43.587Z"
+    },
+    {
+      "id": "supplement",
+      "type": "supplemental_financials",
+      "title": "Costco FY2026 Q4 supplemental information",
+      "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000084/costex9928-k92426.htm",
+      "published_at": "2026-09-24T00:00:00-04:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T16:30:25.978Z"
+    },
+    {
+      "id": "previous-ytd",
+      "type": "regulatory_filing",
+      "title": "Costco first-36-week financial statements and year-ago comparisons",
+      "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000051/cost-20260510.htm",
+      "published_at": "2026-06-03T00:00:00-04:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T16:33:05.380Z"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "metric-revenue",
+      "source_id": "cost-release",
+      "locator": "Consolidated income statement; standalone quarter and prior-year quarter; USD millions except per-share and percentage amounts. ",
+      "quote": "95723; 86156"
+    },
+    {
+      "id": "metric-gross_margin",
+      "source_id": "cost-release",
+      "locator": "Consolidated income statement; standalone quarter and prior-year quarter; USD millions except per-share and percentage amounts. Merchandise gross margin uses net sales excluding membership fees.",
+      "quote": "Net sales 93873; 84432; merchandise costs 83531; 75037"
+    },
+    {
+      "id": "metric-diluted_eps",
+      "source_id": "cost-release",
+      "locator": "Consolidated income statement; standalone quarter and prior-year quarter; USD millions except per-share and percentage amounts. ",
+      "quote": "6.75; 5.87"
+    },
+    {
+      "id": "metric-net_income",
+      "source_id": "cost-release",
+      "locator": "Consolidated income statement; standalone quarter and prior-year quarter; USD millions except per-share and percentage amounts. ",
+      "quote": "2998; 2610"
+    },
+    {
+      "id": "metric-operating_income",
+      "source_id": "cost-release",
+      "locator": "Consolidated income statement; standalone quarter and prior-year quarter; USD millions except per-share and percentage amounts. ",
+      "quote": "3801; 3341"
+    },
+    {
+      "id": "metric-operating_cash_flow",
+      "source_id": "facts",
+      "locator": "Consolidated financial tables; operating_cash_flow; 2026-05-11 to 2026-08-30; comparison 2025-05-12 to 2025-08-31",
+      "quote": "4,684"
+    },
+    {
+      "id": "metric-cash_capex",
+      "source_id": "facts",
+      "locator": "Consolidated financial tables; cash_capex; 2026-05-11 to 2026-08-30; comparison 2025-05-12 to 2025-08-31",
+      "quote": "2,207"
+    },
+    {
+      "id": "metric-free_cash_flow",
+      "source_id": "facts",
+      "locator": "Consolidated financial tables; free_cash_flow; 2026-05-11 to 2026-08-30; comparison 2025-05-12 to 2025-08-31",
+      "quote": "2,477"
+    },
+    {
+      "id": "income",
+      "source_id": "cost-release",
+      "locator": "Consolidated income statement, 16 weeks ended August 30, 2026 and August 31, 2025; USD millions except EPS.",
+      "quote": "93,873; 84,432; 1,850; 1,724; 95,723; 86,156; 83,531; 75,037; 3,801; 3,341; 6.75; 5.87"
+    },
+    {
+      "id": "demand",
+      "source_id": "supplement",
+      "locator": "Q4 highlights, sales and segment demand; percentage growth; adjusted figures exclude the stated gasoline/FX effects.",
+      "quote": "9.4%; 6.7%; traffic 3.3%; adjusted ticket 3.3%; US 7.2%, 3.2%, 3.9%; Canada 4.6%, 2.5%; international 6.2%, 4.5%; digital 19.5%, 19.8%"
+    },
+    {
+      "id": "membership",
+      "source_id": "supplement",
+      "locator": "Membership highlights; income growth versus prior year, member counts in millions, renewal percentages.",
+      "quote": "7.3%; 84.1; 3.8%; 92.3%; 89.8%; 42.3; 75.6%"
+    },
+    {
+      "id": "margin",
+      "source_id": "supplement",
+      "locator": "Financial performance highlights; gross margin and SG&A use net sales as denominator.",
+      "quote": "11.02%; -11 bps; +20 bps excluding gas; SG&A 8.94%; +27 bps favorable"
+    },
+    {
+      "id": "cash",
+      "source_id": "filing",
+      "locator": "Consolidated cash flows: FY2026 OCF 15,817, PPE 6,435; prior FY OCF 13,335, PPE 5,498. Subtract first-36-week amounts from the adjacent 10-Q: OCF 11,133 / 9,468 and PPE 4,228 / 3,532. USD millions.",
+      "quote": "OCF: 15,817 - 11,133 = 4,684; prior 13,335 - 9,468 = 3,867. PPE: 6,435 - 4,228 = 2,207; prior 5,498 - 3,532 = 1,966. FCF: 4,684 - 2,207 = 2,477; prior 3,867 - 1,966 = 1,901."
+    },
+    {
+      "id": "outlook",
+      "source_id": "supplement",
+      "locator": "Financial performance and warehouse expansion highlights; actual FY2026 end versus estimated FY2027 end.",
+      "quote": "EPS benefit 0.15; excluding benefit EPS growth 12.4%; warehouses 939; estimated 967"
+    },
+    {
+      "id": "cash-prior",
+      "source_id": "previous-ytd",
+      "locator": "Cash flows for first 36 weeks ended May 10, 2026 and May 11, 2025; USD millions.",
+      "quote": "OCF 11,133 / 9,468; additions to property and equipment 4,228 / 3,532"
+    }
+  ],
+  "metrics": [
+    {
+      "key": "revenue",
+      "label": "营业收入",
+      "value": 95723000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-05-11",
+      "period_end": "2026-08-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-revenue"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 86156000000,
+          "baseline_start": "2025-05-12",
+          "baseline_end": "2025-08-31",
+          "baseline_evidence_ids": [
+            "metric-revenue"
+          ],
+          "change_pct": 11.104275964529453,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "gross_margin",
+      "label": "商品毛利率（净销售额口径）",
+      "value": 11.017012346468102,
+      "unit": "percent",
+      "currency": null,
+      "basis": "derived",
+      "period_type": "duration",
+      "period_start": "2026-05-11",
+      "period_end": "2026-08-30",
+      "missing_reason": null,
+      "definition": "（净销售额减商品成本）除以净销售额；分母不含会员费，不能用总收入替代。",
+      "evidence_ids": [
+        "metric-gross_margin"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 11.127297707030511,
+          "baseline_start": "2025-05-12",
+          "baseline_end": "2025-08-31",
+          "baseline_evidence_ids": [
+            "metric-gross_margin"
+          ],
+          "change_pct": null,
+          "change_pp": -0.11028536056240945,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "diluted_eps",
+      "label": "GAAP 摊薄每股收益",
+      "value": 6.75,
+      "unit": "currency_per_share",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-05-11",
+      "period_end": "2026-08-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-diluted_eps"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 5.87,
+          "baseline_start": "2025-05-12",
+          "baseline_end": "2025-08-31",
+          "baseline_evidence_ids": [
+            "metric-diluted_eps"
+          ],
+          "change_pct": 14.991482112436106,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "net_income",
+      "label": "归属股东净利润",
+      "value": 2998000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-05-11",
+      "period_end": "2026-08-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-net_income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 2610000000,
+          "baseline_start": "2025-05-12",
+          "baseline_end": "2025-08-31",
+          "baseline_evidence_ids": [
+            "metric-net_income"
+          ],
+          "change_pct": 14.865900383141772,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "operating_income",
+      "label": "GAAP 营业利润",
+      "value": 3801000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-05-11",
+      "period_end": "2026-08-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-operating_income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 3341000000,
+          "baseline_start": "2025-05-12",
+          "baseline_end": "2025-08-31",
+          "baseline_evidence_ids": [
+            "metric-operating_income"
+          ],
+          "change_pct": 13.76833283448069,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "operating_cash_flow",
+      "label": "经营活动现金流",
+      "value": 4684000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-05-11",
+      "period_end": "2026-08-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "cash",
+        "cash-prior"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 3867000000,
+          "baseline_start": "2025-05-12",
+          "baseline_end": "2025-08-31",
+          "baseline_evidence_ids": [
+            "metric-operating_cash_flow"
+          ],
+          "change_pct": 21.127489009568134,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "cash_capex",
+      "label": "现金资本购置",
+      "value": 2207000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-05-11",
+      "period_end": "2026-08-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "cash",
+        "cash-prior"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 1966000000,
+          "baseline_start": "2025-05-12",
+          "baseline_end": "2025-08-31",
+          "baseline_evidence_ids": [
+            "metric-cash_capex"
+          ],
+          "change_pct": 12.25839267548321,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "free_cash_flow",
+      "label": "自由现金流（计算值）",
+      "value": 2477000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "derived",
+      "period_type": "duration",
+      "period_start": "2026-05-11",
+      "period_end": "2026-08-30",
+      "missing_reason": null,
+      "definition": "单季经营现金流减现金资本购置。",
+      "evidence_ids": [
+        "cash",
+        "cash-prior"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 1901000000,
+          "baseline_start": "2025-05-12",
+          "baseline_end": "2025-08-31",
+          "baseline_evidence_ids": [
+            "metric-free_cash_flow"
+          ],
+          "change_pct": 30.299842188321936,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    }
+  ],
+  "guidance": [],
+  "segments": [
+    {
+      "name": "美国需求",
+      "text": "调整后同店销售增长 7.2%，客流增长 3.2%，调整后客单价增长 3.9%；报告同店增长 10.7%。应将基础消费与汽油、汇率影响分开。财年末美国地区仓库 647 家；增长率不能当作分部收入金额。",
+      "evidence_ids": [
+        "demand",
+        "outlook"
+      ]
+    },
+    {
+      "name": "加拿大与其他国际市场",
+      "text": "加拿大调整后同店销售增长 4.6%、客流增长 2.5%；其他国际市场分别增长 6.2% 和 4.5%。这些衡量可比门店需求，并非包含新店在内的全部增长贡献；剔除汇率后的增长也不能直接证明当地营业利润率改善。",
+      "evidence_ids": [
+        "demand"
+      ]
+    },
+    {
+      "name": "会员与数字化参与",
+      "text": "数字化发起的同店销售增长 19.5%，剔除汇率后 19.8%；订单可能由仓库、配送中心或 Costco Travel 履约。这是渠道指标，不是可额外相加的收入分部。应结合续费率和 Executive 会员参与程度跟踪，不能与地区销售重复相加。",
+      "evidence_ids": [
+        "demand",
+        "membership"
+      ]
+    }
+  ],
+  "follow_ups": [
+    {
+      "id": "follow-up-1",
+      "question": "调整后的客流与客单价能否持续共同增长？",
+      "status": "monitoring",
+      "update": "按一致的汽油及汇率调整定义比较地区同店销售与客流。",
+      "next_check": "下一次官方财务披露及相关补充材料更新时。",
+      "evidence_ids": [
+        "demand"
+      ]
+    },
+    {
+      "id": "follow-up-2",
+      "question": "会员增长能否支撑费收入与续费率？",
+      "status": "monitoring",
+      "update": "共同核对付费与 Executive 会员、已确认费收入、递延会员费及续费率。",
+      "next_check": "下一次官方财务披露及相关补充材料更新时。",
+      "evidence_ids": [
+        "membership"
+      ]
+    },
+    {
+      "id": "follow-up-3",
+      "question": "新仓库扩张能否维持现金回报和利润率？",
+      "status": "monitoring",
+      "update": "将实际开店、资本投入、经营现金流及调整费用率与 FY2027 仓库预估共同核对。",
+      "next_check": "下一次官方财务披露及相关补充材料更新时。",
+      "evidence_ids": [
+        "cash",
+        "outlook"
+      ]
+    }
+  ],
+  "limitations": [
+    "财年第四季度有 16 周，应与同比 16 周比较，不能直接类比常见的 12 或 13 周季度。",
+    "总收入包含会员费；商品毛利率的分母为不含会员费的净销售额，同店销售属于补充指标。",
+    "单季现金流由后续 10-K 减相邻前 36 周 10-Q 计算；初步公告的全年经营现金流分类有所不同。自由现金流属于计算值，不是独立 GAAP 报表项目。",
+    "未审阅官方电话会文字材料，也未保留披露前一致预期快照；未核验的收入与 EPS 指引不填入。"
+  ],
+  "summary": {
+    "text": "Costco 在 16 周财年第四季度实现销售、会员费和营业利润增长。报告同店销售受汽油价格及汇率影响，调整后的客流与客单价均有贡献。商品毛利、会员经济及现金投资需要分别评价；本站现金流还采用了后续年报更新的分类。",
+    "evidence_ids": [
+      "income",
+      "demand",
+      "membership",
+      "margin",
+      "cash",
+      "outlook"
+    ]
+  },
+  "findings": [
+    {
+      "kind": "fact",
+      "text": "单季总收入 957.23 亿美元，其中净销售额 938.73 亿美元、会员费 18.50 亿美元。总收入同比约增 11.10%，净销售额约增 11.18%。两者分母不同，会员费已经包含于总收入，不能重复相加。本期为 2026 年 5 月 11 日至 8 月 30 日，共 16 周，同比第四季度也为 16 周。",
+      "evidence_ids": [
+        "income"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "公司整体报告同店销售增长 9.4%，剔除汽油价格与汇率后增长 6.7%；同店客流增长 3.3%，调整后客单价增长 3.3%。调整后的表现同时有客流和客单价支撑，报告值与调整值之间 2.7 个百分点的差额不能全部归为真实销量或某一个外部因素。",
+      "evidence_ids": [
+        "demand"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "会员费同比约增 7.31% 至 18.50 亿美元，付费会员数增长 3.8% 至 8410 万。美国与加拿大续费率 92.3%，全球续费率 89.8%；Executive 会员 4230 万，其销售占比 75.6%。会员费按会员期间确认，因此费收入更快增长不等于本期现金收款同幅增长，也不能直接当作新增会员数量。",
+      "evidence_ids": [
+        "membership"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "营业利润 38.01 亿美元，上年同期 33.41 亿美元，占总收入约 3.97%。商品毛利率约为净销售额的 11.02%，报告口径约降 11 个基点；公司披露剔除汽油影响后改善 20 个基点。SG&A 占净销售额 8.94%，报告口径下降 27 个基点。因此费用效率与销售组合需要结合观察，并保持分母一致。",
+      "evidence_ids": [
+        "income",
+        "margin"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "后续 10-K 披露全年经营现金流 158.17 亿美元，前 36 周累计为 111.33 亿美元，相减后第四季度为 46.84 亿美元。扣除现金物业设备投入 22.07 亿美元，计算单季自由现金流为 24.77 亿美元，上年同期 19.01 亿美元。这里采用后续年报，全年经营现金流较初步公告少 800 万美元；初步全年值 158.25 亿美元不能当作单季现金创造。",
+      "evidence_ids": [
+        "cash",
+        "cash-prior"
+      ]
+    },
+    {
+      "kind": "risk",
+      "text": "GAAP 摊薄 EPS 从 5.87 美元增至 6.75 美元，其中包含每股 0.15 美元的一次性关税退款净收益。公司披露剔除此项后 EPS 增长 12.4%，报告增速约为 15.0%。补充材料预计 FY2027 年末仓库数 967 家，当前为 939 家。扩店、工资、关税和对会员价值的再投入可能影响未来利润率；仓库预估属于管理层展望，并非已完成开店或收入、EPS 指引。",
+      "evidence_ids": [
+        "outlook"
+      ]
+    }
+  ]
+}
