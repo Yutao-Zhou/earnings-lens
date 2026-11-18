@@ -1,0 +1,656 @@
+{
+  "schema_version": "1.0",
+  "data_kind": "production",
+  "report_id": "0000789019-FY2027-Q1",
+  "revision": 1,
+  "revision_reason": "initial",
+  "supersedes_revision": null,
+  "validation_status": "passed",
+  "company": {
+    "id": "0000789019",
+    "cik": "0000789019",
+    "ticker": "MSFT",
+    "name": "Microsoft"
+  },
+  "period": {
+    "fiscal_year": 2027,
+    "fiscal_period": "Q1",
+    "start": "2026-07-01",
+    "end": "2026-09-30"
+  },
+  "published_at": "2026-10-28T00:00:00-05:00",
+  "published_at_precision": "date",
+  "as_of": "2026-11-18T04:07:51.308Z",
+  "analyzed_at": "2026-11-18T04:08:18.641Z",
+  "coverage": {
+    "earnings_release": "available",
+    "regulatory_filing": "pending",
+    "transcript": "available"
+  },
+  "metrics": [
+    {
+      "key": "revenue",
+      "label": "营业收入",
+      "value": 92279000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 77673000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "income",
+            "previous",
+            "period"
+          ],
+          "change_pct": 18.804475171552525,
+          "change_pp": null,
+          "unavailable_reason": null
+        },
+        {
+          "type": "qoq",
+          "baseline_value": 90007000000,
+          "baseline_start": "2026-04-01",
+          "baseline_end": "2026-06-30",
+          "baseline_evidence_ids": [
+            "income",
+            "previous",
+            "period"
+          ],
+          "change_pct": 2.5242481140355766,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "gross_margin",
+      "label": "GAAP 毛利率（计算值）",
+      "value": 67.79332242438691,
+      "unit": "percent",
+      "currency": null,
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": "各季 GAAP 毛利金额 ÷ 同季营业收入；由原始报表金额计算。",
+      "evidence_ids": [
+        "income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 69.04587179586214,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "income",
+            "previous",
+            "period"
+          ],
+          "change_pct": null,
+          "change_pp": -1.2525493714752258,
+          "unavailable_reason": null
+        },
+        {
+          "type": "qoq",
+          "baseline_value": 67.1969957892164,
+          "baseline_start": "2026-04-01",
+          "baseline_end": "2026-06-30",
+          "baseline_evidence_ids": [
+            "income",
+            "previous",
+            "period"
+          ],
+          "change_pct": null,
+          "change_pp": 0.596326635170513,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "diluted_eps",
+      "label": "GAAP 摊薄每股收益",
+      "value": 4.92,
+      "unit": "currency_per_share",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 3.72,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "income",
+            "previous",
+            "period"
+          ],
+          "change_pct": 32.258064516129025,
+          "change_pp": null,
+          "unavailable_reason": null
+        },
+        {
+          "type": "qoq",
+          "baseline_value": 4.81,
+          "baseline_start": "2026-04-01",
+          "baseline_end": "2026-06-30",
+          "baseline_evidence_ids": [
+            "income",
+            "previous",
+            "period"
+          ],
+          "change_pct": 2.2869022869022926,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "net_income",
+      "label": "GAAP 净利润",
+      "value": 36629000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 27747000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "income",
+            "previous",
+            "period"
+          ],
+          "change_pct": 32.0106678199445,
+          "change_pp": null,
+          "unavailable_reason": null
+        },
+        {
+          "type": "qoq",
+          "baseline_value": 35766000000,
+          "baseline_start": "2026-04-01",
+          "baseline_end": "2026-06-30",
+          "baseline_evidence_ids": [
+            "income",
+            "previous",
+            "period"
+          ],
+          "change_pct": 2.4129061119498862,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "operating_income",
+      "label": "GAAP 营业利润",
+      "value": 45915000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 37961000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "income",
+            "previous",
+            "period"
+          ],
+          "change_pct": 20.95308342772846,
+          "change_pp": null,
+          "unavailable_reason": null
+        },
+        {
+          "type": "qoq",
+          "baseline_value": 40603000000,
+          "baseline_start": "2026-04-01",
+          "baseline_end": "2026-06-30",
+          "baseline_evidence_ids": [
+            "income",
+            "previous",
+            "period"
+          ],
+          "change_pct": 13.082777134694478,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "operating_cash_flow",
+      "label": "经营活动现金流",
+      "value": 58000000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "cash"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 45057000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "cash",
+            "previous",
+            "period"
+          ],
+          "change_pct": 28.725836163082306,
+          "change_pp": null,
+          "unavailable_reason": null
+        },
+        {
+          "type": "qoq",
+          "baseline_value": 55441000000,
+          "baseline_start": "2026-04-01",
+          "baseline_end": "2026-06-30",
+          "baseline_evidence_ids": [
+            "cash",
+            "previous",
+            "period"
+          ],
+          "change_pct": 4.615717609711223,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "cash_capex",
+      "label": "现金购置物业及设备",
+      "value": 39367000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "cash"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 19394000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "cash",
+            "previous"
+          ],
+          "change_pct": 102.98545942043931,
+          "change_pp": null,
+          "unavailable_reason": null
+        },
+        {
+          "type": "qoq",
+          "baseline_value": 35802000000,
+          "baseline_start": "2026-04-01",
+          "baseline_end": "2026-06-30",
+          "baseline_evidence_ids": [
+            "cash",
+            "previous"
+          ],
+          "change_pct": 9.957544271269757,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "free_cash_flow",
+      "label": "自由现金流（计算值）",
+      "value": 18633000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "derived",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": "单季经营现金流 − 单季现金购置物业及设备；不以包含融资租赁的投资口径 CapEx 替代现金购置金额。",
+      "evidence_ids": [
+        "cash"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 25663000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "cash",
+            "previous"
+          ],
+          "change_pct": -27.39352375014612,
+          "change_pp": null,
+          "unavailable_reason": null
+        },
+        {
+          "type": "qoq",
+          "baseline_value": 19639000000,
+          "baseline_start": "2026-04-01",
+          "baseline_end": "2026-06-30",
+          "baseline_evidence_ids": [
+            "cash",
+            "previous"
+          ],
+          "change_pct": -5.122460410407859,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "adjusted_eps",
+      "label": "摊薄每股收益（剔除 OpenAI 投资影响）",
+      "value": 4.89,
+      "unit": "currency_per_share",
+      "currency": "USD",
+      "basis": "non-GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": "采用本期官方调整表，剔除 OpenAI 投资影响；不等同于 GAAP EPS。",
+      "evidence_ids": [
+        "earnings-basis"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 4.13,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "earnings-basis"
+          ],
+          "change_pct": 18.401937046004836,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    }
+  ],
+  "guidance": [
+    {
+      "label": "营业收入",
+      "target_period": "FY2027 Q2",
+      "period_start": "2026-10-01",
+      "period_end": "2026-12-31",
+      "low": 96000000000,
+      "high": 97100000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "evidence_ids": [
+        "guidance"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "release",
+      "title": "Microsoft FY2027 Q1 earnings release",
+      "type": "earnings_release",
+      "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast",
+      "published_at": "2026-10-28T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T04:07:51.037Z"
+    },
+    {
+      "id": "previous-release",
+      "title": "Microsoft FY2026 Q4 earnings release",
+      "type": "earnings_release",
+      "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast",
+      "published_at": "2026-07-29T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T04:07:51.025Z"
+    },
+    {
+      "id": "year-ago-release",
+      "title": "Microsoft FY2026 Q1 earnings release",
+      "type": "earnings_release",
+      "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q1/press-release-webcast",
+      "published_at": "2025-10-29T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T04:07:50.992Z"
+    },
+    {
+      "id": "call",
+      "title": "Microsoft FY2027 Q1 official earnings-call transcript",
+      "type": "transcript",
+      "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1",
+      "published_at": "2026-10-28T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T04:07:51.284Z"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "income",
+      "source_id": "release",
+      "locator": "Income statements; standalone three months; current and year-ago revenue, gross profit, net income, and diluted EPS.",
+      "quote": "92,279"
+    },
+    {
+      "id": "cash",
+      "source_id": "release",
+      "locator": "Cash flow statements; standalone three months; operating cash flow and cash additions to property and equipment.",
+      "quote": "58,000"
+    },
+    {
+      "id": "previous",
+      "source_id": "previous-release",
+      "locator": "Income and cash-flow statements; standalone preceding quarter, using the first three-month columns.",
+      "quote": "90,007"
+    },
+    {
+      "id": "period",
+      "source_id": "year-ago-release",
+      "locator": "Income-statement reporting-period header; year-ago standalone quarter.",
+      "quote": "Three Months Ended September 30,"
+    },
+    {
+      "id": "segments",
+      "source_id": "release",
+      "locator": "Segment results; current and recast prior-year revenue; quarterly comparison uses the current disclosure basis.",
+      "quote": "$76,795"
+    },
+    {
+      "id": "earnings-basis",
+      "source_id": "release",
+      "locator": "OpenAI investment reconciliation; GAAP EPS compared with company-adjusted non-GAAP EPS; current and prior year.",
+      "quote": "$4.92 / $(0.03) / $4.89"
+    },
+    {
+      "id": "cloud-growth",
+      "source_id": "release",
+      "locator": "Business highlights; Microsoft Cloud revenue and Azure reported-currency revenue growth. Cloud is an aggregate, not an additional reportable segment.",
+      "quote": "Azure revenue increased 48%"
+    },
+    {
+      "id": "guidance",
+      "source_id": "call",
+      "locator": "Management outlook; next-quarter total-company revenue range; expectations, not realized results.",
+      "quote": "$96 and $97.1 billion"
+    },
+    {
+      "id": "investment",
+      "source_id": "call",
+      "locator": "CFO commentary; investment-basis capital expenditure, finance leases, and cash PPE use different measurement/timing conventions.",
+      "quote": "$45.2 billion"
+    }
+  ],
+  "summary": {
+    "text": "收入同比增长 18.8%，云业务继续扩张。GAAP 与剔除 OpenAI 投资影响后的盈利增速不同；现金资本投入使自由现金流同比下降 27.39%。分部比较采用公司本期披露口径，不拼接旧口径业务数据。",
+    "evidence_ids": [
+      "income",
+      "cash",
+      "segments",
+      "earnings-basis"
+    ]
+  },
+  "findings": [
+    {
+      "kind": "risk",
+      "text": "管理层披露投资口径资本开支 452 亿美元，并单独披露融资租赁 74 亿美元。该投资口径与现金流量表的现金购置金额，在确认和付款时点上有差异；自由现金流采用现金购置金额计算。管理层预计下一季资本开支超过 500 亿美元，需持续验证基础设施投入的现金回报。",
+      "evidence_ids": [
+        "investment",
+        "cash"
+      ]
+    },
+    {
+      "kind": "fact",
+      "text": "GAAP 毛利率按报表金额计算为 67.79%，同比下降 1.25 个百分点、环比上升 0.6 个百分点。营业利润 459.15 亿美元，同比增长 20.95%；收入扩张与毛利率变化需要分开观察。",
+      "evidence_ids": [
+        "income",
+        "previous"
+      ]
+    },
+    {
+      "kind": "fact",
+      "text": "GAAP EPS 为 $4.92，同比增长 32.26%；公司剔除 OpenAI 投资影响后的非 GAAP EPS 为 $4.89，同比增长 18.4%。两种增速差异说明投资损益及基期影响不能直接等同于经营业务增速。",
+      "evidence_ids": [
+        "earnings-basis"
+      ]
+    },
+    {
+      "kind": "fact",
+      "text": "营业收入 922.79 亿美元，同比增长 18.8%。Microsoft Cloud 收入 639 亿美元，这是跨产品的云业务汇总口径，不能再与报告分部收入相加。Azure 收入按报告币种同比增长 48%，该百分比不是 Azure 的收入金额。",
+      "evidence_ids": [
+        "income",
+        "cloud-growth"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "经营现金流 580 亿美元，同比增长 28.73%；现金购置物业及设备 393.67 亿美元。扣除这项现金投入后，自由现金流为 186.33 亿美元，同比下降 27.39%。经营回款增长与投资后的现金结余变化，并不是同一个指标。",
+      "evidence_ids": [
+        "cash"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "经营现金流约为 GAAP 净利润的 158.34%。这一现金转化比例需要与资本支出一起观察：经营现金流高于净利润，可以与扣除基础设施投入后较低的自由现金流同时出现。",
+      "evidence_ids": [
+        "cash",
+        "income"
+      ]
+    },
+    {
+      "kind": "management_expectation",
+      "text": "管理层预计 FY2027 Q2 营业收入为 960 亿美元—971 亿美元。这是公司未来预期；本版不将其解读为实际业绩，也不据此判断是否超过市场一致预期。",
+      "evidence_ids": [
+        "guidance"
+      ]
+    }
+  ],
+  "segments": [
+    {
+      "name": "Agents and Infra",
+      "text": "本季收入 767.95 亿美元，上年同季重述后为 616.72 亿美元，同比增长 24.52%。采用本期披露的分部定义；不与上一季度旧分部名称直接拼接成环比趋势。",
+      "evidence_ids": [
+        "segments"
+      ]
+    },
+    {
+      "name": "Devices and Consumer",
+      "text": "本季收入 154.84 亿美元，上年同季重述后为 160.01 亿美元，同比下降 3.23%。采用本期披露的分部定义；不与上一季度旧分部名称直接拼接成环比趋势。",
+      "evidence_ids": [
+        "segments"
+      ]
+    }
+  ],
+  "follow_ups": [
+    {
+      "id": "cloud-investment",
+      "question": "云业务增长能否转化为投资后的现金回报？",
+      "status": "monitoring",
+      "update": "经营现金流和现金资本投入同时增长，需要跟踪可用容量、利用率与自由现金流。",
+      "next_check": "下一季度业绩及现金流披露时。",
+      "evidence_ids": [
+        "cash",
+        "investment"
+      ]
+    },
+    {
+      "id": "comparable-earnings",
+      "question": "剔除投资影响后，经营盈利的增长是否持续？",
+      "status": "monitoring",
+      "update": "GAAP 与公司调整后的 EPS 均单独保留，继续观察比较基期和投资损益。",
+      "next_check": "下一季度 GAAP 与非 GAAP 调整表更新时。",
+      "evidence_ids": [
+        "earnings-basis"
+      ]
+    },
+    {
+      "id": "segment-comparability",
+      "question": "新的报告分部能否建立口径一致的历史序列？",
+      "status": "monitoring",
+      "update": "本版采用当前披露中的重述同比，尚未拼接旧分部历史。",
+      "next_check": "取得重述历史分部资料时。",
+      "evidence_ids": [
+        "segments"
+      ]
+    }
+  ],
+  "limitations": [
+    "采用当前官方公告及可取得的官方电话会文字稿；正式季度申报文件尚未取得，不能代表完整申报文件审阅。",
+    "Microsoft Cloud 是跨产品汇总口径；Azure 收入增速不等于独立披露的绝对收入，不能与报告分部相加。",
+    "本期报告分部已变更，同比采用公司当前披露的重述值；旧分部不构造新的环比比较。",
+    "自由现金流为经营现金流减现金购置物业及设备的计算值；投资口径资本开支与融资租赁具有不同的确认及付款时点。",
+    "没有保存披露前的市场一致预期快照，因此不判断是否超出市场预期。"
+  ]
+}
