@@ -23,7 +23,7 @@ test('NVIDIA pilot preserves the standalone quarter and company cash-flow defini
   assert.deepEqual(validateReport(report),[]);
 });
 test('unknown guidance dates remain unknown and known dates must be future dates',()=>{
-  const report=structuredClone(dataset.reports[0]);
+  const report=structuredClone(dataset.reports.find(report=>report.guidance.length));
   report.guidance[0].period_end=null;assert.deepEqual(validateReport(report),[]);
   report.guidance[0].period_end=report.period.end;
   assert.ok(validateReport(report).some(error=>/future reporting period/.test(error)));
