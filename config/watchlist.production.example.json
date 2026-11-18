@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "companies": [
+    {
+      "id": "0001045810",
+      "cik": "0001045810",
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "enabled": true,
+      "ir_url": "https://investor.nvidia.com/",
+      "research_questions": ["数据中心收入增长能否持续？", "毛利率、库存与现金回报如何变化？"]
+    },
+    {
+      "id": "0000789019",
+      "cik": "0000789019",
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "enabled": true,
+      "ir_url": "https://www.microsoft.com/en-us/Investor/",
+      "research_questions": ["云业务增长与管理层指引相比如何？", "资本开支增长能否转化为收入与现金回报？"]
+    },
+    {
+      "id": "0000320193",
+      "cik": "0000320193",
+      "ticker": "AAPL",
+      "name": "Apple",
+      "enabled": true,
+      "ir_url": "https://investor.apple.com/",
+      "research_questions": ["产品与服务收入的增长来源有何变化？", "地区收入、利润率与现金流是否支持增长持续性？"]
+    }
+  ]
+}

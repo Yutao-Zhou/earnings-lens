@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0",
+  "data_kind": "demo",
+  "report_id": "DEMO-FY2026-Q3",
+  "revision": 2,
+  "revision_reason": "material_update",
+  "supersedes_revision": 1,
+  "validation_status": "passed",
+  "company": {
+    "id": "DEMO",
+    "cik": null,
+    "ticker": "DEMO",
+    "name": "示例科技"
+  },
+  "period": {
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "start": "2026-07-01",
+    "end": "2026-09-30"
+  },
+  "published_at": "2026-10-22T16:00:00-04:00",
+  "as_of": "2026-10-23T17:00:00-04:00",
+  "analyzed_at": "2026-10-23T17:10:00-04:00",
+  "coverage": {
+    "earnings_release": "available",
+    "regulatory_filing": "available",
+    "transcript": "available"
+  },
+  "metrics": [
+    {
+      "key": "revenue",
+      "label": "营业收入",
+      "value": 10000000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "E1"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 8000000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "E1"
+          ],
+          "change_pct": 25,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "gross_margin",
+      "label": "GAAP 毛利率",
+      "value": 61,
+      "unit": "percent",
+      "currency": null,
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "E1"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 60,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "E1"
+          ],
+          "change_pct": null,
+          "change_pp": 1,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "diluted_eps",
+      "label": "GAAP 稀释 EPS",
+      "value": 2.4,
+      "unit": "currency_per_share",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "E1"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 2,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "E1"
+          ],
+          "change_pct": 20,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "free_cash_flow",
+      "label": "自由现金流",
+      "value": 2060000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "derived",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": "经营活动现金流减资本支出；单季口径。",
+      "evidence_ids": [
+        "E2"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 1600000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "E2"
+          ],
+          "change_pct": 28.75,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "text": "收入同比增长 25%，利润率有所改善；接下来需要确认增长能否持续转化为现金回报。",
+    "evidence_ids": [
+      "E1",
+      "E2",
+      "E4"
+    ]
+  },
+  "findings": [
+    {
+      "kind": "fact",
+      "text": "收入同比增长 25%，GAAP 毛利率较上年同季提升 1 个百分点。",
+      "evidence_ids": [
+        "E1"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "收入与现金流同步增长，为经营改善提供了初步支持；仍需结合资本支出与业务结构持续验证。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    },
+    {
+      "kind": "risk",
+      "text": "管理层预计投资仍处于较高水平，需要持续观察资本开支对现金回报的影响。",
+      "evidence_ids": [
+        "E4"
+      ]
+    }
+  ],
+  "segments": [
+    {
+      "name": "核心产品与服务",
+      "text": "演示业务保持增长；具体业务结构应以真实披露的分部数据为准。",
+      "evidence_ids": [
+        "E1"
+      ]
+    }
+  ],
+  "guidance": [
+    {
+      "label": "营业收入",
+      "target_period": "下一季度",
+      "period_start": "2026-10-01",
+      "period_end": "2026-12-31",
+      "low": 10800000000,
+      "high": 11200000000.000002,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "evidence_ids": [
+        "E3"
+      ]
+    }
+  ],
+  "follow_ups": [
+    {
+      "id": "cash-conversion",
+      "question": "增长能否持续转化为现金回报？",
+      "status": "monitoring",
+      "update": "补充电话会后，管理层对持续投资的表述支持继续跟踪现金回报。",
+      "next_check": "下一季度比较经营现金流、资本支出与收入的变化。",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E4"
+      ]
+    }
+  ],
+  "limitations": [
+    "全部为虚构演示数据，不代表任何真实公司。",
+    "未接入财报发布前的市场共识，无法判断是否超预期。"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "示例科技 Q3 演示业绩公告",
+      "type": "earnings_release",
+      "url": "https://example.com/DEMO/Q3/release",
+      "published_at": "2026-10-22T16:00:00-04:00",
+      "fetched_at": "2026-10-22T16:05:00-04:00"
+    },
+    {
+      "id": "S2",
+      "title": "演示季度申报文件",
+      "type": "regulatory_filing",
+      "url": "https://example.com/DEMO/Q3/filing",
+      "published_at": "2026-10-23T08:00:00-04:00",
+      "fetched_at": "2026-10-23T09:00:00-04:00"
+    },
+    {
+      "id": "S3",
+      "title": "演示电话会记录",
+      "type": "transcript",
+      "url": "https://example.com/DEMO/Q3/transcript",
+      "published_at": "2026-10-22T18:00:00-04:00",
+      "fetched_at": "2026-10-23T09:10:00-04:00"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E1",
+      "source_id": "S1",
+      "locator": "Financial highlights / Revenue and earnings",
+      "quote": "Fictional example: Revenue was USD 10000000000, compared with USD 8000000000 a year ago. GAAP gross margin was 61% versus 60%. Diluted EPS was USD 2.4 versus USD 2."
+    },
+    {
+      "id": "E2",
+      "source_id": "S1",
+      "locator": "Cash flow highlights",
+      "quote": "Fictional example: Operating cash flow was USD 2460000000; capital expenditure was USD 400000000. The prior-year amounts were USD 1900000000 and USD 300000000."
+    },
+    {
+      "id": "E3",
+      "source_id": "S1",
+      "locator": "Business outlook",
+      "quote": "Fictional example: Next-quarter revenue is expected to be between USD 10800000000 and USD 11200000000.000002."
+    },
+    {
+      "id": "E4",
+      "source_id": "S3",
+      "locator": "Management commentary / Investment",
+      "quote": "Fictional example: Management expects investment to remain elevated and will review cash generation alongside revenue growth."
+    },
+    {
+      "id": "E5",
+      "source_id": "S2",
+      "locator": "Financial statements / Revenue",
+      "quote": "Fictional example: Revenue for the quarter was USD 10000000000."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "companies"],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "companies": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "ticker", "name", "cik", "enabled", "research_questions"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,99}$" },
+          "ticker": { "type": "string", "pattern": "^[A-Z0-9.-]{1,12}$" },
+          "name": { "type": "string", "minLength": 1 },
+          "cik": { "type": ["string", "null"], "pattern": "^[0-9]{10}$" },
+          "enabled": { "type": "boolean" },
+          "ir_url": { "type": "string", "format": "uri", "pattern": "^https://" },
+          "research_questions": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+        }
+      }
+    }
+  }
+}

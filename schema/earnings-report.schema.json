@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:earnings-lens:report:1.0",
+  "title": "Earnings Lens report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "data_kind", "report_id", "revision", "revision_reason", "supersedes_revision", "validation_status", "company", "period", "published_at", "as_of", "analyzed_at", "coverage", "metrics", "summary", "findings", "segments", "guidance", "follow_ups", "limitations", "sources", "evidence"],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "data_kind": { "enum": ["demo", "production"] },
+    "report_id": { "$ref": "#/$defs/id" },
+    "revision": { "type": "integer", "minimum": 1 },
+    "revision_reason": { "enum": ["initial", "material_update", "correction", "reanalysis"] },
+    "supersedes_revision": { "type": ["integer", "null"], "minimum": 1 },
+    "validation_status": { "enum": ["draft", "passed", "needs_review"] },
+    "company": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "cik", "ticker", "name"],
+      "properties": { "id": { "$ref": "#/$defs/id" }, "cik": { "type": ["string", "null"], "pattern": "^[0-9]{10}$" }, "ticker": { "type": "string", "pattern": "^[A-Z0-9.-]{1,12}$" }, "name": { "$ref": "#/$defs/text" } }
+    },
+    "period": {
+      "type": "object", "additionalProperties": false,
+      "required": ["fiscal_year", "fiscal_period", "start", "end"],
+      "properties": { "fiscal_year": { "type": "integer", "minimum": 1990, "maximum": 2200 }, "fiscal_period": { "enum": ["Q1", "Q2", "Q3", "Q4", "FY"] }, "start": { "$ref": "#/$defs/date" }, "end": { "$ref": "#/$defs/date" } }
+    },
+    "published_at": { "$ref": "#/$defs/timestamp" },
+    "as_of": { "$ref": "#/$defs/timestamp" },
+    "analyzed_at": { "$ref": "#/$defs/timestamp" },
+    "coverage": {
+      "type": "object", "additionalProperties": false,
+      "required": ["earnings_release", "regulatory_filing", "transcript"],
+      "properties": { "earnings_release": { "$ref": "#/$defs/coverageState" }, "regulatory_filing": { "$ref": "#/$defs/coverageState" }, "transcript": { "$ref": "#/$defs/coverageState" } }
+    },
+    "metrics": { "type": "array", "minItems": 1, "maxItems": 100, "items": { "$ref": "#/$defs/metric" } },
+    "summary": { "$ref": "#/$defs/narrative" },
+    "findings": {
+      "type": "array", "maxItems": 50,
+      "items": { "type": "object", "additionalProperties": false, "required": ["kind", "text", "evidence_ids"], "properties": { "kind": { "enum": ["fact", "management_expectation", "inference", "risk"] }, "text": { "$ref": "#/$defs/text" }, "evidence_ids": { "$ref": "#/$defs/refs" } } }
+    },
+    "segments": {
+      "type": "array", "maxItems": 50,
+      "items": { "type": "object", "additionalProperties": false, "required": ["name", "text", "evidence_ids"], "properties": { "name": { "$ref": "#/$defs/text" }, "text": { "$ref": "#/$defs/text" }, "evidence_ids": { "$ref": "#/$defs/refs" } } }
+    },
+    "guidance": {
+      "type": "array", "maxItems": 30,
+      "items": { "type": "object", "additionalProperties": false, "required": ["label", "target_period", "period_start", "period_end", "low", "high", "unit", "currency", "basis", "evidence_ids"], "properties": { "label": { "$ref": "#/$defs/text" }, "target_period": { "$ref": "#/$defs/text" }, "period_start": { "$ref": "#/$defs/date" }, "period_end": { "$ref": "#/$defs/date" }, "low": { "type": "number" }, "high": { "type": "number" }, "unit": { "$ref": "#/$defs/unit" }, "currency": { "$ref": "#/$defs/currency" }, "basis": { "$ref": "#/$defs/basis" }, "evidence_ids": { "$ref": "#/$defs/refs" } } }
+    },
+    "follow_ups": {
+      "type": "array", "maxItems": 50,
+      "items": { "type": "object", "additionalProperties": false, "required": ["id", "question", "status", "update", "next_check", "evidence_ids"], "properties": { "id": { "$ref": "#/$defs/id" }, "question": { "$ref": "#/$defs/text" }, "status": { "enum": ["open", "monitoring", "resolved"] }, "update": { "$ref": "#/$defs/text" }, "next_check": { "$ref": "#/$defs/text" }, "evidence_ids": { "$ref": "#/$defs/refs" } } }
+    },
+    "limitations": { "type": "array", "minItems": 1, "maxItems": 50, "items": { "$ref": "#/$defs/text" } },
+    "sources": {
+      "type": "array", "minItems": 1, "maxItems": 100,
+      "items": { "type": "object", "additionalProperties": false, "required": ["id", "title", "type", "url", "published_at", "fetched_at"], "properties": { "id": { "$ref": "#/$defs/id" }, "title": { "$ref": "#/$defs/text" }, "type": { "enum": ["earnings_release", "regulatory_filing", "transcript", "presentation"] }, "url": { "type": "string", "format": "uri", "pattern": "^https://", "maxLength": 2048 }, "published_at": { "$ref": "#/$defs/timestamp" }, "fetched_at": { "$ref": "#/$defs/timestamp" } } }
+    },
+    "evidence": {
+      "type": "array", "minItems": 1, "maxItems": 500,
+      "items": { "type": "object", "additionalProperties": false, "required": ["id", "source_id", "locator", "quote"], "properties": { "id": { "$ref": "#/$defs/id" }, "source_id": { "$ref": "#/$defs/id" }, "locator": { "$ref": "#/$defs/text" }, "quote": { "$ref": "#/$defs/text" } } }
+    }
+  },
+  "$defs": {
+    "id": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,99}$" },
+    "text": { "type": "string", "minLength": 1, "maxLength": 12000, "pattern": "\\S" },
+    "date": { "type": "string", "format": "date" },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "coverageState": { "enum": ["available", "pending", "unavailable", "not_applicable"] },
+    "refs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+    "unit": { "enum": ["currency", "currency_per_share", "percent", "count", "ratio"] },
+    "currency": { "type": ["string", "null"], "pattern": "^[A-Z]{3}$" },
+    "basis": { "enum": ["GAAP", "non-GAAP", "operational", "derived"] },
+    "narrative": { "type": "object", "additionalProperties": false, "required": ["text", "evidence_ids"], "properties": { "text": { "$ref": "#/$defs/text" }, "evidence_ids": { "$ref": "#/$defs/refs" } } },
+    "comparison": {
+      "type": "object", "additionalProperties": false,
+      "required": ["type", "baseline_value", "baseline_start", "baseline_end", "baseline_evidence_ids", "change_pct", "change_pp", "unavailable_reason"],
+      "properties": { "type": { "enum": ["yoy", "qoq"] }, "baseline_value": { "type": ["number", "null"] }, "baseline_start": { "type": ["string", "null"], "format": "date" }, "baseline_end": { "$ref": "#/$defs/date" }, "baseline_evidence_ids": { "$ref": "#/$defs/refs" }, "change_pct": { "type": ["number", "null"] }, "change_pp": { "type": ["number", "null"] }, "unavailable_reason": { "type": ["string", "null"], "minLength": 1 } }
+    },
+    "metric": {
+      "type": "object", "additionalProperties": false,
+      "required": ["key", "label", "value", "unit", "currency", "basis", "period_type", "period_start", "period_end", "missing_reason", "definition", "evidence_ids", "comparisons"],
+      "properties": { "key": { "$ref": "#/$defs/id" }, "label": { "$ref": "#/$defs/text" }, "value": { "type": ["number", "null"] }, "unit": { "$ref": "#/$defs/unit" }, "currency": { "$ref": "#/$defs/currency" }, "basis": { "$ref": "#/$defs/basis" }, "period_type": { "enum": ["duration", "instant"] }, "period_start": { "type": ["string", "null"], "format": "date" }, "period_end": { "$ref": "#/$defs/date" }, "missing_reason": { "type": ["string", "null"], "minLength": 1 }, "definition": { "type": ["string", "null"], "minLength": 1 }, "evidence_ids": { "$ref": "#/$defs/refs" }, "comparisons": { "type": "array", "maxItems": 2, "items": { "$ref": "#/$defs/comparison" } } }
+    }
+  }
+}

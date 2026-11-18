@@ -1,0 +1,255 @@
+{
+  "schema_version": "1.0",
+  "data_kind": "demo",
+  "report_id": "CLOUD-FY2026-Q3",
+  "revision": 1,
+  "revision_reason": "initial",
+  "supersedes_revision": null,
+  "validation_status": "passed",
+  "company": {
+    "id": "CLOUD",
+    "cik": null,
+    "ticker": "CLOUD",
+    "name": "示例云服务"
+  },
+  "period": {
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "start": "2026-07-01",
+    "end": "2026-09-30"
+  },
+  "published_at": "2026-10-22T16:00:00-04:00",
+  "as_of": "2026-10-22T16:30:00-04:00",
+  "analyzed_at": "2026-10-22T16:40:00-04:00",
+  "coverage": {
+    "earnings_release": "available",
+    "regulatory_filing": "pending",
+    "transcript": "pending"
+  },
+  "metrics": [
+    {
+      "key": "revenue",
+      "label": "营业收入",
+      "value": 2400000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "E1"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 2000000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "E1"
+          ],
+          "change_pct": 20,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "gross_margin",
+      "label": "GAAP 毛利率",
+      "value": 69,
+      "unit": "percent",
+      "currency": null,
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "E1"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 68,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "E1"
+          ],
+          "change_pct": null,
+          "change_pp": 1,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "diluted_eps",
+      "label": "GAAP 稀释 EPS",
+      "value": 0.92,
+      "unit": "currency_per_share",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "E1"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 0.8,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "E1"
+          ],
+          "change_pct": 15,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "free_cash_flow",
+      "label": "自由现金流",
+      "value": 480000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "derived",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": "经营活动现金流减资本支出；单季口径。",
+      "evidence_ids": [
+        "E2"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 400000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "E2"
+          ],
+          "change_pct": 20,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "text": "收入同比增长 20%，利润率有所改善；接下来需要确认增长能否持续转化为现金回报。",
+    "evidence_ids": [
+      "E1",
+      "E2"
+    ]
+  },
+  "findings": [
+    {
+      "kind": "fact",
+      "text": "收入同比增长 20%，GAAP 毛利率较上年同季提升 1 个百分点。",
+      "evidence_ids": [
+        "E1"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "收入与现金流同步增长，为经营改善提供了初步支持；仍需结合资本支出与业务结构持续验证。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    },
+    {
+      "kind": "risk",
+      "text": "当前仅取得业绩公告，正式申报文件与电话会可能补充重要细节。",
+      "evidence_ids": [
+        "E1"
+      ]
+    }
+  ],
+  "segments": [
+    {
+      "name": "云服务",
+      "text": "演示业务保持增长；具体业务结构应以真实披露的分部数据为准。",
+      "evidence_ids": [
+        "E1"
+      ]
+    }
+  ],
+  "guidance": [
+    {
+      "label": "营业收入",
+      "target_period": "下一季度",
+      "period_start": "2026-10-01",
+      "period_end": "2026-12-31",
+      "low": 2592000000,
+      "high": 2688000000.0000005,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "evidence_ids": [
+        "E3"
+      ]
+    }
+  ],
+  "follow_ups": [
+    {
+      "id": "cash-conversion",
+      "question": "增长能否持续转化为现金回报？",
+      "status": "monitoring",
+      "update": "自由现金流与收入同向增长，继续跟踪现金流和资本支出。",
+      "next_check": "下一季度比较经营现金流、资本支出与收入的变化。",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  ],
+  "limitations": [
+    "全部为虚构演示数据，不代表任何真实公司。",
+    "未接入财报发布前的市场共识，无法判断是否超预期。",
+    "正式申报文件与电话会尚待补充。"
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "示例云服务 Q3 演示业绩公告",
+      "type": "earnings_release",
+      "url": "https://example.com/CLOUD/Q3/release",
+      "published_at": "2026-10-22T16:00:00-04:00",
+      "fetched_at": "2026-10-22T16:05:00-04:00"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E1",
+      "source_id": "S1",
+      "locator": "Financial highlights / Revenue and earnings",
+      "quote": "Fictional example: Revenue was USD 2400000000, compared with USD 2000000000 a year ago. GAAP gross margin was 69% versus 68%. Diluted EPS was USD 0.92 versus USD 0.8."
+    },
+    {
+      "id": "E2",
+      "source_id": "S1",
+      "locator": "Cash flow highlights",
+      "quote": "Fictional example: Operating cash flow was USD 880000000; capital expenditure was USD 400000000. The prior-year amounts were USD 700000000 and USD 300000000."
+    },
+    {
+      "id": "E3",
+      "source_id": "S1",
+      "locator": "Business outlook",
+      "quote": "Fictional example: Next-quarter revenue is expected to be between USD 2592000000 and USD 2688000000.0000005."
+    }
+  ]
+}
