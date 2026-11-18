@@ -4,7 +4,7 @@ const companies=document.getElementById('company-list');
 const search=document.getElementById('company-search');
 const tabs=[['overview','研究总览'],['metrics','财务数据'],['history','历史趋势'],['sources','原文依据']];
 const kindLabels={fact:'已披露事实',management_expectation:'管理层预期',inference:'分析推断',risk:'关注风险'};
-const coverageLabels={earnings_release:'业绩公告',regulatory_filing:'正式申报文件',transcript:'电话会材料'};
+const coverageLabels={earnings_release:'业绩公告',regulatory_filing:'正式申报文件',transcript:'电话会材料',cfo_commentary:'CFO 业绩解读',supplemental_financials:'补充财务数据'};
 const coverageStates={available:'已取得',pending:'待补充',unavailable:'未取得',not_applicable:'不适用'};
 const state={company:dataset.companies[0]?.id,report:null,revision:null,tab:'overview',evidence:null,metric:'revenue'};
 
@@ -31,7 +31,7 @@ function valueLabel(metric,value=metric.value){
   return text(value);
 }
 function periodLabel(report){return `FY${report.period.fiscal_year} ${report.period.fiscal_period}`;}
-function dateLabel(date){return new Intl.DateTimeFormat('zh-CN',{timeZone:'America/New_York',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date(date))+' ET';}
+function dateLabel(date,precision='second'){return new Intl.DateTimeFormat('zh-CN',{timeZone:'America/New_York',year:'numeric',month:'2-digit',day:'2-digit',...(precision==='date'?{}:{hour:'2-digit',minute:'2-digit',hour12:false})}).format(new Date(date))+(precision==='date'?'（仅披露日期）':' ET');}
 function changeLabel(comparison){
   if(!comparison)return '暂无可比数据';
   const prefix=comparison.type==='yoy'?'同比':'环比';
@@ -70,7 +70,7 @@ function renderCompanies(){
   document.getElementById('company-count').textContent=`${matches.length} / ${dataset.companies.length}`;
   companies.replaceChildren(...matches.map(company=>{
     const latest=periodsFor(dataset.reports,company.id)[0];
-    return el('button',{type:'button',class:'company-button','aria-current':state.company===company.id,'data-company':company.id,onclick:()=>{state.company=company.id;state.report=null;state.revision=null;state.evidence=null;render();persist();}},el('span',{},company.name),el('small',{},company.ticker,el('span',{},latest?periodLabel(latest).replace('FY2026 ',''):'暂无报告')));
+    return el('button',{type:'button',class:'company-button','aria-current':state.company===company.id,'data-company':company.id,onclick:()=>{state.company=company.id;state.report=null;state.revision=null;state.evidence=null;render();persist();}},el('span',{},company.name),el('small',{},company.ticker,el('span',{},latest?periodLabel(latest):'暂无报告')));
   }));
   if(!matches.length)companies.append(el('p',{class:'rail-caption',role:'status'},'没有匹配的公司'));
 }
@@ -81,7 +81,7 @@ function renderHeader(report){
   const revisionSelect=el('select',{id:'revision-select','aria-label':'选择分析版本',onChange:event=>{state.revision=Number(event.target.value);state.evidence=null;render();persist();document.getElementById('revision-select').focus();}},revisionsFor(dataset.reports,report.report_id).map(item=>el('option',{value:item.revision},`v${item.revision} · ${item.revision_reason==='initial'?'公告初版':'补充更新'}`)));
   revisionSelect.value=report.revision;
   return el('div',{class:'report-heading'},
-    el('div',{class:'heading-text'},el('div',{},el('p',{class:'eyebrow'},'QUARTERLY RESEARCH / 季度经营研究'),el('h1',{},report.company.name,el('span',{class:'company-ticker'},report.company.ticker))),el('div',{class:'meta-line'},el('span',{},`报告期 ${report.period.start} — ${report.period.end}`),el('span',{},`披露 ${dateLabel(report.published_at)}`),el('span',{},`信息截至 ${dateLabel(report.as_of)}`))),
+    el('div',{class:'heading-text'},el('div',{},el('p',{class:'eyebrow'},'QUARTERLY RESEARCH / 季度经营研究'),el('h1',{},report.company.name,el('span',{class:'company-ticker'},report.company.ticker))),el('div',{class:'meta-line'},el('span',{},`报告期 ${report.period.start} — ${report.period.end}`),el('span',{},`披露 ${dateLabel(report.published_at,report.published_at_precision)}`),el('span',{},`信息截至 ${dateLabel(report.as_of)}`))),
     el('div',{class:'selectors'},el('label',{},'财报期间',periodSelect),el('label',{},'分析版本',revisionSelect)));
 }
 function renderMetrics(report){
@@ -94,14 +94,14 @@ function overview(report){
     el('section',{class:'summary'},el('p',{class:'section-label'},'THE QUARTER IN FOCUS / 本季观察'),el('p',{class:'summary-text'},report.summary.text),evidenceButtons(report.summary.evidence_ids,report)),
     el('section',{},sectionHeading('经营变化','FACTS & INTERPRETATION'),el('div',{class:'finding-list'},report.findings.map(item=>el('article',{class:'finding'},el('span',{class:`finding-kind ${item.kind}`},kindLabels[item.kind]),el('div',{},el('p',{class:'finding-text'},item.text),evidenceButtons(item.evidence_ids,report)))))),
     report.segments.length?el('section',{},sectionHeading('业务拆解','BUSINESS DRIVERS'),report.segments.map(item=>el('article',{class:'segment'},el('h3',{},item.name),el('p',{},item.text),evidenceButtons(item.evidence_ids,report)))):null,
-    el('section',{},sectionHeading('管理层指引','FORWARD LOOK'),report.guidance.length?report.guidance.map(item=>el('article',{class:'segment'},el('h3',{},`${item.target_period} · ${item.label}`),el('p',{},`${valueLabel(item,item.low)} — ${valueLabel(item,item.high)}`),el('p',{class:'rail-caption'},`${item.basis} · ${item.period_start} — ${item.period_end} · 管理层预期，尚未实现`),evidenceButtons(item.evidence_ids,report))):el('p',{class:'rail-caption'},'当前材料中没有可展示的已验证指引。')),
+    el('section',{},sectionHeading('管理层指引','FORWARD LOOK'),report.guidance.length?report.guidance.map(item=>el('article',{class:'segment'},el('h3',{},`${item.target_period} · ${item.label}`),el('p',{},`${valueLabel(item,item.low)} — ${valueLabel(item,item.high)}`),el('p',{class:'rail-caption'},`${item.basis} · ${item.period_start??'起始日期未明确'} — ${item.period_end??'期末日期未明确'} · 管理层预期，尚未实现`),evidenceButtons(item.evidence_ids,report))):el('p',{class:'rail-caption'},'当前材料中没有可展示的已验证指引。')),
     report.follow_ups.length?el('section',{},sectionHeading('继续跟踪','NEXT QUARTER'),report.follow_ups.map(item=>el('article',{class:'followup'},el('h3',{},item.question),el('p',{},item.update),el('p',{class:'next-check'},`下次验证：${item.next_check}`),evidenceButtons(item.evidence_ids,report)))):null
   ];
 }
 function metricsTable(report){
-  return el('section',{},sectionHeading('财务数据与口径','FINANCIAL DETAILS'),el('div',{class:'table-wrap'},el('table',{},el('caption',{class:'sr-only'},'本期核心财务指标、上年同季与比较口径'),el('thead',{},el('tr',{},['指标 / 口径','本期','上年同季','变化','依据'].map(label=>el('th',{scope:'col'},label)))),el('tbody',{},report.metrics.map(metric=>{
-    const comparison=metric.comparisons.find(item=>item.type==='yoy');
-    return el('tr',{},el('td',{},metric.label,el('small',{class:'definition'},`${basisLabel(metric.basis)} · ${metric.period_type==='instant'?'时点':'单期'}`),metric.definition?el('small',{class:'definition'},metric.definition):null,metric.missing_reason?el('small',{class:'definition'},metric.missing_reason):null),el('td',{},valueLabel(metric)),el('td',{},valueLabel(metric,comparison?.baseline_value??null)),el('td',{},changeLabel(comparison)),el('td',{},evidenceButtons(metric.evidence_ids,report)));
+  return el('section',{},sectionHeading('财务数据与口径','FINANCIAL DETAILS'),el('div',{class:'table-wrap'},el('table',{},el('caption',{class:'sr-only'},'本期核心财务指标、上年同季与比较口径'),el('thead',{},el('tr',{},['指标 / 口径','本期','上年同季','同比','上季','环比','依据'].map(label=>el('th',{scope:'col'},label)))),el('tbody',{},report.metrics.map(metric=>{
+    const comparison=metric.comparisons.find(item=>item.type==='yoy');const qoq=metric.comparisons.find(item=>item.type==='qoq');
+    return el('tr',{},el('td',{},metric.label,el('small',{class:'definition'},`${basisLabel(metric.basis)} · ${metric.period_type==='instant'?'时点':'单期'}`),metric.definition?el('small',{class:'definition'},metric.definition):null,metric.missing_reason?el('small',{class:'definition'},metric.missing_reason):null),el('td',{},valueLabel(metric)),el('td',{},valueLabel(metric,comparison?.baseline_value??null)),el('td',{},changeLabel(comparison)),el('td',{},valueLabel(metric,qoq?.baseline_value??null)),el('td',{},changeLabel(qoq)),el('td',{},evidenceButtons([...new Set([...metric.evidence_ids,...(comparison?.baseline_evidence_ids??[]),...(qoq?.baseline_evidence_ids??[])])],report)));
   })))),el('p',{class:'chart-caption'},'金额保留披露币种；利润率差值使用百分点。缺失值不按零处理。'));
 }
 function svgNode(tag,attributes={},content){
@@ -152,7 +152,7 @@ function historyView(report){
   return [section,el('section',{},sectionHeading('历史数据','POINT-IN-TIME'),el('div',{class:'table-wrap'},table))];
 }
 function sourcesView(report){
-  return el('section',{},sectionHeading('材料与原文依据','SOURCE LIBRARY'),report.sources.map(source=>el('article',{class:'source-item'},el('h3',{},source.title),el('p',{class:'source-caption'},`披露 ${dateLabel(source.published_at)} · 采集 ${dateLabel(source.fetched_at)}`),report.evidence.filter(item=>item.source_id===source.id).map(item=>el('div',{},el('p',{class:'evidence-location'},`${item.id} · ${item.locator}`),el('blockquote',{},item.quote))),el('a',{href:source.url,target:'_blank',rel:'noopener noreferrer',class:'external-source'},`${dataset.mode==='demo'?'查看演示链接':'打开官方原文'} ↗`))));
+  return el('section',{},sectionHeading('材料与原文依据','SOURCE LIBRARY'),report.sources.map(source=>el('article',{class:'source-item'},el('h3',{},source.title),el('p',{class:'source-caption'},`披露 ${dateLabel(source.published_at,source.published_at_precision)} · 采集 ${dateLabel(source.fetched_at)}`),report.evidence.filter(item=>item.source_id===source.id).map(item=>el('div',{},el('p',{class:'evidence-location'},`${item.id} · ${item.locator}`),el('blockquote',{},item.quote))),el('a',{href:source.url,target:'_blank',rel:'noopener noreferrer',class:'external-source'},`${dataset.mode==='demo'?'查看演示链接':'打开官方原文'} ↗`))));
 }
 function rightRail(report){
   const item=report.evidence.find(item=>item.id===state.evidence)??report.evidence[0];

@@ -30,7 +30,7 @@ A successful source push is not proof that the public website is current. Check 
 
 ## Verification
 
-Confirm that the public page renders, navigation and evidence expansion work, the expected report revision is displayed, and no runtime data endpoint is required. The website currently contains clearly labeled fictional demonstration data until production reports are integrated.
+Confirm that the public page renders, navigation and evidence expansion work, the expected report revision is displayed, and no runtime data endpoint is required. Production builds read only the active real-report directory. Fictional test fixtures are not embedded in the deployed page.
 
 The initial deployment passed all build and deployment steps in [workflow run 44224697521](https://github.com/Yutao-Zhou/earnings-lens/actions/runs/44224697521). Anonymous requests to both URLs returned HTTP 200 at the custom-domain destination. The embedded report JSON and application script matched the local artifact, and browser checks confirmed company selection, financial tables, and evidence expansion.
 

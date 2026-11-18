@@ -8,7 +8,8 @@ import { historyFor } from '../lib/catalog.mjs';
 import { renderSite, serializeJson } from '../lib/render.mjs';
 import { build } from '../scripts/build.mjs';
 
-const dataset=await loadDataset();
+const fixtureRoot=path.join(projectRoot,'test/fixtures/demo');
+const dataset=await loadDataset(fixtureRoot);
 const latest=dataset.reports.find(report=>report.report_id==='DEMO-FY2026-Q3'&&report.revision===2);
 const clone=()=>structuredClone(latest);
 const matches=(report,pattern)=>assert.ok(validateReport(report).some(message=>pattern.test(message)),validateReport(report).join('\n'));
@@ -73,7 +74,7 @@ test('build is deterministic, self-contained, and does not replace a good artifa
   const temp=await mkdtemp(path.join(runtime,'pipeline-'));
   try{
     const output=path.join(temp,'index.html');
-    const first=await build({output});const second=await build({output});assert.equal(first.sha256,second.sha256);
+    const first=await build({dataRoot:fixtureRoot,output});const second=await build({dataRoot:fixtureRoot,output});assert.equal(first.sha256,second.sha256);
     const html=await readFile(output,'utf8');
     assert.match(html,/connect-src 'none'/);
     assert.ok(!/<script[^>]+src=|<link[^>]+rel="stylesheet"|\bfetch\s*\(|XMLHttpRequest|WebSocket|https?:\/\/fonts\./i.test(html));

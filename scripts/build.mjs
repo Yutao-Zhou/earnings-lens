@@ -5,8 +5,8 @@ import { pathToFileURL } from 'node:url';
 import { loadDataset, projectRoot } from '../lib/data.mjs';
 import { renderSite } from '../lib/render.mjs';
 
-export async function build({ root = projectRoot, output = path.join(root, 'dist/index.html') } = {}) {
-  const data = await loadDataset(root);
+export async function build({ root = projectRoot, dataRoot = root, output = path.join(root, 'dist/index.html') } = {}) {
+  const data = await loadDataset(dataRoot);
   const [css, catalog, app] = await Promise.all(['src/styles.css', 'lib/catalog.mjs', 'src/app.js'].map(file => readFile(path.join(root,file),'utf8')));
   const javascript = `(() => {\n'use strict';\n${catalog.replace(/^export /gm,'')}\n${app}\n})();`;
   if (/<\/script/i.test(javascript) || /<\/style/i.test(css)) throw new Error('An application asset terminates its inline HTML container');

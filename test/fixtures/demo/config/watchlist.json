@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "companies": [
+    {
+      "id": "DEMO",
+      "cik": null,
+      "ticker": "DEMO",
+      "name": "示例科技",
+      "enabled": true,
+      "research_questions": [
+        "增长能否持续转化为现金回报？",
+        "管理层此前的指引是否兑现？"
+      ]
+    },
+    {
+      "id": "CLOUD",
+      "cik": null,
+      "ticker": "CLOUD",
+      "name": "示例云服务",
+      "enabled": true,
+      "research_questions": [
+        "增长能否持续转化为现金回报？",
+        "管理层此前的指引是否兑现？"
+      ]
+    },
+    {
+      "id": "NEXT",
+      "cik": null,
+      "ticker": "NEXT",
+      "name": "示例消费",
+      "enabled": true,
+      "research_questions": [
+        "增长能否持续转化为现金回报？",
+        "管理层此前的指引是否兑现？"
+      ]
+    }
+  ]
+}

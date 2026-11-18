@@ -40,12 +40,13 @@ The preview listens only on `127.0.0.1:4173`. It is a development tool, not a ru
 
 - JSON Schema 2020-12 contracts for report data and the watchlist.
 - Ajv validation plus financial, evidence-reference, timestamp, and revision checks.
-- Six fictional report revisions for two companies, plus an empty-company example.
+- Real NVIDIA FY2027 Q3 analysis, with NVDA/MSFT/AAPL as the active watchlist.
+- Fictional revisions isolated under test fixtures; they are excluded from production builds.
 - Company search, fiscal-period and revision selection, financial tables, evidence inspection, and point-in-time history charts.
 - A deterministic build that embeds data and assets in one HTML file and retains the previous output if validation fails.
 - Node tests for financial comparisons, missing data, revision ancestry, historical cutoffs, unsafe input, and build behavior.
 
-The default dataset is clearly labeled as fictional. `config/watchlist.production.example.json` records NVDA, MSFT, and AAPL for subsequent real-data integration; it is not the active demo configuration. Live collection, model execution, and scheduled jobs are not implemented.
+The active dataset contains verified production reports. The external OpenClaw pilot collects official NVIDIA releases, CFO commentary, and supplemental financial information, then submits versioned JSON through the same validation and publication contract. Microsoft and Apple show an empty state until verified reports are added. Formal filings and call materials remain explicitly pending when not collected. Research prompts and host-specific runner configuration are maintained privately.
 
 ## GitHub Pages publication
 

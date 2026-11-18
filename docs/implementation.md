@@ -2,7 +2,7 @@
 
 ## Status
 
-The static report contract, validation, demo data, build, browser UI, and GitHub Pages workflow are implemented and deployed at [yutaozhou.com/earnings-lens](https://yutaozhou.com/earnings-lens/). Source collection, model execution, research-run recovery, and scheduling remain outside the current implementation.
+The static report contract, financial validation, production dataset, build, browser UI, and GitHub Pages workflow are implemented and deployed at [yutaozhou.com/earnings-lens](https://yutaozhou.com/earnings-lens/). An external OpenClaw content runner supplies NVIDIA analysis as validated JSON. The website has no runtime connection to that runner.
 
 ## Commands and files
 
@@ -16,7 +16,7 @@ The static report contract, validation, demo data, build, browser UI, and GitHub
 | `schema/earnings-report.schema.json` | Report JSON Schema 2020-12 contract |
 | `schema/watchlist.schema.json` | Watchlist contract |
 | `config/watchlist.json` | Active company configuration |
-| `config/watchlist.production.example.json` | Separate NVDA/MSFT/AAPL integration configuration |
+| `config/watchlist.production.example.json` | Reference NVDA/MSFT/AAPL company configuration |
 | `data/reports/<company>/<period>/vN.json` | Versioned report inputs |
 | `lib/validation.mjs` | Schema and cross-field checks |
 | `lib/catalog.mjs` | Period, revision, and point-in-time history selection |
@@ -59,7 +59,7 @@ OpenClaw performs collection and model inference before the website is built. Th
 
 ### Input and validation rules
 
-The checked-in report files are complete fictional examples. Follow the formal schema when producing new input. The contract is stricter than the early planning illustration: all required metadata, missing-value fields, comparison fields, coverage states, and source titles must be present.
+Active report files contain real, sourced financial analysis. Fictional examples live only under `test/fixtures/demo` and are loaded explicitly by tests. Follow the formal schema when producing new input. The contract is stricter than the early planning illustration: all required metadata, missing-value fields, comparison fields, coverage states, and source titles must be present.
 
 - Use `data_kind: "demo"` for fictional content and `"production"` for verified real reports. One artifact cannot mix the two kinds.
 - Production company IDs equal their ten-digit CIKs. Report identities must agree with the watchlist. Placeholder source URLs are rejected for production reports.
@@ -105,3 +105,7 @@ Use English for default documentation, technical specifications, and operating i
 `npm test` covers dangling references, duplicate identifiers, incorrect growth and margin changes, missing values, negative baselines, incorrect periods, future-source leakage, placeholder production sources, revision ancestry, point-in-time selection, safe JSON serialization, deterministic builds, and retention of a good artifact after invalid input.
 
 Browser validation is separate from the Node tests. It should check company search, report and revision selection, evidence expansion, financial tables, history, empty states, responsive layout, and offline file navigation. The browser does not receive the Node validation dependencies.
+
+## Source precision and extended materials
+
+Sources may declare `published_at_precision: "date"` when only a calendar date is known; the UI does not invent an intraday disclosure time. Coverage distinguishes CFO commentary and supplemental financial information from a formal filing or call transcript. Guidance interval dates can be `null` when the source gives only a fiscal-period label. Unknown dates remain visible as unknown. Financial details show both year-over-year and sequential comparison inputs and evidence.
