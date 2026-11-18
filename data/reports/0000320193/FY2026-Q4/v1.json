@@ -1,0 +1,603 @@
+{
+  "schema_version": "1.0",
+  "data_kind": "production",
+  "report_id": "0000320193-FY2026-Q4",
+  "revision": 1,
+  "revision_reason": "initial",
+  "supersedes_revision": null,
+  "validation_status": "passed",
+  "company": {
+    "id": "0000320193",
+    "cik": "0000320193",
+    "ticker": "AAPL",
+    "name": "Apple"
+  },
+  "period": {
+    "fiscal_year": 2026,
+    "fiscal_period": "Q4",
+    "start": "2026-06-28",
+    "end": "2026-09-26"
+  },
+  "published_at": "2026-11-02T00:00:00-05:00",
+  "published_at_precision": "date",
+  "as_of": "2026-11-18T04:10:15.660Z",
+  "analyzed_at": "2026-11-18T04:10:31.358Z",
+  "coverage": {
+    "earnings_release": "available",
+    "regulatory_filing": "pending",
+    "transcript": "pending",
+    "supplemental_financials": "available"
+  },
+  "metrics": [
+    {
+      "key": "revenue",
+      "label": "营业收入",
+      "value": 114477000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-06-28",
+      "period_end": "2026-09-26",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 102466000000,
+          "baseline_start": "2025-06-29",
+          "baseline_end": "2025-09-27",
+          "baseline_evidence_ids": [
+            "income",
+            "previous-income"
+          ],
+          "change_pct": 11.721937032771844,
+          "change_pp": null,
+          "unavailable_reason": null
+        },
+        {
+          "type": "qoq",
+          "baseline_value": 109417000000,
+          "baseline_start": "2026-03-29",
+          "baseline_end": "2026-06-27",
+          "baseline_evidence_ids": [
+            "income",
+            "previous-income"
+          ],
+          "change_pct": 4.624509902483154,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "gross_margin",
+      "label": "GAAP 毛利率（计算值）",
+      "value": 47.887348550363825,
+      "unit": "percent",
+      "currency": null,
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-06-28",
+      "period_end": "2026-09-26",
+      "missing_reason": null,
+      "definition": "单季度 GAAP 毛利金额 ÷ 单季度营业收入；包含公司披露的当期关税退款影响。",
+      "evidence_ids": [
+        "income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 47.177600374758455,
+          "baseline_start": "2025-06-29",
+          "baseline_end": "2025-09-27",
+          "baseline_evidence_ids": [
+            "income",
+            "previous-income"
+          ],
+          "change_pct": null,
+          "change_pp": 0.7097481756053696,
+          "unavailable_reason": null
+        },
+        {
+          "type": "qoq",
+          "baseline_value": 50.056206987945195,
+          "baseline_start": "2026-03-29",
+          "baseline_end": "2026-06-27",
+          "baseline_evidence_ids": [
+            "income",
+            "previous-income"
+          ],
+          "change_pct": null,
+          "change_pp": -2.1688584375813704,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "diluted_eps",
+      "label": "GAAP 摊薄每股收益",
+      "value": 2.1,
+      "unit": "currency_per_share",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-06-28",
+      "period_end": "2026-09-26",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 1.85,
+          "baseline_start": "2025-06-29",
+          "baseline_end": "2025-09-27",
+          "baseline_evidence_ids": [
+            "income",
+            "previous-income"
+          ],
+          "change_pct": 13.513513513513509,
+          "change_pp": null,
+          "unavailable_reason": null
+        },
+        {
+          "type": "qoq",
+          "baseline_value": 2.02,
+          "baseline_start": "2026-03-29",
+          "baseline_end": "2026-06-27",
+          "baseline_evidence_ids": [
+            "income",
+            "previous-income"
+          ],
+          "change_pct": 3.960396039603964,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "net_income",
+      "label": "GAAP 净利润",
+      "value": 30711000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-06-28",
+      "period_end": "2026-09-26",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 27466000000,
+          "baseline_start": "2025-06-29",
+          "baseline_end": "2025-09-27",
+          "baseline_evidence_ids": [
+            "income",
+            "previous-income"
+          ],
+          "change_pct": 11.814607150659008,
+          "change_pp": null,
+          "unavailable_reason": null
+        },
+        {
+          "type": "qoq",
+          "baseline_value": 29789000000,
+          "baseline_start": "2026-03-29",
+          "baseline_end": "2026-06-27",
+          "baseline_evidence_ids": [
+            "income",
+            "previous-income"
+          ],
+          "change_pct": 3.0951022189398714,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "operating_income",
+      "label": "GAAP 营业利润",
+      "value": 35631000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-06-28",
+      "period_end": "2026-09-26",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 32427000000,
+          "baseline_start": "2025-06-29",
+          "baseline_end": "2025-09-27",
+          "baseline_evidence_ids": [
+            "income",
+            "previous-income"
+          ],
+          "change_pct": 9.880655009714134,
+          "change_pp": null,
+          "unavailable_reason": null
+        },
+        {
+          "type": "qoq",
+          "baseline_value": 35695000000,
+          "baseline_start": "2026-03-29",
+          "baseline_end": "2026-06-27",
+          "baseline_evidence_ids": [
+            "income",
+            "previous-income"
+          ],
+          "change_pct": -0.17929682028294813,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "operating_cash_flow",
+      "label": "经营活动现金流（单季还原）",
+      "value": 28101000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "derived",
+      "period_type": "duration",
+      "period_start": "2026-06-28",
+      "period_end": "2026-09-26",
+      "missing_reason": null,
+      "definition": "以本财季累计金额减去前一财季累计金额，还原 Q4 单季值；同比用两份报表对应的上年同期累计列相减。",
+      "evidence_ids": [
+        "cash-ytd",
+        "previous-ytd"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 29728000000,
+          "baseline_start": "2025-06-29",
+          "baseline_end": "2025-09-27",
+          "baseline_evidence_ids": [
+            "cash-ytd",
+            "previous-ytd",
+            "earlier-ytd"
+          ],
+          "change_pct": -5.472954790096873,
+          "change_pp": null,
+          "unavailable_reason": null
+        },
+        {
+          "type": "qoq",
+          "baseline_value": 34369000000,
+          "baseline_start": "2026-03-29",
+          "baseline_end": "2026-06-27",
+          "baseline_evidence_ids": [
+            "cash-ytd",
+            "previous-ytd",
+            "earlier-ytd"
+          ],
+          "change_pct": -18.237365067357214,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "cash_capex",
+      "label": "现金购置物业及设备（单季还原）",
+      "value": 2242000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "derived",
+      "period_type": "duration",
+      "period_start": "2026-06-28",
+      "period_end": "2026-09-26",
+      "missing_reason": null,
+      "definition": "以本财季累计金额减去前一财季累计金额，还原 Q4 单季值；同比用两份报表对应的上年同期累计列相减。",
+      "evidence_ids": [
+        "cash-ytd",
+        "previous-ytd"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 3242000000,
+          "baseline_start": "2025-06-29",
+          "baseline_end": "2025-09-27",
+          "baseline_evidence_ids": [
+            "cash-ytd",
+            "previous-ytd",
+            "earlier-ytd"
+          ],
+          "change_pct": -30.845157310302284,
+          "change_pp": null,
+          "unavailable_reason": null
+        },
+        {
+          "type": "qoq",
+          "baseline_value": 2455000000,
+          "baseline_start": "2026-03-29",
+          "baseline_end": "2026-06-27",
+          "baseline_evidence_ids": [
+            "cash-ytd",
+            "previous-ytd",
+            "earlier-ytd"
+          ],
+          "change_pct": -8.67617107942974,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "free_cash_flow",
+      "label": "自由现金流（计算值）",
+      "value": 25859000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "derived",
+      "period_type": "duration",
+      "period_start": "2026-06-28",
+      "period_end": "2026-09-26",
+      "missing_reason": null,
+      "definition": "单季经营现金流 − 单季现金购置物业及设备。以本财季累计金额减去前一财季累计金额，还原 Q4 单季值；同比用两份报表对应的上年同期累计列相减。 此为本站计算口径，不作为公司披露的非 GAAP 指标。",
+      "evidence_ids": [
+        "cash-ytd",
+        "previous-ytd"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 26486000000,
+          "baseline_start": "2025-06-29",
+          "baseline_end": "2025-09-27",
+          "baseline_evidence_ids": [
+            "cash-ytd",
+            "previous-ytd",
+            "earlier-ytd"
+          ],
+          "change_pct": -2.3672883787661414,
+          "change_pp": null,
+          "unavailable_reason": null
+        },
+        {
+          "type": "qoq",
+          "baseline_value": 31914000000,
+          "baseline_start": "2026-03-29",
+          "baseline_end": "2026-06-27",
+          "baseline_evidence_ids": [
+            "cash-ytd",
+            "previous-ytd",
+            "earlier-ytd"
+          ],
+          "change_pct": -18.972864573541393,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    }
+  ],
+  "guidance": [],
+  "sources": [
+    {
+      "id": "release",
+      "title": "Apple FY2026 Q4 earnings release",
+      "type": "earnings_release",
+      "url": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/",
+      "published_at": "2026-11-02T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T04:10:14.352Z"
+    },
+    {
+      "id": "financials",
+      "title": "Apple FY2026 Q4 consolidated financial statements",
+      "type": "supplemental_financials",
+      "url": "https://www.apple.com/newsroom/pdfs/fy2026q4/FY26_Q4_Consolidated_Financial_Statements.pdf",
+      "published_at": "2026-11-02T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T04:10:15.082Z"
+    },
+    {
+      "id": "previous-financials",
+      "title": "Apple FY2026 Q3 consolidated financial statements",
+      "type": "supplemental_financials",
+      "url": "https://www.apple.com/newsroom/pdfs/fy2026q3/FY26_Q3_Consolidated_Financial_Statements.pdf",
+      "published_at": "2026-07-30T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T04:10:14.975Z"
+    },
+    {
+      "id": "earlier-financials",
+      "title": "Apple FY2026 Q2 consolidated financial statements",
+      "type": "supplemental_financials",
+      "url": "https://www.apple.com/newsroom/pdfs/fy2026q2/FY26_Q2_Consolidated_Financial_Statements.pdf",
+      "published_at": "2026-04-30T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T04:10:14.847Z"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "income",
+      "source_id": "financials",
+      "locator": "Page 1; three-month columns; net sales, gross profit, net income, diluted EPS and category/geographic revenue. Annual columns are not used as quarterly results.",
+      "quote": "114,477"
+    },
+    {
+      "id": "cash-ytd",
+      "source_id": "financials",
+      "locator": "Page 3; cumulative current and year-ago operating cash flow, cash PPE acquisitions, repurchases and dividends.",
+      "quote": "145,097"
+    },
+    {
+      "id": "previous-ytd",
+      "source_id": "previous-financials",
+      "locator": "Page 3; preceding-quarter cumulative cash-flow columns, subtracted from current cumulative columns to derive this standalone quarter.",
+      "quote": "116,996"
+    },
+    {
+      "id": "previous-income",
+      "source_id": "previous-financials",
+      "locator": "Page 1; preceding standalone quarter; income statement and reporting-period dates.",
+      "quote": "109,417"
+    },
+    {
+      "id": "earlier-ytd",
+      "source_id": "earlier-financials",
+      "locator": "Page 3; earlier cumulative cash-flow columns, used only to derive the preceding standalone quarter.",
+      "quote": "82,627"
+    },
+    {
+      "id": "tariff-refund",
+      "source_id": "release",
+      "locator": "Release financial highlights; disclosed favorable tariff-refund effects on gross margin and diluted EPS.",
+      "quote": "tariff refunds"
+    },
+    {
+      "id": "working-capital",
+      "source_id": "financials",
+      "locator": "Page 2; current-period inventory and receivables balances; preceding-quarter balances come from the previous-quarter financial statements.",
+      "quote": "14,541"
+    },
+    {
+      "id": "working-capital-previous",
+      "source_id": "previous-financials",
+      "locator": "Page 2; preceding-quarter inventory and receivables balances.",
+      "quote": "11,092"
+    }
+  ],
+  "summary": {
+    "text": "收入同比增长 11.72%，iPhone 与服务业务继续贡献收入；毛利率包含关税退款的有利影响。按累计报表还原的本季自由现金流同比下降 2.37%，现金表现与利润增长需要分开观察。",
+    "evidence_ids": [
+      "income",
+      "cash-ytd",
+      "previous-ytd",
+      "tariff-refund"
+    ]
+  },
+  "findings": [
+    {
+      "kind": "fact",
+      "text": "营业收入 1,144.77 亿美元，同比增长 11.72%；GAAP 摊薄 EPS 为 $2.10，同比增长 13.51%。产品、服务与地区表现存在差异，需要分别查看增长来源。",
+      "evidence_ids": [
+        "income"
+      ]
+    },
+    {
+      "kind": "fact",
+      "text": "GAAP 毛利率按报表金额计算为 47.89%，同比上升 0.71 个百分点、环比下降 2.17 个百分点。公司披露本季毛利率包含关税退款带来的约 1 个百分点有利影响，EPS 包含约 $0.05 的有利影响；不能将这部分收益机械外推到以后季度。",
+      "evidence_ids": [
+        "income",
+        "previous-income",
+        "tariff-refund"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "还原后的单季经营现金流为 281.01 亿美元，同比下降 5.47%；现金购置物业及设备 22.42 亿美元。计算自由现金流为 258.59 亿美元，同比下降 2.37%。这与营收及净利润增长不同，显示现金实现需要单独跟踪。",
+      "evidence_ids": [
+        "cash-ytd",
+        "previous-ytd",
+        "income"
+      ]
+    },
+    {
+      "kind": "risk",
+      "text": "期末库存 145.41 亿美元，上季为 110.92 亿美元；应收账款 438.17 亿美元，上季为 313.98 亿美元。应结合产品季节性、实际回款及应付项目继续观察；这些余额变化本身不能证明库存减值或坏账。",
+      "evidence_ids": [
+        "working-capital",
+        "working-capital-previous"
+      ]
+    },
+    {
+      "kind": "fact",
+      "text": "本季回购 242.96 亿美元、股息及股息等价物现金支出 39.43 亿美元，合计 282.39 亿美元；本口径自由现金流为 258.59 亿美元。股东回报与单季自由现金流的差额，需要结合现金存量及融资活动理解，不能单凭一个季度判断流动性。",
+      "evidence_ids": [
+        "cash-ytd",
+        "previous-ytd"
+      ]
+    }
+  ],
+  "segments": [
+    {
+      "name": "产品与服务：收入类别",
+      "text": "iPhone 收入 575.83 亿美元，同比增长 17.46%；Services 收入 315.73 亿美元，同比增长 9.82%；Mac 收入 107.92 亿美元，同比增长 23.68%；iPad 收入 62.29 亿美元，同比下降 10.4%；Wearables, Home and Accessories 收入 83 亿美元，同比下降 7.91%。这些是产品及服务类别，不与地区分部收入相加。",
+      "evidence_ids": [
+        "income"
+      ]
+    },
+    {
+      "name": "大中华区：地区报告分部",
+      "text": "本季收入 175.39 亿美元，同比增长 21.02%。地区收入与产品收入是同一总收入的两种拆分方式；单个季度的变化不直接证明长期份额趋势。",
+      "evidence_ids": [
+        "income"
+      ]
+    }
+  ],
+  "follow_ups": [
+    {
+      "id": "margin-quality",
+      "question": "剔除关税退款影响后，经营毛利表现如何变化？",
+      "status": "monitoring",
+      "update": "公司披露了退款的有利影响，仍需结合下一季产品组合及成本变化验证可持续性。",
+      "next_check": "下一次业绩披露及管理层说明更新时。",
+      "evidence_ids": [
+        "tariff-refund",
+        "income"
+      ]
+    },
+    {
+      "id": "cash-conversion",
+      "question": "收入与利润增长何时能体现为更强的现金转化？",
+      "status": "monitoring",
+      "update": "本季经营现金流与自由现金流同比变化不同于收入，需要继续查看营运资本和税费。",
+      "next_check": "下一季度现金流量表披露时。",
+      "evidence_ids": [
+        "cash-ytd",
+        "previous-ytd"
+      ]
+    },
+    {
+      "id": "capital-return",
+      "question": "股东回报节奏是否与现金创造相匹配？",
+      "status": "monitoring",
+      "update": "当季回购与股息支出需要和现金存量、现金流及融资活动一起观察。",
+      "next_check": "下一季度现金流和资本回报披露时。",
+      "evidence_ids": [
+        "cash-ytd",
+        "previous-ytd"
+      ]
+    },
+    {
+      "id": "outlook-coverage",
+      "question": "取得官方电话会材料后，下一季预期有什么变化？",
+      "status": "monitoring",
+      "update": "本版未取得官方电话会文字材料，不以二手报道填补数值指引。",
+      "next_check": "可取得官方电话会文字材料时。",
+      "evidence_ids": [
+        "income"
+      ]
+    }
+  ],
+  "limitations": [
+    "已采集官方业绩公告及连续三期财务报表附件；正式申报文件和官方电话会文字材料尚未取得。",
+    "现金流表采用累计披露，本站按相邻累计期间相减还原单季；同比同样相减，不能将全年金额当作第四季度。",
+    "自由现金流为本站按单季经营现金流减现金购置物业及设备计算的指标，不代表公司另行披露的非 GAAP 口径。",
+    "毛利率按 GAAP 报表金额计算，包含当期关税退款影响；没有把自行调整后的估计值标为 GAAP。",
+    "已采集公告未包含可核验的下一季经营数值区间，因此指引留空；没有保存披露前市场一致预期快照。"
+  ]
+}
