@@ -28,3 +28,26 @@ test('unknown guidance dates remain unknown and known dates must be future dates
   report.guidance[0].period_end=report.period.end;
   assert.ok(validateReport(report).some(error=>/future reporting period/.test(error)));
 });
+test('Microsoft keeps cash PPE separate from investment capex and GAAP EPS separate from adjusted EPS',()=>{
+  const report=dataset.reports.find(r=>r.report_id==='0000789019-FY2027-Q1'&&r.revision===1);
+  assert.ok(report);const metric=key=>report.metrics.find(m=>m.key===key);
+  assert.equal(report.period.start,'2026-07-01');assert.equal(report.period.end,'2026-09-30');
+  assert.equal(metric('cash_capex').value,39367000000);
+  assert.equal(metric('free_cash_flow').value,58000000000-39367000000);
+  assert.equal(metric('diluted_eps').value,4.92);assert.equal(metric('diluted_eps').basis,'GAAP');
+  assert.equal(metric('adjusted_eps').value,4.89);assert.equal(metric('adjusted_eps').basis,'non-GAAP');
+  assert.deepEqual(report.segments.map(s=>s.name),['Agents and Infra','Devices and Consumer']);
+  assert.equal(report.coverage.transcript,'available');
+});
+test('Apple Q4 cash flow is quarter-only and retains the cumulative-source evidence',()=>{
+  const report=dataset.reports.find(r=>r.report_id==='0000320193-FY2026-Q4'&&r.revision===1);
+  assert.ok(report);const metric=key=>report.metrics.find(m=>m.key===key);
+  assert.equal(report.period.start,'2026-06-28');assert.equal(report.period.end,'2026-09-26');
+  assert.equal(metric('revenue').value,114477000000);
+  assert.equal(metric('operating_cash_flow').value,145097000000-116996000000);
+  assert.equal(metric('free_cash_flow').value,(145097000000-116996000000)-(9041000000-6799000000));
+  assert.equal(metric('free_cash_flow').basis,'derived');
+  assert.ok(metric('operating_cash_flow').evidence_ids.includes('previous-ytd'));
+  assert.equal(metric('operating_cash_flow').comparisons.find(c=>c.type==='yoy').baseline_value,29728000000);
+  assert.equal(report.guidance.length,0);assert.equal(report.coverage.transcript,'pending');
+});

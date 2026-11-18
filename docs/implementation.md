@@ -2,7 +2,7 @@
 
 ## Status
 
-The static report contract, financial validation, production dataset, build, browser UI, and GitHub Pages workflow are implemented and deployed at [yutaozhou.com/earnings-lens](https://yutaozhou.com/earnings-lens/). An external OpenClaw content runner supplies NVIDIA analysis as validated JSON. The website has no runtime connection to that runner.
+The static report contract, financial validation, production dataset, build, browser UI, and GitHub Pages workflow are implemented and deployed at [yutaozhou.com/earnings-lens](https://yutaozhou.com/earnings-lens/). An external OpenClaw content runner supplies NVIDIA, Microsoft, and Apple analysis as validated JSON. The website has no runtime connection to that runner.
 
 ## Commands and files
 
@@ -109,3 +109,9 @@ Browser validation is separate from the Node tests. It should check company sear
 ## Source precision and extended materials
 
 Sources may declare `published_at_precision: "date"` when only a calendar date is known; the UI does not invent an intraday disclosure time. Coverage distinguishes CFO commentary and supplemental financial information from a formal filing or call transcript. Guidance interval dates can be `null` when the source gives only a fiscal-period label. Unknown dates remain visible as unknown. Financial details show both year-over-year and sequential comparison inputs and evidence.
+
+## Company-specific financial handling
+
+Microsoft FY2027 Q1 uses the current release's recast segment comparisons. GAAP EPS and company-adjusted EPS excluding OpenAI investment effects remain separate. Calculated free cash flow subtracts cash additions to PPE; investment-basis capital expenditure, which has different lease-recognition and payment timing, is not substituted for cash purchases. The available official transcript supplies the numerical revenue outlook.
+
+Apple FY2026 Q4 income metrics use standalone three-month columns. Cash flow is derived as annual amounts less nine-month amounts for both current and prior years; the preceding-quarter comparison is likewise derived from cumulative statements. The calculated metric is labeled `derived` and retains both source references and the formula. Product categories and geographic segments are separate decompositions of the same revenue. Tariff refunds remain included in reported GAAP results. With no collected official transcript or numerical operating outlook, guidance remains empty.
