@@ -8,7 +8,10 @@
       "name": "NVIDIA",
       "enabled": true,
       "ir_url": "https://investor.nvidia.com/",
-      "research_questions": ["数据中心收入增长能否持续？", "毛利率、库存与现金回报如何变化？"]
+      "research_questions": [
+        "数据中心收入增长能否持续？",
+        "毛利率、库存与现金回报如何变化？"
+      ]
     },
     {
       "id": "0000789019",
@@ -17,7 +20,10 @@
       "name": "Microsoft",
       "enabled": true,
       "ir_url": "https://www.microsoft.com/en-us/Investor/",
-      "research_questions": ["云业务增长与管理层指引相比如何？", "资本开支增长能否转化为收入与现金回报？"]
+      "research_questions": [
+        "云业务增长与管理层指引相比如何？",
+        "资本开支增长能否转化为收入与现金回报？"
+      ]
     },
     {
       "id": "0000320193",
@@ -26,7 +32,154 @@
       "name": "Apple",
       "enabled": true,
       "ir_url": "https://investor.apple.com/",
-      "research_questions": ["产品与服务收入的增长来源有何变化？", "地区收入、利润率与现金流是否支持增长持续性？"]
+      "research_questions": [
+        "产品与服务收入的增长来源有何变化？",
+        "地区收入、利润率与现金流是否支持增长持续性？"
+      ]
+    },
+    {
+      "id": "0001018724",
+      "cik": "0001018724",
+      "ticker": "AMZN",
+      "name": "Amazon",
+      "enabled": true,
+      "ir_url": "https://ir.aboutamazon.com/",
+      "research_questions": [
+        "How do revenue, earnings and cash conversion compare?",
+        "Can growth support cash returns after capital investment?"
+      ]
+    },
+    {
+      "id": "0001652044",
+      "cik": "0001652044",
+      "ticker": "GOOGL",
+      "name": "Alphabet",
+      "enabled": true,
+      "ir_url": "https://abc.xyz/investor/",
+      "research_questions": [
+        "How do revenue, earnings and cash conversion compare?",
+        "Can growth support cash returns after capital investment?"
+      ]
+    },
+    {
+      "id": "0001326801",
+      "cik": "0001326801",
+      "ticker": "META",
+      "name": "Meta Platforms",
+      "enabled": true,
+      "ir_url": "https://investor.atmeta.com/",
+      "research_questions": [
+        "How do revenue, earnings and cash conversion compare?",
+        "Can growth support cash returns after capital investment?"
+      ]
+    },
+    {
+      "id": "0001318605",
+      "cik": "0001318605",
+      "ticker": "TSLA",
+      "name": "Tesla",
+      "enabled": true,
+      "ir_url": "https://ir.tesla.com/",
+      "research_questions": [
+        "How do revenue, earnings and cash conversion compare?",
+        "Can growth support cash returns after capital investment?"
+      ]
+    },
+    {
+      "id": "0001181412",
+      "cik": "0001181412",
+      "ticker": "SPCX",
+      "name": "SpaceX",
+      "enabled": true,
+      "ir_url": "https://ir.spacex.com/",
+      "research_questions": [
+        "How do revenue, earnings and cash conversion compare?",
+        "Can growth support cash returns after capital investment?"
+      ]
+    },
+    {
+      "id": "0000002488",
+      "cik": "0000002488",
+      "ticker": "AMD",
+      "name": "AMD",
+      "enabled": true,
+      "ir_url": "https://ir.amd.com/",
+      "research_questions": [
+        "How do revenue, earnings and cash conversion compare?",
+        "Can growth support cash returns after capital investment?"
+      ]
+    },
+    {
+      "id": "0000050863",
+      "cik": "0000050863",
+      "ticker": "INTC",
+      "name": "Intel",
+      "enabled": true,
+      "ir_url": "https://www.intc.com/",
+      "research_questions": [
+        "How do revenue, earnings and cash conversion compare?",
+        "Can growth support cash returns after capital investment?"
+      ]
+    },
+    {
+      "id": "0000723125",
+      "cik": "0000723125",
+      "ticker": "MU",
+      "name": "Micron",
+      "enabled": true,
+      "ir_url": "https://investors.micron.com/",
+      "research_questions": [
+        "How do revenue, earnings and cash conversion compare?",
+        "Can growth support cash returns after capital investment?"
+      ]
+    },
+    {
+      "id": "0000937966",
+      "cik": "0000937966",
+      "ticker": "ASML",
+      "name": "ASML",
+      "enabled": true,
+      "ir_url": "https://investor.asml.com/",
+      "research_questions": [
+        "How do revenue, earnings and cash conversion compare?",
+        "Can growth support cash returns after capital investment?"
+      ]
+    },
+    {
+      "id": "0001467858",
+      "cik": "0001467858",
+      "ticker": "GM",
+      "name": "General Motors",
+      "enabled": true,
+      "ir_url": "https://investor.gm.com/",
+      "research_questions": [
+        "How do revenue, earnings and cash conversion compare?",
+        "Can growth support cash returns after capital investment?"
+      ]
+    },
+    {
+      "id": "0001321655",
+      "cik": "0001321655",
+      "ticker": "PLTR",
+      "name": "Palantir",
+      "enabled": true,
+      "ir_url": "https://investors.palantir.com/",
+      "research_questions": [
+        "How do revenue, earnings and cash conversion compare?",
+        "Can growth support cash returns after capital investment?"
+      ]
+    },
+    {
+      "id": "0001341439",
+      "cik": "0001341439",
+      "ticker": "ORCL",
+      "name": "Oracle",
+      "enabled": true,
+      "ir_url": "https://investor.oracle.com/",
+      "research_questions": [
+        "How do revenue, earnings and cash conversion compare?",
+        "Can growth support cash returns after capital investment?"
+      ]
     }
   ]
 }

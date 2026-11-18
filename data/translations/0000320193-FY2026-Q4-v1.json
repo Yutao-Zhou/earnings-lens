@@ -1,0 +1,92 @@
+{
+  "report_id": "0000320193-FY2026-Q4",
+  "revision": 1,
+  "en": {
+    "summary": "Revenue grew 11.72% YoY, supported by iPhone and Services. GAAP gross margin includes a favorable tariff refund. Standalone quarterly free cash flow, reconstructed from cumulative statements, fell 2.37% YoY; cash realization differs from earnings growth.",
+    "findings": [
+      "Revenue was $114.477B, up 11.72% YoY. GAAP diluted EPS was $2.10, up 13.51%. Product, service and regional trends differ and require separate analysis.",
+      "Calculated GAAP gross margin was 47.89%, up 0.71 percentage points YoY and down 2.17 points QoQ. The company disclosed a tariff refund adding approximately 1 percentage point to gross margin and $0.05 to EPS; persistence remains uncertain.",
+      "Reconstructed quarterly operating cash flow was $28.101B, down 5.47% YoY. Cash capital purchases were $2.242B; calculated free cash flow was $25.859B, down 2.37%. Revenue and profit growth therefore require separate cash-conversion checks.",
+      "Inventory increased to $14.541B from $11.092B last quarter; receivables rose to $43.817B from $31.398B. Seasonality, collections and payables need further review. These balances alone do not establish impairment or bad debts.",
+      "Quarterly repurchases were $24.296B and cash dividends/equivalents were $3.943B, totaling $28.239B versus $25.859B of calculated free cash flow. Cash balances and financing also matter when assessing this difference."
+    ],
+    "segments": [
+      {
+        "name": "Products and services: revenue categories",
+        "text": "iPhone revenue was $57.583B (+17.46% YoY), Services $31.573B (+9.82%), Mac $10.792B (+23.68%), iPad $6.229B (−10.4%) and Wearables/Home/Accessories $8.3B (−7.91%). Product categories overlap geographic segment totals."
+      },
+      {
+        "name": "Greater China: geographic segment",
+        "text": "Revenue was $17.539B, up 21.02% YoY. Geographic and product revenue are two views of the same total. One quarter does not establish a long-term market-share trend."
+      }
+    ],
+    "guidance": [],
+    "follow_ups": [
+      {
+        "question": "How will margins evolve after the tariff refund?",
+        "update": "Review next-quarter mix and costs to assess durability.",
+        "next_check": "Next earnings and management commentary."
+      },
+      {
+        "question": "When will revenue and profit growth improve cash conversion?",
+        "update": "Track working capital, taxes and cash-flow changes separately.",
+        "next_check": "Next quarterly cash-flow statement."
+      },
+      {
+        "question": "Does the capital-return pace match cash generation?",
+        "update": "Compare repurchases and dividends with cash balances and financing.",
+        "next_check": "Next cash-flow and capital-return disclosures."
+      },
+      {
+        "question": "What will official call materials add to the outlook?",
+        "update": "No official call transcript was collected; secondary reports do not fill numerical guidance.",
+        "next_check": "When official call text becomes available."
+      }
+    ],
+    "limitations": [
+      "Collected the official release and three consecutive financial-statement attachments; the formal filing and official call text were not collected.",
+      "Standalone quarterly cash flows are reconstructed by subtracting adjacent cumulative periods, including the YoY baseline. Full-year cash flow is not treated as Q4.",
+      "Free cash flow is calculated as quarterly operating cash flow less cash property and equipment purchases.",
+      "GAAP gross margin includes the tariff refund. No independently adjusted estimate is labeled GAAP.",
+      "No verifiable next-quarter numerical range was collected; guidance remains empty. No pre-release consensus snapshot was preserved."
+    ],
+    "metrics": [
+      {
+        "key": "revenue",
+        "label": "Revenue"
+      },
+      {
+        "key": "gross_margin",
+        "label": "GAAP gross margin",
+        "definition": "GAAP gross profit divided by quarterly revenue."
+      },
+      {
+        "key": "diluted_eps",
+        "label": "GAAP diluted EPS"
+      },
+      {
+        "key": "net_income",
+        "label": "GAAP net income"
+      },
+      {
+        "key": "operating_income",
+        "label": "GAAP operating income"
+      },
+      {
+        "key": "operating_cash_flow",
+        "label": "Operating cash flow",
+        "definition": "Standalone quarterly operating cash flow less cash purchases of property and equipment. Cash purchases differ from investment capital expenditure including finance leases."
+      },
+      {
+        "key": "cash_capex",
+        "label": "Cash purchases of property and equipment",
+        "definition": "Standalone quarterly operating cash flow less cash purchases of property and equipment. Cash purchases differ from investment capital expenditure including finance leases."
+      },
+      {
+        "key": "free_cash_flow",
+        "label": "Free cash flow",
+        "definition": "Standalone quarterly operating cash flow less cash purchases of property and equipment. Cash purchases differ from investment capital expenditure including finance leases."
+      }
+    ]
+  }
+}

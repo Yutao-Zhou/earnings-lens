@@ -1,0 +1,62 @@
+{
+  "report_id": "0001652044-FY2026-Q3",
+  "revision": 1,
+  "en": {
+    "summary": "Cloud expansion lifted revenue and operating profit, while non-operating losses and capital spending weighed on earnings and cash.",
+    "findings": [
+      "Google Cloud revenue was $30.709B, up 103%; Google Services revenue was $96.302B. These are separate reported segments.",
+      "Operating income reached $40.576B, but other expense of $8.221B contrasts with $12.759B other income a year ago. Common-stockholder earnings fell.",
+      "Quarterly operating cash flow of $42.290B was below $51.355B of property and equipment purchases, leaving negative $9.065B calculated free cash flow."
+    ],
+    "segments": [],
+    "guidance": [],
+    "follow_ups": [
+      {
+        "question": "Will growth sustain earnings and cash returns after investment?",
+        "update": "Monitor demand, expenses, working capital and cash capital purchases.",
+        "next_check": "Next quarterly disclosure and official supplemental materials."
+      }
+    ],
+    "limitations": [
+      "A research snapshot of the listed official materials. Official earnings-call text was not collected.",
+      "Standalone and cumulative periods are treated separately; cash flows may require adjacent cumulative-period subtraction. Missing values are not zero.",
+      "No pre-release consensus snapshot was retained. Unverified numerical guidance is omitted from the guidance table."
+    ],
+    "metrics": [
+      {
+        "key": "revenue",
+        "label": "Revenue"
+      },
+      {
+        "key": "gross_margin",
+        "label": "GAAP gross margin",
+        "definition": "GAAP gross profit divided by quarterly revenue."
+      },
+      {
+        "key": "diluted_eps",
+        "label": "GAAP diluted EPS"
+      },
+      {
+        "key": "net_income",
+        "label": "Net income available to common stockholders"
+      },
+      {
+        "key": "operating_income",
+        "label": "GAAP operating income"
+      },
+      {
+        "key": "operating_cash_flow",
+        "label": "Operating cash flow"
+      },
+      {
+        "key": "cash_capex",
+        "label": "Cash capital purchases"
+      },
+      {
+        "key": "free_cash_flow",
+        "label": "Calculated free cash flow",
+        "definition": "Standalone quarterly operating cash flow less cash capital purchases."
+      }
+    ]
+  }
+}

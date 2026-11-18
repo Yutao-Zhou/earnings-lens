@@ -1,0 +1,63 @@
+{
+  "report_id": "0001467858-FY2026-Q3",
+  "revision": 1,
+  "en": {
+    "summary": "North American profitability supported higher earnings, while international and financing results were weaker. Automotive cash measures have a separate perimeter.",
+    "findings": [
+      "Revenue was $50.015B and net income attributable to stockholders was $3.335B. Adjusted EBIT was $4.106B, versus $3.376B a year ago.",
+      "GM North America adjusted EBIT was $3.592B. International adjusted EBIT fell to $28M and GM Financial adjusted EBT was $668M. These measures use different scopes.",
+      "Adjusted automotive free cash flow was $5.882B versus $4.201B. This is not consolidated free cash flow. The $20B buyback authorization is multi-year capacity, not completed repurchases."
+    ],
+    "segments": [],
+    "guidance": [],
+    "follow_ups": [
+      {
+        "question": "Will growth sustain earnings and cash returns after investment?",
+        "update": "Monitor demand, expenses, working capital and cash capital purchases.",
+        "next_check": "Next quarterly disclosure and official supplemental materials."
+      }
+    ],
+    "limitations": [
+      "A research snapshot of the listed official materials. Official earnings-call text was not collected.",
+      "Standalone and cumulative periods are treated separately; cash flows may require adjacent cumulative-period subtraction. Missing values are not zero.",
+      "No pre-release consensus snapshot was retained. Unverified numerical guidance is omitted from the guidance table."
+    ],
+    "metrics": [
+      {
+        "key": "revenue",
+        "label": "Revenue"
+      },
+      {
+        "key": "gross_margin",
+        "label": "GAAP gross margin",
+        "definition": "GAAP gross profit divided by quarterly revenue.",
+        "missing_reason": "A comparable standalone quarterly value has not been verified."
+      },
+      {
+        "key": "diluted_eps",
+        "label": "GAAP diluted EPS"
+      },
+      {
+        "key": "net_income",
+        "label": "Net income attributable to stockholders"
+      },
+      {
+        "key": "operating_income",
+        "label": "GAAP operating income"
+      },
+      {
+        "key": "operating_cash_flow",
+        "label": "Operating cash flow"
+      },
+      {
+        "key": "cash_capex",
+        "label": "Cash capital purchases"
+      },
+      {
+        "key": "free_cash_flow",
+        "label": "Adjusted automotive free cash flow",
+        "definition": "Company non-GAAP automotive perimeter and reconciliation; not consolidated free cash flow."
+      }
+    ]
+  }
+}

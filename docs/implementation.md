@@ -2,7 +2,7 @@
 
 ## Status
 
-The static report contract, financial validation, production dataset, build, browser UI, and GitHub Pages workflow are implemented and deployed at [yutaozhou.com/earnings-lens](https://yutaozhou.com/earnings-lens/). An external OpenClaw content runner supplies NVIDIA, Microsoft, and Apple analysis as validated JSON. The website has no runtime connection to that runner.
+The static report contract, financial validation, production dataset, build, browser UI, and GitHub Pages workflow are implemented at [yutaozhou.com/earnings-lens](https://yutaozhou.com/earnings-lens/). External content production supplies validated report JSON for 15 companies. The website has no runtime connection to that runner.
 
 ## Commands and files
 
@@ -43,7 +43,7 @@ OpenClaw performs collection and model inference before the website is built. Th
 - Include the CSS and JavaScript required for rendering and interaction in the output.
 - Render charts with embedded SVG or bundled local code.
 - Implement search, company selection, period selection, version selection, and evidence expansion locally.
-- Do not issue automatic API calls or fetch external JSON, scripts, fonts, images, telemetry, or chart assets.
+- Financial JSON, analysis, display scripts, styles and charts remain embedded. The user-authorized shared anonymous analytics module is the sole optional network exception on the production domain.
 - Permit explicit user navigation to original source links.
 - Preserve functionality when the HTML is opened directly from disk without a network connection.
 
@@ -115,3 +115,23 @@ Sources may declare `published_at_precision: "date"` when only a calendar date i
 Microsoft FY2027 Q1 uses the current release's recast segment comparisons. GAAP EPS and company-adjusted EPS excluding OpenAI investment effects remain separate. Calculated free cash flow subtracts cash additions to PPE; investment-basis capital expenditure, which has different lease-recognition and payment timing, is not substituted for cash purchases. The available official transcript supplies the numerical revenue outlook.
 
 Apple FY2026 Q4 income metrics use standalone three-month columns. Cash flow is derived as annual amounts less nine-month amounts for both current and prior years; the preceding-quarter comparison is likewise derived from cumulative statements. The calculated metric is labeled `derived` and retains both source references and the formula. Product categories and geographic segments are separate decompositions of the same revenue. Tariff refunds remain included in reported GAAP results. With no collected official transcript or numerical operating outlook, guidance remains empty.
+
+## Languages, themes and announcements
+
+`data/translations/<report_id>-v<revision>.json` contains the complete English narrative, labels, definitions and limitations corresponding to a Chinese report revision. Identity and array lengths are validated. Translation metrics may contain only text fields and cannot override financial values, units, evidence or accounting bases. Production builds fail on missing English editions. The raw report payload remains immutable; display localization applies an overlay from the embedded translation map.
+
+First visits use English regardless of browser locale. Explicit language and theme choices are stored under `earnings-lens.language` and `earnings-lens.theme`; blocked storage falls back safely. Auto theme uses local browser time, choosing dark at 19:00–06:59 and light at 07:00–18:59. It rechecks each minute and on tab visibility changes. Manual choices take precedence. A small head script applies the initial theme before CSS rendering.
+
+`config/announcements.json` contains dated bilingual notices. The latest is displayed with expandable history. Dismissal stores only that notice's ID, so a later announcement can appear.
+
+## Anonymous reading analytics
+
+On `yutaozhou.com` and `www.yutaozhou.com`, `src/analytics.js` loads the existing shared `https://yutaozhou.com/js/site-analytics.js` module with project `earnings-lens`. It reuses the existing Umami property and privacy controls. The CSP permits only that shared script, `https://cloud.umami.is/script.js` and collection at `https://gateway.umami.is`. Financial content never depends on those requests.
+
+Events include `report_open`, `report_read` (overview viewed), `report_engaged` (30 seconds of visible overview reading), `report_complete` (end marker reached after at least 3 seconds with scrolling), and `source_click`. These are engagement signals, not proof that a person read every word. Report identity is encoded in the tracker's allowlisted `path` property as `/earnings-lens/<ticker>/<fiscal period>/v<revision>`. Search terms, query strings, URL hashes and personal identifiers are not sent. Language and tab rerenders do not duplicate report-open events. Reading state is accumulated per report revision during the page session.
+
+Opt-out (`umami.disabled=1`), Do Not Track and Global Privacy Control disable collection. File URLs, localhost and non-production hosts are disabled; blocked local storage also fails closed. The footer links to the existing anonymous analytics settings page. Blocking analytics leaves all report features available.
+
+## Expanded financial coverage
+
+The production watchlist contains 15 companies, including SpaceX under its SEC-verified ticker SPCX. Source coverage is shown per revision. ASML values retain EUR and US GAAP. GM's adjusted automotive free cash flow is labeled with its separate perimeter. Meta deducts finance-lease principal in its company free-cash-flow measure. Micron's adjusted cash flow includes government incentives and equipment sale proceeds; gross cash purchases remain a separate metric. AMD's cash-flow comparison uses continuing operations. Oracle and Alphabet common-stockholder earnings are identified explicitly. Ordinary percentage growth is omitted for nonpositive baselines.

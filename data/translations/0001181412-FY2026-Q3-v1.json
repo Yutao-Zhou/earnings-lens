@@ -1,0 +1,62 @@
+{
+  "report_id": "0001181412-FY2026-Q3",
+  "revision": 1,
+  "en": {
+    "summary": "Revenue accelerated across Super Intelligence and Connectivity, with a return to GAAP profit and substantial capital requirements.",
+    "findings": [
+      "Revenue was $14.575B versus $5.576B a year ago. Segment revenue was Space $1.767B, Connectivity $5.248B and SI $7.560B.",
+      "Net income improved to $4.404B from a $1.054B loss. Ordinary percentage EPS growth is unavailable because the prior-year baseline was negative.",
+      "Adjusted EBITDA was $8.809B, a non-GAAP measure. Disclosed segment capital expenditure totaled $19.593B; EBITDA is not cash remaining after this investment."
+    ],
+    "segments": [],
+    "guidance": [],
+    "follow_ups": [
+      {
+        "question": "Will growth sustain earnings and cash returns after investment?",
+        "update": "Monitor demand, expenses, working capital and cash capital purchases.",
+        "next_check": "Next quarterly disclosure and official supplemental materials."
+      }
+    ],
+    "limitations": [
+      "A research snapshot of the listed official materials. Official earnings-call text was not collected.",
+      "Standalone and cumulative periods are treated separately; cash flows may require adjacent cumulative-period subtraction. Missing values are not zero.",
+      "No pre-release consensus snapshot was retained. Unverified numerical guidance is omitted from the guidance table."
+    ],
+    "metrics": [
+      {
+        "key": "revenue",
+        "label": "Revenue"
+      },
+      {
+        "key": "gross_margin",
+        "label": "GAAP gross margin",
+        "definition": "GAAP gross profit divided by quarterly revenue."
+      },
+      {
+        "key": "diluted_eps",
+        "label": "GAAP diluted EPS"
+      },
+      {
+        "key": "net_income",
+        "label": "Net income attributable to stockholders"
+      },
+      {
+        "key": "operating_income",
+        "label": "GAAP operating income"
+      },
+      {
+        "key": "operating_cash_flow",
+        "label": "Operating cash flow"
+      },
+      {
+        "key": "cash_capex",
+        "label": "Cash capital purchases"
+      },
+      {
+        "key": "free_cash_flow",
+        "label": "Calculated free cash flow",
+        "definition": "Standalone quarterly operating cash flow less cash capital purchases."
+      }
+    ]
+  }
+}

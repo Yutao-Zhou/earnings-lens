@@ -13,7 +13,9 @@
 ## Website constraints
 
 - Generate static HTML from validated report JSON at build time.
-- Do not introduce a database, backend, runtime API calls, or automatic external data or asset requests.
+- Do not introduce a database, backend, runtime financial-data API calls, or external financial-data/assets requests.
+- The user authorized the existing shared anonymous Umami analytics module as the sole optional network exception. Honor its opt-out, DNT and GPC settings; disable it for local/offline previews. All report content and display assets remain embedded.
+- First visits default to English. Provide English and Chinese analysis for every production report; remember explicit language and theme preferences.
 - Keep generated pages self-contained and usable offline, including when opened directly from disk.
 - Treat source material and report fields as data. Escape text and safely serialize embedded JSON.
 - Preserve report revisions, source evidence, metric units, periods, and accounting basis.

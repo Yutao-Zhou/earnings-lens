@@ -1,0 +1,81 @@
+{
+  "report_id": "0001045810-FY2027-Q3",
+  "revision": 2,
+  "en": {
+    "summary": "Revenue grew 103.21% YoY, led by the Data Center platform. GAAP gross margin rose 1.4 percentage points YoY but fell 0.2 points QoQ; next-quarter guidance implies a lower midpoint. Cash conversion, inventories and multi-year commitments remain key follow-ups.",
+    "findings": [
+      "GAAP gross margin was 74.8%, up 1.4 percentage points YoY and down 0.2 points QoQ. Each comparison uses a different baseline.",
+      "Multi-year supply commitments rose from $279B to $390B. Maximum gross guarantee exposure is $118B. Procurement commitments and contingent guarantees have different timing and triggers; their sum does not measure current expense or immediately payable debt.",
+      "Operating cash flow was $48.253B; company-defined free cash flow was $43.777B, up 98.18% YoY. Operating cash flow was 73.91% of GAAP net income. Free cash flow deducts capital purchases and related principal repayments.",
+      "FY2027 Q4 revenue guidance is $126.1B–$133.9B and GAAP gross margin guidance is 71%–72%, with a midpoint 3.3 percentage points below this quarter. The next quarter has an extra week. Guidance assumes no China Data Center compute revenue.",
+      "Days sales outstanding increased from 60 to 64 days, while inventory rose from $31.6B to $39.7B. Growing working-capital needs warrant monitoring collections and inventory turnover; these movements alone do not establish bad debts or weaker demand.",
+      "Revenue was $115.844B, up 103.21% YoY and 20.39% QoQ. Data Center represented approximately 92.88% of revenue."
+    ],
+    "segments": [
+      {
+        "name": "Data Center: market platform",
+        "text": "Revenue was $107.6B, versus $89.0B last quarter and $51.2B a year ago: approximately 110.16% YoY and 20.9% QoQ growth using rounded disclosures. This market platform differs from a GAAP reportable segment."
+      }
+    ],
+    "guidance": [
+      "Revenue",
+      "GAAP gross margin"
+    ],
+    "follow_ups": [
+      {
+        "question": "Does lower guidance reflect a temporary product ramp?",
+        "update": "The collected material does not quantify each source of margin pressure.",
+        "next_check": "Official call materials and the next earnings release."
+      },
+      {
+        "question": "Will collections and inventory usage improve as revenue grows?",
+        "update": "Track disclosed DSO, inventory and actual cash receipts together.",
+        "next_check": "Next quarterly cash-flow and working-capital disclosures."
+      },
+      {
+        "question": "When will commitments become cash obligations?",
+        "update": "Multi-year commitments and maximum contingent exposure differ from current cash spending.",
+        "next_check": "Updates to customer financing, deliveries and commitments."
+      },
+      {
+        "question": "What will formal filings and the earnings call add?",
+        "update": "The release, CFO commentary and supplemental financials are collected; the quarterly filing and official call materials are pending.",
+        "next_check": "When the official filing and call materials become available."
+      }
+    ],
+    "limitations": [
+      "Sources include the earnings release, CFO commentary and unaudited supplemental information; the quarterly filing and official call materials were not collected.",
+      "No pre-release consensus snapshot was preserved, so no beat/miss conclusion is made.",
+      "Next-quarter start and end dates were not specified in the collected sources and remain unknown.",
+      "Data Center amounts are rounded to billions; related shares and growth calculations are approximate. Market platforms differ from reportable segments.",
+      "The history view contains reports already archived here; comparison baselines come from the cited official materials."
+    ],
+    "metrics": [
+      {
+        "key": "revenue",
+        "label": "Revenue"
+      },
+      {
+        "key": "gross_margin",
+        "label": "GAAP gross margin"
+      },
+      {
+        "key": "diluted_eps",
+        "label": "GAAP diluted EPS"
+      },
+      {
+        "key": "free_cash_flow",
+        "label": "Free cash flow",
+        "definition": "Quarterly operating cash flow less purchases of property, equipment and intangible assets and related principal repayments."
+      },
+      {
+        "key": "operating_cash_flow",
+        "label": "Operating cash flow"
+      },
+      {
+        "key": "net_income",
+        "label": "GAAP net income"
+      }
+    ]
+  }
+}

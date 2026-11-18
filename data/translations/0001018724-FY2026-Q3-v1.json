@@ -1,0 +1,62 @@
+{
+  "report_id": "0001018724-FY2026-Q3",
+  "revision": 1,
+  "en": {
+    "summary": "AWS is accelerating while infrastructure investment absorbs cash. Operating profit and GAAP earnings tell different stories.",
+    "findings": [
+      "AWS revenue reached $46.0B, up 39%. Prime Day moved into Q2 in 2026, distorting the retail YoY comparison.",
+      "Operating income rose to $28.076B, while net income fell to $20.685B. The year-ago quarter included a $9.5B Anthropic investment gain.",
+      "Quarterly cash flow uses three-month figures. The release headline of negative $42.4B free cash flow covers twelve months and must be kept separate."
+    ],
+    "segments": [],
+    "guidance": [],
+    "follow_ups": [
+      {
+        "question": "Will growth sustain earnings and cash returns after investment?",
+        "update": "Monitor demand, expenses, working capital and cash capital purchases.",
+        "next_check": "Next quarterly disclosure and official supplemental materials."
+      }
+    ],
+    "limitations": [
+      "A research snapshot of the listed official materials. Official earnings-call text was not collected.",
+      "Standalone and cumulative periods are treated separately; cash flows may require adjacent cumulative-period subtraction. Missing values are not zero.",
+      "No pre-release consensus snapshot was retained. Unverified numerical guidance is omitted from the guidance table."
+    ],
+    "metrics": [
+      {
+        "key": "revenue",
+        "label": "Revenue"
+      },
+      {
+        "key": "gross_margin",
+        "label": "GAAP gross margin",
+        "definition": "GAAP gross profit divided by quarterly revenue."
+      },
+      {
+        "key": "diluted_eps",
+        "label": "GAAP diluted EPS"
+      },
+      {
+        "key": "net_income",
+        "label": "Net income attributable to stockholders"
+      },
+      {
+        "key": "operating_income",
+        "label": "GAAP operating income"
+      },
+      {
+        "key": "operating_cash_flow",
+        "label": "Operating cash flow"
+      },
+      {
+        "key": "cash_capex",
+        "label": "Cash capital purchases"
+      },
+      {
+        "key": "free_cash_flow",
+        "label": "Calculated free cash flow",
+        "definition": "Quarterly operating cash flow less equipment purchases plus property sales and incentives; company net-purchase definition."
+      }
+    ]
+  }
+}

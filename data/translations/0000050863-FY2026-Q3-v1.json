@@ -1,0 +1,64 @@
+{
+  "report_id": "0000050863-FY2026-Q3",
+  "revision": 1,
+  "en": {
+    "summary": "Revenue and operating profit recovered, while GAAP EPS declined against a stronger prior-year earnings base.",
+    "findings": [
+      "Revenue was $16.513B versus $13.653B a year ago. Gross profit rose to $7.096B from $5.218B.",
+      "GAAP operating income was $2.522B versus $683M, but diluted EPS fell to $0.60 from $0.90. Operating improvement does not explain all below-the-line changes.",
+      "Q4 revenue guidance is $15B–$16B, with GAAP EPS of $0.10 and non-GAAP EPS of $0.25. Keep adjusted outlook separate from GAAP."
+    ],
+    "segments": [],
+    "guidance": [
+      "Revenue"
+    ],
+    "follow_ups": [
+      {
+        "question": "Will growth sustain earnings and cash returns after investment?",
+        "update": "Monitor demand, expenses, working capital and cash capital purchases.",
+        "next_check": "Next quarterly disclosure and official supplemental materials."
+      }
+    ],
+    "limitations": [
+      "A research snapshot of the listed official materials. Official earnings-call text was not collected.",
+      "Standalone and cumulative periods are treated separately; cash flows may require adjacent cumulative-period subtraction. Missing values are not zero.",
+      "No pre-release consensus snapshot was retained. Unverified numerical guidance is omitted from the guidance table."
+    ],
+    "metrics": [
+      {
+        "key": "revenue",
+        "label": "Revenue"
+      },
+      {
+        "key": "gross_margin",
+        "label": "GAAP gross margin",
+        "definition": "GAAP gross profit divided by quarterly revenue."
+      },
+      {
+        "key": "diluted_eps",
+        "label": "GAAP diluted EPS"
+      },
+      {
+        "key": "net_income",
+        "label": "Net income attributable to stockholders"
+      },
+      {
+        "key": "operating_income",
+        "label": "GAAP operating income"
+      },
+      {
+        "key": "operating_cash_flow",
+        "label": "Operating cash flow"
+      },
+      {
+        "key": "cash_capex",
+        "label": "Cash capital purchases"
+      },
+      {
+        "key": "free_cash_flow",
+        "label": "Calculated free cash flow",
+        "definition": "Standalone quarterly operating cash flow less cash capital purchases."
+      }
+    ]
+  }
+}

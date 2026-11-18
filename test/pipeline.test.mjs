@@ -66,7 +66,7 @@ test('embedded source text cannot terminate script containers',()=>{
   assert.deepEqual(JSON.parse(encoded),payload);
   const poisoned=structuredClone(dataset);poisoned.reports[0].evidence[0].quote=payload.quote;
   const html=renderSite(poisoned,'','');
-  assert.equal((html.match(/<\/script>/g)??[]).length,2);
+  assert.equal((html.match(/<\/script>/g)??[]).length,3);
   assert.ok(!html.includes(payload.quote));
 });
 test('build is deterministic, self-contained, and does not replace a good artifact after validation fails',async()=>{
@@ -76,7 +76,7 @@ test('build is deterministic, self-contained, and does not replace a good artifa
     const output=path.join(temp,'index.html');
     const first=await build({dataRoot:fixtureRoot,output});const second=await build({dataRoot:fixtureRoot,output});assert.equal(first.sha256,second.sha256);
     const html=await readFile(output,'utf8');
-    assert.match(html,/connect-src 'none'/);
+    assert.match(html,/connect-src https:\/\/gateway\.umami\.is;/);
     assert.ok(!/<script[^>]+src=|<link[^>]+rel="stylesheet"|\bfetch\s*\(|XMLHttpRequest|WebSocket|https?:\/\/fonts\./i.test(html));
     const embedded=html.match(/<script type="application\/json" id="earnings-data">([\s\S]*?)<\/script>/)[1];
     assert.equal(JSON.parse(embedded).reports.length,6);

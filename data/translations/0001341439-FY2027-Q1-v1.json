@@ -1,0 +1,63 @@
+{
+  "report_id": "0001341439-FY2027-Q1",
+  "revision": 1,
+  "en": {
+    "summary": "Cloud infrastructure drove growth, while large capital spending kept free cash flow negative. Backlog conversion and financing remain key checks.",
+    "findings": [
+      "FY2027 Q1 revenue was $19.345B. Cloud infrastructure revenue reached $7.4B, up 121%; cloud applications revenue was $4.2B, up 10%.",
+      "GAAP diluted EPS was $1.56 versus non-GAAP EPS of $1.92. Revenue growth and earnings adjustments should be assessed separately.",
+      "Operating cash flow was $23.103B, while gross equipment purchases were $28.499B. Remaining performance obligations of $664B span future delivery; they are not current-quarter revenue."
+    ],
+    "segments": [],
+    "guidance": [],
+    "follow_ups": [
+      {
+        "question": "Will growth sustain earnings and cash returns after investment?",
+        "update": "Monitor demand, expenses, working capital and cash capital purchases.",
+        "next_check": "Next quarterly disclosure and official supplemental materials."
+      }
+    ],
+    "limitations": [
+      "A research snapshot of the listed official materials. Official earnings-call text was not collected.",
+      "Standalone and cumulative periods are treated separately; cash flows may require adjacent cumulative-period subtraction. Missing values are not zero.",
+      "No pre-release consensus snapshot was retained. Unverified numerical guidance is omitted from the guidance table."
+    ],
+    "metrics": [
+      {
+        "key": "revenue",
+        "label": "Revenue"
+      },
+      {
+        "key": "gross_margin",
+        "label": "GAAP gross margin",
+        "definition": "GAAP gross profit divided by quarterly revenue.",
+        "missing_reason": "A comparable standalone quarterly value has not been verified."
+      },
+      {
+        "key": "diluted_eps",
+        "label": "GAAP diluted EPS"
+      },
+      {
+        "key": "net_income",
+        "label": "Net income available to common stockholders"
+      },
+      {
+        "key": "operating_income",
+        "label": "GAAP operating income"
+      },
+      {
+        "key": "operating_cash_flow",
+        "label": "Operating cash flow"
+      },
+      {
+        "key": "cash_capex",
+        "label": "Cash capital purchases"
+      },
+      {
+        "key": "free_cash_flow",
+        "label": "Calculated free cash flow",
+        "definition": "Standalone quarterly operating cash flow less cash capital purchases."
+      }
+    ]
+  }
+}

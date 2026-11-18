@@ -1,0 +1,64 @@
+{
+  "report_id": "0000002488-FY2026-Q3",
+  "revision": 1,
+  "en": {
+    "summary": "Data Center growth drove higher revenue and profit, while other businesses followed different demand trends.",
+    "findings": [
+      "Data Center revenue reached $8.5B, up 97%. Client and Gaming revenue was $3.7B, down 8%, while Embedded revenue rose 29% to $1.1B.",
+      "GAAP diluted EPS was $1.46 versus company non-GAAP EPS of $2.09. Adjustments should remain visible when assessing profitability.",
+      "Management expects Q4 revenue of $17B, plus or minus 3%, and non-GAAP gross margin of 55%. These are forward-looking estimates."
+    ],
+    "segments": [],
+    "guidance": [
+      "Revenue"
+    ],
+    "follow_ups": [
+      {
+        "question": "Will growth sustain earnings and cash returns after investment?",
+        "update": "Monitor demand, expenses, working capital and cash capital purchases.",
+        "next_check": "Next quarterly disclosure and official supplemental materials."
+      }
+    ],
+    "limitations": [
+      "A research snapshot of the listed official materials. Official earnings-call text was not collected.",
+      "Standalone and cumulative periods are treated separately; cash flows may require adjacent cumulative-period subtraction. Missing values are not zero.",
+      "No pre-release consensus snapshot was retained. Unverified numerical guidance is omitted from the guidance table."
+    ],
+    "metrics": [
+      {
+        "key": "revenue",
+        "label": "Revenue"
+      },
+      {
+        "key": "gross_margin",
+        "label": "GAAP gross margin",
+        "definition": "GAAP gross profit divided by quarterly revenue."
+      },
+      {
+        "key": "diluted_eps",
+        "label": "GAAP diluted EPS"
+      },
+      {
+        "key": "net_income",
+        "label": "Net income attributable to stockholders"
+      },
+      {
+        "key": "operating_income",
+        "label": "GAAP operating income"
+      },
+      {
+        "key": "operating_cash_flow",
+        "label": "Operating cash flow (continuing operations)"
+      },
+      {
+        "key": "cash_capex",
+        "label": "Cash capital purchases"
+      },
+      {
+        "key": "free_cash_flow",
+        "label": "Calculated free cash flow",
+        "definition": "Standalone quarterly operating cash flow less cash capital purchases."
+      }
+    ]
+  }
+}

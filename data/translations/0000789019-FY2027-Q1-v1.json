@@ -1,0 +1,94 @@
+{
+  "report_id": "0000789019-FY2027-Q1",
+  "revision": 1,
+  "en": {
+    "summary": "Revenue grew 18.8% YoY as cloud expanded. GAAP earnings growth differs from growth excluding OpenAI investment effects. Cash capital spending reduced free cash flow 27.39% YoY. Segment comparisons use current recast definitions.",
+    "findings": [
+      "Management reported $45.2B of investment capital expenditure and separately disclosed $7.4B of finance leases. Recognition and payment timing differ from cash purchases in the cash-flow statement. Next-quarter capital expenditure is expected to exceed $50B.",
+      "Calculated GAAP gross margin was 67.79%, down 1.25 percentage points YoY and up 0.6 points QoQ. Operating income was $45.915B, up 20.95% YoY.",
+      "GAAP EPS was $4.92, up 32.26% YoY. Company-adjusted EPS excluding OpenAI investment effects was $4.89, up 18.4%. Investment gains and the comparison base affect the two growth rates differently.",
+      "Revenue was $92.279B, up 18.8% YoY. Microsoft Cloud revenue was $63.9B, a cross-product aggregate that overlaps segments. Azure grew 48% in reported currency; this growth rate is not absolute Azure revenue.",
+      "Operating cash flow was $58B, up 28.73% YoY. Cash property and equipment purchases were $39.367B, leaving calculated free cash flow of $18.633B, down 27.39% YoY.",
+      "Operating cash flow was 158.34% of GAAP net income. Strong cash receipts can coexist with lower free cash flow after infrastructure investment.",
+      "Management expects FY2027 Q2 revenue of $96B–$97.1B. This is an outlook, rather than realized revenue or a comparison with a preserved consensus estimate."
+    ],
+    "segments": [
+      {
+        "name": "Agents and Infra",
+        "text": "Revenue was $76.795B versus a recast $61.672B a year ago, up 24.52%. Current segment definitions are used; old segment names are not joined into a QoQ series."
+      },
+      {
+        "name": "Devices and Consumer",
+        "text": "Revenue was $15.484B versus a recast $16.001B a year ago, down 3.23%. Current segment definitions are used; old segment names are not joined into a QoQ series."
+      }
+    ],
+    "guidance": [
+      "Revenue"
+    ],
+    "follow_ups": [
+      {
+        "question": "Can cloud growth deliver cash returns after investment?",
+        "update": "Monitor capacity, utilization, operating cash flow and cash capital purchases.",
+        "next_check": "Next earnings and cash-flow disclosures."
+      },
+      {
+        "question": "Will underlying earnings growth persist?",
+        "update": "Keep GAAP and company-adjusted EPS separate and monitor investment effects.",
+        "next_check": "Next GAAP/non-GAAP reconciliation."
+      },
+      {
+        "question": "Can the recast segments establish comparable history?",
+        "update": "This version uses recast YoY values and does not splice old segment history.",
+        "next_check": "When recast historical segment information is available."
+      }
+    ],
+    "limitations": [
+      "Uses the official release and available official call transcript; the formal quarterly filing was not collected.",
+      "Microsoft Cloud overlaps product and segment categories. Azure growth does not disclose absolute revenue.",
+      "Segment definitions changed; YoY comparisons use current recast values and no old-definition QoQ series is constructed.",
+      "Calculated free cash flow subtracts cash property and equipment purchases. Investment capital expenditure and finance leases have different recognition and payment timing.",
+      "No pre-release consensus snapshot was preserved, so no beat/miss conclusion is made."
+    ],
+    "metrics": [
+      {
+        "key": "revenue",
+        "label": "Revenue"
+      },
+      {
+        "key": "gross_margin",
+        "label": "GAAP gross margin",
+        "definition": "GAAP gross profit divided by quarterly revenue."
+      },
+      {
+        "key": "diluted_eps",
+        "label": "GAAP diluted EPS"
+      },
+      {
+        "key": "net_income",
+        "label": "GAAP net income"
+      },
+      {
+        "key": "operating_income",
+        "label": "GAAP operating income"
+      },
+      {
+        "key": "operating_cash_flow",
+        "label": "Operating cash flow"
+      },
+      {
+        "key": "cash_capex",
+        "label": "Cash purchases of property and equipment"
+      },
+      {
+        "key": "free_cash_flow",
+        "label": "Free cash flow",
+        "definition": "Standalone quarterly operating cash flow less cash purchases of property and equipment. Cash purchases differ from investment capital expenditure including finance leases."
+      },
+      {
+        "key": "adjusted_eps",
+        "label": "Diluted EPS excluding OpenAI investment effects",
+        "definition": "Company non-GAAP reconciliation excluding OpenAI investment effects."
+      }
+    ]
+  }
+}

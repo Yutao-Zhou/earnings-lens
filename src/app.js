@@ -13,34 +13,36 @@ function el(tag,attributes={},...children){
   for(const [key,value] of Object.entries(attributes)){
     if(key==='class')node.className=value;
     else if(key.startsWith('on'))node.addEventListener(key.slice(2).toLowerCase(),value);
-    else if(value!==null&&value!==undefined)node.setAttribute(key,String(value));
+    else if(key==='selected'){if(value)node.setAttribute(key,'');}
+    else if(value!==null&&value!==undefined)node.setAttribute(key,String(ui(value)));
   }
-  for(const child of children.flat(Infinity))if(child!==null&&child!==undefined)node.append(child instanceof Node?child:document.createTextNode(String(child)));
+  for(const child of children.flat(Infinity))if(child!==null&&child!==undefined)node.append(child instanceof Node?child:document.createTextNode(String(ui(child))));
   return node;
 }
-function text(value){return new Intl.NumberFormat('zh-CN',{maximumFractionDigits:2}).format(value);}
-function basisLabel(value){return ({GAAP:'GAAP','non-GAAP':'non-GAAP',operational:'经营指标',derived:'计算指标'})[value];}
+function text(value){return new Intl.NumberFormat(locale(),{maximumFractionDigits:2}).format(value);}
+function basisLabel(value){return ui(({GAAP:'GAAP','non-GAAP':'non-GAAP',operational:'经营指标',derived:'计算指标'})[value]);}
 function valueLabel(metric,value=metric.value){
-  if(value===null||value===undefined)return '暂无数据';
+  if(value===null||value===undefined)return tx('Not available','暂无数据');
   if(metric.unit==='percent')return `${value.toFixed(1)}%`;
-  if(metric.unit==='currency_per_share')return new Intl.NumberFormat('zh-CN',{style:'currency',currency:metric.currency,minimumFractionDigits:2,maximumFractionDigits:2}).format(value);
+  if(metric.unit==='currency_per_share')return new Intl.NumberFormat(locale(),{style:'currency',currency:metric.currency,minimumFractionDigits:2,maximumFractionDigits:2}).format(value);
   if(metric.unit==='currency'){
+    if(language==='en')return new Intl.NumberFormat('en-US',{style:'currency',currency:metric.currency,notation:Math.abs(value)>=1e6?'compact':'standard',minimumFractionDigits:0,maximumFractionDigits:2}).format(value);
     const unit=metric.currency==='USD'?'美元':metric.currency;
     return Math.abs(value)>=1e8?`${text(value/1e8)} 亿${unit}`:`${text(value)} ${unit}`;
   }
   return text(value);
 }
 function periodLabel(report){return `FY${report.period.fiscal_year} ${report.period.fiscal_period}`;}
-function dateLabel(date,precision='second'){return new Intl.DateTimeFormat('zh-CN',{timeZone:'America/New_York',year:'numeric',month:'2-digit',day:'2-digit',...(precision==='date'?{}:{hour:'2-digit',minute:'2-digit',hour12:false})}).format(new Date(date))+(precision==='date'?'（仅披露日期）':' ET');}
+function dateLabel(date,precision='second'){return new Intl.DateTimeFormat(locale(),{timeZone:'America/New_York',year:'numeric',month:'2-digit',day:'2-digit',...(precision==='date'?{}:{hour:'2-digit',minute:'2-digit',hour12:false})}).format(new Date(date))+(precision==='date'?tx(' (date only)','（仅披露日期）'):' ET');}
 function changeLabel(comparison){
   if(!comparison)return '暂无可比数据';
-  const prefix=comparison.type==='yoy'?'同比':'环比';
-  if(comparison.change_pp!==null)return `${prefix} ${comparison.change_pp>0?'+':''}${text(comparison.change_pp)} 个百分点`;
+  const prefix=comparison.type==='yoy'?tx('YoY','同比'):tx('QoQ','环比');
+  if(comparison.change_pp!==null)return `${prefix} ${comparison.change_pp>0?'+':''}${text(comparison.change_pp)} ${tx('pp','个百分点')}`;
   if(comparison.change_pct!==null)return `${prefix} ${comparison.change_pct>0?'+':''}${text(comparison.change_pct)}%`;
-  return comparison.unavailable_reason;
+  return language==='en'?'Not comparable; see metric definition.':comparison.unavailable_reason;
 }
 function evidenceButtons(ids,report){
-  return el('span',{class:'source-buttons'},ids.map(id=>el('button',{type:'button',class:'source-button','aria-label':`查看原文依据 ${id}`,'aria-pressed':state.evidence===id,onclick:()=>{state.evidence=id;render();document.getElementById('evidence-inspector')?.scrollIntoView({block:'nearest',behavior:'instant'});}},`依据 ${id.replace(/^E/,'')}`)));
+  return el('span',{class:'source-buttons'},ids.map(id=>el('button',{type:'button',class:'source-button','aria-label':`查看原文依据 ${report.evidence.findIndex(e=>e.id===id)+1}`,'aria-pressed':state.evidence===id,onclick:()=>{state.evidence=id;render();document.getElementById('evidence-inspector')?.scrollIntoView({block:'nearest',behavior:'instant'});}},`依据 ${report.evidence.findIndex(e=>e.id===id)+1}`)));
 }
 function sectionHeading(title,label){return el('div',{class:'section-title'},el('h2',{},title),label?el('span',{class:'section-label'},label):null);}
 function selectedReport(){
@@ -50,7 +52,7 @@ function selectedReport(){
   const selected=revisions.find(report=>report.revision===Number(state.revision))??revisions[0];
   state.revision=selected?.revision??null;
   if(selected&&!selected.evidence.some(item=>item.id===state.evidence))state.evidence=selected.evidence[0]?.id??null;
-  return selected;
+  return localizedReport(selected);
 }
 function persist(){
   const params=new URLSearchParams({company:state.company??'',tab:state.tab});
@@ -132,7 +134,7 @@ function historyView(report){
     for(let tick=0;tick<3;tick++){
       const value=min+(max-min)*tick/2,position=y(value);
       svg.append(svgNode('line',{x1:left,x2:width-right,y1:position,y2:position,stroke:'#e4e9e6','stroke-width':1}));
-      const label=metric.unit==='currency'?`${text(value/1e8)} 亿`:metric.unit==='percent'?`${value.toFixed(1)}%`:text(value);
+      const label=metric.unit==='currency'?(language==='en'?new Intl.NumberFormat('en-US',{notation:'compact',maximumFractionDigits:1}).format(value):`${text(value/1e8)} 亿`):metric.unit==='percent'?`${value.toFixed(1)}%`:text(value);
       svg.append(svgNode('text',{x:left-10,y:position+4,'text-anchor':'end',fill:'#68777b','font-size':11},label));
     }
     let previous=null;
@@ -140,8 +142,8 @@ function historyView(report){
       if(!compatible(item)){previous=null;continue;}
       const cx=x(item.report.period.end),cy=y(item.metric.value);
       const gap=previous?(Date.parse(item.report.period.end)-Date.parse(previous.date))/86400000:0;
-      if(previous&&gap<=(report.period.fiscal_period==='FY'?400:130))svg.append(svgNode('line',{x1:previous.x,y1:previous.y,x2:cx,y2:cy,stroke:'#1e5b56','stroke-width':2.5}));
-      const circle=svgNode('circle',{cx,cy,r:4.5,fill:'#1e5b56'});circle.append(svgNode('title',{},`${periodLabel(item.report)}：${valueLabel(item.metric)}`));svg.append(circle);
+      if(previous&&gap<=(report.period.fiscal_period==='FY'?400:130))svg.append(svgNode('line',{x1:previous.x,y1:previous.y,x2:cx,y2:cy,stroke:'var(--accent)','stroke-width':2.5}));
+      const circle=svgNode('circle',{cx,cy,r:4.5,fill:'var(--accent)'});circle.append(svgNode('title',{},`${periodLabel(item.report)}：${valueLabel(item.metric)}`));svg.append(circle);
       svg.append(svgNode('text',{x:cx,y:height-20,'text-anchor':'middle',fill:'#68777b','font-size':11},item.report.period.fiscal_period));
       previous={x:cx,y:cy,date:item.report.period.end};
     }
@@ -163,9 +165,11 @@ function rightRail(report){
     el('section',{class:'limitations'},el('h2',{},'阅读边界'),el('ul',{},report.limitations.map(item=>el('li',{},item)))));
 }
 function render(){
+  renderChrome();
   const report=selectedReport();
   renderCompanies();
   if(!report){
+    window.earningsAnalytics?.selection(null);
     const company=dataset.companies.find(item=>item.id===state.company);
     workspace.replaceChildren(el('section',{class:'empty-state'},el('p',{class:'eyebrow'},'RESEARCH ARCHIVE'),el('h1',{},company?.name??'财报档案'),el('p',{},'暂无已验证的财报分析。生成并通过校验的报告会在下次页面更新时出现在这里。')));
     return;
@@ -177,7 +181,8 @@ function render(){
     state.tab=tabs[index][0];render();persist();document.getElementById(`tab-${state.tab}`).focus();
   }},label)));
   const contents=state.tab==='metrics'?metricsTable(report):state.tab==='history'?historyView(report):state.tab==='sources'?sourcesView(report):overview(report);
-  const panel=el('section',{class:'report-content',id:'report-panel',role:'tabpanel','aria-labelledby':`tab-${state.tab}`},contents);
+  window.earningsAnalytics?.selection({report_id:report.report_id,ticker:report.company.ticker,revision:report.revision,period:periodLabel(report),end:report.period.end,tab:state.tab});
+  const panel=el('section',{class:'report-content',id:'report-panel',role:'tabpanel','aria-labelledby':`tab-${state.tab}`},contents,el('span',{'data-analytics-reading-end':'','aria-hidden':'true'}));
   workspace.replaceChildren(renderHeader(report),renderMetrics(report),nav,el('div',{class:'content-grid'},panel,rightRail(report)));
 }
 search.addEventListener('input',renderCompanies);

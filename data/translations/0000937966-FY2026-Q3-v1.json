@@ -1,0 +1,62 @@
+{
+  "report_id": "0000937966-FY2026-Q3",
+  "revision": 1,
+  "en": {
+    "summary": "Higher system and service sales expanded earnings. Strong cash inflow includes working-capital movements and requires a separate durability check.",
+    "findings": [
+      "US GAAP revenue was €11.662B versus €7.516B a year ago; system sales were €8.3732B and service/field-option sales €3.2888B.",
+      "Gross margin was 57.5%, with diluted EPS of €12.93. Figures retain euros; no currency conversion is applied.",
+      "Operating cash flow was €11.7976B, including €7.009B of favorable changes in assets and liabilities. Calculated free cash flow deducts both equipment and intangible purchases."
+    ],
+    "segments": [],
+    "guidance": [],
+    "follow_ups": [
+      {
+        "question": "Will growth sustain earnings and cash returns after investment?",
+        "update": "Monitor demand, expenses, working capital and cash capital purchases.",
+        "next_check": "Next quarterly disclosure and official supplemental materials."
+      }
+    ],
+    "limitations": [
+      "A research snapshot of the listed official materials. Official earnings-call text was not collected.",
+      "Standalone and cumulative periods are treated separately; cash flows may require adjacent cumulative-period subtraction. Missing values are not zero.",
+      "No pre-release consensus snapshot was retained. Unverified numerical guidance is omitted from the guidance table."
+    ],
+    "metrics": [
+      {
+        "key": "revenue",
+        "label": "Revenue"
+      },
+      {
+        "key": "gross_margin",
+        "label": "GAAP gross margin",
+        "definition": "GAAP gross profit divided by quarterly revenue."
+      },
+      {
+        "key": "diluted_eps",
+        "label": "GAAP diluted EPS"
+      },
+      {
+        "key": "net_income",
+        "label": "Net income attributable to stockholders"
+      },
+      {
+        "key": "operating_income",
+        "label": "GAAP operating income"
+      },
+      {
+        "key": "operating_cash_flow",
+        "label": "Operating cash flow"
+      },
+      {
+        "key": "cash_capex",
+        "label": "Cash capital purchases including intangibles"
+      },
+      {
+        "key": "free_cash_flow",
+        "label": "Calculated free cash flow",
+        "definition": "Quarterly OCF less both property/equipment and intangible purchases."
+      }
+    ]
+  }
+}

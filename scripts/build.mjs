@@ -7,8 +7,8 @@ import { renderSite } from '../lib/render.mjs';
 
 export async function build({ root = projectRoot, dataRoot = root, output = path.join(root, 'dist/index.html') } = {}) {
   const data = await loadDataset(dataRoot);
-  const [css, catalog, app] = await Promise.all(['src/styles.css', 'lib/catalog.mjs', 'src/app.js'].map(file => readFile(path.join(root,file),'utf8')));
-  const javascript = `(() => {\n'use strict';\n${catalog.replace(/^export /gm,'')}\n${app}\n})();`;
+  const [css, catalog, preferences, ui, analytics, app] = await Promise.all(['src/styles.css', 'lib/catalog.mjs', 'src/preferences.js','src/ui.js','src/analytics.js','src/app.js'].map(file => readFile(path.join(root,file),'utf8')));
+  const javascript = `(() => {\n'use strict';\n${preferences}\n${ui}\n${analytics}\n${catalog.replace(/^export /gm,'')}\n${app}\n})();`;
   if (/<\/script/i.test(javascript) || /<\/style/i.test(css)) throw new Error('An application asset terminates its inline HTML container');
   const html = renderSite(data, css, javascript);
   await mkdir(path.dirname(output), { recursive:true });
