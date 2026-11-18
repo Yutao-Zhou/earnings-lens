@@ -2,7 +2,7 @@
 
 ## Status
 
-The static report contract, validation, demo data, build, browser UI, and GitHub Pages workflow are implemented. Source collection, model execution, research-run recovery, and scheduling remain outside the current implementation. The first public deployment is pending.
+The static report contract, validation, demo data, build, browser UI, and GitHub Pages workflow are implemented and deployed at [yutaozhou.com/earnings-lens](https://yutaozhou.com/earnings-lens/). Source collection, model execution, research-run recovery, and scheduling remain outside the current implementation.
 
 ## Commands and files
 

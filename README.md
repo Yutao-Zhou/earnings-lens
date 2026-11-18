@@ -1,5 +1,7 @@
 # Earnings Lens
 
+[Live website](https://yutaozhou.com/earnings-lens/) · [GitHub Pages workflow](https://github.com/Yutao-Zhou/earnings-lens/actions/workflows/pages.yml)
+
 Static US earnings research generated from structured report JSON. OpenClaw collects source material and produces analysis during the content-production process; the published page contains its own display data.
 
 ## Implementation contract
@@ -47,7 +49,7 @@ The default dataset is clearly labeled as fictional. `config/watchlist.productio
 
 ## GitHub Pages publication
 
-This repository is prepared for direct GitHub Pages hosting through GitHub Actions. Pushes to `main` run validation, tests, and the static build, then deploy only `dist/`. See [GitHub Pages Deployment](docs/deployment.md) for setup and verification. The intended website address is `https://yutao-zhou.github.io/earnings-lens/`; the first public deployment is pending.
+This public repository hosts the website directly through GitHub Actions and GitHub Pages. Pushes to `main` run validation, tests, and the static build, then deploy only `dist/`. The [GitHub Pages project URL](https://yutao-zhou.github.io/earnings-lens/) redirects to the account's existing custom domain at [yutaozhou.com/earnings-lens](https://yutaozhou.com/earnings-lens/). See [GitHub Pages Deployment](docs/deployment.md) for setup and verification.
 
 ## Documentation
 

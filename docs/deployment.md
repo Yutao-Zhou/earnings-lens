@@ -4,7 +4,7 @@
 
 The public `Yutao-Zhou/earnings-lens` repository contains application source and technical documentation. A GitHub Actions workflow builds and hosts the generated site directly from this repository. Product plans and private research instructions remain outside the source repository and website artifacts.
 
-The intended project URL is `https://yutao-zhou.github.io/earnings-lens/`. Repository provisioning and the first public deployment must be completed before this address is considered live.
+The website is live at [https://yutaozhou.com/earnings-lens/](https://yutaozhou.com/earnings-lens/). The [GitHub Pages project URL](https://yutao-zhou.github.io/earnings-lens/) redirects to that address through the account's existing custom-domain configuration.
 
 ## Initial configuration
 
@@ -31,3 +31,11 @@ A successful source push is not proof that the public website is current. Check 
 ## Verification
 
 Confirm that the public page renders, navigation and evidence expansion work, the expected report revision is displayed, and no runtime data endpoint is required. The website currently contains clearly labeled fictional demonstration data until production reports are integrated.
+
+The initial deployment passed all build and deployment steps in [workflow run 44224697521](https://github.com/Yutao-Zhou/earnings-lens/actions/runs/44224697521). Anonymous requests to both URLs returned HTTP 200 at the custom-domain destination. The embedded report JSON and application script matched the local artifact, and browser checks confirmed company selection, financial tables, and evidence expansion.
+
+## Custom-domain behavior
+
+The account's existing domain configuration is inherited by the project. No root-domain DNS or Pages configuration was changed for this deployment. Public HTTPS works with a valid connection at the custom domain. The project-level HTTPS enforcement request was declined because GitHub did not yet have a project certificate; do not assume that the Pages API enforcement flag is enabled.
+
+The custom-domain edge adds security markup to responses, so whole-response HTML hashes can vary. Verify the embedded application data and script, or use the workflow artifact for byte-for-byte comparisons. Edge-added markup is not part of the generated standalone HTML.
