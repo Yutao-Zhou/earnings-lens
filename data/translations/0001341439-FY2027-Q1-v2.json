@@ -1,0 +1,93 @@
+{
+  "report_id": "0001341439-FY2027-Q1",
+  "revision": 2,
+  "en": {
+    "summary": "Cloud infrastructure led growth and operating leverage, while customer prepayments helped OCF and equipment spending kept FCF negative. The enlarged backlog extends across future service delivery, and equity financing supports the investment program. Assess revenue recognition, prepayment timing, capacity delivery and per-share economics separately before treating backlog or cash receipts as current earnings.",
+    "findings": [
+      "Revenue was $19.345B, changing 29.606% YoY. GAAP diluted EPS was $1.56 versus $1.01 a year ago. These are realized standalone results for 2026-06-01–2026-08-31; changes in the business mix and special items need to be evaluated alongside the consolidated comparison.",
+      "GAAP operating income was $6.728B. Dividing it by revenue gives an operating margin of about 34.779%, versus 28.655% a year ago. Gross and operating margins measure different expense levels; neither measures cash left after capital investment or the return earned on the installed asset base.",
+      "Quarterly OCF was $23.103B against $28.499B of equipment purchases, leaving negative $5.396B of FCF. The OCF statement includes an $11.363B increase in deferred revenue from customer prepayments with a significant financing component. Those receipts are classified as operating cash by the company but support future delivery obligations, so they should not be interpreted as revenue already earned in the quarter.",
+      "Infrastructure revenue was $7.388B and applications revenue $4.219B, totaling $11.607B of cloud revenue. The release reports respective growth of 121% and 10%. Cloud is therefore not a single uniform demand trend; the infrastructure build-out is growing much faster than applications, while software revenue of $5.550B faces migration-related pressure.",
+      "Remaining performance obligations reached $664B, supported by additional AI contracts. RPO spans future contractual service and is not current-quarter revenue, cash on hand or a guarantee of future margin. Its conversion depends on delivery timing, capacity and contract terms; comparing that stock directly with one quarter’s $19.345B revenue would mix horizons.",
+      "The ATM common-stock program produced $19.909B of net financing cash. Management’s FY2027 outlook calls for at least $90B of revenue and non-GAAP EPS of $8.10; Q2 non-GAAP EPS guidance is $1.85–$1.93 in reported currency. Funding supports expansion but affects shares and obligations, so guided growth must be evaluated alongside capex, prepayments and the path to positive FCF."
+    ],
+    "segments": [
+      {
+        "name": "Cloud Infrastructure (IaaS) product category",
+        "text": "Revenue was $7.388B, up approximately 121% according to the release. It is the fastest-growing major category but requires substantial infrastructure investment. Revenue growth alone does not establish the cash return on that incremental capacity."
+      },
+      {
+        "name": "Cloud Applications (SaaS) product category",
+        "text": "Revenue was $4.219B, up approximately 10%. Its application-subscription economics and growth differ from IaaS. Both sit within cloud revenue and must not be counted twice in group totals."
+      },
+      {
+        "name": "Software product category",
+        "text": "Revenue was $5.550B, including $655M of licenses and $4.895B of support. Cloud migration changes the mix and recognition pattern. Combining faster infrastructure growth with software contraction can hide how the older profit/cash base is changing."
+      }
+    ],
+    "guidance": [
+      "Revenue growth YoY (reported currency)",
+      "Non-GAAP diluted EPS (reported currency)"
+    ],
+    "follow_ups": [
+      {
+        "question": "How quickly does RPO convert into delivered and recognized services?",
+        "update": "Track recognized revenue, delivery capacity and remaining obligations on consistent horizons.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      },
+      {
+        "question": "Can OCF cover capital spending without relying on prepayment growth?",
+        "update": "Separate prepayment movements from recurring receipts and compare cash PPE with FCF.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      },
+      {
+        "question": "Does the investment program improve per-share cash economics?",
+        "update": "Review actual share issuance, financing costs and the GAAP/non-GAAP earnings bridge.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      }
+    ],
+    "limitations": [
+      "Analysis uses the listed official filings, releases and financial attachments; official call text has not been fully reviewed.",
+      "Product/geographic categories, reportable segments and adjusted measures retain their disclosed perimeters and must not be double-counted or substituted for consolidated GAAP results.",
+      "Cash flows are standalone; cumulative disclosures are differenced across adjacent periods. Issuer adjustments, leases and incentives are identified in metric definitions.",
+      "No pre-release consensus snapshot was preserved. Management guidance and analytical inferences are distinct from realized results."
+    ],
+    "metrics": [
+      {
+        "key": "revenue",
+        "label": "Revenue"
+      },
+      {
+        "key": "gross_margin",
+        "label": "GAAP gross margin",
+        "definition": "GAAP gross profit divided by quarterly revenue.",
+        "missing_reason": "A comparable standalone quarterly value has not been verified."
+      },
+      {
+        "key": "diluted_eps",
+        "label": "GAAP diluted EPS"
+      },
+      {
+        "key": "net_income",
+        "label": "Net income available to common stockholders"
+      },
+      {
+        "key": "operating_income",
+        "label": "GAAP operating income"
+      },
+      {
+        "key": "operating_cash_flow",
+        "label": "Operating cash flow"
+      },
+      {
+        "key": "cash_capex",
+        "label": "Cash capital purchases"
+      },
+      {
+        "key": "free_cash_flow",
+        "label": "Calculated free cash flow",
+        "definition": "Standalone quarterly operating cash flow less cash capital purchases."
+      }
+    ]
+  }
+}

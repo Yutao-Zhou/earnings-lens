@@ -1,0 +1,89 @@
+{
+  "report_id": "0001318605-FY2026-Q3",
+  "revision": 2,
+  "en": {
+    "summary": "Revenue was essentially flat YoY, but a larger gross-profit pool did not offset higher operating expenses. Cash flow recovered from the previous quarter while remaining well below year-ago FCF. Separate automotive, energy and service economics, and distinguish current reported profitability from the investment case for businesses still being scaled.",
+    "findings": [
+      "Revenue was $28.046B, changing -0.174% YoY. GAAP diluted EPS was $0.22 versus $0.39 a year ago. These are realized standalone results for 2026-07-01–2026-09-30; changes in the business mix and special items need to be evaluated alongside the consolidated comparison.",
+      "GAAP operating income was $718M. Dividing it by revenue gives an operating margin of about 2.56%, versus 5.78% a year ago. The financial table separately retains GAAP gross margin of 19.589%. Gross and operating margins measure different expense levels; neither measures cash left after capital investment or the return earned on the installed asset base.",
+      "Quarterly OCF of $6.263B was close to $6.238B a year ago, while capex rose to $4.732B from $2.248B. FCF therefore fell to $1.531B from $3.990B. Sequentially, it improved from negative $1.092B in Q2 as cash investment fell. These comparisons show different baselines; neither proves that the long-term investment cycle has ended.",
+      "Gross profit rose from $5.054B to $5.494B, but operating expenses rose by $1.346B to $4.776B. The expense increase exceeded the $440M gross-profit improvement, explaining the fall in operating income from $1.624B to $718M. This is an operating-cost issue that a higher headline gross margin alone does not resolve.",
+      "GAAP net income attributable to common stockholders was $787M and diluted EPS $0.22, versus company-adjusted figures of $1.697B and $0.48. The adjustment gap is substantial relative to GAAP profit. Keep compensation and other reconciliation items visible when using adjusted results to assess earnings durability.",
+      "Automotive regulatory-credit revenue was $113M, with the filing disclosing a $475M reversal from a terminated contract. This is distinct from vehicle unit demand and selling prices. Management’s robotaxi/robotics expansion plans also require execution and capital; current-quarter automotive results alone do not verify their future profitability or deployment scale."
+    ],
+    "segments": [
+      {
+        "name": "Automotive revenue category",
+        "text": "Revenue was $20.560B, down from $21.205B a year ago. It includes sales, leasing and regulatory credits. This product revenue category differs from the broader reportable Automotive segment, which also includes Services and Other; the two scopes should not be combined."
+      },
+      {
+        "name": "Energy generation and storage",
+        "text": "Revenue was $2.881B versus $3.415B a year ago. Related cost of revenue was $1.927B, implying roughly 33.1% gross margin. Quarterly recognized revenue need not move in step with storage deployments, because product mix and recognition timing also matter."
+      },
+      {
+        "name": "Services and other revenue category",
+        "text": "Revenue increased to $4.605B from $3.475B. Cost of revenue of $3.871B implies roughly 15.9% gross margin. Faster sales growth here can coexist with a different margin profile from vehicle sales or storage products."
+      }
+    ],
+    "guidance": [],
+    "follow_ups": [
+      {
+        "question": "Can gross-profit growth cover the operating-expense increase?",
+        "update": "Compare gross profit with R&D and other operating expenses, retaining GAAP operating margin.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      },
+      {
+        "question": "Is the sequential cash recovery durable?",
+        "update": "Track quarterly OCF, cash capex and working-capital movements against the year-ago comparison.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      },
+      {
+        "question": "Which new-business milestones have become realized results?",
+        "update": "Separate reported revenue/costs from management’s future deployment and profitability expectations.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      }
+    ],
+    "limitations": [
+      "Analysis uses the listed official filings, releases and financial attachments; official call text has not been fully reviewed.",
+      "Product/geographic categories, reportable segments and adjusted measures retain their disclosed perimeters and must not be double-counted or substituted for consolidated GAAP results.",
+      "Cash flows are standalone; cumulative disclosures are differenced across adjacent periods. Issuer adjustments, leases and incentives are identified in metric definitions.",
+      "No pre-release consensus snapshot was preserved. Management guidance and analytical inferences are distinct from realized results."
+    ],
+    "metrics": [
+      {
+        "key": "revenue",
+        "label": "Revenue"
+      },
+      {
+        "key": "gross_margin",
+        "label": "GAAP gross margin",
+        "definition": "GAAP gross profit divided by quarterly revenue."
+      },
+      {
+        "key": "diluted_eps",
+        "label": "GAAP diluted EPS"
+      },
+      {
+        "key": "net_income",
+        "label": "Net income attributable to stockholders"
+      },
+      {
+        "key": "operating_income",
+        "label": "GAAP operating income"
+      },
+      {
+        "key": "operating_cash_flow",
+        "label": "Operating cash flow"
+      },
+      {
+        "key": "cash_capex",
+        "label": "Cash capital purchases"
+      },
+      {
+        "key": "free_cash_flow",
+        "label": "Calculated free cash flow",
+        "definition": "Standalone quarterly operating cash flow less cash capital purchases."
+      }
+    ]
+  }
+}

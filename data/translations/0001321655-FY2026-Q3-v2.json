@@ -1,0 +1,88 @@
+{
+  "report_id": "0001321655-FY2026-Q3",
+  "revision": 2,
+  "en": {
+    "summary": "U.S. commercial expansion and operating leverage produced strong reported growth, but revenue, contract values and retention measure different stages of the business. Cash generation is substantial, while stock compensation remains relevant to dilution and adjusted-profit comparisons. The next test is whether customer expansion and new contracts sustain growth at the margins implied by management’s outlook.",
+    "findings": [
+      "Revenue was $2.313B, changing 95.871% YoY. GAAP diluted EPS was $0.44 versus $0.18 a year ago. These are realized standalone results for 2026-07-01–2026-09-30; changes in the business mix and special items need to be evaluated alongside the consolidated comparison.",
+      "GAAP operating income was $1.085B. Dividing it by revenue gives an operating margin of about 46.894%, versus 33.296% a year ago. The financial table separately retains GAAP gross margin of 83.432%. Gross and operating margins measure different expense levels; neither measures cash left after capital investment or the return earned on the installed asset base.",
+      "OCF was $1.204570B and property purchases $8.014M, yielding $1.196556B of calculated FCF. The company separately presents about $1.22B of adjusted FCF, which adds specified employer payroll taxes related to stock compensation. Stock compensation was $319.230M in the equity statement; its noncash nature helps explain cash/profit differences but does not remove the economic question of dilution.",
+      "U.S. commercial revenue grew 148% to approximately $984M, surpassing U.S. government revenue of approximately $953M, which grew 96%. Total U.S. revenue was about $1.937B. These are rounded geographic/customer-group disclosures inside consolidated revenue; they cannot be added to total company revenue again or treated as identical to global segment totals.",
+      "Closed TCV was $2.918B, up 6%, compared with approximately 96% recognized-revenue growth. Net dollar retention was 165%. TCV includes contract options, while retention describes expansion within existing customer relationships. Their different definitions and timing mean the mismatch is a reason to investigate the pipeline, not sufficient proof of an imminent revenue slowdown.",
+      "Management guides Q4 revenue to $2.649B–$2.653B and adjusted operating income to $1.640B–$1.644B. The latter is non-GAAP and is not a forecast of GAAP operating income. Contract duration, customer conversion, government procurement timing and compensation-related dilution need continued review before treating the upper end of guidance as secured earnings."
+    ],
+    "segments": [
+      {
+        "name": "U.S. commercial customer group",
+        "text": "Revenue was approximately $984M, up 148% YoY and 29% QoQ. Growth from this group is a key contributor to consolidated expansion, but it is a U.S. subset and does not represent all global commercial revenue."
+      },
+      {
+        "name": "U.S. government customer group",
+        "text": "Revenue was approximately $953M, up 96% YoY and 18% QoQ. Government contracts differ in procurement and exercise timing, so milestone awards and total contract value should be distinguished from revenue recognized in the quarter."
+      }
+    ],
+    "guidance": [
+      "Revenue",
+      "Adjusted operating income"
+    ],
+    "follow_ups": [
+      {
+        "question": "Will commercial expansion sustain as the comparison base rises?",
+        "update": "Track U.S. commercial growth, retention and actual recognized revenue against guidance.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      },
+      {
+        "question": "Will new contracts convert into durable revenue?",
+        "update": "Review TCV, non-cancelable RPO, options and contract duration without combining their scopes.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      },
+      {
+        "question": "Do cash returns remain attractive after considering dilution?",
+        "update": "Retain GAAP FCF, adjusted FCF, stock compensation and diluted share counts as separate measures.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      }
+    ],
+    "limitations": [
+      "Analysis uses the listed official filings, releases and financial attachments; official call text has not been fully reviewed.",
+      "Product/geographic categories, reportable segments and adjusted measures retain their disclosed perimeters and must not be double-counted or substituted for consolidated GAAP results.",
+      "Cash flows are standalone; cumulative disclosures are differenced across adjacent periods. Issuer adjustments, leases and incentives are identified in metric definitions.",
+      "No pre-release consensus snapshot was preserved. Management guidance and analytical inferences are distinct from realized results."
+    ],
+    "metrics": [
+      {
+        "key": "revenue",
+        "label": "Revenue"
+      },
+      {
+        "key": "gross_margin",
+        "label": "GAAP gross margin",
+        "definition": "GAAP gross profit divided by quarterly revenue."
+      },
+      {
+        "key": "diluted_eps",
+        "label": "GAAP diluted EPS"
+      },
+      {
+        "key": "net_income",
+        "label": "Net income attributable to stockholders"
+      },
+      {
+        "key": "operating_income",
+        "label": "GAAP operating income"
+      },
+      {
+        "key": "operating_cash_flow",
+        "label": "Operating cash flow"
+      },
+      {
+        "key": "cash_capex",
+        "label": "Cash capital purchases"
+      },
+      {
+        "key": "free_cash_flow",
+        "label": "Calculated free cash flow",
+        "definition": "Standalone quarterly operating cash flow less cash capital purchases."
+      }
+    ]
+  }
+}

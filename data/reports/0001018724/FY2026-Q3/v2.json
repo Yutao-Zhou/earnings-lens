@@ -1,0 +1,556 @@
+{
+  "schema_version": "1.0",
+  "data_kind": "production",
+  "report_id": "0001018724-FY2026-Q3",
+  "revision": 2,
+  "revision_reason": "reanalysis",
+  "supersedes_revision": 1,
+  "validation_status": "passed",
+  "company": {
+    "id": "0001018724",
+    "cik": "0001018724",
+    "ticker": "AMZN",
+    "name": "Amazon"
+  },
+  "period": {
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "start": "2026-07-01",
+    "end": "2026-09-30"
+  },
+  "published_at": "2026-10-29T00:00:00-05:00",
+  "published_at_precision": "date",
+  "as_of": "2026-11-18T08:27:24.023Z",
+  "analyzed_at": "2026-11-18T08:27:24.023Z",
+  "coverage": {
+    "earnings_release": "available",
+    "regulatory_filing": "available",
+    "transcript": "pending",
+    "supplemental_financials": "available"
+  },
+  "sources": [
+    {
+      "id": "filing",
+      "title": "Amazon 10-Q — period ended 2026-09-30",
+      "type": "regulatory_filing",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+      "published_at": "2026-10-30T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T07:08:56.316Z"
+    },
+    {
+      "id": "facts",
+      "title": "Amazon SEC XBRL financial facts",
+      "type": "supplemental_financials",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json",
+      "published_at": "2026-10-30T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T07:29:15.749Z"
+    },
+    {
+      "id": "release",
+      "title": "Amazon quarterly results and financial highlights",
+      "type": "earnings_release",
+      "url": "https://s2.q4cdn.com/299287126/files/doc_earnings/2026/q3/earnings-result/AMZN-Q3-2026-Earnings-Release.pdf",
+      "published_at": "2026-10-29T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T07:29:15.749Z"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "metric-revenue",
+      "source_id": "filing",
+      "locator": "Consolidated financial statement cells; 2026-07-01 to 2026-09-30; USD millions, except per-share and percentage amounts.",
+      "quote": "201,944"
+    },
+    {
+      "id": "metric-gross_margin",
+      "source_id": "filing",
+      "locator": "Gross profit/revenue or revenue/cost cells; use the metric definition for the ratio; 2026-07-01 to 2026-09-30; USD millions, except per-share and percentage amounts.",
+      "quote": "201,944; 94,573"
+    },
+    {
+      "id": "metric-diluted_eps",
+      "source_id": "filing",
+      "locator": "Consolidated financial statement cells; 2026-07-01 to 2026-09-30; USD millions, except per-share and percentage amounts.",
+      "quote": "1.89"
+    },
+    {
+      "id": "metric-net_income",
+      "source_id": "filing",
+      "locator": "Consolidated financial statement cells; 2026-07-01 to 2026-09-30; USD millions, except per-share and percentage amounts.",
+      "quote": "20,685"
+    },
+    {
+      "id": "metric-operating_income",
+      "source_id": "filing",
+      "locator": "Consolidated financial statement cells; 2026-07-01 to 2026-09-30; USD millions, except per-share and percentage amounts.",
+      "quote": "28,076"
+    },
+    {
+      "id": "metric-operating_cash_flow",
+      "source_id": "facts",
+      "locator": "SEC XBRL financial facts; NetCashProvidedByUsedInOperatingActivities: 2026-07-01 to 2026-09-30; amounts in full USD. Standalone quarter uses the displayed cumulative subtraction where applicable.",
+      "quote": "42422000000"
+    },
+    {
+      "id": "metric-cash_capex",
+      "source_id": "facts",
+      "locator": "SEC XBRL financial facts; PaymentsToAcquireProductiveAssets: 2026-07-01 to 2026-09-30; amounts in full USD. Standalone quarter uses the displayed cumulative subtraction where applicable.",
+      "quote": "77259000000"
+    },
+    {
+      "id": "metric-free_cash_flow",
+      "source_id": "facts",
+      "locator": "SEC XBRL financial facts; NetCashProvidedByUsedInOperatingActivities: 2026-07-01 to 2026-09-30; PaymentsToAcquireProductiveAssets: 2026-07-01 to 2026-09-30; amounts in full USD. Quarterly cash inputs; issuer adjustments are cited separately.",
+      "quote": "42422000000; 77259000000"
+    },
+    {
+      "id": "business",
+      "source_id": "release",
+      "locator": "Quarterly financial highlights, business results and measure definitions",
+      "quote": "Amazon"
+    },
+    {
+      "id": "research-income",
+      "source_id": "filing",
+      "locator": "Consolidated income statement; USD millions, except EPS; standalone quarter and comparative columns.",
+      "quote": "201,944; 28,076; 1.89"
+    },
+    {
+      "id": "research-cash",
+      "source_id": "release",
+      "locator": "Financial summary/cash-flow reconciliation and stated measure definitions; USD millions; distinguish standalone from cumulative columns.",
+      "quote": "35,525; 42,422; (35,095); (77,259); 867; 1,381"
+    },
+    {
+      "id": "business-detail-1",
+      "source_id": "release",
+      "locator": "Quarterly release/filing; business mix and segment results; USD millions unless billions, rates or per-share figures are stated.",
+      "quote": "45,984; 17,773; 112,852; 8,723; 43,108; 1,580"
+    },
+    {
+      "id": "business-detail-2",
+      "source_id": "release",
+      "locator": "Quarterly release/filing; earnings reconciliation and comparability; USD millions unless billions, rates or per-share figures are stated.",
+      "quote": "1.89; 1.95; 9.5"
+    },
+    {
+      "id": "business-detail-3",
+      "source_id": "release",
+      "locator": "Quarterly release/filing; outlook, financing and risk disclosures; USD millions unless billions, rates or per-share figures are stated.",
+      "quote": "240.0; 247.0; 28.5; 33.5; 220"
+    },
+    {
+      "id": "business-segment-1",
+      "source_id": "release",
+      "locator": "AWS; reported segment/product/customer-category table; preserve the stated scope; USD millions, except rates.",
+      "quote": "45,984; 17,773"
+    },
+    {
+      "id": "business-segment-2",
+      "source_id": "release",
+      "locator": "North America; reported segment/product/customer-category table; preserve the stated scope; USD millions, except rates.",
+      "quote": "112,852; 8,723"
+    },
+    {
+      "id": "business-segment-3",
+      "source_id": "release",
+      "locator": "International; reported segment/product/customer-category table; preserve the stated scope; USD millions, except rates.",
+      "quote": "43,108; 1,580"
+    }
+  ],
+  "metrics": [
+    {
+      "key": "revenue",
+      "label": "营业收入",
+      "value": 201944000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-revenue"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 180169000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-revenue"
+          ],
+          "change_pct": 12.085874928539319,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "gross_margin",
+      "label": "GAAP 毛利率",
+      "value": 53.16870023372816,
+      "unit": "percent",
+      "currency": null,
+      "basis": "derived",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": "GAAP 毛利金额除以同季收入。",
+      "evidence_ids": [
+        "metric-gross_margin"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 50.78509621522015,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-gross_margin"
+          ],
+          "change_pct": null,
+          "change_pp": 2.3836040185080094,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "diluted_eps",
+      "label": "GAAP 摊薄每股收益",
+      "value": 1.89,
+      "unit": "currency_per_share",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-diluted_eps"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 1.95,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-diluted_eps"
+          ],
+          "change_pct": -3.076923076923077,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "net_income",
+      "label": "归属股东净利润",
+      "value": 20685000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-net_income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 21187000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-net_income"
+          ],
+          "change_pct": -2.3693774484353614,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "operating_income",
+      "label": "GAAP 营业利润",
+      "value": 28076000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-operating_income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 17422000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-operating_income"
+          ],
+          "change_pct": 61.15256572150154,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "operating_cash_flow",
+      "label": "经营活动现金流",
+      "value": 42422000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-operating_cash_flow"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 35525000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-operating_cash_flow"
+          ],
+          "change_pct": 19.414496833216056,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "cash_capex",
+      "label": "现金资本购置",
+      "value": 77259000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-cash_capex"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 35095000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-cash_capex"
+          ],
+          "change_pct": 120.14247043738426,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "free_cash_flow",
+      "label": "自由现金流（计算值）",
+      "value": -33456000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "derived",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": "单季经营现金流减设备购置，加设备出售与激励款；公司净购置口径。",
+      "evidence_ids": [
+        "metric-free_cash_flow"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 1297000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-free_cash_flow"
+          ],
+          "change_pct": -2679.491133384734,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    }
+  ],
+  "guidance": [
+    {
+      "label": "营业收入",
+      "target_period": "FY2026 Q4",
+      "period_start": "2026-10-01",
+      "period_end": "2026-12-31",
+      "low": 240000000000,
+      "high": 247000000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "evidence_ids": [
+        "business-detail-3"
+      ]
+    },
+    {
+      "label": "营业利润",
+      "target_period": "FY2026 Q4",
+      "period_start": "2026-10-01",
+      "period_end": "2026-12-31",
+      "low": 28500000000,
+      "high": 33500000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "evidence_ids": [
+        "business-detail-3"
+      ]
+    }
+  ],
+  "segments": [
+    {
+      "name": "AWS 云业务",
+      "text": "459.84 亿美元收入对应 177.73 亿美元营业利润；公告披露收入增长约 39.3%。容量利用率、折旧和客户需求将决定基础设施扩张后当前较高的营业利润率能否延续。",
+      "evidence_ids": [
+        "business-segment-1"
+      ]
+    },
+    {
+      "name": "北美零售分部",
+      "text": "收入 1128.52 亿美元，营业利润 87.23 亿美元。这里是最大的收入来源，但利润率明显低于 AWS。评价同比时应同时考虑 Prime Day 时点和履约成本，不能用云业务增长替代零售需求判断。",
+      "evidence_ids": [
+        "business-segment-2"
+      ]
+    },
+    {
+      "name": "国际零售分部",
+      "text": "收入 431.08 亿美元，营业利润 15.80 亿美元。报告增速还受汇率影响。由于分部利润率较低，即使收入变化看起来温和，物流效率、产品组合和本地定价的变化仍可能显著影响利润。",
+      "evidence_ids": [
+        "business-segment-3"
+      ]
+    }
+  ],
+  "follow_ups": [
+    {
+      "id": "company-follow-up-1",
+      "question": "AWS 扩容后能否同时保持增长和利润率？",
+      "status": "monitoring",
+      "update": "同时跟踪 AWS 收入、营业利润率、折旧和管理层对容量的说明。",
+      "next_check": "下一次官方业绩、申报文件及相关补充材料更新时。",
+      "evidence_ids": [
+        "business-detail-1",
+        "research-income"
+      ]
+    },
+    {
+      "id": "company-follow-up-2",
+      "question": "经营回款能否追上现金投资？",
+      "status": "monitoring",
+      "update": "比较单季经营现金流与净设备购置，并与过去十二个月自由现金流分开展示。",
+      "next_check": "下一次官方业绩、申报文件及相关补充材料更新时。",
+      "evidence_ids": [
+        "business-detail-2",
+        "research-cash"
+      ]
+    },
+    {
+      "id": "company-follow-up-3",
+      "question": "跨过 Prime Day 时点差异后，零售增速如何？",
+      "status": "monitoring",
+      "update": "结合促销时点及汇率，核对北美和国际分部收入与营业利润。",
+      "next_check": "下一次官方业绩、申报文件及相关补充材料更新时。",
+      "evidence_ids": [
+        "business-detail-3",
+        "research-income"
+      ]
+    }
+  ],
+  "limitations": [
+    "依据已列明的官方申报、业绩及财务附件进行分析；尚未完成官方电话会文字材料审阅。",
+    "业务类别、地区拆分、报告分部与调整指标采用各自披露范围，不能重复相加或替代合并 GAAP 数值。",
+    "现金流采用单季金额，累计披露按相邻期间相减；公司调整口径、融资租赁和激励款等差异见指标定义。",
+    "未保留披露前市场一致预期快照，不作超预期判断；未来指引与分析推断不等于已实现结果。"
+  ],
+  "summary": {
+    "text": "AWS 增长明显快于零售，以较小的收入占比贡献了多数营业利润。经营利润改善，但上年投资收益使 GAAP 净利润同比受到基数影响。更关键的约束在现金端：基础设施投入超过经营现金创造，云业务增长与投资后的现金回报需要分开评价。",
+    "evidence_ids": [
+      "research-income",
+      "research-cash",
+      "business-detail-1",
+      "business-detail-2",
+      "business-detail-3"
+    ]
+  },
+  "findings": [
+    {
+      "kind": "fact",
+      "text": "营业收入 2,019.44 亿美元，同比变化 12.086%；GAAP 摊薄 EPS 为 1.89 美元，上年同期为 1.95 美元。这些是 2026-07-01 至 2026-09-30 的已实现单季结果，需结合业务组合及特殊项目评价合并同比。",
+      "evidence_ids": [
+        "metric-revenue",
+        "metric-diluted_eps"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "GAAP 营业利润为 280.76 亿美元，除以收入后，营业利润率约为 13.903%，上年同期约 9.67%。财务表另保留 GAAP 毛利率 53.169%。毛利率和营业利润率对应不同费用层级，都不等于资本投入后的现金结余或既有资产回报。",
+      "evidence_ids": [
+        "research-income"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "单季经营现金流为 424.22 亿美元，上年同期 355.25 亿美元。设备购置 772.59 亿美元，扣除出售及激励款 13.81 亿美元后，单季自由现金流为负 334.56 亿美元。公告标题的负 424 亿美元属于过去十二个月。经营回款增强与投资后资金缺口扩大可以同时出现。",
+      "evidence_ids": [
+        "research-cash",
+        "metric-free_cash_flow"
+      ]
+    },
+    {
+      "kind": "fact",
+      "text": "AWS 收入 459.84 亿美元、营业利润 177.73 亿美元，分别约占合并收入的 22.8% 和营业利润的 63.3%。云业务对利润的重要性显著高于其收入份额。按分部金额计算，AWS 营业利润率约 38.7%，北美约 7.7%，国际约 3.7%。",
+      "evidence_ids": [
+        "business-detail-1"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "GAAP EPS 从 1.95 美元降至 1.89 美元，但营业利润从 174.22 亿美元增至 280.76 亿美元。上年同期包含 95 亿美元 Anthropic 投资税前收益，因此 EPS 下降不能直接解释为零售与云业务经营利润池收缩；投资估值损益和税费需单独核对。",
+      "evidence_ids": [
+        "business-detail-2"
+      ]
+    },
+    {
+      "kind": "risk",
+      "text": "2026 年多数主要市场的 Prime Day 移至第二季度，使零售同比存在时点差异。管理层预计第四季度收入 2400 至 2470 亿美元、营业利润 285 至 335 亿美元，全年现金资本开支约 2200 亿美元。这些属于管理层预期，后续应验证新增云容量能否在投资账单扩大时形成现金回报。",
+      "evidence_ids": [
+        "business-detail-3"
+      ]
+    }
+  ]
+}

@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-18-deeper-analysis",
+    "date": "2026-11-18",
+    "en": {
+      "title": "Deeper analysis, clearer evidence",
+      "text": "Expanded business, cash-flow, risk and follow-up analysis for 12 companies in both languages. Each period now opens the latest analysis. Fiscal-calendar labels, the Auto option and evidence styling are clearer."
+    },
+    "zh": {
+      "title": "分析与原文依据更新",
+      "text": "已补充 12 家公司的双语业务、现金流、风险及跟踪分析。每个财季默认展示最新分析，并改进财季说明、自动主题选项和原文依据样式。"
+    }
+  },
+  {
     "id": "2026-11-17-bilingual-research",
     "date": "2026-11-17",
     "en": {

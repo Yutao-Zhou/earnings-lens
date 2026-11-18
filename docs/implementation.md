@@ -42,7 +42,7 @@ OpenClaw performs collection and model inference before the website is built. Th
 - Embed all display data in the HTML at build time.
 - Include the CSS and JavaScript required for rendering and interaction in the output.
 - Render charts with embedded SVG or bundled local code.
-- Implement search, company selection, period selection, version selection, and evidence expansion locally.
+- Implement search, company selection, period selection, latest-analysis resolution, and evidence expansion locally.
 - Financial JSON, analysis, display scripts, styles and charts remain embedded. The user-authorized shared anonymous analytics module is the sole optional network exception on the production domain.
 - Permit explicit user navigation to original source links.
 - Preserve functionality when the HTML is opened directly from disk without a network connection.
@@ -104,7 +104,7 @@ Use English for default documentation, technical specifications, and operating i
 
 `npm test` covers dangling references, duplicate identifiers, incorrect growth and margin changes, missing values, negative baselines, incorrect periods, future-source leakage, placeholder production sources, revision ancestry, point-in-time selection, safe JSON serialization, deterministic builds, and retention of a good artifact after invalid input.
 
-Browser validation is separate from the Node tests. It should check company search, report and revision selection, evidence expansion, financial tables, history, empty states, responsive layout, and offline file navigation. The browser does not receive the Node validation dependencies.
+Browser validation is separate from the Node tests. It should check company search, report selection and latest-analysis resolution, evidence expansion, financial tables, history, empty states, responsive layout, and offline file navigation. The browser does not receive the Node validation dependencies.
 
 ## Source precision and extended materials
 
@@ -119,6 +119,8 @@ Apple FY2026 Q4 income metrics use standalone three-month columns. Cash flow is 
 ## Languages, themes and announcements
 
 `data/translations/<report_id>-v<revision>.json` contains the complete English narrative, labels, definitions and limitations corresponding to a Chinese report revision. Identity and array lengths are validated. Translation metrics may contain only text fields and cannot override financial values, units, evidence or accounting bases. Production builds fail on missing English editions. The raw report payload remains immutable; display localization applies an overlay from the embedded translation map.
+
+The reader opens the latest retained analysis for each fiscal period, including from legacy links containing a revision parameter. Internal revisions remain available to validation, historical cutoffs and analytics, but are not exposed as a reader control. FY labels follow the issuer's fiscal calendar. Source cards group identical URLs and provide native keyboard-accessible evidence disclosures. Evidence surfaces and history controls use the active theme's color variables.
 
 First visits use English regardless of browser locale. Explicit language and theme choices are stored under `earnings-lens.language` and `earnings-lens.theme`; blocked storage falls back safely. Auto theme uses local browser time, choosing dark at 19:00–06:59 and light at 07:00–18:59. It rechecks each minute and on tab visibility changes. Manual choices take precedence. A small head script applies the initial theme before CSS rendering.
 

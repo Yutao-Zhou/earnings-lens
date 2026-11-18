@@ -1,0 +1,529 @@
+{
+  "schema_version": "1.0",
+  "data_kind": "production",
+  "report_id": "0000937966-FY2026-Q3",
+  "revision": 2,
+  "revision_reason": "reanalysis",
+  "supersedes_revision": 1,
+  "validation_status": "passed",
+  "company": {
+    "id": "0000937966",
+    "cik": "0000937966",
+    "ticker": "ASML",
+    "name": "ASML"
+  },
+  "period": {
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "start": "2026-06-29",
+    "end": "2026-09-27"
+  },
+  "published_at": "2026-10-14T00:00:00-05:00",
+  "published_at_precision": "date",
+  "as_of": "2026-11-18T08:27:24.734Z",
+  "analyzed_at": "2026-11-18T08:27:24.734Z",
+  "coverage": {
+    "earnings_release": "available",
+    "regulatory_filing": "pending",
+    "transcript": "pending",
+    "supplemental_financials": "available"
+  },
+  "sources": [
+    {
+      "id": "facts",
+      "title": "Official quarterly financial tables",
+      "type": "supplemental_financials",
+      "url": "https://investor.asml.com/static-files/d310262b-d037-485d-83b5-92c93cc462f0",
+      "published_at": "2026-10-14T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T07:29:21.082Z"
+    },
+    {
+      "id": "release",
+      "title": "ASML quarterly results and financial highlights",
+      "type": "supplemental_financials",
+      "url": "https://investor.asml.com/static-files/d310262b-d037-485d-83b5-92c93cc462f0",
+      "published_at": "2026-10-14T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T07:29:21.082Z"
+    },
+    {
+      "id": "asml-release",
+      "title": "ASML Q3 2026 earnings release, furnished with Form 6-K",
+      "type": "earnings_release",
+      "url": "https://www.sec.gov/Archives/edgar/data/937966/000162828026065813/pressreleasefinancialresul.htm",
+      "published_at": "2026-10-14T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T08:27:24.734Z"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "metric-revenue",
+      "source_id": "facts",
+      "locator": "Consolidated financial statement cells; 2026-06-29 to 2026-09-27; EUR millions, except per-share and percentage amounts.",
+      "quote": "11,662"
+    },
+    {
+      "id": "metric-gross_margin",
+      "source_id": "facts",
+      "locator": "Gross profit/revenue or revenue/cost cells; use the metric definition for the ratio; 2026-06-29 to 2026-09-27; EUR millions, except per-share and percentage amounts.",
+      "quote": "6,699.8; 11,662.0"
+    },
+    {
+      "id": "metric-diluted_eps",
+      "source_id": "facts",
+      "locator": "Consolidated financial statement cells; 2026-06-29 to 2026-09-27; EUR millions, except per-share and percentage amounts.",
+      "quote": "12.93"
+    },
+    {
+      "id": "metric-net_income",
+      "source_id": "facts",
+      "locator": "Consolidated financial statement cells; 2026-06-29 to 2026-09-27; EUR millions, except per-share and percentage amounts.",
+      "quote": "4,960.4"
+    },
+    {
+      "id": "metric-operating_income",
+      "source_id": "facts",
+      "locator": "Consolidated financial statement cells; 2026-06-29 to 2026-09-27; EUR millions, except per-share and percentage amounts.",
+      "quote": "5,172.8"
+    },
+    {
+      "id": "metric-operating_cash_flow",
+      "source_id": "facts",
+      "locator": "Standalone quarterly cash-flow statement; EUR millions; cash-flow, capital-purchase and adjustment inputs; metric definitions preserve the disclosed scope.",
+      "quote": "11,797.6; 7,009.0; (413.3); (33.9)"
+    },
+    {
+      "id": "metric-cash_capex",
+      "source_id": "facts",
+      "locator": "Standalone quarterly cash-flow statement; EUR millions; cash-flow, capital-purchase and adjustment inputs; metric definitions preserve the disclosed scope.",
+      "quote": "11,797.6; 7,009.0; (413.3); (33.9)"
+    },
+    {
+      "id": "metric-free_cash_flow",
+      "source_id": "facts",
+      "locator": "Standalone quarterly cash-flow statement; EUR millions; cash-flow, capital-purchase and adjustment inputs; metric definitions preserve the disclosed scope.",
+      "quote": "11,797.6; 7,009.0; (413.3); (33.9)"
+    },
+    {
+      "id": "business",
+      "source_id": "release",
+      "locator": "Quarterly financial highlights, business results and measure definitions",
+      "quote": "ASML"
+    },
+    {
+      "id": "research-income",
+      "source_id": "facts",
+      "locator": "Consolidated income statement; EUR millions, except EPS; standalone quarter and comparative columns.",
+      "quote": "11,662; 5,172.8; 12.93"
+    },
+    {
+      "id": "research-cash",
+      "source_id": "facts",
+      "locator": "Financial summary/cash-flow reconciliation and stated measure definitions; EUR millions; distinguish standalone from cumulative columns.",
+      "quote": "11,797.6; 7,009.0; (413.3); (33.9)"
+    },
+    {
+      "id": "business-detail-1",
+      "source_id": "asml-release",
+      "locator": "Quarterly release/filing; business mix and segment results; EUR millions unless billions, rates or per-share figures are stated.",
+      "quote": "8,373.2; 5,553.8; 3,288.8; 1,962.2"
+    },
+    {
+      "id": "business-detail-2",
+      "source_id": "asml-release",
+      "locator": "Quarterly release/filing; earnings reconciliation and comparability; EUR millions unless billions, rates or per-share figures are stated.",
+      "quote": "509.7; 134.7; 12.93"
+    },
+    {
+      "id": "business-detail-3",
+      "source_id": "asml-release",
+      "locator": "Quarterly release/filing; outlook, financing and risk disclosures; EUR millions unless billions, rates or per-share figures are stated.",
+      "quote": "14.2; 15.2; 57%; 44; 45"
+    },
+    {
+      "id": "business-segment-1",
+      "source_id": "facts",
+      "locator": "System sales; reported segment/product/customer-category table; preserve the stated scope; EUR millions, except rates.",
+      "quote": "8,373.2; 121"
+    },
+    {
+      "id": "business-segment-2",
+      "source_id": "facts",
+      "locator": "Services and field options; reported segment/product/customer-category table; preserve the stated scope; EUR millions, except rates.",
+      "quote": "3,288.8"
+    }
+  ],
+  "metrics": [
+    {
+      "key": "revenue",
+      "label": "营业收入",
+      "value": 11662000000,
+      "unit": "currency",
+      "currency": "EUR",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-06-29",
+      "period_end": "2026-09-27",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-revenue"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 7516000000,
+          "baseline_start": "2025-06-30",
+          "baseline_end": "2025-09-28",
+          "baseline_evidence_ids": [
+            "metric-revenue"
+          ],
+          "change_pct": 55.16232038318254,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "gross_margin",
+      "label": "GAAP 毛利率",
+      "value": 57.5,
+      "unit": "percent",
+      "currency": null,
+      "basis": "derived",
+      "period_type": "duration",
+      "period_start": "2026-06-29",
+      "period_end": "2026-09-27",
+      "missing_reason": null,
+      "definition": "GAAP 毛利金额除以同季收入。",
+      "evidence_ids": [
+        "metric-gross_margin"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 51.6,
+          "baseline_start": "2025-06-30",
+          "baseline_end": "2025-09-28",
+          "baseline_evidence_ids": [
+            "metric-gross_margin"
+          ],
+          "change_pct": null,
+          "change_pp": 5.899999999999999,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "diluted_eps",
+      "label": "GAAP 摊薄每股收益",
+      "value": 12.93,
+      "unit": "currency_per_share",
+      "currency": "EUR",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-06-29",
+      "period_end": "2026-09-27",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-diluted_eps"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 5.48,
+          "baseline_start": "2025-06-30",
+          "baseline_end": "2025-09-28",
+          "baseline_evidence_ids": [
+            "metric-diluted_eps"
+          ],
+          "change_pct": 135.94890510948906,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "net_income",
+      "label": "归属股东净利润",
+      "value": 4960400000,
+      "unit": "currency",
+      "currency": "EUR",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-06-29",
+      "period_end": "2026-09-27",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-net_income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 2124500000,
+          "baseline_start": "2025-06-30",
+          "baseline_end": "2025-09-28",
+          "baseline_evidence_ids": [
+            "metric-net_income"
+          ],
+          "change_pct": 133.4855260061191,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "operating_income",
+      "label": "GAAP 营业利润",
+      "value": 5172800000,
+      "unit": "currency",
+      "currency": "EUR",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-06-29",
+      "period_end": "2026-09-27",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-operating_income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 2468400000,
+          "baseline_start": "2025-06-30",
+          "baseline_end": "2025-09-28",
+          "baseline_evidence_ids": [
+            "metric-operating_income"
+          ],
+          "change_pct": 109.56084913304163,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "operating_cash_flow",
+      "label": "经营活动现金流",
+      "value": 11797600000,
+      "unit": "currency",
+      "currency": "EUR",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-06-29",
+      "period_end": "2026-09-27",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-operating_cash_flow"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 559100000,
+          "baseline_start": "2025-06-30",
+          "baseline_end": "2025-09-28",
+          "baseline_evidence_ids": [
+            "metric-operating_cash_flow"
+          ],
+          "change_pct": 2010.1055267394026,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "cash_capex",
+      "label": "现金资本购置（含无形资产）",
+      "value": 447200000,
+      "unit": "currency",
+      "currency": "EUR",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-06-29",
+      "period_end": "2026-09-27",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-cash_capex"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 315400000,
+          "baseline_start": "2025-06-30",
+          "baseline_end": "2025-09-28",
+          "baseline_evidence_ids": [
+            "metric-cash_capex"
+          ],
+          "change_pct": 41.78820545339252,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "free_cash_flow",
+      "label": "自由现金流（计算值）",
+      "value": 11350400000,
+      "unit": "currency",
+      "currency": "EUR",
+      "basis": "derived",
+      "period_type": "duration",
+      "period_start": "2026-06-29",
+      "period_end": "2026-09-27",
+      "missing_reason": null,
+      "definition": "单季经营现金流减物业设备及无形资产购置。",
+      "evidence_ids": [
+        "metric-free_cash_flow"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 243700000.00000006,
+          "baseline_start": "2025-06-30",
+          "baseline_end": "2025-09-28",
+          "baseline_evidence_ids": [
+            "metric-free_cash_flow"
+          ],
+          "change_pct": 4557.529749692245,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    }
+  ],
+  "guidance": [
+    {
+      "label": "营业收入",
+      "target_period": "FY2026 Q4",
+      "period_start": "2026-09-28",
+      "period_end": null,
+      "low": 14200000000,
+      "high": 15200000000,
+      "unit": "currency",
+      "currency": "EUR",
+      "basis": "GAAP",
+      "evidence_ids": [
+        "business-detail-3"
+      ]
+    }
+  ],
+  "segments": [
+    {
+      "name": "系统销售类别",
+      "text": "收入 83.732 亿欧元，约占总销售额 71.8%。这是收入类别，并非单独的合并利润指标。财务表披露销售 121 台光刻系统，数量不含量测检测系统，也不意味着每台机器收入相同。",
+      "evidence_ids": [
+        "business-segment-1"
+      ]
+    },
+    {
+      "name": "服务与现场升级类别",
+      "text": "收入 32.888 亿欧元，约占总销售额 28.2%，管理层强调生产率升级需求。存量设备业务提供了不同于新机的收入来源，但不能把其全部季度增长直接当作订阅式经常性收入。",
+      "evidence_ids": [
+        "business-segment-2"
+      ]
+    }
+  ],
+  "follow_ups": [
+    {
+      "id": "company-follow-up-1",
+      "question": "第四季度销售爬坡能否匹配验收和产能执行？",
+      "status": "monitoring",
+      "update": "对照 142 至 152 亿欧元指引，核对实际销售、组合与交付说明。",
+      "next_check": "下一次官方业绩、申报文件及相关补充材料更新时。",
+      "evidence_ids": [
+        "business-detail-1",
+        "research-income"
+      ]
+    },
+    {
+      "id": "company-follow-up-2",
+      "question": "营运资本时点变化会使多少现金增长回转？",
+      "status": "monitoring",
+      "update": "核对客户预收款、应收及供应商付款，避免外推单季经营现金流。",
+      "next_check": "下一次官方业绩、申报文件及相关补充材料更新时。",
+      "evidence_ids": [
+        "business-detail-2",
+        "research-cash"
+      ]
+    },
+    {
+      "id": "company-follow-up-3",
+      "question": "剔除投资收益影响后，经常性经营盈利如何？",
+      "status": "monitoring",
+      "update": "把设备与服务经营表现和股权投资及权益法贡献分开评价。",
+      "next_check": "下一次官方业绩、申报文件及相关补充材料更新时。",
+      "evidence_ids": [
+        "business-detail-3",
+        "research-income"
+      ]
+    }
+  ],
+  "limitations": [
+    "依据已列明的官方申报、业绩及财务附件进行分析；尚未完成官方电话会文字材料审阅。",
+    "业务类别、地区拆分、报告分部与调整指标采用各自披露范围，不能重复相加或替代合并 GAAP 数值。",
+    "现金流采用单季金额，累计披露按相邻期间相减；公司调整口径、融资租赁和激励款等差异见指标定义。",
+    "未保留披露前市场一致预期快照，不作超预期判断；未来指引与分析推断不等于已实现结果。"
+  ],
+  "summary": {
+    "text": "系统与存量设备相关销售共同增长，带动经营杠杆；强劲的现金季度还明显受益于营运资本变化，股权投资收益也贡献了盈利。应把欧元及 US GAAP 业绩、现金转化、管理层产能及收入展望分别解读，而非当成单一的需求信号。",
+    "evidence_ids": [
+      "research-income",
+      "research-cash",
+      "business-detail-1",
+      "business-detail-2",
+      "business-detail-3"
+    ]
+  },
+  "findings": [
+    {
+      "kind": "fact",
+      "text": "营业收入 116.62 亿欧元，同比变化 55.162%；GAAP 摊薄 EPS 为 12.93 欧元，上年同期为 5.48 欧元。这些是 2026-06-29 至 2026-09-27 的已实现单季结果，需结合业务组合及特殊项目评价合并同比。",
+      "evidence_ids": [
+        "metric-revenue",
+        "metric-diluted_eps"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "GAAP 营业利润为 51.728 亿欧元，除以收入后，营业利润率约为 44.356%，上年同期约 32.842%。财务表另保留 GAAP 毛利率 57.5%。毛利率和营业利润率对应不同费用层级，都不等于资本投入后的现金结余或既有资产回报。",
+      "evidence_ids": [
+        "research-income"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "经营现金流为 117.976 亿欧元，上年同期为 5.591 亿欧元，其中资产负债变化带来 70.09 亿欧元有利贡献。扣除设备购置 4.133 亿欧元及无形资产购置 0.339 亿欧元后，计算自由现金流为 113.504 亿欧元。营运资本贡献很大，不能据此假定未来脱离客户预付款、回款和供应商付款节奏仍能维持相同转化率。",
+      "evidence_ids": [
+        "research-cash",
+        "metric-free_cash_flow"
+      ]
+    },
+    {
+      "kind": "fact",
+      "text": "系统销售从 55.538 亿欧元增至 83.732 亿欧元，服务与现场升级从 19.622 亿欧元增至 32.888 亿欧元，两者都贡献增长。后者包含存量设备升级及支持，不能解释为新机销量；收入确认时点及产品组合会影响合并利润率。",
+      "evidence_ids": [
+        "business-detail-1"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "US GAAP 利润表包含 5.097 亿欧元股权投资收益，以及 1.347 亿欧元权益法投资相关利润，均影响营业利润之后的结果。因此摊薄 EPS 12.93 欧元不只反映设备销售的经营杠杆，评价经常性经营利润时应保留这些贡献。",
+      "evidence_ids": [
+        "business-detail-2"
+      ]
+    },
+    {
+      "kind": "risk",
+      "text": "管理层预计第四季度销售额 142 至 152 亿欧元、毛利率约 57%，全年销售额 440 至 450 亿欧元，并说明客户需求高于当前计划产能。这些属于管理层预测及产能判断，不能当作已实现订单或收入；交付验收、产品组合及客户付款时点仍影响需求转化为现金。",
+      "evidence_ids": [
+        "business-detail-3"
+      ]
+    }
+  ]
+}

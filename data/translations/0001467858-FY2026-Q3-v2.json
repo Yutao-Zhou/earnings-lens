@@ -1,0 +1,90 @@
+{
+  "report_id": "0001467858-FY2026-Q3",
+  "revision": 2,
+  "en": {
+    "summary": "North America drove improved adjusted earnings, while international and finance results were weaker. Share repurchases also affect per-share comparisons. The cash story requires particular care: adjusted automotive FCF has a different perimeter from consolidated OCF, and an annual guidance increase is not a fourth-quarter result already earned.",
+    "findings": [
+      "Revenue was $50.015B, changing 2.931% YoY. GAAP diluted EPS was $3.73 versus $1.35 a year ago. These are realized standalone results for 2026-07-01–2026-09-30; changes in the business mix and special items need to be evaluated alongside the consolidated comparison.",
+      "GAAP operating income was $3.598B. Dividing it by revenue gives an operating margin of about 7.194%, versus 2.214% a year ago. Gross and operating margins measure different expense levels; neither measures cash left after capital investment or the return earned on the installed asset base.",
+      "Automotive OCF was $8.049B and adjusted automotive FCF $5.882B. The financial table separately contains consolidated OCF of $7.316B and cash PPE purchases of $2.346B. Subtracting the latter pair would give a different $4.970B consolidated calculation. The site preserves the company’s automotive measure rather than mixing its adjusted/perimeter result with consolidated cash inputs.",
+      "Adjusted EBIT increased to $4.106B from $3.376B, while North America contributed $3.592B versus $2.506B. International adjusted EBIT fell to $28M from $226M and GM Financial adjusted EBT fell to $668M from $804M. The improvement is therefore concentrated rather than uniform across geography and financing activities.",
+      "GAAP diluted EPS was $3.73 versus $1.35, while adjusted EPS was $3.70 versus $2.80. Outstanding shares fell to 849M from 904M at year-end 2025. EPS reflects earnings and the weighted-average diluted share count; the period-end count is useful capital-return context but is not the denominator used to recompute reported EPS.",
+      "Full-year adjusted EBIT guidance narrowed to $14.5B–$15.5B from $14B–$16B, while adjusted automotive FCF guidance increased to $11.5B–$12.5B from $9.5B–$11.5B. The new $20B repurchase authorization has no expiry and can be suspended. Neither the guidance nor the authorization represents cash already generated or shares already repurchased."
+    ],
+    "segments": [
+      {
+        "name": "GM North America",
+        "text": "Adjusted EBIT was $3.592B and adjusted margin 8.7%, versus $2.506B and 6.2% a year ago. This is the main operating improvement, but both figures are adjusted measures and should not be substituted for the group’s GAAP operating margin."
+      },
+      {
+        "name": "GM International",
+        "text": "Adjusted EBIT was $28M versus $226M; China equity income was $32M versus $80M. Equity-method joint-venture income is not the same as consolidated regional revenue, so a geographic sales-growth conclusion cannot be inferred from these profit lines alone."
+      },
+      {
+        "name": "GM Financial",
+        "text": "Adjusted EBT was $668M versus $804M. It measures financing activity on a pretax adjusted basis, distinct from automotive EBIT and automotive FCF. Credit performance, funding costs and lease residuals are relevant subsequent disclosures for assessing the lower result."
+      }
+    ],
+    "guidance": [],
+    "follow_ups": [
+      {
+        "question": "Can North America retain its improved adjusted margin?",
+        "update": "Track mix, incentives, costs and the GAAP-to-adjusted reconciliation.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      },
+      {
+        "question": "Will international and financing weakness stabilize?",
+        "update": "Review GMI, China equity income and GM Financial’s credit/funding indicators separately.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      },
+      {
+        "question": "Will capital returns follow realized automotive cash generation?",
+        "update": "Compare actual repurchases, dividend cash and automotive FCF; keep authorization capacity separate.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      }
+    ],
+    "limitations": [
+      "Analysis uses the listed official filings, releases and financial attachments; official call text has not been fully reviewed.",
+      "Product/geographic categories, reportable segments and adjusted measures retain their disclosed perimeters and must not be double-counted or substituted for consolidated GAAP results.",
+      "Cash flows are standalone; cumulative disclosures are differenced across adjacent periods. Issuer adjustments, leases and incentives are identified in metric definitions.",
+      "No pre-release consensus snapshot was preserved. Management guidance and analytical inferences are distinct from realized results."
+    ],
+    "metrics": [
+      {
+        "key": "revenue",
+        "label": "Revenue"
+      },
+      {
+        "key": "gross_margin",
+        "label": "GAAP gross margin",
+        "definition": "GAAP gross profit divided by quarterly revenue.",
+        "missing_reason": "A comparable standalone quarterly value has not been verified."
+      },
+      {
+        "key": "diluted_eps",
+        "label": "GAAP diluted EPS"
+      },
+      {
+        "key": "net_income",
+        "label": "Net income attributable to stockholders"
+      },
+      {
+        "key": "operating_income",
+        "label": "GAAP operating income"
+      },
+      {
+        "key": "operating_cash_flow",
+        "label": "Operating cash flow"
+      },
+      {
+        "key": "cash_capex",
+        "label": "Cash capital purchases"
+      },
+      {
+        "key": "free_cash_flow",
+        "label": "Adjusted automotive free cash flow",
+        "definition": "Company non-GAAP automotive perimeter and reconciliation; not consolidated free cash flow."
+      }
+    ]
+  }
+}

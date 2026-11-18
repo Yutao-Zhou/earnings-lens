@@ -1,0 +1,527 @@
+{
+  "schema_version": "1.0",
+  "data_kind": "production",
+  "report_id": "0001652044-FY2026-Q3",
+  "revision": 2,
+  "revision_reason": "reanalysis",
+  "supersedes_revision": 1,
+  "validation_status": "passed",
+  "company": {
+    "id": "0001652044",
+    "cik": "0001652044",
+    "ticker": "GOOGL",
+    "name": "Alphabet"
+  },
+  "period": {
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "start": "2026-07-01",
+    "end": "2026-09-30"
+  },
+  "published_at": "2026-10-28T00:00:00-05:00",
+  "published_at_precision": "date",
+  "as_of": "2026-11-18T08:27:24.023Z",
+  "analyzed_at": "2026-11-18T08:27:24.023Z",
+  "coverage": {
+    "earnings_release": "available",
+    "regulatory_filing": "available",
+    "transcript": "pending",
+    "supplemental_financials": "available"
+  },
+  "sources": [
+    {
+      "id": "filing",
+      "title": "Alphabet 10-Q — period ended 2026-09-30",
+      "type": "regulatory_filing",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+      "published_at": "2026-10-29T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T07:08:56.558Z"
+    },
+    {
+      "id": "facts",
+      "title": "Alphabet SEC XBRL financial facts",
+      "type": "supplemental_financials",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json",
+      "published_at": "2026-10-29T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T07:29:16.497Z"
+    },
+    {
+      "id": "release",
+      "title": "Alphabet quarterly results and financial highlights",
+      "type": "earnings_release",
+      "url": "https://s206.q4cdn.com/479360582/files/doc_news/2026/Oct/28/attachments/2026q3-alphabet-earnings-release.pdf",
+      "published_at": "2026-10-28T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T07:29:16.497Z"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "metric-revenue",
+      "source_id": "filing",
+      "locator": "Consolidated financial statement cells; 2026-07-01 to 2026-09-30; USD millions, except per-share and percentage amounts.",
+      "quote": "127,577"
+    },
+    {
+      "id": "metric-gross_margin",
+      "source_id": "filing",
+      "locator": "Gross profit/revenue or revenue/cost cells; use the metric definition for the ratio; 2026-07-01 to 2026-09-30; USD millions, except per-share and percentage amounts.",
+      "quote": "127,577; 51,419"
+    },
+    {
+      "id": "metric-diluted_eps",
+      "source_id": "filing",
+      "locator": "Consolidated financial statement cells; 2026-07-01 to 2026-09-30; USD millions, except per-share and percentage amounts.",
+      "quote": "2.12"
+    },
+    {
+      "id": "metric-net_income",
+      "source_id": "filing",
+      "locator": "Consolidated financial statement cells; 2026-07-01 to 2026-09-30; USD millions, except per-share and percentage amounts.",
+      "quote": "26,170"
+    },
+    {
+      "id": "metric-operating_income",
+      "source_id": "filing",
+      "locator": "Consolidated financial statement cells; 2026-07-01 to 2026-09-30; USD millions, except per-share and percentage amounts.",
+      "quote": "40,576"
+    },
+    {
+      "id": "metric-operating_cash_flow",
+      "source_id": "facts",
+      "locator": "SEC XBRL financial facts; NetCashProvidedByUsedInOperatingActivities: 2026-01-01 to 2026-09-30, less 2026-01-01 to 2026-06-30; amounts in full USD. Standalone quarter uses the displayed cumulative subtraction where applicable.",
+      "quote": "127149000000; 84859000000"
+    },
+    {
+      "id": "metric-cash_capex",
+      "source_id": "facts",
+      "locator": "SEC XBRL financial facts; PaymentsToAcquirePropertyPlantAndEquipment: 2026-01-01 to 2026-09-30, less 2026-01-01 to 2026-06-30; amounts in full USD. Standalone quarter uses the displayed cumulative subtraction where applicable.",
+      "quote": "131953000000; 80598000000"
+    },
+    {
+      "id": "metric-free_cash_flow",
+      "source_id": "facts",
+      "locator": "SEC XBRL financial facts; NetCashProvidedByUsedInOperatingActivities: 2026-01-01 to 2026-09-30, less 2026-01-01 to 2026-06-30; PaymentsToAcquirePropertyPlantAndEquipment: 2026-01-01 to 2026-09-30, less 2026-01-01 to 2026-06-30; amounts in full USD. Quarterly cash inputs; issuer adjustments are cited separately.",
+      "quote": "127149000000; 84859000000; 131953000000; 80598000000"
+    },
+    {
+      "id": "business",
+      "source_id": "release",
+      "locator": "Quarterly financial highlights, business results and measure definitions",
+      "quote": "Alphabet"
+    },
+    {
+      "id": "research-income",
+      "source_id": "filing",
+      "locator": "Consolidated income statement; USD millions, except EPS; standalone quarter and comparative columns.",
+      "quote": "127,577; 40,576; 2.12"
+    },
+    {
+      "id": "research-cash",
+      "source_id": "release",
+      "locator": "Financial summary/cash-flow reconciliation and stated measure definitions; USD millions; distinguish standalone from cumulative columns.",
+      "quote": "48,414; 42,290; (23,953); (51,355)"
+    },
+    {
+      "id": "business-detail-1",
+      "source_id": "release",
+      "locator": "Quarterly release/filing; business mix and segment results; USD millions unless billions, rates or per-share figures are stated.",
+      "quote": "30,709; 15,157; 11,121; 3,594"
+    },
+    {
+      "id": "business-detail-2",
+      "source_id": "release",
+      "locator": "Quarterly release/filing; earnings reconciliation and comparability; USD millions unless billions, rates or per-share figures are stated.",
+      "quote": "12,759; (8,221); 26,170; 40,576"
+    },
+    {
+      "id": "business-detail-3",
+      "source_id": "release",
+      "locator": "Quarterly release/filing; outlook, financing and risk disclosures; USD millions unless billions, rates or per-share figures are stated.",
+      "quote": "4.3; 8.1; 28.7"
+    },
+    {
+      "id": "business-segment-1",
+      "source_id": "release",
+      "locator": "Google Services; reported segment/product/customer-category table; preserve the stated scope; USD millions, except rates.",
+      "quote": "96,302; 39,157; 63,350; 11,207"
+    },
+    {
+      "id": "business-segment-2",
+      "source_id": "release",
+      "locator": "Google Cloud; reported segment/product/customer-category table; preserve the stated scope; USD millions, except rates.",
+      "quote": "30,709; 11,121"
+    },
+    {
+      "id": "business-segment-3",
+      "source_id": "release",
+      "locator": "Other Bets and central costs; reported segment/product/customer-category table; preserve the stated scope; USD millions, except rates.",
+      "quote": "372; (2,047); (7,655)"
+    }
+  ],
+  "metrics": [
+    {
+      "key": "revenue",
+      "label": "营业收入",
+      "value": 127577000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-revenue"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 102346000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-revenue"
+          ],
+          "change_pct": 24.652648857796102,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "gross_margin",
+      "label": "GAAP 毛利率",
+      "value": 59.69571317714008,
+      "unit": "percent",
+      "currency": null,
+      "basis": "derived",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": "GAAP 毛利金额除以同季收入。",
+      "evidence_ids": [
+        "metric-gross_margin"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 59.579270318331936,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-gross_margin"
+          ],
+          "change_pct": null,
+          "change_pp": 0.11644285880814209,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "diluted_eps",
+      "label": "GAAP 摊薄每股收益",
+      "value": 2.12,
+      "unit": "currency_per_share",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-diluted_eps"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 2.87,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-diluted_eps"
+          ],
+          "change_pct": -26.132404181184665,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "net_income",
+      "label": "归属普通股股东净利润",
+      "value": 26170000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-net_income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 34979000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-net_income"
+          ],
+          "change_pct": -25.183681637553956,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "operating_income",
+      "label": "GAAP 营业利润",
+      "value": 40576000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-operating_income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 31228000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-operating_income"
+          ],
+          "change_pct": 29.934674010503404,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "operating_cash_flow",
+      "label": "经营活动现金流",
+      "value": 42290000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-operating_cash_flow"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 48414000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-operating_cash_flow"
+          ],
+          "change_pct": -12.649233692733509,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "cash_capex",
+      "label": "现金资本购置",
+      "value": 51355000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-cash_capex"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 23953000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-cash_capex"
+          ],
+          "change_pct": 114.39903143656326,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "free_cash_flow",
+      "label": "自由现金流（计算值）",
+      "value": -9065000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "derived",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": "单季经营现金流减现金资本购置。",
+      "evidence_ids": [
+        "metric-free_cash_flow"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 24461000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-free_cash_flow"
+          ],
+          "change_pct": -137.05899186460078,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    }
+  ],
+  "guidance": [],
+  "segments": [
+    {
+      "name": "Google Services",
+      "text": "收入 963.02 亿美元，营业利润 391.57 亿美元，计算利润率约 40.7%；Search & other 收入 633.50 亿美元，YouTube 广告收入 112.07 亿美元。广告及订阅、设备类别属于 Services 内部拆分，不能与分部总收入重复相加。",
+      "evidence_ids": [
+        "business-segment-1"
+      ]
+    },
+    {
+      "name": "Google Cloud",
+      "text": "收入 307.09 亿美元，按原始金额计算同比约增 102.6%。分部营业利润 111.21 亿美元未包含 Alphabet 层面的全部费用，不能等同于集团扣除共享研发、融资及税费后的利润。",
+      "evidence_ids": [
+        "business-segment-2"
+      ]
+    },
+    {
+      "name": "Other Bets 与总部费用",
+      "text": "Other Bets 收入 3.72 亿美元，营业亏损 20.47 亿美元；Alphabet 层面活动发生 76.55 亿美元经营费用，主要涉及共享 AI 研发。评价集团回报时，需要把这些项目纳入分部利润到合并利润的调节。",
+      "evidence_ids": [
+        "business-segment-3"
+      ]
+    }
+  ],
+  "follow_ups": [
+    {
+      "id": "company-follow-up-1",
+      "question": "Cloud 增长中，经常性用量与系统销售分别贡献多少？",
+      "status": "monitoring",
+      "update": "结合管理层业务组合说明、分部利润率和现金回收核对。",
+      "next_check": "下一次官方业绩、申报文件及相关补充材料更新时。",
+      "evidence_ids": [
+        "business-detail-1",
+        "research-income"
+      ]
+    },
+    {
+      "id": "company-follow-up-2",
+      "question": "基础设施投资能否带来更多自由现金流？",
+      "status": "monitoring",
+      "update": "当前单季设备购置高于经营现金流，重点跟踪缺口变化。",
+      "next_check": "下一次官方业绩、申报文件及相关补充材料更新时。",
+      "evidence_ids": [
+        "business-detail-2",
+        "research-cash"
+      ]
+    },
+    {
+      "id": "company-follow-up-3",
+      "question": "投资损益和融资如何影响每股盈利？",
+      "status": "monitoring",
+      "update": "分别核对非经营损益、普通股股东盈利口径及新增股数。",
+      "next_check": "下一次官方业绩、申报文件及相关补充材料更新时。",
+      "evidence_ids": [
+        "business-detail-3",
+        "research-income"
+      ]
+    }
+  ],
+  "limitations": [
+    "依据已列明的官方申报、业绩及财务附件进行分析；尚未完成官方电话会文字材料审阅。",
+    "业务类别、地区拆分、报告分部与调整指标采用各自披露范围，不能重复相加或替代合并 GAAP 数值。",
+    "现金流采用单季金额，累计披露按相邻期间相减；公司调整口径、融资租赁和激励款等差异见指标定义。",
+    "未保留披露前市场一致预期快照，不作超预期判断；未来指引与分析推断不等于已实现结果。"
+  ],
+  "summary": {
+    "text": "Cloud 扩张明显快于 Services，并带来经营杠杆，但非经营损益比较大幅转弱，使合并 EPS 下降。设备投资还超过了单季经营现金流。后续重点是云利润的持续性、Services 的现金创造，以及基础设施扩张需要怎样的融资支持。",
+    "evidence_ids": [
+      "research-income",
+      "research-cash",
+      "business-detail-1",
+      "business-detail-2",
+      "business-detail-3"
+    ]
+  },
+  "findings": [
+    {
+      "kind": "fact",
+      "text": "营业收入 1,275.77 亿美元，同比变化 24.653%；GAAP 摊薄 EPS 为 2.12 美元，上年同期为 2.87 美元。这些是 2026-07-01 至 2026-09-30 的已实现单季结果，需结合业务组合及特殊项目评价合并同比。",
+      "evidence_ids": [
+        "metric-revenue",
+        "metric-diluted_eps"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "GAAP 营业利润为 405.76 亿美元，除以收入后，营业利润率约为 31.805%，上年同期约 30.512%。财务表另保留 GAAP 毛利率 59.696%。毛利率和营业利润率对应不同费用层级，都不等于资本投入后的现金结余或既有资产回报。",
+      "evidence_ids": [
+        "research-income"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "单季经营现金流 422.90 亿美元，低于上年同期 484.14 亿美元；物业设备购置从 239.53 亿美元增至 513.55 亿美元，使计算自由现金流从正 244.61 亿美元变为负 90.65 亿美元。变化来自经营回款走弱与现金投资大幅增加两端，不能只凭营业利润增长判断现金转化改善。",
+      "evidence_ids": [
+        "research-cash",
+        "metric-free_cash_flow"
+      ]
+    },
+    {
+      "kind": "fact",
+      "text": "Google Cloud 收入从 151.57 亿美元增至 307.09 亿美元，分部营业利润从 35.94 亿美元增至 111.21 亿美元，计算分部利润率由约 23.7% 升至 36.2%。经营杠杆改善明显，但公告也说明 TPU 系统销售带来贡献，因此不能把全部增长直接视作经常性用量增长。",
+      "evidence_ids": [
+        "business-detail-1"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "其他损益从收益 127.59 亿美元变为费用 82.21 亿美元，税前同比不利变化达 209.80 亿美元。这有助于解释为何营业利润达到 405.76 亿美元，归属普通股股东盈利却降至 261.70 亿美元。经营业务、投资等非经营影响应分开，净利润与普通股股东可得盈利也要区分。",
+      "evidence_ids": [
+        "business-detail-2"
+      ]
+    },
+    {
+      "kind": "risk",
+      "text": "公司本季通过 A/C 类股票发行取得净现金 124 亿美元，并通过优先票据取得净资金 287 亿美元。这些有助于支持投资，但属于融资活动。后续需把资本投入与经营现金创造、股数及利息负担一起观察；已取得公告不足以用市场评论填入精确的下一季度收入区间。",
+      "evidence_ids": [
+        "business-detail-3"
+      ]
+    }
+  ]
+}

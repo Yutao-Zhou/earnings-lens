@@ -1,0 +1,91 @@
+{
+  "report_id": "0000002488-FY2026-Q3",
+  "revision": 2,
+  "en": {
+    "summary": "Data Center supplied most incremental revenue and a growing share of segment profit, while Gaming weakened and cash conversion lagged earnings. The investment case in the reported quarter therefore has two different sides: strong server/AI operating leverage and a much smaller free-cash-flow outcome. Upcoming revenue guidance needs to be tested against margins, collections and capital requirements.",
+    "findings": [
+      "Revenue was $13.377B, changing 44.679% YoY. GAAP diluted EPS was $1.46 versus $0.75 a year ago. These are realized standalone results for 2026-06-28–2026-09-26; changes in the business mix and special items need to be evaluated alongside the consolidated comparison.",
+      "GAAP operating income was $2.832B. Dividing it by revenue gives an operating margin of about 21.171%, versus 13.736% a year ago. The financial table separately retains GAAP gross margin of 53.898%. Gross and operating margins measure different expense levels; neither measures cash left after capital investment or the return earned on the installed asset base.",
+      "Continuing-operations OCF was $1.202B versus $1.788B a year ago. Cash capex rose to $648M from $258M, reducing FCF to $554M from $1.530B, about a 63.8% decline. The prior-year total-operations OCF also included discontinued operations; using that larger number would mix scopes. The cash gap warrants checking receivables, inventory and payment timing without assuming one cause.",
+      "Data Center revenue rose from $4.341B to $8.546B, contributing $4.205B of growth against $4.131B of consolidated growth. Declines elsewhere offset part of that increase. Data Center operating income rose to $2.882B from $1.074B; the segment’s approximately 33.7% operating margin should be read as a segment measure, before corporate/unallocated costs.",
+      "The three operating segments generated $3.908B of operating profit in total, while All Other costs of $1.076B reconcile that to GAAP operating income of $2.832B. Company non-GAAP EPS of $2.09 exceeds GAAP EPS of $1.46. Segment strength and adjusted profitability therefore require the acquisition-intangible, compensation and other reconciliation items to remain visible.",
+      "Management guides Q4 revenue to $17B plus or minus 3%, equivalent to $16.49B–$17.51B, with non-GAAP gross margin of 55%. That midpoint implies substantial sequential growth, but it remains a forecast. Delivery timing, supply, customer collections and the gap between GAAP and adjusted margins must be checked before treating the guided revenue as realized cash-generating growth."
+    ],
+    "segments": [
+      {
+        "name": "Data Center",
+        "text": "Revenue was $8.546B, up approximately 96.9% YoY, and operating income $2.882B. The segment includes server CPUs, AI accelerators and other data-center products; it is broader than GPU revenue alone."
+      },
+      {
+        "name": "Client and Gaming",
+        "text": "Combined revenue was $3.722B versus $4.048B. Client revenue increased to $2.949B from $2.750B, while Gaming fell to $773M from $1.298B. The combined decline therefore masks different demand trends, and the two product figures must not be added again to the segment total."
+      },
+      {
+        "name": "Embedded",
+        "text": "Revenue was $1.109B versus $857M, and operating income $453M versus $283M. Recovery here supports diversification, but the much smaller revenue base means it does not currently replace the group’s dependence on Data Center growth."
+      }
+    ],
+    "guidance": [
+      "Revenue"
+    ],
+    "follow_ups": [
+      {
+        "question": "Will Data Center growth translate into stronger cash conversion?",
+        "update": "Compare continuing-operations OCF and working capital with revenue and segment profit.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      },
+      {
+        "question": "Will the Q4 revenue ramp preserve reported profitability?",
+        "update": "Check realized revenue against the $16.49B–$17.51B range and retain both GAAP and adjusted margins.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      },
+      {
+        "question": "Can Client growth and Embedded recovery offset Gaming weakness?",
+        "update": "Track each product category separately rather than interpreting the combined segment as one demand cycle.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      }
+    ],
+    "limitations": [
+      "Analysis uses the listed official filings, releases and financial attachments; official call text has not been fully reviewed.",
+      "Product/geographic categories, reportable segments and adjusted measures retain their disclosed perimeters and must not be double-counted or substituted for consolidated GAAP results.",
+      "Cash flows are standalone; cumulative disclosures are differenced across adjacent periods. Issuer adjustments, leases and incentives are identified in metric definitions.",
+      "No pre-release consensus snapshot was preserved. Management guidance and analytical inferences are distinct from realized results."
+    ],
+    "metrics": [
+      {
+        "key": "revenue",
+        "label": "Revenue"
+      },
+      {
+        "key": "gross_margin",
+        "label": "GAAP gross margin",
+        "definition": "GAAP gross profit divided by quarterly revenue."
+      },
+      {
+        "key": "diluted_eps",
+        "label": "GAAP diluted EPS"
+      },
+      {
+        "key": "net_income",
+        "label": "Net income attributable to stockholders"
+      },
+      {
+        "key": "operating_income",
+        "label": "GAAP operating income"
+      },
+      {
+        "key": "operating_cash_flow",
+        "label": "Operating cash flow (continuing operations)"
+      },
+      {
+        "key": "cash_capex",
+        "label": "Cash capital purchases"
+      },
+      {
+        "key": "free_cash_flow",
+        "label": "Calculated free cash flow",
+        "definition": "Standalone quarterly operating cash flow less cash capital purchases."
+      }
+    ]
+  }
+}

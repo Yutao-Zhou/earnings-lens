@@ -1,0 +1,89 @@
+{
+  "report_id": "0001181412-FY2026-Q3",
+  "revision": 2,
+  "en": {
+    "summary": "Growth is now driven by SI and Connectivity rather than launch revenue alone. Consolidated operating profit turned positive, but the cash investment requirement remains much larger than the current operating-profit base. Acquisitions affect comparability, and adjusted EBITDA should be assessed alongside cash investment and GAAP earnings rather than used as a substitute for them.",
+    "findings": [
+      "Revenue was $14.575B, changing 161.388% YoY. GAAP diluted EPS was $0.35 versus $-0.36 a year ago. These are realized standalone results for 2026-07-01–2026-09-30; changes in the business mix and special items need to be evaluated alongside the consolidated comparison.",
+      "GAAP operating income was $2.791B. Dividing it by revenue gives an operating margin of about 19.149%, versus -4.896% a year ago. The financial table separately retains GAAP gross margin of 62.415%. Gross and operating margins measure different expense levels; neither measures cash left after capital investment or the return earned on the installed asset base.",
+      "Quarterly OCF was $9.631B and cash property/equipment purchases were $19.593B, giving calculated FCF of negative $9.962B. Most disclosed segment capex was in SI at $16.444B. Adjusted EBITDA of $8.809B is neither OCF nor cash remaining after capital investment; the gap makes funding, utilization and actual investment returns central follow-ups.",
+      "SI revenue reached $7.560B versus $813M a year ago, while Connectivity grew to $5.248B from $3.097B. Space revenue was $1.767B versus $1.666B. These different growth rates materially change the business mix; a consolidated growth percentage should not be interpreted as launch-demand growth.",
+      "Net income improved from a $1.054B loss to a $4.404B profit, while operating income was $2.791B. The difference means below-the-line items also matter. The prior diluted EPS baseline was negative $0.36 versus current $0.35, so ordinary percentage EPS growth is not meaningful; the loss-to-profit transition is shown directly instead.",
+      "The period includes the acquisition of Cursor/Anysphere. Connectivity subscribers increased to 13.6M from 7.2M a year ago, while reported consumer monthly ARPU fell to $69 from $83. Growth therefore combines customer expansion, pricing/mix and acquisition effects. The collected sources do not isolate a full organic-growth bridge or a verified consolidated next-quarter revenue range."
+    ],
+    "segments": [
+      {
+        "name": "Space",
+        "text": "Revenue was $1.767B and operating loss $7M, compared with $259M of operating profit a year ago. Segment capex was $1.606B. Launch revenue and development spending have different timing, so a launch milestone alone does not establish near-term segment cash profitability."
+      },
+      {
+        "name": "Connectivity",
+        "text": "Revenue was $5.248B and operating income $2.367B, about a 45.1% operating margin. Enterprise/government revenue was $2.127B and consumer revenue $3.121B. Subscriber growth and ARPU should be read alongside the changing customer mix."
+      },
+      {
+        "name": "Super Intelligence (SI)",
+        "text": "Revenue was $7.560B and operating income $431M, versus a $1.722B operating loss a year ago. Segment capex of $16.444B exceeded current revenue. The ramp materially improves reported operations while creating a large future utilization and financing requirement."
+      }
+    ],
+    "guidance": [],
+    "follow_ups": [
+      {
+        "question": "Will SI utilization support the scale of capital spending?",
+        "update": "Track segment revenue, operating profit and cash capex alongside the capacity ramp.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      },
+      {
+        "question": "Can Connectivity growth offset lower consumer ARPU?",
+        "update": "Review subscriber count, consumer ARPU and enterprise/government mix separately.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      },
+      {
+        "question": "How much growth comes from acquisitions and non-operating items?",
+        "update": "Seek an organic-growth reconciliation and the bridge from operating to net income.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      }
+    ],
+    "limitations": [
+      "Analysis uses the listed official filings, releases and financial attachments; official call text has not been fully reviewed.",
+      "Product/geographic categories, reportable segments and adjusted measures retain their disclosed perimeters and must not be double-counted or substituted for consolidated GAAP results.",
+      "Cash flows are standalone; cumulative disclosures are differenced across adjacent periods. Issuer adjustments, leases and incentives are identified in metric definitions.",
+      "No pre-release consensus snapshot was preserved. Management guidance and analytical inferences are distinct from realized results."
+    ],
+    "metrics": [
+      {
+        "key": "revenue",
+        "label": "Revenue"
+      },
+      {
+        "key": "gross_margin",
+        "label": "GAAP gross margin",
+        "definition": "GAAP gross profit divided by quarterly revenue."
+      },
+      {
+        "key": "diluted_eps",
+        "label": "GAAP diluted EPS"
+      },
+      {
+        "key": "net_income",
+        "label": "Net income attributable to stockholders"
+      },
+      {
+        "key": "operating_income",
+        "label": "GAAP operating income"
+      },
+      {
+        "key": "operating_cash_flow",
+        "label": "Operating cash flow"
+      },
+      {
+        "key": "cash_capex",
+        "label": "Cash capital purchases"
+      },
+      {
+        "key": "free_cash_flow",
+        "label": "Calculated free cash flow",
+        "definition": "Standalone quarterly operating cash flow less cash capital purchases."
+      }
+    ]
+  }
+}

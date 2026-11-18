@@ -1,0 +1,514 @@
+{
+  "schema_version": "1.0",
+  "data_kind": "production",
+  "report_id": "0001467858-FY2026-Q3",
+  "revision": 2,
+  "revision_reason": "reanalysis",
+  "supersedes_revision": 1,
+  "validation_status": "passed",
+  "company": {
+    "id": "0001467858",
+    "cik": "0001467858",
+    "ticker": "GM",
+    "name": "General Motors"
+  },
+  "period": {
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "start": "2026-07-01",
+    "end": "2026-09-30"
+  },
+  "published_at": "2026-10-20T00:00:00-05:00",
+  "published_at_precision": "date",
+  "as_of": "2026-11-18T08:27:24.023Z",
+  "analyzed_at": "2026-11-18T08:27:24.023Z",
+  "coverage": {
+    "earnings_release": "available",
+    "regulatory_filing": "available",
+    "transcript": "pending",
+    "supplemental_financials": "available"
+  },
+  "sources": [
+    {
+      "id": "filing",
+      "title": "General Motors 10-Q — period ended 2026-09-30",
+      "type": "regulatory_filing",
+      "url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000059/gm-20260930.htm",
+      "published_at": "2026-10-20T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T07:08:58.760Z"
+    },
+    {
+      "id": "facts",
+      "title": "General Motors SEC XBRL financial facts",
+      "type": "supplemental_financials",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001467858.json",
+      "published_at": "2026-10-20T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T07:29:21.823Z"
+    },
+    {
+      "id": "release",
+      "title": "General Motors quarterly results and financial highlights",
+      "type": "earnings_release",
+      "url": "https://investor.gm.com/static-files/c79ce1e6-c1f9-41cc-b503-1b98e1dbdfb2",
+      "published_at": "2026-10-20T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T07:29:21.823Z"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "metric-revenue",
+      "source_id": "filing",
+      "locator": "Consolidated financial statement cells; 2026-07-01 to 2026-09-30; USD millions, except per-share and percentage amounts.",
+      "quote": "50,015"
+    },
+    {
+      "id": "metric-gross_margin",
+      "source_id": "filing",
+      "locator": "Gross profit/revenue or revenue/cost cells; use the metric definition for the ratio; 2026-07-01 to 2026-09-30; USD millions, except per-share and percentage amounts.",
+      "quote": "Financial statements"
+    },
+    {
+      "id": "metric-diluted_eps",
+      "source_id": "filing",
+      "locator": "Consolidated financial statement cells; 2026-07-01 to 2026-09-30; USD millions, except per-share and percentage amounts.",
+      "quote": "3.73"
+    },
+    {
+      "id": "metric-net_income",
+      "source_id": "filing",
+      "locator": "Consolidated financial statement cells; 2026-07-01 to 2026-09-30; USD millions, except per-share and percentage amounts.",
+      "quote": "3,335"
+    },
+    {
+      "id": "metric-operating_income",
+      "source_id": "filing",
+      "locator": "Consolidated financial statement cells; 2026-07-01 to 2026-09-30; USD millions, except per-share and percentage amounts.",
+      "quote": "3,598"
+    },
+    {
+      "id": "metric-operating_cash_flow",
+      "source_id": "facts",
+      "locator": "SEC XBRL financial facts; NetCashProvidedByUsedInOperatingActivities: 2026-01-01 to 2026-09-30, less 2026-01-01 to 2026-06-30; amounts in full USD. Standalone quarter uses the displayed cumulative subtraction where applicable.",
+      "quote": "16620000000; 9304000000"
+    },
+    {
+      "id": "metric-cash_capex",
+      "source_id": "facts",
+      "locator": "SEC XBRL financial facts; PaymentsToAcquirePropertyPlantAndEquipment: 2026-01-01 to 2026-09-30, less 2026-01-01 to 2026-06-30; amounts in full USD. Standalone quarter uses the displayed cumulative subtraction where applicable.",
+      "quote": "5800000000; 3454000000"
+    },
+    {
+      "id": "metric-free_cash_flow",
+      "source_id": "facts",
+      "locator": "SEC XBRL financial facts; NetCashProvidedByUsedInOperatingActivities: 2026-01-01 to 2026-09-30, less 2026-01-01 to 2026-06-30; PaymentsToAcquirePropertyPlantAndEquipment: 2026-01-01 to 2026-09-30, less 2026-01-01 to 2026-06-30; amounts in full USD. Quarterly cash inputs; issuer adjustments are cited separately.",
+      "quote": "16620000000; 9304000000; 5800000000; 3454000000"
+    },
+    {
+      "id": "business",
+      "source_id": "release",
+      "locator": "Quarterly financial highlights, business results and measure definitions",
+      "quote": "General Motors"
+    },
+    {
+      "id": "research-income",
+      "source_id": "filing",
+      "locator": "Consolidated income statement; USD millions, except EPS; standalone quarter and comparative columns.",
+      "quote": "50,015; 3,598; 3.73"
+    },
+    {
+      "id": "research-cash",
+      "source_id": "release",
+      "locator": "Financial summary/cash-flow reconciliation and stated measure definitions; USD millions; distinguish standalone from cumulative columns.",
+      "quote": "8,049; 5,882; 6,070; 4,201"
+    },
+    {
+      "id": "business-detail-1",
+      "source_id": "release",
+      "locator": "Quarterly release/filing; business mix and segment results; USD millions unless billions, rates or per-share figures are stated.",
+      "quote": "4,106; 3,376; 3,592; 2,506; 28; 226; 668; 804"
+    },
+    {
+      "id": "business-detail-2",
+      "source_id": "release",
+      "locator": "Quarterly release/filing; earnings reconciliation and comparability; USD millions unless billions, rates or per-share figures are stated.",
+      "quote": "3.73; 1.35; 3.70; 2.80; 849; 904"
+    },
+    {
+      "id": "business-detail-3",
+      "source_id": "release",
+      "locator": "Quarterly release/filing; outlook, financing and risk disclosures; USD millions unless billions, rates or per-share figures are stated.",
+      "quote": "14.5; 15.5; 11.5; 12.5; 20"
+    },
+    {
+      "id": "business-segment-1",
+      "source_id": "release",
+      "locator": "GM North America; reported segment/product/customer-category table; preserve the stated scope; USD millions, except rates.",
+      "quote": "3,592; 8.7%; 2,506; 6.2%"
+    },
+    {
+      "id": "business-segment-2",
+      "source_id": "release",
+      "locator": "GM International; reported segment/product/customer-category table; preserve the stated scope; USD millions, except rates.",
+      "quote": "28; 226; 32; 80"
+    },
+    {
+      "id": "business-segment-3",
+      "source_id": "release",
+      "locator": "GM Financial; reported segment/product/customer-category table; preserve the stated scope; USD millions, except rates.",
+      "quote": "668; 804"
+    }
+  ],
+  "metrics": [
+    {
+      "key": "revenue",
+      "label": "营业收入",
+      "value": 50015000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-revenue"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 48591000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-revenue"
+          ],
+          "change_pct": 2.930583852976887,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "gross_margin",
+      "label": "GAAP 毛利率",
+      "value": null,
+      "unit": "percent",
+      "currency": null,
+      "basis": "derived",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": "尚未核验口径一致的单季度数值。",
+      "definition": "GAAP 毛利金额除以同季收入。",
+      "evidence_ids": [
+        "metric-gross_margin"
+      ],
+      "comparisons": []
+    },
+    {
+      "key": "diluted_eps",
+      "label": "GAAP 摊薄每股收益",
+      "value": 3.73,
+      "unit": "currency_per_share",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-diluted_eps"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 1.35,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-diluted_eps"
+          ],
+          "change_pct": 176.29629629629625,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "net_income",
+      "label": "归属股东净利润",
+      "value": 3335000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-net_income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 1327000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-net_income"
+          ],
+          "change_pct": 151.3187641296157,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "operating_income",
+      "label": "GAAP 营业利润",
+      "value": 3598000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-operating_income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 1076000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-operating_income"
+          ],
+          "change_pct": 234.38661710037175,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "operating_cash_flow",
+      "label": "经营活动现金流",
+      "value": 7316000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-operating_cash_flow"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 7103000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-operating_cash_flow"
+          ],
+          "change_pct": 2.9987329297479937,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "cash_capex",
+      "label": "现金资本购置",
+      "value": 2346000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-cash_capex"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 2130000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-cash_capex"
+          ],
+          "change_pct": 10.140845070422543,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "free_cash_flow",
+      "label": "调整后汽车自由现金流",
+      "value": 5882000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "non-GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": "公司调整后汽车业务口径，非合并现金流，包含公司调节项目。",
+      "evidence_ids": [
+        "metric-free_cash_flow"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 4201000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-free_cash_flow"
+          ],
+          "change_pct": 40.014282313734824,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    }
+  ],
+  "guidance": [],
+  "segments": [
+    {
+      "name": "GM 北美",
+      "text": "调整 EBIT 为 35.92 亿美元、调整利润率 8.7%，上年同期分别为 25.06 亿美元和 6.2%。这是主要经营改善来源，但两者属于调整指标，不能替代集团 GAAP 营业利润率。",
+      "evidence_ids": [
+        "business-segment-1"
+      ]
+    },
+    {
+      "name": "GM 国际",
+      "text": "调整 EBIT 为 0.28 亿美元，上年同期 2.26 亿美元；中国权益收益为 0.32 亿美元，上年同期 0.80 亿美元。权益法合资企业收益不等于合并地区收入，不能只凭这些利润项目推断地区销售增速。",
+      "evidence_ids": [
+        "business-segment-2"
+      ]
+    },
+    {
+      "name": "GM Financial",
+      "text": "调整税前利润为 6.68 亿美元，上年同期 8.04 亿美元，属于金融活动的调整税前口径，不同于汽车 EBIT 或汽车自由现金流。后续需要核对信贷表现、融资成本及租赁残值来解释下降。",
+      "evidence_ids": [
+        "business-segment-3"
+      ]
+    }
+  ],
+  "follow_ups": [
+    {
+      "id": "company-follow-up-1",
+      "question": "北美能否保持改善后的调整利润率？",
+      "status": "monitoring",
+      "update": "跟踪组合、促销、成本，以及 GAAP 到调整口径的调节。",
+      "next_check": "下一次官方业绩、申报文件及相关补充材料更新时。",
+      "evidence_ids": [
+        "business-detail-1",
+        "research-income"
+      ]
+    },
+    {
+      "id": "company-follow-up-2",
+      "question": "国际及金融业务的走弱能否稳定？",
+      "status": "monitoring",
+      "update": "分别核对 GMI、中国权益收益及 GM Financial 的信贷和融资指标。",
+      "next_check": "下一次官方业绩、申报文件及相关补充材料更新时。",
+      "evidence_ids": [
+        "business-detail-2",
+        "research-cash"
+      ]
+    },
+    {
+      "id": "company-follow-up-3",
+      "question": "资本回报能否与实际汽车现金创造相匹配？",
+      "status": "monitoring",
+      "update": "比较实际回购、股息现金和汽车自由现金流，并单列尚未执行的授权额度。",
+      "next_check": "下一次官方业绩、申报文件及相关补充材料更新时。",
+      "evidence_ids": [
+        "business-detail-3",
+        "research-income"
+      ]
+    }
+  ],
+  "limitations": [
+    "依据已列明的官方申报、业绩及财务附件进行分析；尚未完成官方电话会文字材料审阅。",
+    "业务类别、地区拆分、报告分部与调整指标采用各自披露范围，不能重复相加或替代合并 GAAP 数值。",
+    "现金流采用单季金额，累计披露按相邻期间相减；公司调整口径、融资租赁和激励款等差异见指标定义。",
+    "未保留披露前市场一致预期快照，不作超预期判断；未来指引与分析推断不等于已实现结果。"
+  ],
+  "summary": {
+    "text": "北美业务推动调整盈利改善，国际及金融业务相对偏弱，回购还影响每股比较。现金端尤其需要区分：调整汽车自由现金流与合并经营现金流范围不同，全年指引上调也不等于第四季度已实现的结果。",
+    "evidence_ids": [
+      "research-income",
+      "research-cash",
+      "business-detail-1",
+      "business-detail-2",
+      "business-detail-3"
+    ]
+  },
+  "findings": [
+    {
+      "kind": "fact",
+      "text": "营业收入 500.15 亿美元，同比变化 2.931%；GAAP 摊薄 EPS 为 3.73 美元，上年同期为 1.35 美元。这些是 2026-07-01 至 2026-09-30 的已实现单季结果，需结合业务组合及特殊项目评价合并同比。",
+      "evidence_ids": [
+        "metric-revenue",
+        "metric-diluted_eps"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "GAAP 营业利润为 35.98 亿美元，除以收入后，营业利润率约为 7.194%，上年同期约 2.214%。毛利率和营业利润率对应不同费用层级，都不等于资本投入后的现金结余或既有资产回报。",
+      "evidence_ids": [
+        "research-income"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "汽车业务经营现金流为 80.49 亿美元，调整汽车自由现金流为 58.82 亿美元。财务表另列合并经营现金流 73.16 亿美元及现金设备购置 23.46 亿美元，二者相减是不同范围下的 49.70 亿美元计算值。本站保留公司的汽车指标，不把它与合并现金输入拼成同一口径。",
+      "evidence_ids": [
+        "research-cash",
+        "metric-free_cash_flow"
+      ]
+    },
+    {
+      "kind": "fact",
+      "text": "调整后 EBIT 从 33.76 亿美元增至 41.06 亿美元，北美贡献从 25.06 亿美元增至 35.92 亿美元；国际调整 EBIT 从 2.26 亿美元降至 0.28 亿美元，GM Financial 调整税前利润从 8.04 亿美元降至 6.68 亿美元。改善具有集中性，并非地区与金融活动同步增强。",
+      "evidence_ids": [
+        "business-detail-1"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "GAAP 摊薄 EPS 为 3.73 美元，上年同期 1.35 美元；调整 EPS 为 3.70 美元，上年同期 2.80 美元。期末流通股从 2025 年末 9.04 亿股降至 8.49 亿股。EPS 同时受盈利和加权摊薄股数影响，期末股数可用于理解回购，但不能直接当作重算报告 EPS 的分母。",
+      "evidence_ids": [
+        "business-detail-2"
+      ]
+    },
+    {
+      "kind": "risk",
+      "text": "全年调整 EBIT 指引由 140 至 160 亿美元收窄至 145 至 155 亿美元，调整汽车自由现金流指引由 95 至 115 亿美元升至 115 至 125 亿美元。新增 200 亿美元回购授权没有到期日且可暂停。指引和授权都不代表已经产生的现金或已经完成的回购。",
+      "evidence_ids": [
+        "business-detail-3"
+      ]
+    }
+  ]
+}

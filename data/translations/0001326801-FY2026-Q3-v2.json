@@ -1,0 +1,87 @@
+{
+  "report_id": "0001326801-FY2026-Q3",
+  "revision": 2,
+  "en": {
+    "summary": "Advertising demand and pricing supported revenue growth, while the legal charge weighed on operating profit and infrastructure cash spending exceeded OCF. EPS growth is amplified by a very high year-ago tax rate. Assess the core advertising engine, Reality Labs losses, legal cash obligations and AI investment separately before drawing conclusions from the headline earnings increase.",
+    "findings": [
+      "Revenue was $64.601B, changing 26.07% YoY. GAAP diluted EPS was $3.83 versus $1.05 a year ago. These are realized standalone results for 2026-07-01–2026-09-30; changes in the business mix and special items need to be evaluated alongside the consolidated comparison.",
+      "GAAP operating income was $12.988B. Dividing it by revenue gives an operating margin of about 20.105%, versus 40.075% a year ago. The financial table separately retains GAAP gross margin of 79.305%. Gross and operating margins measure different expense levels; neither measures cash left after capital investment or the return earned on the installed asset base.",
+      "OCF was $32.786B. Property purchases of $33.942B plus $964M of finance-lease principal exceeded receipts, producing company-defined FCF of negative $2.120B versus positive $10.625B a year ago. Subtracting property purchases alone would overstate this company measure. Legal expense recognition and settlement payment timing also differ, so the litigation charge is not a proxy for current-quarter cash paid.",
+      "Ad impressions rose 10% and average price per ad 14% YoY. Advertising revenue was $63.061B, within Family of Apps revenue of $64.158B. Both volume and pricing support the revenue result, but multiplying rounded growth rates is only an approximation and does not isolate currency, mix or individual-app contributions.",
+      "The $9.89B legal charge reduced operating income to $12.988B; the company says EPS excluding it would be $7.40 versus GAAP $3.83. At the same time, the effective tax rate fell to 24% from 87% a year ago. Consequently, the approximately 265% reported EPS increase is not an equivalent growth rate for ongoing advertising operations.",
+      "Management expects Q4 revenue of $73B–$76B and 2026 capital spending including lease principal of $135B–$145B. The attorneys-general agreement provides for payments up to approximately $18.59B, beyond the current charge alone. These are separate forecasting and contingent/legal scopes; infrastructure returns and the actual legal payment schedule require continued monitoring."
+    ],
+    "segments": [
+      {
+        "name": "Family of Apps",
+        "text": "Revenue was $64.158B and operating income $17.117B. This remains the group’s revenue engine. The legal charge affects the consolidated/segment profit comparison, so raw segment margin should not be treated as a clean advertising efficiency trend without the reconciliation."
+      },
+      {
+        "name": "Reality Labs",
+        "text": "Revenue was $443M and operating loss $4.129B. The current revenue base is small relative to the loss. Management expects full-year losses of $18B–$19B; that outlook is a future budget expectation, not a result already recognized for the current quarter."
+      }
+    ],
+    "guidance": [
+      "Revenue"
+    ],
+    "follow_ups": [
+      {
+        "question": "Will advertising growth sustain without the tax-base distortion?",
+        "update": "Track impressions, price per ad and operating performance rather than headline EPS growth alone.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      },
+      {
+        "question": "Can OCF keep pace with AI infrastructure spending?",
+        "update": "Retain finance-lease principal in company FCF and compare receipts with the cash investment plan.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      },
+      {
+        "question": "How will legal expenses turn into cash payments?",
+        "update": "Review settlement obligations, provisions and actual payments separately from new legal proceedings.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      }
+    ],
+    "limitations": [
+      "Analysis uses the listed official filings, releases and financial attachments; official call text has not been fully reviewed.",
+      "Product/geographic categories, reportable segments and adjusted measures retain their disclosed perimeters and must not be double-counted or substituted for consolidated GAAP results.",
+      "Cash flows are standalone; cumulative disclosures are differenced across adjacent periods. Issuer adjustments, leases and incentives are identified in metric definitions.",
+      "No pre-release consensus snapshot was preserved. Management guidance and analytical inferences are distinct from realized results."
+    ],
+    "metrics": [
+      {
+        "key": "revenue",
+        "label": "Revenue"
+      },
+      {
+        "key": "gross_margin",
+        "label": "GAAP gross margin",
+        "definition": "GAAP gross profit divided by quarterly revenue."
+      },
+      {
+        "key": "diluted_eps",
+        "label": "GAAP diluted EPS"
+      },
+      {
+        "key": "net_income",
+        "label": "Net income attributable to stockholders"
+      },
+      {
+        "key": "operating_income",
+        "label": "GAAP operating income"
+      },
+      {
+        "key": "operating_cash_flow",
+        "label": "Operating cash flow"
+      },
+      {
+        "key": "cash_capex",
+        "label": "Cash capital purchases"
+      },
+      {
+        "key": "free_cash_flow",
+        "label": "Free cash flow (company definition)",
+        "definition": "Company non-GAAP measure: quarterly OCF less equipment purchases and finance-lease principal."
+      }
+    ]
+  }
+}

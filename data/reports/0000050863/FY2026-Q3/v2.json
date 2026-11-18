@@ -1,0 +1,542 @@
+{
+  "schema_version": "1.0",
+  "data_kind": "production",
+  "report_id": "0000050863-FY2026-Q3",
+  "revision": 2,
+  "revision_reason": "reanalysis",
+  "supersedes_revision": 1,
+  "validation_status": "passed",
+  "company": {
+    "id": "0000050863",
+    "cik": "0000050863",
+    "ticker": "INTC",
+    "name": "Intel"
+  },
+  "period": {
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "start": "2026-06-28",
+    "end": "2026-09-26"
+  },
+  "published_at": "2026-10-29T00:00:00-05:00",
+  "published_at_precision": "date",
+  "as_of": "2026-11-18T08:27:24.023Z",
+  "analyzed_at": "2026-11-18T08:27:24.023Z",
+  "coverage": {
+    "earnings_release": "available",
+    "regulatory_filing": "available",
+    "transcript": "pending",
+    "supplemental_financials": "available"
+  },
+  "sources": [
+    {
+      "id": "filing",
+      "title": "Intel 10-Q — period ended 2026-09-26",
+      "type": "regulatory_filing",
+      "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm",
+      "published_at": "2026-10-30T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T07:08:57.993Z"
+    },
+    {
+      "id": "facts",
+      "title": "Intel SEC XBRL financial facts",
+      "type": "supplemental_financials",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000050863.json",
+      "published_at": "2026-10-30T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T07:29:19.994Z"
+    },
+    {
+      "id": "release",
+      "title": "Intel quarterly results and financial highlights",
+      "type": "earnings_release",
+      "url": "https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-26-000188/q326earningsrelease.htm",
+      "published_at": "2026-10-29T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T07:29:19.994Z"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "metric-revenue",
+      "source_id": "filing",
+      "locator": "Consolidated financial statement cells; 2026-06-28 to 2026-09-26; USD millions, except per-share and percentage amounts.",
+      "quote": "16,513"
+    },
+    {
+      "id": "metric-gross_margin",
+      "source_id": "filing",
+      "locator": "Gross profit/revenue or revenue/cost cells; use the metric definition for the ratio; 2026-06-28 to 2026-09-26; USD millions, except per-share and percentage amounts.",
+      "quote": "7,096; 16,513"
+    },
+    {
+      "id": "metric-diluted_eps",
+      "source_id": "filing",
+      "locator": "Consolidated financial statement cells; 2026-06-28 to 2026-09-26; USD millions, except per-share and percentage amounts.",
+      "quote": "0.6"
+    },
+    {
+      "id": "metric-net_income",
+      "source_id": "filing",
+      "locator": "Consolidated financial statement cells; 2026-06-28 to 2026-09-26; USD millions, except per-share and percentage amounts.",
+      "quote": "3,320"
+    },
+    {
+      "id": "metric-operating_income",
+      "source_id": "filing",
+      "locator": "Consolidated financial statement cells; 2026-06-28 to 2026-09-26; USD millions, except per-share and percentage amounts.",
+      "quote": "2,522"
+    },
+    {
+      "id": "metric-operating_cash_flow",
+      "source_id": "facts",
+      "locator": "SEC XBRL financial facts; NetCashProvidedByUsedInOperatingActivities: 2025-12-28 to 2026-09-26, less 2025-12-28 to 2026-06-27; amounts in full USD. Standalone quarter uses the displayed cumulative subtraction where applicable.",
+      "quote": "13184000000; 8102000000"
+    },
+    {
+      "id": "metric-cash_capex",
+      "source_id": "facts",
+      "locator": "SEC XBRL financial facts; PaymentsToAcquirePropertyPlantAndEquipment: 2025-12-28 to 2026-09-26, less 2025-12-28 to 2026-06-27; amounts in full USD. Standalone quarter uses the displayed cumulative subtraction where applicable.",
+      "quote": "10216000000; 6192000000"
+    },
+    {
+      "id": "metric-free_cash_flow",
+      "source_id": "facts",
+      "locator": "SEC XBRL financial facts; NetCashProvidedByUsedInOperatingActivities: 2025-12-28 to 2026-09-26, less 2025-12-28 to 2026-06-27; PaymentsToAcquirePropertyPlantAndEquipment: 2025-12-28 to 2026-09-26, less 2025-12-28 to 2026-06-27; amounts in full USD. Quarterly cash inputs; issuer adjustments are cited separately.",
+      "quote": "13184000000; 8102000000; 10216000000; 6192000000"
+    },
+    {
+      "id": "business",
+      "source_id": "release",
+      "locator": "Quarterly financial highlights, business results and measure definitions",
+      "quote": "Intel"
+    },
+    {
+      "id": "research-income",
+      "source_id": "filing",
+      "locator": "Consolidated income statement; USD millions, except EPS; standalone quarter and comparative columns.",
+      "quote": "16,513; 2,522; 0.60"
+    },
+    {
+      "id": "research-cash",
+      "source_id": "release",
+      "locator": "Financial summary/cash-flow reconciliation and stated measure definitions; USD millions; distinguish standalone from cumulative columns.",
+      "quote": "5,082; (4,219); 1,639"
+    },
+    {
+      "id": "business-detail-1",
+      "source_id": "release",
+      "locator": "Quarterly release/filing; business mix and segment results; USD millions unless billions, rates or per-share figures are stated.",
+      "quote": "7,318; 4,117; 8,097; 8,535; 5,324"
+    },
+    {
+      "id": "business-detail-2",
+      "source_id": "release",
+      "locator": "Quarterly release/filing; earnings reconciliation and comparability; USD millions unless billions, rates or per-share figures are stated.",
+      "quote": "2,522; 683; 5,546; 1,005; 0.60; 0.90"
+    },
+    {
+      "id": "business-detail-3",
+      "source_id": "release",
+      "locator": "Quarterly release/filing; outlook, financing and risk disclosures; USD millions unless billions, rates or per-share figures are stated.",
+      "quote": "6,697; (6,291); (1,853); 15; 16; 0.10; 0.25"
+    },
+    {
+      "id": "business-segment-1",
+      "source_id": "release",
+      "locator": "Client Computing and Physical AI Group; reported segment/product/customer-category table; preserve the stated scope; USD millions, except rates.",
+      "quote": "8,097; 2,285; 8,535; 2,694"
+    },
+    {
+      "id": "business-segment-2",
+      "source_id": "release",
+      "locator": "Data Center and AI; reported segment/product/customer-category table; preserve the stated scope; USD millions, except rates.",
+      "quote": "7,318; 3,039; 4,117; 964"
+    },
+    {
+      "id": "business-segment-3",
+      "source_id": "release",
+      "locator": "Intel Foundry; reported segment/product/customer-category table; preserve the stated scope; USD millions, except rates.",
+      "quote": "6,697; 4,235; (1,853); (2,321)"
+    }
+  ],
+  "metrics": [
+    {
+      "key": "revenue",
+      "label": "营业收入",
+      "value": 16513000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-06-28",
+      "period_end": "2026-09-26",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-revenue"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 13653000000,
+          "baseline_start": "2025-06-29",
+          "baseline_end": "2025-09-27",
+          "baseline_evidence_ids": [
+            "metric-revenue"
+          ],
+          "change_pct": 20.94777704533801,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "gross_margin",
+      "label": "GAAP 毛利率",
+      "value": 42.972203718282564,
+      "unit": "percent",
+      "currency": null,
+      "basis": "derived",
+      "period_type": "duration",
+      "period_start": "2026-06-28",
+      "period_end": "2026-09-26",
+      "missing_reason": null,
+      "definition": "GAAP 毛利金额除以同季收入。",
+      "evidence_ids": [
+        "metric-gross_margin"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 38.21870651138944,
+          "baseline_start": "2025-06-29",
+          "baseline_end": "2025-09-27",
+          "baseline_evidence_ids": [
+            "metric-gross_margin"
+          ],
+          "change_pct": null,
+          "change_pp": 4.7534972068931225,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "diluted_eps",
+      "label": "GAAP 摊薄每股收益",
+      "value": 0.6,
+      "unit": "currency_per_share",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-06-28",
+      "period_end": "2026-09-26",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-diluted_eps"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 0.9,
+          "baseline_start": "2025-06-29",
+          "baseline_end": "2025-09-27",
+          "baseline_evidence_ids": [
+            "metric-diluted_eps"
+          ],
+          "change_pct": -33.333333333333336,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "net_income",
+      "label": "归属股东净利润",
+      "value": 3320000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-06-28",
+      "period_end": "2026-09-26",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-net_income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 4063000000,
+          "baseline_start": "2025-06-29",
+          "baseline_end": "2025-09-27",
+          "baseline_evidence_ids": [
+            "metric-net_income"
+          ],
+          "change_pct": -18.286980063992118,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "operating_income",
+      "label": "GAAP 营业利润",
+      "value": 2522000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-06-28",
+      "period_end": "2026-09-26",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-operating_income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 683000000,
+          "baseline_start": "2025-06-29",
+          "baseline_end": "2025-09-27",
+          "baseline_evidence_ids": [
+            "metric-operating_income"
+          ],
+          "change_pct": 269.25329428989755,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "operating_cash_flow",
+      "label": "经营活动现金流",
+      "value": 5082000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-06-28",
+      "period_end": "2026-09-26",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-operating_cash_flow"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 2546000000,
+          "baseline_start": "2025-06-29",
+          "baseline_end": "2025-09-27",
+          "baseline_evidence_ids": [
+            "metric-operating_cash_flow"
+          ],
+          "change_pct": 99.60722702278085,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "cash_capex",
+      "label": "现金资本购置",
+      "value": 4024000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-06-28",
+      "period_end": "2026-09-26",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-cash_capex"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 2425000000,
+          "baseline_start": "2025-06-29",
+          "baseline_end": "2025-09-27",
+          "baseline_evidence_ids": [
+            "metric-cash_capex"
+          ],
+          "change_pct": 65.93814432989691,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "free_cash_flow",
+      "label": "自由现金流（计算值）",
+      "value": 1058000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "derived",
+      "period_type": "duration",
+      "period_start": "2026-06-28",
+      "period_end": "2026-09-26",
+      "missing_reason": null,
+      "definition": "单季经营现金流减现金资本购置。",
+      "evidence_ids": [
+        "metric-free_cash_flow"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 121000000,
+          "baseline_start": "2025-06-29",
+          "baseline_end": "2025-09-27",
+          "baseline_evidence_ids": [
+            "metric-free_cash_flow"
+          ],
+          "change_pct": 774.3801652892563,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    }
+  ],
+  "guidance": [
+    {
+      "label": "营业收入",
+      "target_period": "FY2026 Q4",
+      "period_start": "2026-09-27",
+      "period_end": null,
+      "low": 15000000000,
+      "high": 16000000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "evidence_ids": [
+        "business"
+      ]
+    }
+  ],
+  "segments": [
+    {
+      "name": "客户端计算与 Physical AI（CCPG）",
+      "text": "收入 80.97 亿美元、营业利润 22.85 亿美元，上年同期分别为 85.35 和 26.94 亿美元。该业务仍盈利，但增长轨迹与 DCAI 不同；更早披露曾使用 CCG 名称。",
+      "evidence_ids": [
+        "business-segment-1"
+      ]
+    },
+    {
+      "name": "数据中心与 AI（DCAI）",
+      "text": "收入 73.18 亿美元、营业利润 30.39 亿美元，上年同期分别为 41.17 亿美元和 9.64 亿美元。更强的组合支撑 Intel Products，但合并回报还取决于 Foundry 成本及总部和抵销调节。",
+      "evidence_ids": [
+        "business-segment-2"
+      ]
+    },
+    {
+      "name": "Intel Foundry",
+      "text": "收入从 42.35 亿美元增至 66.97 亿美元，营业亏损从 23.21 亿美元收窄至 18.53 亿美元。内部制造收入及集团抵销，使这个指标不同于外部客户销售额。",
+      "evidence_ids": [
+        "business-segment-3"
+      ]
+    }
+  ],
+  "follow_ups": [
+    {
+      "id": "company-follow-up-1",
+      "question": "客户端偏弱时，DCAI 的改善能否持续？",
+      "status": "monitoring",
+      "update": "分别核对两个产品组的收入和营业利润。",
+      "next_check": "下一次官方业绩、申报文件及相关补充材料更新时。",
+      "evidence_ids": [
+        "business-detail-1",
+        "research-income"
+      ]
+    },
+    {
+      "id": "company-follow-up-2",
+      "question": "Foundry 的外部需求和现金经济性能否改善？",
+      "status": "monitoring",
+      "update": "区分外部销售与内部收入，并结合利用率、亏损和投入观察。",
+      "next_check": "下一次官方业绩、申报文件及相关补充材料更新时。",
+      "evidence_ids": [
+        "business-detail-2",
+        "research-cash"
+      ]
+    },
+    {
+      "id": "company-follow-up-3",
+      "question": "调整现金创造中，政府激励及伙伴资金贡献多少？",
+      "status": "monitoring",
+      "update": "保留现金购置、gross capex、伙伴资金与调整自由现金流之间的调节。",
+      "next_check": "下一次官方业绩、申报文件及相关补充材料更新时。",
+      "evidence_ids": [
+        "business-detail-3",
+        "research-income"
+      ]
+    }
+  ],
+  "limitations": [
+    "依据已列明的官方申报、业绩及财务附件进行分析；尚未完成官方电话会文字材料审阅。",
+    "业务类别、地区拆分、报告分部与调整指标采用各自披露范围，不能重复相加或替代合并 GAAP 数值。",
+    "现金流采用单季金额，累计披露按相邻期间相减；公司调整口径、融资租赁和激励款等差异见指标定义。",
+    "未保留披露前市场一致预期快照，不作超预期判断；未来指引与分析推断不等于已实现结果。"
+  ],
+  "summary": {
+    "text": "数据中心带动收入恢复，Intel Products 利润改善，但 Foundry 仍亏损，且包含大量内部收入。上年处置收益形成的基数使 GAAP EPS 同比下降。产品需求、代工经济性及不同现金投入定义需要分别评价，分部收入未经抵销不能直接相加。",
+    "evidence_ids": [
+      "research-income",
+      "research-cash",
+      "business-detail-1",
+      "business-detail-2",
+      "business-detail-3"
+    ]
+  },
+  "findings": [
+    {
+      "kind": "fact",
+      "text": "营业收入 165.13 亿美元，同比变化 20.948%；GAAP 摊薄 EPS 为 0.60 美元，上年同期为 0.90 美元。这些是 2026-06-28 至 2026-09-26 的已实现单季结果，需结合业务组合及特殊项目评价合并同比。",
+      "evidence_ids": [
+        "metric-revenue",
+        "metric-diluted_eps"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "GAAP 营业利润为 25.22 亿美元，除以收入后，营业利润率约为 15.273%，上年同期约 5.003%。财务表另保留 GAAP 毛利率 42.972%。毛利率和营业利润率对应不同费用层级，都不等于资本投入后的现金结余或既有资产回报。",
+      "evidence_ids": [
+        "research-income"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "单季经营现金流为 50.82 亿美元，财务表现金购置口径为 40.24 亿美元，计算自由现金流为 10.58 亿美元。公司另披露 gross capex 42.19 亿美元，以及包含政府激励、SCIP 伙伴净出资和融资租赁付款等调节的调整自由现金流 16.39 亿美元。两者边界不同，本站简单现金计算值不冒称公司调整口径。",
+      "evidence_ids": [
+        "research-cash",
+        "metric-free_cash_flow"
+      ]
+    },
+    {
+      "kind": "fact",
+      "text": "DCAI 收入从 41.17 亿美元增至 73.18 亿美元，CCPG 则从 85.35 亿美元降至 80.97 亿美元；Intel Products 营业利润增至 53.24 亿美元。服务器与 AI 的强劲表现与客户端销售走弱并存，合并增长不代表所有产品都在同步复苏。",
+      "evidence_ids": [
+        "business-detail-1"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "GAAP 营业利润从 6.83 亿美元增至 25.22 亿美元，但上年非经营项目包含 55.46 亿美元 Altera 处置收益，本季还包含 10.05 亿美元托管股份重新计量收益。因此 EPS 从 0.90 降至 0.60 美元混合了经营改善和较大的非经营影响，不能单独衡量产品盈利。",
+      "evidence_ids": [
+        "business-detail-2"
+      ]
+    },
+    {
+      "kind": "risk",
+      "text": "Foundry 收入 66.97 亿美元包含内部交易，集团分部间收入抵销达 62.91 亿美元，Foundry 仍有 18.53 亿美元营业亏损。管理层第四季度收入 150 至 160 亿美元、GAAP／非 GAAP EPS 0.10／0.25 美元属于预期。关键应验证外部变现、利用率、制程执行和产能现金成本，而非只看内部毛收入。",
+      "evidence_ids": [
+        "business-detail-3"
+      ]
+    }
+  ]
+}

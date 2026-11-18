@@ -1,0 +1,92 @@
+{
+  "report_id": "0000723125-FY2026-Q4",
+  "revision": 2,
+  "en": {
+    "summary": "Memory revenue and margins increased dramatically across multiple businesses, with strong reported cash generation. The quarter is longer than the year-ago comparison, while pricing, product mix and capital incentives affect how sustainable the result may be. Separate the reported quarter, company-adjusted cash measure and next-quarter guidance rather than extrapolating the current margin indefinitely.",
+    "findings": [
+      "Revenue was $54.229B, changing 379.266% YoY. GAAP diluted EPS was $32.87 versus $2.83 a year ago. These are realized standalone results for 2026-05-29–2026-09-03; changes in the business mix and special items need to be evaluated alongside the consolidated comparison.",
+      "GAAP operating income was $43.751B. Dividing it by revenue gives an operating margin of about 80.678%, versus 32.293% a year ago. The financial table separately retains GAAP gross margin of 86.8%. Gross and operating margins measure different expense levels; neither measures cash left after capital investment or the return earned on the installed asset base.",
+      "Quarterly OCF was $43.973B. Gross property purchases were $11.110B; $9M of property-sale proceeds and $327M of government incentives reduce company-defined net capex to $10.774B, producing adjusted FCF of $33.199B. A simple OCF-minus-gross-purchases calculation would instead be $32.863B. The difference is a disclosed definition difference, not extra operating earnings.",
+      "Cloud Memory revenue was $16.283B and Core Data Center revenue $18.002B. Mobile/Client and Automotive/Embedded also expanded. These disclosures show that the revenue result spans several end markets; they do not by themselves quantify how much growth came from price, shipped bits or a specific HBM product.",
+      "The fiscal quarter ran from May 29 to September 3, 2026: 98 days versus 91 in the year-ago May 30–August 28 quarter. Revenue growth calculations retain the reported periods and are not week-adjusted. The extra week affects comparability, but it does not explain the full increase in revenue or the rise in GAAP gross margin from 44.7% to 86.8%.",
+      "Management guides FY2027 Q1 revenue to $61.5B plus or minus $1.5B, GAAP gross margin to approximately 85.95% and GAAP EPS to $37.84 plus or minus $1.00. These are forecasts. The investment and pricing cycle, product mix, customer commitments and the durability of cash receipts must be checked before assuming the unusually high current profitability persists."
+    ],
+    "segments": [
+      {
+        "name": "Cloud Memory Business Unit",
+        "text": "Revenue was $16.283B versus $4.543B a year ago; the company reports 83% gross margin and 76% operating margin. These business-unit margins differ from consolidated GAAP margin and are preserved on their own disclosed basis."
+      },
+      {
+        "name": "Core Data Center Business Unit",
+        "text": "Revenue was $18.002B versus $1.577B, with reported 90% gross margin. This is a major part of the expansion, but the amount is not a standalone disclosure of HBM-only sales."
+      },
+      {
+        "name": "Mobile/Client and Automotive/Embedded",
+        "text": "Mobile/Client revenue was $13.114B versus $3.760B; Automotive/Embedded was $6.824B versus $1.434B. The business-unit figures are preserved as disclosed rather than used to replace consolidated revenue or to infer identical demand conditions across all customer types."
+      }
+    ],
+    "guidance": [
+      "Revenue"
+    ],
+    "follow_ups": [
+      {
+        "question": "How much margin strength comes from pricing, mix and sustainable cost progress?",
+        "update": "Compare realized GAAP margin with management’s next-quarter estimate and product commentary.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      },
+      {
+        "question": "Do adjusted cash returns remain strong without incentive timing effects?",
+        "update": "Track gross purchases, government incentives, net capex and adjusted FCF separately.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      },
+      {
+        "question": "Will the broader revenue mix hold after the longer fiscal quarter?",
+        "update": "Use actual fiscal dates and distinguish cloud, data-center and other business-unit trends.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      }
+    ],
+    "limitations": [
+      "Analysis uses the listed official filings, releases and financial attachments; official call text has not been fully reviewed.",
+      "Product/geographic categories, reportable segments and adjusted measures retain their disclosed perimeters and must not be double-counted or substituted for consolidated GAAP results.",
+      "Cash flows are standalone; cumulative disclosures are differenced across adjacent periods. Issuer adjustments, leases and incentives are identified in metric definitions.",
+      "No pre-release consensus snapshot was preserved. Management guidance and analytical inferences are distinct from realized results.",
+      "The current quarter has 14 weeks versus 13 in the year-ago comparison. Growth is not week-adjusted; business-unit amounts retain the issuer table values."
+    ],
+    "metrics": [
+      {
+        "key": "revenue",
+        "label": "Revenue"
+      },
+      {
+        "key": "gross_margin",
+        "label": "GAAP gross margin",
+        "definition": "GAAP gross profit divided by quarterly revenue."
+      },
+      {
+        "key": "diluted_eps",
+        "label": "GAAP diluted EPS"
+      },
+      {
+        "key": "net_income",
+        "label": "Net income attributable to stockholders"
+      },
+      {
+        "key": "operating_income",
+        "label": "GAAP operating income"
+      },
+      {
+        "key": "operating_cash_flow",
+        "label": "Operating cash flow"
+      },
+      {
+        "key": "cash_capex",
+        "label": "Cash capital purchases"
+      },
+      {
+        "key": "free_cash_flow",
+        "label": "Adjusted free cash flow (company)",
+        "definition": "Company OCF less property purchases plus property sales and government incentives; differs from gross cash purchases."
+      }
+    ]
+  }
+}

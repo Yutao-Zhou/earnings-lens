@@ -1,0 +1,92 @@
+{
+  "report_id": "0001018724-FY2026-Q3",
+  "revision": 2,
+  "en": {
+    "summary": "AWS is growing much faster than retail and contributes most operating profit despite a minority of revenue. Underlying operating performance improved, while a prior-year investment gain complicates GAAP earnings comparisons. The main constraint is cash: infrastructure spending exceeds operating cash generation, so cloud growth and returns after investment need separate assessment.",
+    "findings": [
+      "Revenue was $201.944B, changing 12.086% YoY. GAAP diluted EPS was $1.89 versus $1.95 a year ago. These are realized standalone results for 2026-07-01–2026-09-30; changes in the business mix and special items need to be evaluated alongside the consolidated comparison.",
+      "GAAP operating income was $28.076B. Dividing it by revenue gives an operating margin of about 13.903%, versus 9.67% a year ago. The financial table separately retains GAAP gross margin of 53.169%. Gross and operating margins measure different expense levels; neither measures cash left after capital investment or the return earned on the installed asset base.",
+      "Quarterly operating cash flow was $42.422B versus $35.525B a year ago. Equipment purchases of $77.259B, offset by $1.381B of sales and incentives, leave negative $33.456B of quarterly free cash flow. The headline negative $42.4B covers twelve months. Stronger operating receipts therefore coexist with a larger funding requirement after infrastructure investment.",
+      "AWS generated $45.984B of revenue and $17.773B of operating income: approximately 22.8% of consolidated sales but 63.3% of operating profit. This makes cloud profitability disproportionately important to the group. AWS margin is about 38.7%, compared with 7.7% in North America and 3.7% internationally, using the reported segment figures.",
+      "GAAP EPS fell from $1.95 to $1.89 even as operating income rose from $17.422B to $28.076B. The year-ago quarter included a $9.5B pretax Anthropic investment gain. A weaker EPS comparison therefore does not imply that the retail/cloud operating profit pool contracted; investment marks and taxes must be evaluated separately.",
+      "Prime Day moved largely into Q2 in 2026, making the retail growth comparison uneven. Management guides Q4 revenue to $240B–$247B and operating income to $28.5B–$33.5B, and expects roughly $220B of 2026 cash capital expenditure. These are management expectations. The key test is whether new cloud capacity translates into cash returns as the investment bill rises."
+    ],
+    "segments": [
+      {
+        "name": "AWS",
+        "text": "Revenue was $45.984B and operating income $17.773B. The release reports approximately 39.3% revenue growth. Capacity utilization, depreciation and customer demand determine whether the current high operating margin can persist as infrastructure expands."
+      },
+      {
+        "name": "North America",
+        "text": "Revenue was $112.852B and operating income $8.723B. This is the largest sales base, with a substantially lower margin than AWS. Interpret YoY growth alongside the Prime Day shift and fulfillment costs rather than using cloud growth as a proxy for retail demand."
+      },
+      {
+        "name": "International",
+        "text": "Revenue was $43.108B and operating income $1.580B. Reported growth also reflects currency effects. The lower segment margin means logistics, mix and local pricing changes can materially affect profit even when the revenue change appears modest."
+      }
+    ],
+    "guidance": [
+      "Revenue",
+      "Operating income"
+    ],
+    "follow_ups": [
+      {
+        "question": "Will AWS growth maintain margins as new capacity enters service?",
+        "update": "Track segment revenue, operating margin, depreciation and management capacity commentary together.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      },
+      {
+        "question": "Will operating receipts catch up with cash investment?",
+        "update": "Compare standalone OCF with net property purchases; keep the twelve-month FCF measure separate.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      },
+      {
+        "question": "What does retail growth look like after the Prime Day shift?",
+        "update": "Review North America/international revenue and operating profit with event timing and currency effects.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      }
+    ],
+    "limitations": [
+      "Analysis uses the listed official filings, releases and financial attachments; official call text has not been fully reviewed.",
+      "Product/geographic categories, reportable segments and adjusted measures retain their disclosed perimeters and must not be double-counted or substituted for consolidated GAAP results.",
+      "Cash flows are standalone; cumulative disclosures are differenced across adjacent periods. Issuer adjustments, leases and incentives are identified in metric definitions.",
+      "No pre-release consensus snapshot was preserved. Management guidance and analytical inferences are distinct from realized results."
+    ],
+    "metrics": [
+      {
+        "key": "revenue",
+        "label": "Revenue"
+      },
+      {
+        "key": "gross_margin",
+        "label": "GAAP gross margin",
+        "definition": "GAAP gross profit divided by quarterly revenue."
+      },
+      {
+        "key": "diluted_eps",
+        "label": "GAAP diluted EPS"
+      },
+      {
+        "key": "net_income",
+        "label": "Net income attributable to stockholders"
+      },
+      {
+        "key": "operating_income",
+        "label": "GAAP operating income"
+      },
+      {
+        "key": "operating_cash_flow",
+        "label": "Operating cash flow"
+      },
+      {
+        "key": "cash_capex",
+        "label": "Cash capital purchases"
+      },
+      {
+        "key": "free_cash_flow",
+        "label": "Calculated free cash flow",
+        "definition": "Quarterly operating cash flow less equipment purchases plus property sales and incentives; company net-purchase definition."
+      }
+    ]
+  }
+}

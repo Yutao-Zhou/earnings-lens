@@ -1,0 +1,542 @@
+{
+  "schema_version": "1.0",
+  "data_kind": "production",
+  "report_id": "0000002488-FY2026-Q3",
+  "revision": 2,
+  "revision_reason": "reanalysis",
+  "supersedes_revision": 1,
+  "validation_status": "passed",
+  "company": {
+    "id": "0000002488",
+    "cik": "0000002488",
+    "ticker": "AMD",
+    "name": "AMD"
+  },
+  "period": {
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "start": "2026-06-28",
+    "end": "2026-09-26"
+  },
+  "published_at": "2026-11-03T00:00:00-05:00",
+  "published_at_precision": "date",
+  "as_of": "2026-11-18T08:27:24.023Z",
+  "analyzed_at": "2026-11-18T08:27:24.023Z",
+  "coverage": {
+    "earnings_release": "available",
+    "regulatory_filing": "available",
+    "transcript": "pending",
+    "supplemental_financials": "available"
+  },
+  "sources": [
+    {
+      "id": "filing",
+      "title": "AMD 10-Q — period ended 2026-09-26",
+      "type": "regulatory_filing",
+      "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000191/amd-20260926.htm",
+      "published_at": "2026-11-04T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T07:08:57.494Z"
+    },
+    {
+      "id": "facts",
+      "title": "AMD SEC XBRL financial facts",
+      "type": "supplemental_financials",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000002488.json",
+      "published_at": "2026-11-04T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T07:29:18.862Z"
+    },
+    {
+      "id": "release",
+      "title": "AMD quarterly results and financial highlights",
+      "type": "earnings_release",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results",
+      "published_at": "2026-11-03T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-18T07:29:18.862Z"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "metric-revenue",
+      "source_id": "filing",
+      "locator": "Consolidated financial statement cells; 2026-06-28 to 2026-09-26; USD millions, except per-share and percentage amounts.",
+      "quote": "13,377"
+    },
+    {
+      "id": "metric-gross_margin",
+      "source_id": "filing",
+      "locator": "Gross profit/revenue or revenue/cost cells; use the metric definition for the ratio; 2026-06-28 to 2026-09-26; USD millions, except per-share and percentage amounts.",
+      "quote": "7,210; 13,377"
+    },
+    {
+      "id": "metric-diluted_eps",
+      "source_id": "filing",
+      "locator": "Consolidated financial statement cells; 2026-06-28 to 2026-09-26; USD millions, except per-share and percentage amounts.",
+      "quote": "1.46"
+    },
+    {
+      "id": "metric-net_income",
+      "source_id": "filing",
+      "locator": "Consolidated financial statement cells; 2026-06-28 to 2026-09-26; USD millions, except per-share and percentage amounts.",
+      "quote": "2,428"
+    },
+    {
+      "id": "metric-operating_income",
+      "source_id": "filing",
+      "locator": "Consolidated financial statement cells; 2026-06-28 to 2026-09-26; USD millions, except per-share and percentage amounts.",
+      "quote": "2,832"
+    },
+    {
+      "id": "metric-operating_cash_flow",
+      "source_id": "facts",
+      "locator": "SEC XBRL financial facts; NetCashProvidedByUsedInOperatingActivitiesContinuingOperations: 2025-12-28 to 2026-09-26, less 2025-12-28 to 2026-06-27; amounts in full USD. Standalone quarter uses the displayed cumulative subtraction where applicable.",
+      "quote": "6523000000; 5321000000"
+    },
+    {
+      "id": "metric-cash_capex",
+      "source_id": "facts",
+      "locator": "SEC XBRL financial facts; PaymentsToAcquirePropertyPlantAndEquipment: 2025-12-28 to 2026-09-26, less 2025-12-28 to 2026-06-27; amounts in full USD. Standalone quarter uses the displayed cumulative subtraction where applicable.",
+      "quote": "1845000000; 1197000000"
+    },
+    {
+      "id": "metric-free_cash_flow",
+      "source_id": "facts",
+      "locator": "SEC XBRL financial facts; NetCashProvidedByUsedInOperatingActivities: 2025-12-28 to 2026-09-26, less 2025-12-28 to 2026-06-27; NetCashProvidedByUsedInOperatingActivitiesContinuingOperations: 2025-12-28 to 2026-09-26, less 2025-12-28 to 2026-06-27; PaymentsToAcquirePropertyPlantAndEquipment: 2025-12-28 to 2026-09-26, less 2025-12-28 to 2026-06-27; amounts in full USD. Quarterly cash inputs; issuer adjustments are cited separately.",
+      "quote": "6523000000; 5321000000; 6523000000; 5321000000; 1845000000; 1197000000"
+    },
+    {
+      "id": "business",
+      "source_id": "release",
+      "locator": "Quarterly financial highlights, business results and measure definitions",
+      "quote": "AMD"
+    },
+    {
+      "id": "research-income",
+      "source_id": "filing",
+      "locator": "Consolidated income statement; USD millions, except EPS; standalone quarter and comparative columns.",
+      "quote": "13,377; 2,832; 1.46"
+    },
+    {
+      "id": "research-cash",
+      "source_id": "release",
+      "locator": "Financial summary/cash-flow reconciliation and stated measure definitions; USD millions; distinguish standalone from cumulative columns.",
+      "quote": "1,202; 1,788; (648); (258); 554; 1,530"
+    },
+    {
+      "id": "business-detail-1",
+      "source_id": "release",
+      "locator": "Quarterly release/filing; business mix and segment results; USD millions unless billions, rates or per-share figures are stated.",
+      "quote": "8,546; 4,341; 2,882; 1,074"
+    },
+    {
+      "id": "business-detail-2",
+      "source_id": "release",
+      "locator": "Quarterly release/filing; earnings reconciliation and comparability; USD millions unless billions, rates or per-share figures are stated.",
+      "quote": "2,882; 573; 453; (1,076); 2,832; 2.09; 1.46"
+    },
+    {
+      "id": "business-detail-3",
+      "source_id": "release",
+      "locator": "Quarterly release/filing; outlook, financing and risk disclosures; USD millions unless billions, rates or per-share figures are stated.",
+      "quote": "17; 3%; 55%"
+    },
+    {
+      "id": "business-segment-1",
+      "source_id": "release",
+      "locator": "Data Center; reported segment/product/customer-category table; preserve the stated scope; USD millions, except rates.",
+      "quote": "8,546; 2,882"
+    },
+    {
+      "id": "business-segment-2",
+      "source_id": "release",
+      "locator": "Client and Gaming; reported segment/product/customer-category table; preserve the stated scope; USD millions, except rates.",
+      "quote": "3,722; 4,048; 2,949; 2,750; 773; 1,298"
+    },
+    {
+      "id": "business-segment-3",
+      "source_id": "release",
+      "locator": "Embedded; reported segment/product/customer-category table; preserve the stated scope; USD millions, except rates.",
+      "quote": "1,109; 857; 453; 283"
+    }
+  ],
+  "metrics": [
+    {
+      "key": "revenue",
+      "label": "营业收入",
+      "value": 13377000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-06-28",
+      "period_end": "2026-09-26",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-revenue"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 9246000000,
+          "baseline_start": "2025-06-29",
+          "baseline_end": "2025-09-27",
+          "baseline_evidence_ids": [
+            "metric-revenue"
+          ],
+          "change_pct": 44.67878001297858,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "gross_margin",
+      "label": "GAAP 毛利率",
+      "value": 53.898482469911045,
+      "unit": "percent",
+      "currency": null,
+      "basis": "derived",
+      "period_type": "duration",
+      "period_start": "2026-06-28",
+      "period_end": "2026-09-26",
+      "missing_reason": null,
+      "definition": "GAAP 毛利金额除以同季收入。",
+      "evidence_ids": [
+        "metric-gross_margin"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 51.69803158122431,
+          "baseline_start": "2025-06-29",
+          "baseline_end": "2025-09-27",
+          "baseline_evidence_ids": [
+            "metric-gross_margin"
+          ],
+          "change_pct": null,
+          "change_pp": 2.2004508886867313,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "diluted_eps",
+      "label": "GAAP 摊薄每股收益",
+      "value": 1.46,
+      "unit": "currency_per_share",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-06-28",
+      "period_end": "2026-09-26",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-diluted_eps"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 0.75,
+          "baseline_start": "2025-06-29",
+          "baseline_end": "2025-09-27",
+          "baseline_evidence_ids": [
+            "metric-diluted_eps"
+          ],
+          "change_pct": 94.66666666666666,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "net_income",
+      "label": "归属股东净利润",
+      "value": 2428000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-06-28",
+      "period_end": "2026-09-26",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-net_income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 1243000000,
+          "baseline_start": "2025-06-29",
+          "baseline_end": "2025-09-27",
+          "baseline_evidence_ids": [
+            "metric-net_income"
+          ],
+          "change_pct": 95.33386967015285,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "operating_income",
+      "label": "GAAP 营业利润",
+      "value": 2832000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-06-28",
+      "period_end": "2026-09-26",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-operating_income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 1270000000,
+          "baseline_start": "2025-06-29",
+          "baseline_end": "2025-09-27",
+          "baseline_evidence_ids": [
+            "metric-operating_income"
+          ],
+          "change_pct": 122.99212598425196,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "operating_cash_flow",
+      "label": "经营现金流（持续经营）",
+      "value": 1202000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-06-28",
+      "period_end": "2026-09-26",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-operating_cash_flow"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 1788000000,
+          "baseline_start": "2025-06-29",
+          "baseline_end": "2025-09-27",
+          "baseline_evidence_ids": [
+            "metric-operating_cash_flow"
+          ],
+          "change_pct": -32.77404921700223,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "cash_capex",
+      "label": "现金资本购置",
+      "value": 648000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-06-28",
+      "period_end": "2026-09-26",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-cash_capex"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 258000000,
+          "baseline_start": "2025-06-29",
+          "baseline_end": "2025-09-27",
+          "baseline_evidence_ids": [
+            "metric-cash_capex"
+          ],
+          "change_pct": 151.1627906976744,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "free_cash_flow",
+      "label": "自由现金流（计算值）",
+      "value": 554000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "derived",
+      "period_type": "duration",
+      "period_start": "2026-06-28",
+      "period_end": "2026-09-26",
+      "missing_reason": null,
+      "definition": "单季经营现金流减现金资本购置。",
+      "evidence_ids": [
+        "metric-free_cash_flow"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 1530000000,
+          "baseline_start": "2025-06-29",
+          "baseline_end": "2025-09-27",
+          "baseline_evidence_ids": [
+            "metric-free_cash_flow"
+          ],
+          "change_pct": -63.79084967320261,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    }
+  ],
+  "guidance": [
+    {
+      "label": "营业收入",
+      "target_period": "FY2026 Q4",
+      "period_start": "2026-09-27",
+      "period_end": null,
+      "low": 16490000000,
+      "high": 17510000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "evidence_ids": [
+        "business"
+      ]
+    }
+  ],
+  "segments": [
+    {
+      "name": "数据中心",
+      "text": "收入 85.46 亿美元，同比约增 96.9%，营业利润 28.82 亿美元。分部包含服务器 CPU、AI 加速器及其他数据中心产品，范围大于 GPU 收入。",
+      "evidence_ids": [
+        "business-segment-1"
+      ]
+    },
+    {
+      "name": "客户端与游戏",
+      "text": "合计收入 37.22 亿美元，上年同期为 40.48 亿美元；其中客户端从 27.50 亿美元增至 29.49 亿美元，游戏从 12.98 亿美元降至 7.73 亿美元。合计下降掩盖了不同需求趋势，产品拆分不能再与分部总额重复相加。",
+      "evidence_ids": [
+        "business-segment-2"
+      ]
+    },
+    {
+      "name": "嵌入式",
+      "text": "收入从 8.57 亿美元增至 11.09 亿美元，营业利润从 2.83 亿美元增至 4.53 亿美元。业务恢复有利于分散增长来源，但相对较小的收入基数，尚不能替代集团对数据中心增长的依赖。",
+      "evidence_ids": [
+        "business-segment-3"
+      ]
+    }
+  ],
+  "follow_ups": [
+    {
+      "id": "company-follow-up-1",
+      "question": "数据中心增长能否带来更好的现金转化？",
+      "status": "monitoring",
+      "update": "将持续经营现金流、营运资本与收入及分部利润共同核对。",
+      "next_check": "下一次官方业绩、申报文件及相关补充材料更新时。",
+      "evidence_ids": [
+        "business-detail-1",
+        "research-income"
+      ]
+    },
+    {
+      "id": "company-follow-up-2",
+      "question": "第四季度收入爬坡能否保住报告口径的盈利能力？",
+      "status": "monitoring",
+      "update": "对照 164.9 至 175.1 亿美元区间检查实际收入，并同时保留 GAAP 与调整利润率。",
+      "next_check": "下一次官方业绩、申报文件及相关补充材料更新时。",
+      "evidence_ids": [
+        "business-detail-2",
+        "research-cash"
+      ]
+    },
+    {
+      "id": "company-follow-up-3",
+      "question": "客户端增长与嵌入式恢复能否抵消游戏疲弱？",
+      "status": "monitoring",
+      "update": "分别跟踪各产品类别，避免把合并分部当作同一需求周期。",
+      "next_check": "下一次官方业绩、申报文件及相关补充材料更新时。",
+      "evidence_ids": [
+        "business-detail-3",
+        "research-income"
+      ]
+    }
+  ],
+  "limitations": [
+    "依据已列明的官方申报、业绩及财务附件进行分析；尚未完成官方电话会文字材料审阅。",
+    "业务类别、地区拆分、报告分部与调整指标采用各自披露范围，不能重复相加或替代合并 GAAP 数值。",
+    "现金流采用单季金额，累计披露按相邻期间相减；公司调整口径、融资租赁和激励款等差异见指标定义。",
+    "未保留披露前市场一致预期快照，不作超预期判断；未来指引与分析推断不等于已实现结果。"
+  ],
+  "summary": {
+    "text": "数据中心贡献了主要收入增量及更多分部利润，游戏业务走弱，现金转化也落后于盈利增长。本季呈现两个不同侧面：服务器与 AI 带来较强经营杠杆，但自由现金流结果明显较弱。下一季收入指引需要与利润率、回款及资本需求一起验证。",
+    "evidence_ids": [
+      "research-income",
+      "research-cash",
+      "business-detail-1",
+      "business-detail-2",
+      "business-detail-3"
+    ]
+  },
+  "findings": [
+    {
+      "kind": "fact",
+      "text": "营业收入 133.77 亿美元，同比变化 44.679%；GAAP 摊薄 EPS 为 1.46 美元，上年同期为 0.75 美元。这些是 2026-06-28 至 2026-09-26 的已实现单季结果，需结合业务组合及特殊项目评价合并同比。",
+      "evidence_ids": [
+        "metric-revenue",
+        "metric-diluted_eps"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "GAAP 营业利润为 28.32 亿美元，除以收入后，营业利润率约为 21.171%，上年同期约 13.736%。财务表另保留 GAAP 毛利率 53.898%。毛利率和营业利润率对应不同费用层级，都不等于资本投入后的现金结余或既有资产回报。",
+      "evidence_ids": [
+        "research-income"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "持续经营口径经营现金流为 12.02 亿美元，上年同期 17.88 亿美元；现金资本开支从 2.58 亿美元增至 6.48 亿美元，使自由现金流从 15.30 亿美元降至 5.54 亿美元，约降 63.8%。上年总经营现金流还包含已终止业务，不能混用更大的总额。需继续核对应收、库存和付款时点，不能武断归因单一因素。",
+      "evidence_ids": [
+        "research-cash",
+        "metric-free_cash_flow"
+      ]
+    },
+    {
+      "kind": "fact",
+      "text": "数据中心收入从 43.41 亿美元增至 85.46 亿美元，增加 42.05 亿美元，高于合并收入增量 41.31 亿美元，说明其他业务的下降抵消了部分增长。分部营业利润从 10.74 亿美元增至 28.82 亿美元，约 33.7% 的利润率属于分部口径，尚未扣除全部总部及未分配费用。",
+      "evidence_ids": [
+        "business-detail-1"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "三个经营分部合计营业利润 39.08 亿美元，经 All Other 的 10.76 亿美元费用调节后，合并 GAAP 营业利润为 28.32 亿美元。公司非 GAAP EPS 为 2.09 美元，高于 GAAP 的 1.46 美元。评价分部及调整盈利时，应保留并购无形资产、薪酬等调节项目。",
+      "evidence_ids": [
+        "business-detail-2"
+      ]
+    },
+    {
+      "kind": "risk",
+      "text": "管理层预计第四季度收入 170 亿美元、上下浮动 3%，即 164.9 至 175.1 亿美元，非 GAAP 毛利率为 55%。指引中点意味着较明显的环比增长，但仍是预期，需要核对交付时点、供给、客户回款及 GAAP 与调整毛利率的差异，再判断增长能否形成现金。",
+      "evidence_ids": [
+        "business-detail-3"
+      ]
+    }
+  ]
+}

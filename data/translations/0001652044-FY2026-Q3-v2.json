@@ -1,0 +1,89 @@
+{
+  "report_id": "0001652044-FY2026-Q3",
+  "revision": 2,
+  "en": {
+    "summary": "Cloud expanded much faster than Services and added operating leverage, but consolidated EPS fell because the non-operating comparison moved sharply in the opposite direction. Equipment investment exceeded quarterly operating cash flow. The central questions are cloud profit durability, the continuing Services cash engine and the financing needed to support the infrastructure build-out.",
+    "findings": [
+      "Revenue was $127.577B, changing 24.653% YoY. GAAP diluted EPS was $2.12 versus $2.87 a year ago. These are realized standalone results for 2026-07-01–2026-09-30; changes in the business mix and special items need to be evaluated alongside the consolidated comparison.",
+      "GAAP operating income was $40.576B. Dividing it by revenue gives an operating margin of about 31.805%, versus 30.512% a year ago. The financial table separately retains GAAP gross margin of 59.696%. Gross and operating margins measure different expense levels; neither measures cash left after capital investment or the return earned on the installed asset base.",
+      "Quarterly OCF was $42.290B, below $48.414B a year ago. Property and equipment purchases rose to $51.355B from $23.953B, taking calculated FCF to negative $9.065B from positive $24.461B. This is a combined effect of weaker operating receipts and much higher cash investment; operating-income growth alone does not establish improved cash conversion.",
+      "Google Cloud revenue was $30.709B versus $15.157B, while segment operating income rose to $11.121B from $3.594B. The implied segment margin increased to about 36.2% from 23.7%. That operating leverage is material, but the release says TPU system sales also contributed; the growth should not automatically be read as recurring consumption alone.",
+      "Other income/expense swung from $12.759B of income to $8.221B of expense, a $20.980B adverse pretax movement. This helps explain why common-stockholder earnings fell to $26.170B despite $40.576B of operating income. Keep the operating businesses separate from investment/other non-operating effects, and distinguish total net income from earnings available to common stockholders.",
+      "The company raised net cash of $12.4B through Class A/C share issuance and $28.7B through senior notes during the quarter. These proceeds help fund investment but are financing, not operating performance. Track cash investment against cash generation and the share/interest burden; the collected release does not justify filling a precise next-quarter revenue range from market commentary."
+    ],
+    "segments": [
+      {
+        "name": "Google Services",
+        "text": "Revenue was $96.302B and operating income $39.157B, approximately a 40.7% margin. Search & other revenue was $63.350B and YouTube ads $11.207B. Advertising and subscriptions/device categories sit inside Services and must not be added again to segment totals."
+      },
+      {
+        "name": "Google Cloud",
+        "text": "Revenue reached $30.709B, up approximately 102.6% using exact disclosed values. Segment operating income of $11.121B excludes Alphabet-level costs; it is not the same as group profit after shared research, financing and taxes."
+      },
+      {
+        "name": "Other Bets and central costs",
+        "text": "Other Bets revenue was $372M with a $2.047B operating loss. Alphabet-level activities incurred $7.655B of operating costs, primarily shared AI R&D. These amounts reconcile the stronger operating segments to consolidated profit and cannot be ignored when judging group returns."
+      }
+    ],
+    "guidance": [],
+    "follow_ups": [
+      {
+        "question": "How much Cloud growth is recurring consumption versus system sales?",
+        "update": "Watch management mix disclosures, segment margin and cash collections together.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      },
+      {
+        "question": "Does infrastructure investment begin to generate more free cash?",
+        "update": "Quarterly equipment purchases currently exceed OCF; monitor the gap rather than operating profit alone.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      },
+      {
+        "question": "How do investment results and financing affect per-share earnings?",
+        "update": "Separate non-operating changes, the common-stockholder earnings measure and newly issued shares.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      }
+    ],
+    "limitations": [
+      "Analysis uses the listed official filings, releases and financial attachments; official call text has not been fully reviewed.",
+      "Product/geographic categories, reportable segments and adjusted measures retain their disclosed perimeters and must not be double-counted or substituted for consolidated GAAP results.",
+      "Cash flows are standalone; cumulative disclosures are differenced across adjacent periods. Issuer adjustments, leases and incentives are identified in metric definitions.",
+      "No pre-release consensus snapshot was preserved. Management guidance and analytical inferences are distinct from realized results."
+    ],
+    "metrics": [
+      {
+        "key": "revenue",
+        "label": "Revenue"
+      },
+      {
+        "key": "gross_margin",
+        "label": "GAAP gross margin",
+        "definition": "GAAP gross profit divided by quarterly revenue."
+      },
+      {
+        "key": "diluted_eps",
+        "label": "GAAP diluted EPS"
+      },
+      {
+        "key": "net_income",
+        "label": "Net income available to common stockholders"
+      },
+      {
+        "key": "operating_income",
+        "label": "GAAP operating income"
+      },
+      {
+        "key": "operating_cash_flow",
+        "label": "Operating cash flow"
+      },
+      {
+        "key": "cash_capex",
+        "label": "Cash capital purchases"
+      },
+      {
+        "key": "free_cash_flow",
+        "label": "Calculated free cash flow",
+        "definition": "Standalone quarterly operating cash flow less cash capital purchases."
+      }
+    ]
+  }
+}

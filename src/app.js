@@ -13,7 +13,7 @@ function el(tag,attributes={},...children){
   for(const [key,value] of Object.entries(attributes)){
     if(key==='class')node.className=value;
     else if(key.startsWith('on'))node.addEventListener(key.slice(2).toLowerCase(),value);
-    else if(key==='selected'){if(value)node.setAttribute(key,'');}
+    else if(['selected','open'].includes(key)){if(value)node.setAttribute(key,'');}
     else if(value!==null&&value!==undefined)node.setAttribute(key,String(ui(value)));
   }
   for(const child of children.flat(Infinity))if(child!==null&&child!==undefined)node.append(child instanceof Node?child:document.createTextNode(String(ui(child))));
@@ -49,21 +49,21 @@ function selectedReport(){
   const periods=periodsFor(dataset.reports,state.company);
   if(!periods.some(report=>report.report_id===state.report)){state.report=periods[0]?.report_id??null;state.revision=null;}
   const revisions=revisionsFor(dataset.reports,state.report);
-  const selected=revisions.find(report=>report.revision===Number(state.revision))??revisions[0];
+  const selected=revisions[0];
   state.revision=selected?.revision??null;
   if(selected&&!selected.evidence.some(item=>item.id===state.evidence))state.evidence=selected.evidence[0]?.id??null;
   return localizedReport(selected);
 }
 function persist(){
   const params=new URLSearchParams({company:state.company??'',tab:state.tab});
-  if(state.report){params.set('report',state.report);params.set('revision',state.revision);}
+  if(state.report)params.set('report',state.report);
   const next=params.toString();
   if(location.hash.slice(1)!==next)location.hash=next;
 }
 function readHash(){
   const params=new URLSearchParams(location.hash.slice(1));
   if(dataset.companies.some(company=>company.id===params.get('company')))state.company=params.get('company');
-  state.report=params.get('report');state.revision=Number(params.get('revision'))||null;
+  state.report=params.get('report');
   state.tab=tabs.some(([id])=>id===params.get('tab'))?params.get('tab'):'overview';
 }
 function renderCompanies(){
@@ -80,11 +80,9 @@ function renderHeader(report){
   const periods=periodsFor(dataset.reports,state.company);
   const periodSelect=el('select',{id:'period-select','aria-label':'选择财季',onChange:event=>{state.report=event.target.value;state.revision=null;state.evidence=null;render();persist();document.getElementById('period-select').focus();}},periods.map(item=>el('option',{value:item.report_id},periodLabel(item))));
   periodSelect.value=report.report_id;
-  const revisionSelect=el('select',{id:'revision-select','aria-label':'选择分析版本',onChange:event=>{state.revision=Number(event.target.value);state.evidence=null;render();persist();document.getElementById('revision-select').focus();}},revisionsFor(dataset.reports,report.report_id).map(item=>el('option',{value:item.revision},`v${item.revision} · ${({initial:'公告初版',material_update:'补充更新',correction:'更正',reanalysis:'重新分析'})[item.revision_reason]}`)));
-  revisionSelect.value=report.revision;
   return el('div',{class:'report-heading'},
     el('div',{class:'heading-text'},el('div',{},el('p',{class:'eyebrow'},'QUARTERLY RESEARCH / 季度经营研究'),el('h1',{},report.company.name,el('span',{class:'company-ticker'},report.company.ticker))),el('div',{class:'meta-line'},el('span',{},`报告期 ${report.period.start} — ${report.period.end}`),el('span',{},`披露 ${dateLabel(report.published_at,report.published_at_precision)}`),el('span',{},`信息截至 ${dateLabel(report.as_of)}`))),
-    el('div',{class:'selectors'},el('label',{},'财报期间',periodSelect),el('label',{},'分析版本',revisionSelect)));
+    el('div',{class:'selectors'},el('label',{},tx('Company fiscal period','公司财季'),periodSelect,el('small',{class:'fiscal-note'},tx("FY follows the company’s fiscal calendar.",'FY 按公司的财年计算。')))));
 }
 function renderMetrics(report){
   const keys=['revenue','gross_margin','diluted_eps','free_cash_flow'];
@@ -108,8 +106,8 @@ function metricsTable(report){
 }
 function svgNode(tag,attributes={},content){
   const node=document.createElementNS('http://www.w3.org/2000/svg',tag);
-  for(const [key,value] of Object.entries(attributes))node.setAttribute(key,String(value));
-  if(content!==undefined)node.textContent=content;
+  for(const [key,value] of Object.entries(attributes))node.setAttribute(key,String(ui(value)));
+  if(content!==undefined)node.textContent=ui(content);
   return node;
 }
 function historyView(report){
@@ -150,17 +148,26 @@ function historyView(report){
     section.append(svg);
   }else section.append(el('p',{class:'rail-caption'},'暂无口径可比的历史数据。'));
   section.append(el('p',{class:'chart-caption'},`${metric.label} · ${metric.currency??metric.unit} · ${basisLabel(metric.basis)} · 按实际报告期末日期排列。仅展示当时已知的历史版本。`));
-  const table=el('table',{},el('thead',{},el('tr',{},['财季','期末日期',metric.label,'版本'].map(label=>el('th',{scope:'col'},label)))),el('tbody',{},observations.map(item=>el('tr',{},el('td',{},periodLabel(item.report)),el('td',{},item.report.period.end),el('td',{},compatible(item)?valueLabel(item.metric):'缺失或不可比'),el('td',{},`v${item.report.revision}`)))));
+  const table=el('table',{},el('thead',{},el('tr',{},['财季','期末日期',metric.label].map(label=>el('th',{scope:'col'},label)))),el('tbody',{},observations.map(item=>el('tr',{},el('td',{},periodLabel(item.report)),el('td',{},item.report.period.end),el('td',{},compatible(item)?valueLabel(item.metric):'缺失或不可比')))));
   return [section,el('section',{},sectionHeading('历史数据','POINT-IN-TIME'),el('div',{class:'table-wrap'},table))];
 }
+function evidenceLabel(item,report){
+  const metric=report.metrics.find(m=>item.id===`metric-${m.key}`);if(metric)return metric.label;
+  return item.id.startsWith('business')?tx('Business disclosure','业务披露'):item.locator.split(';')[0];
+}
 function sourcesView(report){
-  return el('section',{},sectionHeading('材料与原文依据','SOURCE LIBRARY'),report.sources.map(source=>el('article',{class:'source-item'},el('h3',{},source.title),el('p',{class:'source-caption'},`披露 ${dateLabel(source.published_at,source.published_at_precision)} · 采集 ${dateLabel(source.fetched_at)}`),report.evidence.filter(item=>item.source_id===source.id).map(item=>el('div',{},el('p',{class:'evidence-location'},`${item.id} · ${item.locator}`),el('blockquote',{},item.quote))),el('a',{href:source.url,target:'_blank',rel:'noopener noreferrer',class:'external-source'},`${dataset.mode==='demo'?'查看演示链接':'打开官方原文'} ↗`))));
+  const sources=[...new Map(report.sources.map(source=>[source.url,source])).values()];
+  return el('section',{class:'source-library'},sectionHeading('材料与原文依据','SOURCE LIBRARY'),sources.map(source=>{
+    const ids=report.sources.filter(s=>s.url===source.url).map(s=>s.id);
+    const items=report.evidence.filter(item=>ids.includes(item.source_id));
+    return el('article',{class:'source-item'},el('div',{class:'source-item-heading'},el('h3',{},source.title),el('a',{href:source.url,target:'_blank',rel:'noopener noreferrer',class:'external-source'},`${dataset.mode==='demo'?'查看演示链接':'打开官方原文'} ↗`)),el('p',{class:'source-caption'},`披露 ${dateLabel(source.published_at,source.published_at_precision)} · 采集 ${dateLabel(source.fetched_at)}`),items.length?el('div',{class:'source-evidence-list'},items.map(item=>el('details',{class:'source-evidence',open:state.evidence===item.id},el('summary',{},el('span',{class:'evidence-number'},`${tx('Evidence','依据')} ${report.evidence.indexOf(item)+1}`),el('span',{},evidenceLabel(item,report))),el('div',{class:'source-evidence-body'},el('p',{class:'evidence-location'},item.locator),el('blockquote',{},item.quote))))):el('p',{class:'rail-caption'},tx('Reference material; no separate excerpt in this analysis.','参考材料；本次分析没有单独摘录。')));
+  }));
 }
 function rightRail(report){
   const item=report.evidence.find(item=>item.id===state.evidence)??report.evidence[0];
   const source=report.sources.find(source=>source.id===item.source_id);
   return el('aside',{class:'right-rail','aria-label':'材料状态与原文依据'},
-    el('section',{class:'rail-card'},el('h2',{},'本版材料范围'),el('div',{class:'coverage-list'},Object.entries(report.coverage).map(([type,status])=>el('div',{class:'coverage-row'},el('span',{},coverageLabels[type]),el('span',{class:`coverage-state ${status}`},`${status==='available'?'✓ ':''}${coverageStates[status]}`)))),el('p',{class:'rail-footnote'},`分析 v${report.revision} · 完成于 ${dateLabel(report.analyzed_at)}`)),
+    el('section',{class:'rail-card'},el('h2',{},tx('Source coverage','材料范围')),el('div',{class:'coverage-list'},Object.entries(report.coverage).map(([type,status])=>el('div',{class:'coverage-row'},el('span',{},coverageLabels[type]),el('span',{class:`coverage-state ${status}`},`${status==='available'?'✓ ':''}${coverageStates[status]}`)))),el('p',{class:'rail-footnote'},`${tx('Analyzed','分析完成于')} ${dateLabel(report.analyzed_at)}`)),
     el('section',{class:'rail-card evidence-card',id:'evidence-inspector','aria-live':'polite'},el('p',{class:'section-label'},`SOURCE EVIDENCE / ${item.id}`),el('h2',{},'回到原文'),el('p',{class:'source-caption'},source.title),el('blockquote',{},item.quote),el('p',{class:'evidence-location'},item.locator),el('a',{href:source.url,target:'_blank',rel:'noopener noreferrer',class:'external-source'},`${dataset.mode==='demo'?'查看演示链接':'打开官方原文'} ↗`),dataset.mode==='demo'?el('p',{class:'rail-caption'},'虚构材料，仅用于验证页面与数据结构。'):null),
     el('section',{class:'limitations'},el('h2',{},'阅读边界'),el('ul',{},report.limitations.map(item=>el('li',{},item)))));
 }

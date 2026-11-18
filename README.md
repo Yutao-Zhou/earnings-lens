@@ -46,7 +46,7 @@ The preview listens only on `127.0.0.1:4173`. It is a development tool, not a ru
 - Dated, bilingual announcements with release history and persistent per-announcement dismissal.
 - Shared anonymous report-open, reading, engagement, completion and source-click analytics, with existing privacy settings.
 - Fictional revisions isolated under test fixtures; they are excluded from production builds.
-- Company search, fiscal-period and revision selection, financial tables, evidence inspection, and point-in-time history charts.
+- Company search, fiscal-period selection with the latest analysis, financial tables, evidence inspection, and point-in-time history charts.
 - A deterministic build that embeds data and assets in one HTML file and retains the previous output if validation fails.
 - Node tests for financial comparisons, missing data, revision ancestry, historical cutoffs, unsafe input, and build behavior.
 

@@ -1,0 +1,87 @@
+{
+  "report_id": "0000937966-FY2026-Q3",
+  "revision": 2,
+  "en": {
+    "summary": "Both systems and installed-base sales expanded, lifting operating leverage. The strong cash quarter also benefited materially from working-capital movements, while equity-investment gains contributed to earnings. Read EUR/US GAAP results, the cash conversion and management’s capacity/revenue outlook as distinct parts of the quarter rather than one uniform demand signal.",
+    "findings": [
+      "Revenue was €11.662B, changing 55.162% YoY. GAAP diluted EPS was €12.93 versus €5.48 a year ago. These are realized standalone results for 2026-06-29–2026-09-27; changes in the business mix and special items need to be evaluated alongside the consolidated comparison.",
+      "GAAP operating income was €5.173B. Dividing it by revenue gives an operating margin of about 44.356%, versus 32.842% a year ago. The financial table separately retains GAAP gross margin of 57.5%. Gross and operating margins measure different expense levels; neither measures cash left after capital investment or the return earned on the installed asset base.",
+      "OCF was €11.7976B versus €559.1M a year ago, including €7.009B of favorable changes in assets and liabilities. Property/equipment purchases of €413.3M and intangible purchases of €33.9M leave €11.3504B of calculated FCF. The working-capital contribution is large, so the quarter is not evidence that the same conversion rate will repeat independently of customer advances, collections and supplier payments.",
+      "System sales rose to €8.3732B from €5.5538B, while service/field-option sales rose to €3.2888B from €1.9622B. Both sources contribute to growth. The latter includes installed-base upgrades and support, so it should not be interpreted as new-machine volume; revenue timing and product mix can shift consolidated margin.",
+      "The US GAAP income statement includes a €509.7M gain on equity investments and €134.7M of profit related to equity-method investments. These contribute below operating income. Diluted EPS of €12.93 therefore reflects more than operating leverage from equipment sales; a recurring operating-profit comparison should keep these contributions visible.",
+      "Management expects Q4 net sales of €14.2B–€15.2B and gross margin around 57%, and 2026 sales of €44B–€45B. It also describes customer demand beyond currently planned capacity. These are management forecasts and capacity assessments, not realized orders or revenue. Delivery acceptance, product mix and customer payment timing remain important to converting demand into cash."
+    ],
+    "segments": [
+      {
+        "name": "System sales",
+        "text": "Revenue was €8.3732B, approximately 71.8% of total sales. This is a revenue category, not a separate consolidated profit measure. The financial statements report 121 lithography systems sold; counts exclude metrology/inspection and do not imply equal revenue per machine."
+      },
+      {
+        "name": "Services and field options",
+        "text": "Revenue was €3.2888B, approximately 28.2% of total sales. Management highlights productivity upgrades. Installed-base demand supports a different revenue stream from new systems, but its quarterly growth should not be assumed to be entirely subscription-like recurring revenue."
+      }
+    ],
+    "guidance": [
+      "Revenue"
+    ],
+    "follow_ups": [
+      {
+        "question": "Does the Q4 sales ramp match acceptance and capacity execution?",
+        "update": "Compare realized sales and mix with the €14.2B–€15.2B outlook and management delivery commentary.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      },
+      {
+        "question": "How much of the cash surge reverses with working-capital timing?",
+        "update": "Review customer advances, receivables and supplier payments rather than extrapolating one quarter’s OCF.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      },
+      {
+        "question": "What is recurring operating profit after investment gains?",
+        "update": "Keep equipment/service operating performance separate from equity gains and equity-method contributions.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      }
+    ],
+    "limitations": [
+      "Analysis uses the listed official filings, releases and financial attachments; official call text has not been fully reviewed.",
+      "Product/geographic categories, reportable segments and adjusted measures retain their disclosed perimeters and must not be double-counted or substituted for consolidated GAAP results.",
+      "Cash flows are standalone; cumulative disclosures are differenced across adjacent periods. Issuer adjustments, leases and incentives are identified in metric definitions.",
+      "No pre-release consensus snapshot was preserved. Management guidance and analytical inferences are distinct from realized results."
+    ],
+    "metrics": [
+      {
+        "key": "revenue",
+        "label": "Revenue"
+      },
+      {
+        "key": "gross_margin",
+        "label": "GAAP gross margin",
+        "definition": "GAAP gross profit divided by quarterly revenue."
+      },
+      {
+        "key": "diluted_eps",
+        "label": "GAAP diluted EPS"
+      },
+      {
+        "key": "net_income",
+        "label": "Net income attributable to stockholders"
+      },
+      {
+        "key": "operating_income",
+        "label": "GAAP operating income"
+      },
+      {
+        "key": "operating_cash_flow",
+        "label": "Operating cash flow"
+      },
+      {
+        "key": "cash_capex",
+        "label": "Cash capital purchases including intangibles"
+      },
+      {
+        "key": "free_cash_flow",
+        "label": "Calculated free cash flow",
+        "definition": "Quarterly OCF less both property/equipment and intangible purchases."
+      }
+    ]
+  }
+}

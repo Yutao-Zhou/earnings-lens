@@ -1,0 +1,91 @@
+{
+  "report_id": "0000050863-FY2026-Q3",
+  "revision": 2,
+  "en": {
+    "summary": "Data Center led the revenue recovery and Intel Products profit improved, while Foundry remained loss-making and includes substantial internal revenue. GAAP EPS fell against a prior-year disposal-gain base. Evaluate product demand, foundry economics and the multiple cash-investment definitions separately; adding segment revenue without eliminations would overstate the group’s business.",
+    "findings": [
+      "Revenue was $16.513B, changing 20.948% YoY. GAAP diluted EPS was $0.60 versus $0.90 a year ago. These are realized standalone results for 2026-06-28–2026-09-26; changes in the business mix and special items need to be evaluated alongside the consolidated comparison.",
+      "GAAP operating income was $2.522B. Dividing it by revenue gives an operating margin of about 15.273%, versus 5.003% a year ago. The financial table separately retains GAAP gross margin of 42.972%. Gross and operating margins measure different expense levels; neither measures cash left after capital investment or the return earned on the installed asset base.",
+      "Standalone OCF was $5.082B. The financial cash-purchase measure is $4.024B, leaving $1.058B of calculated FCF. The company separately reports $4.219B of gross capex and $1.639B of adjusted FCF with government incentives, net SCIP partner contributions and finance-lease payments in its reconciliation. These are different boundaries; the site does not relabel the simple cash calculation as company-adjusted FCF.",
+      "DCAI revenue rose from $4.117B to $7.318B, while CCPG fell from $8.535B to $8.097B. Intel Products operating income increased to $5.324B. Server/AI strength therefore coexists with weaker client sales, and consolidated growth should not be interpreted as uniform recovery across the product portfolio.",
+      "GAAP operating income increased to $2.522B from $683M, but the year-ago non-operating comparison included a $5.546B Altera divestiture gain. The current quarter also includes a $1.005B gain on escrowed-share remeasurement. The EPS decrease from $0.90 to $0.60 therefore mixes operating progress with large non-operating effects, rather than measuring product profitability alone.",
+      "Foundry revenue of $6.697B includes internal transactions; group intersegment revenue eliminations were $6.291B. Foundry still lost $1.853B operationally. Management’s Q4 revenue range of $15B–$16B and GAAP/non-GAAP EPS of $0.10/$0.25 are forward-looking. The critical tests are external monetization, utilization, process execution and the cash cost of capacity, not gross internal revenue alone."
+    ],
+    "segments": [
+      {
+        "name": "Client Computing and Physical AI Group",
+        "text": "Revenue was $8.097B and operating income $2.285B. Year-ago revenue was $8.535B and operating income $2.694B. This part of Intel Products remains profitable but is not following the same growth path as DCAI; earlier disclosures used the CCG name."
+      },
+      {
+        "name": "Data Center and AI",
+        "text": "Revenue was $7.318B and operating income $3.039B, versus $4.117B and $964M a year ago. The stronger mix supports Intel Products, but consolidated returns also depend on Foundry costs and corporate/elimination adjustments."
+      },
+      {
+        "name": "Intel Foundry",
+        "text": "Revenue rose to $6.697B from $4.235B and the operating loss narrowed to $1.853B from $2.321B. Internal manufacturing revenue and group eliminations make this a different measure from external customer sales."
+      }
+    ],
+    "guidance": [
+      "Revenue"
+    ],
+    "follow_ups": [
+      {
+        "question": "Can DCAI improvement persist while client revenue remains weaker?",
+        "update": "Track the two product groups’ revenue and operating income separately.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      },
+      {
+        "question": "Does Foundry improve external demand and cash economics?",
+        "update": "Separate external sales from intersegment revenue and compare utilization, losses and investment.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      },
+      {
+        "question": "How much adjusted cash generation comes from incentives and partners?",
+        "update": "Retain the reconciliation between cash purchases, gross capex, partner funding and adjusted FCF.",
+        "next_check": "Next official quarterly results, filing and relevant supplemental disclosures."
+      }
+    ],
+    "limitations": [
+      "Analysis uses the listed official filings, releases and financial attachments; official call text has not been fully reviewed.",
+      "Product/geographic categories, reportable segments and adjusted measures retain their disclosed perimeters and must not be double-counted or substituted for consolidated GAAP results.",
+      "Cash flows are standalone; cumulative disclosures are differenced across adjacent periods. Issuer adjustments, leases and incentives are identified in metric definitions.",
+      "No pre-release consensus snapshot was preserved. Management guidance and analytical inferences are distinct from realized results."
+    ],
+    "metrics": [
+      {
+        "key": "revenue",
+        "label": "Revenue"
+      },
+      {
+        "key": "gross_margin",
+        "label": "GAAP gross margin",
+        "definition": "GAAP gross profit divided by quarterly revenue."
+      },
+      {
+        "key": "diluted_eps",
+        "label": "GAAP diluted EPS"
+      },
+      {
+        "key": "net_income",
+        "label": "Net income attributable to stockholders"
+      },
+      {
+        "key": "operating_income",
+        "label": "GAAP operating income"
+      },
+      {
+        "key": "operating_cash_flow",
+        "label": "Operating cash flow"
+      },
+      {
+        "key": "cash_capex",
+        "label": "Cash capital purchases"
+      },
+      {
+        "key": "free_cash_flow",
+        "label": "Calculated free cash flow",
+        "definition": "Standalone quarterly operating cash flow less cash capital purchases."
+      }
+    ]
+  }
+}
