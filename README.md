@@ -13,7 +13,7 @@ Static US earnings research generated from structured report JSON. OpenClaw coll
 | Output | A self-contained static HTML page |
 | Browser | Search, filter, and switch reports using embedded data |
 
-All financial data, English/Chinese analysis, styles and charts are embedded in the page. There is no database, backend or runtime financial-data API. The optional shared anonymous Umami tracker is disabled offline and on local previews, honors opt-out/DNT/GPC, and cannot affect report rendering. A separately configured company-request form can send a native POST to FormSubmit after explicit submission; requests require editorial review and never modify the watchlist automatically. Original sources open when selected by a reader.
+All financial data, English/Chinese analysis, styles and charts are embedded in the page. There is no database, backend or runtime financial-data API. The optional shared anonymous Umami tracker is disabled offline and on local previews, honors opt-out/DNT/GPC, and cannot affect report rendering. After an explicit action, the company-request form opens the configured FormSubmit contact page with request details prefilled, or submits to a configured native endpoint. Requests require editorial review and never modify the watchlist automatically. Original sources open when selected by a reader.
 
 Technical details are documented in [Implementation Notes](docs/implementation.md).
 

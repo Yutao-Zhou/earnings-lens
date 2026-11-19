@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-18-stock-requests",
+    "date": "2026-11-18",
+    "en": {
+      "title": "Suggest stocks to cover",
+      "text": "Use Request a stock below the watchlist search to suggest a company. Continue through the contact form to send; coverage is added after review."
+    },
+    "zh": {
+      "title": "申请添加股票",
+      "text": "在关注列表搜索框下方填写公司或股票代码，点击继续发送，在联系表单完成申请。所有新增覆盖均由编辑审核。"
+    }
+  },
+  {
     "id": "2026-11-18-cost-ant",
     "date": "2026-11-18",
     "en": {
