@@ -25,17 +25,65 @@ function renderChrome(){
   renderAnnouncements();
   renderCoverageRequest();
 }
-const coverageRequestDraft={company:'',reason:''};
+const coverageRequestDraft={company:'',reason:'',consent:false};
 function renderCoverageRequest(){
- const root=document.getElementById('coverage-request');if(!root)return;const endpoint=dataset.requests?.endpoint,hosted=endpoint&&new URL(endpoint).pathname.startsWith('/el/'),expanded=root.querySelector('details')?.open??false;
- const company=el('input',{id:'request-company',name:hosted?null:'company',type:'text',required:true,maxlength:80,autocomplete:'off',value:coverageRequestDraft.company,onInput:event=>{coverageRequestDraft.company=event.target.value;event.target.setCustomValidity('');}});
- const reason=el('textarea',{id:'request-reason',name:hosted?null:'reason',maxlength:500,rows:3,onInput:event=>{coverageRequestDraft.reason=event.target.value;}},coverageRequestDraft.reason);
- const offline=location.protocol==='file:',unavailable=!endpoint||offline,button=el('button',{type:'submit',class:'request-submit','aria-describedby':unavailable?'request-availability':null},hosted?tx('Continue to send','继续发送'):tx('Send request','提交申请'));if(unavailable)button.disabled=true;
- const hidden=(name,value)=>el('input',{type:'hidden',name,value});
- const subject=hidden(hosted?'subject':'_subject','Earnings Lens — company coverage request'),message=hosted?hidden('message',''):null;
- const deliveryFields=hosted?[subject,message]:[subject,hidden('_template','table'),hidden('_url','https://yutaozhou.com/earnings-lens/'),el('input',{type:'text',name:'_honey',class:'request-honeypot',tabindex:'-1',autocomplete:'off','aria-hidden':'true'})];
- const status=unavailable?el('p',{id:'request-availability',class:'request-status',role:'status'},offline?tx('An internet connection is required to send requests.','提交申请需要联网。'):tx('Email delivery is not ready yet. Requests cannot be sent right now.','邮件通知尚未就绪，暂时无法提交申请。')):null;
- root.replaceChildren(el('details',{class:'coverage-request',open:expanded},el('summary',{id:'stock-request-toggle'},tx('Request a stock','申请添加股票')),el('p',{},tx('Suggest a company for earnings coverage. Each request is reviewed; inclusion is not automatic.','申请关注某家公司的财报。所有申请均需审核，不会自动加入。')),status,el('form',{method:hosted?'GET':'POST',action:endpoint,target:'_blank',rel:'noopener noreferrer',onSubmit:event=>{if(unavailable){event.preventDefault();return;}if(!company.value.trim()){event.preventDefault();company.setCustomValidity(tx('Enter a company name or ticker.','请填写公司名称或股票代码。'));company.reportValidity();return;}company.value=company.value.trim();subject.value=`Earnings Lens — coverage request: ${company.value}`;if(message)message.value=`Company or ticker: ${company.value}\nReason: ${reason.value.trim()||'Not provided'}\n\nFrom https://yutaozhou.com/earnings-lens/\nRequests require editorial review; do not add automatically.`;}},el('label',{for:'request-company'},tx('Company or ticker','公司名称或股票代码')),company,el('label',{for:'request-reason'},tx('Why add it? (optional)','添加理由（选填）')),reason,deliveryFields,button),el('p',{class:'request-privacy'},unavailable?tx('Your draft stays in this page until you submit.','提交前，草稿仅保留在当前页面。'):hosted?tx('Continue on FormSubmit to enter your name and email and complete sending. Your stock and reason will be filled in.','将在 FormSubmit 填写姓名、邮箱并完成发送，股票和理由会自动带入。'):tx('Submitting sends these fields to FormSubmit for email delivery. Do not include personal or sensitive information.','提交后，这些内容将交给 FormSubmit 发送邮件。请勿填写个人或敏感信息。'))));
+  const root = document.getElementById('coverage-request');
+  if (!root) return;
+  const endpoint = dataset.requests?.endpoint;
+  const hosted = endpoint && new URL(endpoint).pathname.startsWith('/el/');
+  const expanded = root.querySelector('details')?.open ?? false;
+  const offline = location.protocol === 'file:';
+  const unavailable = !endpoint || offline;
+  const company = el('input', { id: 'request-company', name: hosted ? null : 'company', type: 'text', required: true,
+    maxlength: 80, autocomplete: 'off', value: coverageRequestDraft.company, onInput: event => {
+      coverageRequestDraft.company = event.target.value;
+      event.target.setCustomValidity('');
+    } });
+  const reason = el('textarea', { id: 'request-reason', name: hosted ? null : 'reason', maxlength: 500, rows: 3,
+    onInput: event => { coverageRequestDraft.reason = event.target.value; } }, coverageRequestDraft.reason);
+  const consent = el('input', { id: 'request-consent', type: 'checkbox', required: true, 'aria-describedby': 'request-privacy',
+    onChange: event => { coverageRequestDraft.consent = event.target.checked; } });
+  consent.checked = coverageRequestDraft.consent;
+  const button = el('button', { type: 'submit', class: 'request-submit', 'aria-describedby': unavailable ? 'request-availability' : null },
+    hosted ? tx('Continue to send', '继续发送') : tx('Send request', '提交申请'));
+  button.disabled = unavailable;
+  const hidden = (name, value) => el('input', { type: 'hidden', name, value });
+  const subject = hidden(hosted ? 'subject' : '_subject', 'Earnings Lens — company coverage request');
+  const message = hosted ? hidden('message', '') : null;
+  const deliveryFields = hosted ? [subject, message] : [subject, hidden('_template', 'table'),
+    hidden('_url', 'https://yutaozhou.com/earnings-lens/'), el('input', { type: 'text', name: '_honey', class: 'request-honeypot',
+      tabindex: '-1', autocomplete: 'off', 'aria-hidden': 'true' })];
+  const status = unavailable ? el('p', { id: 'request-availability', class: 'request-status', role: 'status' }, offline
+    ? tx('An internet connection is required to send requests.', '提交申请需要联网。')
+    : tx('Email delivery is not ready yet. Requests cannot be sent right now.', '邮件通知尚未就绪，暂时无法提交申请。')) : null;
+  function submit(event) {
+    if (unavailable || !consent.checked) {
+      event.preventDefault();
+      if (!unavailable) consent.reportValidity();
+      return;
+    }
+    if (!company.value.trim()) {
+      event.preventDefault();
+      company.setCustomValidity(tx('Enter a company name or ticker.', '请填写公司名称或股票代码。'));
+      company.reportValidity();
+      return;
+    }
+    company.value = company.value.trim();
+    subject.value = `Earnings Lens — coverage request: ${company.value}`;
+    if (message) message.value = `Company or ticker: ${company.value}\nReason: ${reason.value.trim() || 'Not provided'}\n\nFrom https://yutaozhou.com/earnings-lens/\nRequests require editorial review.`;
+  }
+  const privacy = unavailable ? tx('Your draft stays in this page until you submit.', '提交前，草稿仅保留在当前页面。') : hosted
+    ? tx('When you continue, FormSubmit receives the stock and reason. It asks for your name and email if you finish sending.', '点击继续会将股票和理由发送到 FormSubmit。完成发送时，它会要求填写姓名和邮箱。')
+    : tx('FormSubmit forwards the information you submit by email. Avoid including sensitive information.', 'FormSubmit 将通过邮件转发你提交的信息。请避免填写敏感信息。');
+  root.replaceChildren(el('details', { class: 'coverage-request', open: expanded },
+    el('summary', { id: 'stock-request-toggle' }, tx('Request a stock', '申请添加股票')),
+    el('p', {}, tx('Suggest a company for earnings coverage. Each request is reviewed.', '申请关注某家公司的财报。每项申请都会经过审核。')),
+    status, el('form', { method: hosted ? 'GET' : 'POST', action: endpoint, target: '_blank', rel: 'noopener noreferrer', onSubmit: submit },
+      el('label', { for: 'request-company' }, tx('Company or ticker', '公司名称或股票代码')), company,
+      el('label', { for: 'request-reason' }, tx('Why add it? (optional)', '添加理由（选填）')), reason,
+      unavailable ? null : el('label', { class: 'request-consent' }, consent,
+        tx('I agree to share this request with FormSubmit for delivery.', '我同意将该申请交由 FormSubmit 转发。')),
+      deliveryFields, button), el('p', { id: 'request-privacy', class: 'request-privacy' }, privacy)));
 }
 function setLanguage(next){language=next;rememberPreference('earnings-lens.language',language);render();document.getElementById(`language-${next}`)?.focus();}
 function renderAnnouncements(){
