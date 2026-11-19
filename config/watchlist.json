@@ -204,6 +204,18 @@
         "Can revenue growth support GAAP profitability and compute economics?",
         "How will capacity commitments and financing affect cash returns?"
       ]
+    },
+    {
+      "id": "0000946581",
+      "cik": "0000946581",
+      "ticker": "TTWO",
+      "name": "Take-Two Interactive",
+      "enabled": true,
+      "ir_url": "https://www.take2games.com/ir",
+      "research_questions": [
+        "How do new releases and recurrent consumer spending affect bookings and reported revenue?",
+        "How will the launch slate, software investment and deferred revenue affect cash generation?"
+      ]
     }
   ]
 }

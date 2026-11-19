@@ -6,7 +6,7 @@ import {validateReport} from '../lib/validation.mjs';
 const dataset=await loadDataset();
 test('the active site contains real reports and the requested watchlist',()=>{
   assert.equal(dataset.mode,'production');
-  assert.deepEqual(dataset.companies.map(c=>c.ticker),['NVDA','MSFT','AAPL','AMZN','GOOGL','META','TSLA','SPCX','AMD','INTC','MU','ASML','GM','PLTR','ORCL','COST','ANT']);
+  assert.deepEqual(dataset.companies.map(c=>c.ticker),['NVDA','MSFT','AAPL','AMZN','GOOGL','META','TSLA','SPCX','AMD','INTC','MU','ASML','GM','PLTR','ORCL','COST','ANT','TTWO']);
   for(const company of dataset.companies)assert.ok(dataset.reports.some(r=>r.company.id===company.id));
   assert.ok(dataset.reports.length>=1);
   assert.ok(dataset.reports.every(report=>report.data_kind==='production'));
@@ -70,3 +70,18 @@ test('expanded coverage preserves issuer cash definitions, currency and loss bas
 
 test('Costco keeps its 16-week quarter, membership denominator and later cash-flow classification',()=>{const r=dataset.reports.find(r=>r.company.ticker==='COST'),m=key=>r.metrics.find(m=>m.key===key);assert.deepEqual(r.period,{fiscal_year:2026,fiscal_period:'Q4',start:'2026-05-11',end:'2026-08-30'});assert.equal(m('revenue').value,95723e6);assert.equal(m('diluted_eps').value,6.75);assert.equal(m('gross_margin').value,(93873-83531)/93873*100);assert.equal(m('operating_cash_flow').value,(15817-11133)*1e6);assert.equal(m('free_cash_flow').value,((15817-11133)-(6435-4228))*1e6);assert.ok(m('free_cash_flow').evidence_ids.includes('cash-prior'));assert.notEqual(m('operating_cash_flow').value,15825e6);});
 test('Anthropic uses the IPO quarterly statement and preserves unverified metrics and loss baselines',()=>{const r=dataset.reports.find(r=>r.company.ticker==='ANT'),m=key=>r.metrics.find(m=>m.key===key);assert.equal(r.period.start,'2026-07-01');assert.equal(m('revenue').value,16956e6);assert.equal(m('net_income').value,-23291e6);assert.equal(m('operating_income').value,-567e6);for(const key of ['gross_margin','diluted_eps','operating_cash_flow','cash_capex','free_cash_flow']){assert.equal(m(key).value,null);assert.ok(m(key).missing_reason);}assert.equal(m('net_income').comparisons[0].change_pct,null);assert.equal(r.coverage.earnings_release,'pending');assert.match(r.summary.text,/IPO/);assert.ok(r.findings.length>=5&&r.follow_ups.length>=3);});
+
+test('Take-Two separates GAAP revenue, operating metrics and management outlook', () => {
+  const report = dataset.reports.find(item => item.report_id === '0000946581-FY2027-Q2' && item.revision === 1);
+  assert.ok(report);
+  const metric = key => report.metrics.find(item => item.key === key);
+  assert.equal(metric('revenue').value, 1497e6);
+  assert.equal(metric('net_bookings').value, 1601.3e6);
+  assert.equal(metric('net_bookings').basis, 'operational');
+  assert.equal(metric('recurrent_spending_revenue').value, 1210.2e6);
+  assert.equal(metric('free_cash_flow').value, -143e6);
+  assert.deepEqual(report.guidance.map(({ target_period, basis, low, high }) => [target_period, basis, low, high]), [
+    ['FY2027', 'GAAP', 7980e6, 8180e6], ['FY2027', 'operational', 8000e6, 8200e6],
+    ['FY2027 Q3', 'GAAP', 3270e6, 3420e6], ['FY2027 Q3', 'operational', 3350e6, 3500e6],
+  ]);
+});

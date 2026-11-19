@@ -1,0 +1,665 @@
+{
+  "schema_version": "1.0",
+  "data_kind": "production",
+  "report_id": "0000946581-FY2027-Q2",
+  "revision": 1,
+  "revision_reason": "initial",
+  "supersedes_revision": null,
+  "validation_status": "passed",
+  "company": {
+    "id": "0000946581",
+    "cik": "0000946581",
+    "ticker": "TTWO",
+    "name": "Take-Two Interactive"
+  },
+  "period": {
+    "fiscal_year": 2027,
+    "fiscal_period": "Q2",
+    "start": "2026-07-01",
+    "end": "2026-09-30"
+  },
+  "published_at": "2026-11-09T00:00:00-05:00",
+  "published_at_precision": "date",
+  "as_of": "2026-11-19T06:10:50.339Z",
+  "analyzed_at": "2026-11-19T06:10:50.339Z",
+  "coverage": {
+    "earnings_release": "available",
+    "regulatory_filing": "available",
+    "transcript": "pending",
+    "supplemental_financials": "available"
+  },
+  "sources": [
+    {
+      "id": "filing",
+      "title": "Take-Two Interactive 10-Q — period ended 2026-09-30",
+      "type": "regulatory_filing",
+      "url": "https://www.sec.gov/Archives/edgar/data/946581/000162828026072254/ttwo-20260930.htm",
+      "published_at": "2026-11-09T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-19T06:10:07.884Z"
+    },
+    {
+      "id": "facts",
+      "title": "Take-Two Interactive SEC XBRL financial facts",
+      "type": "supplemental_financials",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000946581.json",
+      "published_at": "2026-11-09T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-19T06:10:09.011Z"
+    },
+    {
+      "id": "release",
+      "title": "Take-Two Interactive quarterly earnings release",
+      "type": "earnings_release",
+      "url": "https://www.sec.gov/Archives/edgar/data/946581/000162828026072175/ttwo2q27earningsrelease.htm",
+      "published_at": "2026-11-09T00:00:00-05:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-19T06:10:09.548Z"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "metric-revenue",
+      "source_id": "filing",
+      "locator": "Consolidated financial tables; revenue; 2026-07-01 to 2026-09-30; comparison 2025-07-01 to 2025-09-30",
+      "quote": "1,497"
+    },
+    {
+      "id": "metric-gross_margin",
+      "source_id": "facts",
+      "locator": "Consolidated financial tables; gross_margin; 2026-07-01 to 2026-09-30; comparison 2025-07-01 to 2025-09-30",
+      "quote": "57.4749"
+    },
+    {
+      "id": "metric-diluted_eps",
+      "source_id": "filing",
+      "locator": "Consolidated financial tables; diluted_eps; 2026-07-01 to 2026-09-30; comparison 2025-07-01 to 2025-09-30",
+      "quote": "-0.29"
+    },
+    {
+      "id": "metric-net_income",
+      "source_id": "filing",
+      "locator": "Consolidated financial tables; net_income; 2026-07-01 to 2026-09-30; comparison 2025-07-01 to 2025-09-30",
+      "quote": "-54"
+    },
+    {
+      "id": "metric-operating_income",
+      "source_id": "filing",
+      "locator": "Consolidated financial tables; operating_income; 2026-07-01 to 2026-09-30; comparison 2025-07-01 to 2025-09-30",
+      "quote": "-117.5"
+    },
+    {
+      "id": "metric-operating_cash_flow",
+      "source_id": "facts",
+      "locator": "Consolidated financial tables; operating_cash_flow; 2026-07-01 to 2026-09-30; comparison 2025-07-01 to 2025-09-30",
+      "quote": "-4.7"
+    },
+    {
+      "id": "metric-cash_capex",
+      "source_id": "facts",
+      "locator": "Consolidated financial tables; cash_capex; 2026-07-01 to 2026-09-30; comparison 2025-07-01 to 2025-09-30",
+      "quote": "138.3"
+    },
+    {
+      "id": "metric-free_cash_flow",
+      "source_id": "facts",
+      "locator": "Consolidated financial tables; free_cash_flow; 2026-07-01 to 2026-09-30; comparison 2025-07-01 to 2025-09-30",
+      "quote": "-143"
+    },
+    {
+      "id": "take-two-net-bookings",
+      "source_id": "release",
+      "locator": "Net Bookings by content, standalone quarter and prior-year quarter.",
+      "quote": "Net Bookings (USD millions): 1601.3; 1960.5."
+    },
+    {
+      "id": "take-two-recurrent-spending-revenue",
+      "source_id": "release",
+      "locator": "Net revenue by content, standalone quarter and prior-year quarter.",
+      "quote": "Recurrent consumer spending revenue (USD millions): 1210.2; 1275.9."
+    },
+    {
+      "id": "take-two-guidance-2027-03-31-revenue",
+      "source_id": "release",
+      "locator": "Fiscal Year Ending March 31, 2027",
+      "quote": "GAAP net revenue: $7,980 to $8,180 million."
+    },
+    {
+      "id": "take-two-guidance-2027-03-31-bookings",
+      "source_id": "release",
+      "locator": "Fiscal Year Ending March 31, 2027",
+      "quote": "Net Bookings: $8,000 to $8,200 million."
+    },
+    {
+      "id": "take-two-guidance-2026-12-31-revenue",
+      "source_id": "release",
+      "locator": "Three Months Ending December 31, 2026",
+      "quote": "GAAP net revenue: $3,270 to $3,420 million."
+    },
+    {
+      "id": "take-two-guidance-2026-12-31-bookings",
+      "source_id": "release",
+      "locator": "Three Months Ending December 31, 2026",
+      "quote": "Net Bookings: $3,350 to $3,500 million."
+    },
+    {
+      "id": "ttwo-review-rcs",
+      "source_id": "filing",
+      "locator": "MD&A, Results of Operations, three-month net revenue by content",
+      "quote": "Color Block Jam and Match Factory!"
+    },
+    {
+      "id": "ttwo-review-games",
+      "source_id": "filing",
+      "locator": "MD&A, Results of Operations, full game and digital net revenue",
+      "quote": "Borderlands and Mafia franchises"
+    },
+    {
+      "id": "ttwo-review-tax",
+      "source_id": "filing",
+      "locator": "Note 13, Income Taxes, three-month comparison",
+      "quote": "Benefit from income taxes"
+    },
+    {
+      "id": "ttwo-review-launch",
+      "source_id": "release",
+      "locator": "CEO comments and Product Releases, forward lineup",
+      "quote": "Grand Theft Auto VI"
+    },
+    {
+      "id": "ttwo-review-dependencies",
+      "source_id": "release",
+      "locator": "Outlook for Fiscal Year 2027, assumptions and dependencies",
+      "quote": "timely delivery of the titles"
+    }
+  ],
+  "metrics": [
+    {
+      "key": "revenue",
+      "label": "营业收入",
+      "value": 1497000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-revenue"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 1773800000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-revenue"
+          ],
+          "change_pct": -15.604915999548997,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "gross_margin",
+      "label": "GAAP 毛利率",
+      "value": 57.4749498997996,
+      "unit": "percent",
+      "currency": null,
+      "basis": "derived",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": "GAAP 毛利金额除以同季收入。",
+      "evidence_ids": [
+        "metric-gross_margin"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 55.27680685533882,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-gross_margin"
+          ],
+          "change_pct": null,
+          "change_pp": 2.198143044460778,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "diluted_eps",
+      "label": "GAAP 摊薄每股收益",
+      "value": -0.29,
+      "unit": "currency_per_share",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-diluted_eps"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": -0.73,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-diluted_eps"
+          ],
+          "change_pct": null,
+          "change_pp": null,
+          "unavailable_reason": "基期非正值，普通增长率不具可比意义。"
+        }
+      ]
+    },
+    {
+      "key": "net_income",
+      "label": "归属股东净利润",
+      "value": -54000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-net_income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": -133900000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-net_income"
+          ],
+          "change_pct": null,
+          "change_pp": null,
+          "unavailable_reason": "基期非正值，普通增长率不具可比意义。"
+        }
+      ]
+    },
+    {
+      "key": "operating_income",
+      "label": "GAAP 营业利润",
+      "value": -117500000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-operating_income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": -98000000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-operating_income"
+          ],
+          "change_pct": null,
+          "change_pp": null,
+          "unavailable_reason": "基期非正值，普通增长率不具可比意义。"
+        }
+      ]
+    },
+    {
+      "key": "operating_cash_flow",
+      "label": "经营活动现金流",
+      "value": -4700000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-operating_cash_flow"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 128400000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-operating_cash_flow"
+          ],
+          "change_pct": -103.66043613707166,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "cash_capex",
+      "label": "现金资本购置",
+      "value": 138300000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-cash_capex"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 31900000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-cash_capex"
+          ],
+          "change_pct": 333.5423197492163,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "free_cash_flow",
+      "label": "自由现金流（计算值）",
+      "value": -143000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "derived",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "definition": "单季经营现金流减现金资本购置。",
+      "evidence_ids": [
+        "metric-free_cash_flow"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 96500000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "metric-free_cash_flow"
+          ],
+          "change_pct": -248.1865284974093,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "net_bookings",
+      "label": "净预订额",
+      "definition": "公司披露的经营指标，用于衡量期间内以数字方式售出或向实体零售渠道售入的产品及服务净额。",
+      "value": 1601300000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "operational",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "evidence_ids": [
+        "take-two-net-bookings"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 1960500000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "take-two-net-bookings"
+          ],
+          "change_pct": -18.32185666921704,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "recurrent_spending_revenue",
+      "label": "持续性玩家消费收入",
+      "definition": "按内容分类的已确认收入，包括虚拟货币、追加内容、游戏内购买和广告。",
+      "value": 1210200000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-07-01",
+      "period_end": "2026-09-30",
+      "missing_reason": null,
+      "evidence_ids": [
+        "take-two-recurrent-spending-revenue"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 1275900000,
+          "baseline_start": "2025-07-01",
+          "baseline_end": "2025-09-30",
+          "baseline_evidence_ids": [
+            "take-two-recurrent-spending-revenue"
+          ],
+          "change_pct": -5.149306371972728,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    }
+  ],
+  "guidance": [
+    {
+      "label": "GAAP 净收入",
+      "target_period": "FY2027",
+      "period_start": null,
+      "period_end": "2027-03-31",
+      "low": 7980000000,
+      "high": 8180000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "evidence_ids": [
+        "take-two-guidance-2027-03-31-revenue"
+      ]
+    },
+    {
+      "label": "净预订额",
+      "target_period": "FY2027",
+      "period_start": null,
+      "period_end": "2027-03-31",
+      "low": 8000000000,
+      "high": 8200000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "operational",
+      "evidence_ids": [
+        "take-two-guidance-2027-03-31-bookings"
+      ]
+    },
+    {
+      "label": "GAAP 净收入",
+      "target_period": "FY2027 Q3",
+      "period_start": null,
+      "period_end": "2026-12-31",
+      "low": 3270000000,
+      "high": 3420000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "evidence_ids": [
+        "take-two-guidance-2026-12-31-revenue"
+      ]
+    },
+    {
+      "label": "净预订额",
+      "target_period": "FY2027 Q3",
+      "period_start": null,
+      "period_end": "2026-12-31",
+      "low": 3350000000,
+      "high": 3500000000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "operational",
+      "evidence_ids": [
+        "take-two-guidance-2026-12-31-bookings"
+      ]
+    }
+  ],
+  "segments": [
+    {
+      "name": "Rockstar 与主机游戏",
+      "text": "既有《GTA》系列数字收入增长，部分抵消了其他游戏走弱。《GTA VI》是下一财季的新品，届时可用主机净预订额、完整游戏收入和递延收入来区分首发销售与后续确认。",
+      "evidence_ids": [
+        "ttwo-review-games",
+        "ttwo-review-launch",
+        "take-two-net-bookings"
+      ]
+    },
+    {
+      "name": "移动游戏与持续性玩家消费",
+      "text": "移动游戏收入包含在游戏内购买和广告等长期变现业务中。季度披露把《Color Block Jam》和《Match Factory!》的走弱列为持续性消费收入下滑的主要原因；后续可一起观察移动端收入和持续性消费绝对额。",
+      "evidence_ids": [
+        "ttwo-review-rcs",
+        "take-two-recurrent-spending-revenue"
+      ]
+    }
+  ],
+  "follow_ups": [
+    {
+      "id": "take-two-follow-up-1",
+      "status": "monitoring",
+      "question": "《GTA VI》首发如何转化为业绩？",
+      "update": "用第三财季披露的净预订额与收入对照本次指引，跟踪主机业务和递延收入。",
+      "next_check": "下一次正式财报披露。",
+      "evidence_ids": [
+        "ttwo-review-launch",
+        "take-two-guidance-2026-12-31-bookings",
+        "take-two-guidance-2026-12-31-revenue"
+      ]
+    },
+    {
+      "id": "take-two-follow-up-2",
+      "status": "monitoring",
+      "question": "持续性玩家消费收入能否恢复增长？",
+      "update": "比较移动业务收入与持续性消费绝对额，核对公司是否披露关键游戏和玩家获取成本。",
+      "next_check": "下一次正式财报披露。",
+      "evidence_ids": [
+        "take-two-recurrent-spending-revenue",
+        "ttwo-review-rcs",
+        "ttwo-review-dependencies"
+      ]
+    },
+    {
+      "id": "take-two-follow-up-3",
+      "status": "monitoring",
+      "question": "新品销售何时带来自由现金流改善？",
+      "update": "从下一期累计现金流中扣除本期累计值，核对单季经营现金流、现金资本购置和营运资本变化。",
+      "next_check": "下一次正式财报披露。",
+      "evidence_ids": [
+        "metric-operating_cash_flow",
+        "metric-cash_capex",
+        "metric-free_cash_flow"
+      ]
+    }
+  ],
+  "limitations": [
+    "分析依据已列明的官方材料，资料覆盖情况与尚未核验的单季指标分别列出。",
+    "财务数值与数值指引来自已核验的财报数据，业务分析根据引用的披露材料解读。",
+    "未保留披露前市场一致预期快照。"
+  ],
+  "summary": {
+    "text": "本季 GAAP 净收入同比下滑 15.6%，净预订额下降 18.3%。完整游戏销售回落是收入下滑的主要原因，而营业亏损和现金流也弱于去年同期。管理层在 11 月 9 日披露中维持 FY2027 净预订额 80 亿至 82 亿美元的预期，部分取决于《GTA VI》推出后的销售表现。",
+    "evidence_ids": [
+      "metric-revenue",
+      "take-two-net-bookings",
+      "ttwo-review-games",
+      "metric-operating_income",
+      "metric-free_cash_flow",
+      "ttwo-review-launch",
+      "take-two-guidance-2027-03-31-bookings"
+    ]
+  },
+  "findings": [
+    {
+      "kind": "fact",
+      "text": "GAAP 净收入为 14.97 亿美元，净预订额为 16.01 亿美元，分别同比下降 15.6% 和 18.3%。净预订额衡量期间内售出的产品和服务，游戏收入则按会计规则确认，两项指标在新品集中上线时的变动可能不同。",
+      "evidence_ids": [
+        "metric-revenue",
+        "take-two-net-bookings"
+      ]
+    },
+    {
+      "kind": "fact",
+      "text": "毛利率升至 57.5%，但营业亏损从 9800 万美元扩大到 1.175 亿美元。净亏损则从 1.339 亿美元收窄到 5400 万美元，本季确认 5790 万美元税务收益，上年同期为 1840 万美元税费。",
+      "evidence_ids": [
+        "metric-gross_margin",
+        "metric-operating_income",
+        "metric-net_income",
+        "ttwo-review-tax"
+      ]
+    },
+    {
+      "kind": "fact",
+      "text": "单季经营现金流从上年同期流入 1.284 亿美元转为流出 470 万美元，现金资本购置增至 1.383 亿美元。以两者相减计算的自由现金流为负 1.43 亿美元。单季现金流采用同一财年六个月累计值减去首季值。",
+      "evidence_ids": [
+        "metric-operating_cash_flow",
+        "metric-cash_capex",
+        "metric-free_cash_flow"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "完整游戏及其他收入减少 2.111 亿美元，占本季整体净收入降幅约四分之三。公司指出，主要拖累来自《无主之地》和《四海兄弟》系列；观察下一季时，应分开看旧作对比基数和新作实际贡献。",
+      "evidence_ids": [
+        "ttwo-review-games",
+        "metric-revenue"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "持续性玩家消费收入从 12.76 亿美元降至 12.10 亿美元，但收入占比从 71.9% 升至 80.8%，因为完整游戏销售下滑更快。《Color Block Jam》和《Match Factory!》是公司点名的拖累，判断业务表现时要同时跟踪绝对收入和占比。",
+      "evidence_ids": [
+        "take-two-recurrent-spending-revenue",
+        "ttwo-review-rcs",
+        "ttwo-review-games"
+      ]
+    },
+    {
+      "kind": "risk",
+      "text": "管理层预计 FY2027 Q3 净预订额为 33.5 亿至 35 亿美元。公司在 11 月 9 日公告中预计《GTA VI》于 11 月 19 日推出。全年指引对作品按期推出及主机需求敏感，下一季需核对实际预订额、收入确认和现金回流。",
+      "evidence_ids": [
+        "take-two-guidance-2026-12-31-bookings",
+        "ttwo-review-launch",
+        "ttwo-review-dependencies"
+      ]
+    }
+  ]
+}
