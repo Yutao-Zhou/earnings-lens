@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-20-portfolio-valuations",
+    "date": "2026-11-20",
+    "en": {
+      "title": "Valuations across the watchlist",
+      "text": "The Valuation tab now covers all 18 companies. See bear, base and bull estimates, with the specific inputs and sources for each company."
+    },
+    "zh": {
+      "title": "关注列表估值已覆盖 18 家公司",
+      "text": "在「估值」标签查看每家公司悲观、基准和乐观三种情景，以及对应的假设与资料来源。"
+    }
+  },
+  {
     "id": "2026-11-20-valuation-pilot",
     "date": "2026-11-20",
     "en": {

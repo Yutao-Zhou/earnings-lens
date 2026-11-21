@@ -1,0 +1,79 @@
+{
+  "report_id": "0000937966-FY2026-Q3",
+  "revision": 2,
+  "method": "forward_pe",
+  "as_of": "2026-11-20",
+  "currency": "EUR",
+  "revenue_anchor": {
+    "amount": 39473500000,
+    "kind": "ttm",
+    "description": {
+      "en": "Reported revenue for the trailing twelve months ending on the report period date.",
+      "zh": "采用截至报告期末的最近十二个月已披露营收。"
+    }
+  },
+  "shares": {
+    "count": 383500000,
+    "basis": "quarter_diluted",
+    "description": {
+      "en": "The model holds the latest reported standalone quarter’s diluted weighted-average share count constant.",
+      "zh": "模型固定采用本季已披露的加权平均摊薄股数。"
+    }
+  },
+  "capital": null,
+  "source_ids": [
+    "facts"
+  ],
+  "additional_sources": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/937966/000162828026065813/financial_statementsxusx.htm",
+      "label": {
+        "en": "ASML quarterly US GAAP statements · revenue and diluted shares",
+        "zh": "ASML 季度 US GAAP 财报：营收与摊薄股数"
+      }
+    },
+    {
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000937966.json",
+      "label": {
+        "en": "SEC company facts · financial and share disclosures",
+        "zh": "SEC 公司财务数据：财务和股数披露"
+      }
+    }
+  ],
+  "method_note": {
+    "en": "Growth, normalized net margin and forward P/E are research assumptions. Multiples reflect the expected persistence of earnings and company-specific risk. The denominator is held constant across scenarios.",
+    "zh": "增长、常态净利率和远期市盈率均为研究假设。倍数反映对盈利持续性和公司特有风险的判断。三个情景使用相同股数。"
+  },
+  "scenarios": [
+    {
+      "case": "bear",
+      "revenue_growth": 0.02,
+      "net_margin": 0.26,
+      "multiple": 23,
+      "rationale": {
+        "en": "Customer fab schedules slip and systems mix weakens.",
+        "zh": "客户晶圆厂建设延后，系统销售组合转弱。"
+      }
+    },
+    {
+      "case": "base",
+      "revenue_growth": 0.16,
+      "net_margin": 0.31,
+      "multiple": 31,
+      "rationale": {
+        "en": "EUV deliveries and installed-base services expand as planned.",
+        "zh": "EUV 设备交付和装机服务按计划增长。"
+      }
+    },
+    {
+      "case": "bull",
+      "revenue_growth": 0.27,
+      "net_margin": 0.35,
+      "multiple": 38,
+      "rationale": {
+        "en": "EUV adoption and productivity upgrades drive stronger revenue and mix.",
+        "zh": "EUV 应用和生产率升级推动营收及产品组合改善。"
+      }
+    }
+  ]
+}

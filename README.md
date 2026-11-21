@@ -54,7 +54,7 @@ The active dataset contains verified production reports. External content produc
 
 ## Valuation snapshots
 
-An optional `data/valuations/<report-id>-v<revision>.json` file binds a bilingual valuation to a single report revision. The first model starts from fiscal-year revenue made up of reported results and a verified guidance midpoint. Each scenario supplies forecast growth, net margin and a forward P/E, with a shared diluted share assumption. The build validates the source references, guidance, and scenario inputs. The page calculates EPS and per-share value from those inputs and renders them from the embedded dataset.
+An optional `data/valuations/<report-id>-v<revision>.json` file binds a bilingual valuation to a single report revision. The original NVIDIA pilot uses fiscal-year revenue made up of reported results and a verified guidance midpoint. Other snapshots forecast the 12 months after period end from trailing or explicitly annualized revenue. Forward P/E uses net margin and modeled shares. Forward EV / revenue includes a bridge from enterprise value to common equity using cash, debt and other claims. The build verifies identities, source references and scenario inputs. The page calculates and displays per-share values from the embedded dataset.
 
 Add a new snapshot after reviewing its assumptions against the underlying release. Reports without a snapshot display an unavailable state. A new report or report revision requires its own snapshot.
 

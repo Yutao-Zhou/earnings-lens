@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { loadDataset } from '../lib/data.mjs';
+import { periodsFor, revisionsFor } from '../lib/catalog.mjs';
 import { calculateValuation } from '../lib/valuation.mjs';
 import { validateValuation } from '../lib/valuation-data.mjs';
 
@@ -19,4 +20,24 @@ test('valuation recomputes prices and rejects broken anchors and scenario inputs
   wrongCase.scenarios[0].net_margin = 0;
   assert.match(validateValuation(wrongCase, report), /scenario|assumptions/);
   assert.match(validateValuation({ ...model, revision: 1 }, report), /existing report revision/);
+});
+
+test('published models follow their report identity and enterprise values bridge to equity', async () => {
+  const data = await loadDataset();
+  for (const company of data.companies) {
+    const period = periodsFor(data.reports, company.id)[0];
+    const report = revisionsFor(data.reports, period.report_id)[0];
+    const model = data.valuations[`${report.report_id}@${report.revision}`];
+    // A new report may precede its valuation while fresh inputs are being verified.
+    if (!model) continue;
+    assert.equal(validateValuation(model, report), null, company.ticker);
+  }
+  const model = data.valuations['0002130357-FY2026-Q3@1'];
+  const [, base] = calculateValuation(model);
+  assert.equal(model.shares.count, 13_219_642_276);
+  assert.equal(base.enterprise, 35_282e6 * 2 * 15);
+  assert.equal(base.equity, base.enterprise + 232_351e6 - 109_742e6);
+  assert.equal(base.price, base.equity / model.shares.count);
+  const spcx = data.valuations['0001181412-FY2026-Q3@2'];
+  assert.equal(spcx.shares.count, 8_246_541_218 + 5_334_522_491);
 });

@@ -1,0 +1,72 @@
+{
+  "report_id": "0001018724-FY2026-Q3",
+  "revision": 2,
+  "method": "forward_pe",
+  "as_of": "2026-11-20",
+  "currency": "USD",
+  "revenue_anchor": {
+    "amount": 797455000000,
+    "kind": "ttm",
+    "description": {
+      "en": "Trailing 12-month revenue (USD billions) combines the last full year (716.924) with this year's reported year-to-date revenue (584.069) less the matching prior-year period (503.538).",
+      "zh": "最近十二个月营收以十亿 USD 计：上个完整财年 716.924，加本财年累计 584.069，减去上年同期累计 503.538。"
+    }
+  },
+  "shares": {
+    "count": 10929000000,
+    "basis": "quarter_diluted",
+    "description": {
+      "en": "The model holds the latest reported standalone quarter’s diluted weighted-average share count constant.",
+      "zh": "模型固定采用本季已披露的加权平均摊薄股数。"
+    }
+  },
+  "capital": null,
+  "source_ids": [
+    "filing"
+  ],
+  "additional_sources": [
+    {
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json",
+      "label": {
+        "en": "SEC company facts · financial and share disclosures",
+        "zh": "SEC 公司财务数据：财务和股数披露"
+      }
+    }
+  ],
+  "method_note": {
+    "en": "Growth, normalized net margin and forward P/E are research assumptions. Multiples reflect the expected persistence of earnings and company-specific risk. The denominator is held constant across scenarios.",
+    "zh": "增长、常态净利率和远期市盈率均为研究假设。倍数反映对盈利持续性和公司特有风险的判断。三个情景使用相同股数。"
+  },
+  "scenarios": [
+    {
+      "case": "bear",
+      "revenue_growth": 0.08,
+      "net_margin": 0.08,
+      "multiple": 23,
+      "rationale": {
+        "en": "Retail margin tightens and AWS capacity absorbs more ongoing expense.",
+        "zh": "零售利润率收紧，AWS 产能增加持续性费用。"
+      }
+    },
+    {
+      "case": "base",
+      "revenue_growth": 0.15,
+      "net_margin": 0.105,
+      "multiple": 30,
+      "rationale": {
+        "en": "AWS and ads take more of the sales mix as retail costs scale.",
+        "zh": "AWS 与广告提高收入占比，零售成本随规模优化。"
+      }
+    },
+    {
+      "case": "bull",
+      "revenue_growth": 0.22,
+      "net_margin": 0.13,
+      "multiple": 36,
+      "rationale": {
+        "en": "Stronger AWS utilization and advertising lift underlying earnings.",
+        "zh": "AWS 利用率和广告增长提高基础盈利。"
+      }
+    }
+  ]
+}

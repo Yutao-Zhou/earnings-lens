@@ -1,0 +1,72 @@
+{
+  "report_id": "0001321655-FY2026-Q3",
+  "revision": 2,
+  "method": "forward_pe",
+  "as_of": "2026-11-20",
+  "currency": "USD",
+  "revenue_anchor": {
+    "amount": 7288260000,
+    "kind": "ttm",
+    "description": {
+      "en": "Trailing 12-month revenue (USD billions) combines the last full year (4.4754) with this year's reported year-to-date revenue (5.8815) less the matching prior-year period (3.0686).",
+      "zh": "最近十二个月营收以十亿 USD 计：上个完整财年 4.4754，加本财年累计 5.8815，减去上年同期累计 3.0686。"
+    }
+  },
+  "shares": {
+    "count": 2573926000,
+    "basis": "quarter_diluted",
+    "description": {
+      "en": "The model holds the latest reported standalone quarter’s diluted weighted-average share count constant.",
+      "zh": "模型固定采用本季已披露的加权平均摊薄股数。"
+    }
+  },
+  "capital": null,
+  "source_ids": [
+    "filing"
+  ],
+  "additional_sources": [
+    {
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001321655.json",
+      "label": {
+        "en": "SEC company facts · financial and share disclosures",
+        "zh": "SEC 公司财务数据：财务和股数披露"
+      }
+    }
+  ],
+  "method_note": {
+    "en": "Growth, normalized net margin and forward P/E are research assumptions. Multiples reflect the expected persistence of earnings and company-specific risk. The denominator is held constant across scenarios.",
+    "zh": "增长、常态净利率和远期市盈率均为研究假设。倍数反映对盈利持续性和公司特有风险的判断。三个情景使用相同股数。"
+  },
+  "scenarios": [
+    {
+      "case": "bear",
+      "revenue_growth": 0.22,
+      "net_margin": 0.31,
+      "multiple": 34,
+      "rationale": {
+        "en": "Commercial deployments slow and concentrated deal timing raises risk.",
+        "zh": "商业部署放缓，大单时间集中提高风险。"
+      }
+    },
+    {
+      "case": "base",
+      "revenue_growth": 0.43,
+      "net_margin": 0.4,
+      "multiple": 54,
+      "rationale": {
+        "en": "Commercial and government deployments scale while dilution remains important.",
+        "zh": "商业与政府部署扩大，同时需关注股权稀释。"
+      }
+    },
+    {
+      "case": "bull",
+      "revenue_growth": 0.64,
+      "net_margin": 0.48,
+      "multiple": 76,
+      "rationale": {
+        "en": "Commercial deployments broaden and incremental software margins hold.",
+        "zh": "商业部署进一步普及，新增软件收入维持高利润率。"
+      }
+    }
+  ]
+}

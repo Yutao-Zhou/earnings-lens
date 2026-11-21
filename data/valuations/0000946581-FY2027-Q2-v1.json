@@ -1,0 +1,80 @@
+{
+  "report_id": "0000946581-FY2027-Q2",
+  "revision": 1,
+  "method": "forward_ev_sales",
+  "as_of": "2026-11-20",
+  "currency": "USD",
+  "revenue_anchor": {
+    "amount": 6409700000,
+    "kind": "ttm",
+    "description": {
+      "en": "Trailing 12-month revenue (USD billions) combines the last full year (6.6564) with this year's reported year-to-date revenue (3.0309) less the matching prior-year period (3.2776).",
+      "zh": "最近十二个月营收以十亿 USD 计：上个完整财年 6.6564，加本财年累计 3.0309，减去上年同期累计 3.2776。"
+    }
+  },
+  "shares": {
+    "count": 187200000,
+    "basis": "outstanding",
+    "description": {
+      "en": "The model holds disclosed period-end common shares outstanding constant. Additional future dilution may change per-share value.",
+      "zh": "模型固定采用已披露的期末流通普通股数。未来进一步稀释可能改变每股价值。"
+    }
+  },
+  "capital": {
+    "cash": 1673600000,
+    "debt": 2519800000,
+    "other_claims": 0,
+    "description": {
+      "en": "Current cash and liquid investments are added. Borrowings and identified noncontrolling interests are deducted at carrying value.",
+      "zh": "加计期末现金与流动投资，按账面值扣除借款和已识别的非控股权益。"
+    }
+  },
+  "source_ids": [
+    "filing"
+  ],
+  "additional_sources": [
+    {
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000946581.json",
+      "label": {
+        "en": "SEC company facts · financial and share disclosures",
+        "zh": "SEC 公司财务数据：财务和股数披露"
+      }
+    }
+  ],
+  "method_note": {
+    "en": "Revenue growth and EV / revenue are research assumptions reflecting expected economics and risk. The equity bridge uses disclosed carrying values. The multiple is sensitive to future margins and funding requirements.",
+    "zh": "营收增速和企业价值／营收倍数是反映业务预期与风险的研究假设。由企业价值换算至股权价值时采用披露账面值。倍数对未来利润率与资金需求敏感。"
+  },
+  "scenarios": [
+    {
+      "case": "bear",
+      "revenue_growth": 0.22,
+      "net_margin": null,
+      "multiple": 3,
+      "rationale": {
+        "en": "Launch sales normalize rapidly and recurring spending stays subdued.",
+        "zh": "首发销售很快恢复常态，持续性消费依然偏弱。"
+      }
+    },
+    {
+      "case": "base",
+      "revenue_growth": 0.42,
+      "net_margin": null,
+      "multiple": 4.5,
+      "rationale": {
+        "en": "Major releases lift recognized revenue while recurrent spending stabilizes.",
+        "zh": "大作发行提升确认收入，持续性消费逐步企稳。"
+      }
+    },
+    {
+      "case": "bull",
+      "revenue_growth": 0.62,
+      "net_margin": null,
+      "multiple": 6.5,
+      "rationale": {
+        "en": "Stronger launch sell-through and repeat spending sustain the revenue step-up.",
+        "zh": "更强的新作销售与重复消费使收入台阶更持久。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "report_id": "0001326801-FY2026-Q3",
+  "revision": 2,
+  "method": "forward_pe",
+  "as_of": "2026-11-20",
+  "currency": "USD",
+  "revenue_anchor": {
+    "amount": 241605000000,
+    "kind": "ttm",
+    "description": {
+      "en": "Trailing 12-month revenue (USD billions) combines the last full year (200.966) with this year's reported year-to-date revenue (181.712) less the matching prior-year period (141.073).",
+      "zh": "最近十二个月营收以十亿 USD 计：上个完整财年 200.966，加本财年累计 181.712，减去上年同期累计 141.073。"
+    }
+  },
+  "shares": {
+    "count": 2573000000,
+    "basis": "quarter_diluted",
+    "description": {
+      "en": "The model holds the latest reported standalone quarter’s diluted weighted-average share count constant.",
+      "zh": "模型固定采用本季已披露的加权平均摊薄股数。"
+    }
+  },
+  "capital": null,
+  "source_ids": [
+    "filing"
+  ],
+  "additional_sources": [
+    {
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001326801.json",
+      "label": {
+        "en": "SEC company facts · financial and share disclosures",
+        "zh": "SEC 公司财务数据：财务和股数披露"
+      }
+    }
+  ],
+  "method_note": {
+    "en": "Growth, normalized net margin and forward P/E are research assumptions. Multiples reflect the expected persistence of earnings and company-specific risk. The denominator is held constant across scenarios.",
+    "zh": "增长、常态净利率和远期市盈率均为研究假设。倍数反映对盈利持续性和公司特有风险的判断。三个情景使用相同股数。"
+  },
+  "scenarios": [
+    {
+      "case": "bear",
+      "revenue_growth": 0.12,
+      "net_margin": 0.22,
+      "multiple": 16,
+      "rationale": {
+        "en": "Accelerating infrastructure costs absorb ad efficiency gains.",
+        "zh": "加快基建投入带来的成本侵蚀广告效率改善。"
+      }
+    },
+    {
+      "case": "base",
+      "revenue_growth": 0.2,
+      "net_margin": 0.3,
+      "multiple": 22,
+      "rationale": {
+        "en": "Advertising conversion improves as AI infrastructure spending rises.",
+        "zh": "AI 基建开支上升的同时，广告转化率改善。"
+      }
+    },
+    {
+      "case": "bull",
+      "revenue_growth": 0.27,
+      "net_margin": 0.36,
+      "multiple": 28,
+      "rationale": {
+        "en": "Ad volume and pricing both improve while new capacity earns returns.",
+        "zh": "广告量价齐升，同时新增算力产能开始贡献回报。"
+      }
+    }
+  ]
+}

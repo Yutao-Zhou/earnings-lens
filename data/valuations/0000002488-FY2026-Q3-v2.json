@@ -1,0 +1,72 @@
+{
+  "report_id": "0000002488-FY2026-Q3",
+  "revision": 2,
+  "method": "forward_pe",
+  "as_of": "2026-11-20",
+  "currency": "USD",
+  "revenue_anchor": {
+    "amount": 45436000000,
+    "kind": "ttm",
+    "description": {
+      "en": "Trailing 12-month revenue (USD billions) combines the last full year (34.639) with this year's reported year-to-date revenue (35.166) less the matching prior-year period (24.369).",
+      "zh": "最近十二个月营收以十亿 USD 计：上个完整财年 34.639，加本财年累计 35.166，减去上年同期累计 24.369。"
+    }
+  },
+  "shares": {
+    "count": 1661000000,
+    "basis": "quarter_diluted",
+    "description": {
+      "en": "The model holds the latest reported standalone quarter’s diluted weighted-average share count constant.",
+      "zh": "模型固定采用本季已披露的加权平均摊薄股数。"
+    }
+  },
+  "capital": null,
+  "source_ids": [
+    "filing"
+  ],
+  "additional_sources": [
+    {
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000002488.json",
+      "label": {
+        "en": "SEC company facts · financial and share disclosures",
+        "zh": "SEC 公司财务数据：财务和股数披露"
+      }
+    }
+  ],
+  "method_note": {
+    "en": "Growth, normalized net margin and forward P/E are research assumptions. Multiples reflect the expected persistence of earnings and company-specific risk. The denominator is held constant across scenarios.",
+    "zh": "增长、常态净利率和远期市盈率均为研究假设。倍数反映对盈利持续性和公司特有风险的判断。三个情景使用相同股数。"
+  },
+  "scenarios": [
+    {
+      "case": "bear",
+      "revenue_growth": 0.15,
+      "net_margin": 0.12,
+      "multiple": 21,
+      "rationale": {
+        "en": "Accelerator ramps slip and PC or embedded sales provide limited offset.",
+        "zh": "加速器放量延后，PC 与嵌入式业务抵消有限。"
+      }
+    },
+    {
+      "case": "base",
+      "revenue_growth": 0.3,
+      "net_margin": 0.18,
+      "multiple": 29,
+      "rationale": {
+        "en": "Accelerators and server CPUs scale with better blended profitability.",
+        "zh": "加速器与服务器 CPU 增长，综合盈利改善。"
+      }
+    },
+    {
+      "case": "bull",
+      "revenue_growth": 0.46,
+      "net_margin": 0.23,
+      "multiple": 36,
+      "rationale": {
+        "en": "A broader AI customer base and product mix sustain faster growth.",
+        "zh": "AI 客户群扩大，产品组合支撑更快增长。"
+      }
+    }
+  ]
+}

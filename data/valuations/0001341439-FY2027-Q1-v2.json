@@ -1,0 +1,72 @@
+{
+  "report_id": "0001341439-FY2027-Q1",
+  "revision": 2,
+  "method": "forward_pe",
+  "as_of": "2026-11-20",
+  "currency": "USD",
+  "revenue_anchor": {
+    "amount": 71776000000,
+    "kind": "ttm",
+    "description": {
+      "en": "Trailing 12-month revenue (USD billions) combines the last full year (67.357) with this year's reported year-to-date revenue (19.345) less the matching prior-year period (14.926).",
+      "zh": "最近十二个月营收以十亿 USD 计：上个完整财年 67.357，加本财年累计 19.345，减去上年同期累计 14.926。"
+    }
+  },
+  "shares": {
+    "count": 3024000000,
+    "basis": "outstanding",
+    "description": {
+      "en": "The model holds disclosed period-end common shares outstanding constant. Additional future dilution may change per-share value.",
+      "zh": "模型固定采用已披露的期末流通普通股数。未来进一步稀释可能改变每股价值。"
+    }
+  },
+  "capital": null,
+  "source_ids": [
+    "filing"
+  ],
+  "additional_sources": [
+    {
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001341439.json",
+      "label": {
+        "en": "SEC company facts · financial and share disclosures",
+        "zh": "SEC 公司财务数据：财务和股数披露"
+      }
+    }
+  ],
+  "method_note": {
+    "en": "Growth, normalized net margin and forward P/E are research assumptions. Multiples reflect the expected persistence of earnings and company-specific risk. The denominator is held constant across scenarios.",
+    "zh": "增长、常态净利率和远期市盈率均为研究假设。倍数反映对盈利持续性和公司特有风险的判断。三个情景使用相同股数。"
+  },
+  "scenarios": [
+    {
+      "case": "bear",
+      "revenue_growth": 0.12,
+      "net_margin": 0.18,
+      "multiple": 17,
+      "rationale": {
+        "en": "Data-center delivery delays push out cloud revenue and financing weighs on margins.",
+        "zh": "数据中心交付延迟递延云收入，融资压缩利润率。"
+      }
+    },
+    {
+      "case": "base",
+      "revenue_growth": 0.22,
+      "net_margin": 0.23,
+      "multiple": 23,
+      "rationale": {
+        "en": "Backlog becomes billable as capital spending and depreciation rise.",
+        "zh": "积压订单逐步转为可计费收入，同时资本开支及折旧上升。"
+      }
+    },
+    {
+      "case": "bull",
+      "revenue_growth": 0.34,
+      "net_margin": 0.28,
+      "multiple": 30,
+      "rationale": {
+        "en": "Capacity is deployed on time, supporting utilization and cash returns.",
+        "zh": "新增产能如期投用，支撑利用率及现金回报。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "report_id": "0000723125-FY2026-Q4",
+  "revision": 2,
+  "method": "forward_pe",
+  "as_of": "2026-11-20",
+  "currency": "USD",
+  "revenue_anchor": {
+    "amount": 133188000000,
+    "kind": "ttm",
+    "description": {
+      "en": "Reported revenue for the trailing twelve months ending on the report period date.",
+      "zh": "采用截至报告期末的最近十二个月已披露营收。"
+    }
+  },
+  "shares": {
+    "count": 1131000000,
+    "basis": "outstanding",
+    "description": {
+      "en": "The model holds disclosed period-end common shares outstanding constant. Additional future dilution may change per-share value.",
+      "zh": "模型固定采用已披露的期末流通普通股数。未来进一步稀释可能改变每股价值。"
+    }
+  },
+  "capital": null,
+  "source_ids": [
+    "filing"
+  ],
+  "additional_sources": [
+    {
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000723125.json",
+      "label": {
+        "en": "SEC company facts · financial and share disclosures",
+        "zh": "SEC 公司财务数据：财务和股数披露"
+      }
+    }
+  ],
+  "method_note": {
+    "en": "Growth, normalized net margin and forward P/E are research assumptions. Multiples reflect the expected persistence of earnings and company-specific risk. The denominator is held constant across scenarios.",
+    "zh": "增长、常态净利率和远期市盈率均为研究假设。倍数反映对盈利持续性和公司特有风险的判断。三个情景使用相同股数。"
+  },
+  "scenarios": [
+    {
+      "case": "bear",
+      "revenue_growth": -0.05,
+      "net_margin": 0.36,
+      "multiple": 8,
+      "rationale": {
+        "en": "Memory prices normalize and the high-margin quarter proves difficult to sustain.",
+        "zh": "存储价格回归常态，高利润率难以持续。"
+      }
+    },
+    {
+      "case": "base",
+      "revenue_growth": 0.22,
+      "net_margin": 0.49,
+      "multiple": 11,
+      "rationale": {
+        "en": "High-bandwidth memory and infrastructure demand offset some price normalization.",
+        "zh": "高带宽存储器与基建需求抵消部分价格回落。"
+      }
+    },
+    {
+      "case": "bull",
+      "revenue_growth": 0.45,
+      "net_margin": 0.61,
+      "multiple": 14,
+      "rationale": {
+        "en": "Tight supply and richer memory mix sustain strong profits longer.",
+        "zh": "供应偏紧和高端存储组合延长高盈利周期。"
+      }
+    }
+  ]
+}

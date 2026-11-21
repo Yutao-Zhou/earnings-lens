@@ -1,0 +1,80 @@
+{
+  "report_id": "0002130357-FY2026-Q3",
+  "revision": 1,
+  "method": "forward_ev_sales",
+  "as_of": "2026-11-20",
+  "currency": "USD",
+  "revenue_anchor": {
+    "amount": 35282000000,
+    "kind": "ttm",
+    "description": {
+      "en": "Sum of the four standalone quarters ending September 30, 2026, in the final IPO prospectus.",
+      "zh": "采用最终上市招股书中截至 2026 年 9 月 30 日的最近四个单季营收之和。"
+    }
+  },
+  "shares": {
+    "count": 13219642276,
+    "basis": "pro_forma_outstanding",
+    "description": {
+      "en": "13.220 billion legally outstanding common shares across classes after the IPO and concurrent private placement, before over-allotment and additional unissued awards.",
+      "zh": "按 IPO 和同期私募完成后的全部普通股类别计算，共约 132.20 亿股。股数采用法律流通口径，未计入超额配售或尚未发行的股权奖励。"
+    }
+  },
+  "capital": {
+    "cash": 232351000000,
+    "debt": 109742000000,
+    "other_claims": 0,
+    "description": {
+      "en": "September 30 capitalization adjusted for the offering and private placement. Cash includes short-term investments. Debt uses the remaining convertible notes at carrying value, with no assumed future conversion.",
+      "zh": "以 9 月 30 日资本结构为基础，按 IPO 与同期私募调整。现金包括短期投资；债务采用剩余可转债账面值，未假定未来转股。"
+    }
+  },
+  "source_ids": [
+    "filing"
+  ],
+  "additional_sources": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm",
+      "label": {
+        "en": "Final IPO prospectus · quarterly results, offering and capitalization",
+        "zh": "最终上市招股书：分季业绩、发行与资本结构"
+      }
+    }
+  ],
+  "method_note": {
+    "en": "Revenue growth and EV / revenue are research assumptions reflecting expected economics and risk. The equity bridge uses disclosed carrying values. The multiple is sensitive to future margins and funding requirements.",
+    "zh": "营收增速和企业价值／营收倍数是反映业务预期与风险的研究假设。由企业价值换算至股权价值时采用披露账面值。倍数对未来利润率与资金需求敏感。"
+  },
+  "scenarios": [
+    {
+      "case": "bear",
+      "revenue_growth": 0.55,
+      "net_margin": null,
+      "multiple": 9,
+      "rationale": {
+        "en": "Compute commitments rise faster than monetization and usage growth slows.",
+        "zh": "算力承诺增长快于变现，使用量增速放缓。"
+      }
+    },
+    {
+      "case": "base",
+      "revenue_growth": 1,
+      "net_margin": null,
+      "multiple": 15,
+      "rationale": {
+        "en": "API and enterprise demand scale while inference costs remain a major constraint.",
+        "zh": "API 和企业需求扩大，推理成本仍是主要制约。"
+      }
+    },
+    {
+      "case": "bull",
+      "revenue_growth": 1.65,
+      "net_margin": null,
+      "multiple": 22,
+      "rationale": {
+        "en": "Enterprise adoption broadens and utilization improves the economics of new capacity.",
+        "zh": "企业采用面扩大，利用率改善新增算力的经济性。"
+      }
+    }
+  ]
+}

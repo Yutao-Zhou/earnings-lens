@@ -1,0 +1,72 @@
+{
+  "report_id": "0001652044-FY2026-Q3",
+  "revision": 2,
+  "method": "forward_pe",
+  "as_of": "2026-11-20",
+  "currency": "USD",
+  "revenue_anchor": {
+    "amount": 471098000000,
+    "kind": "ttm",
+    "description": {
+      "en": "Trailing 12-month revenue (USD billions) combines the last full year (402.836) with this year's reported year-to-date revenue (357.269) less the matching prior-year period (289.007).",
+      "zh": "最近十二个月营收以十亿 USD 计：上个完整财年 402.836，加本财年累计 357.269，减去上年同期累计 289.007。"
+    }
+  },
+  "shares": {
+    "count": 12368000000,
+    "basis": "quarter_diluted",
+    "description": {
+      "en": "The model holds the latest reported standalone quarter’s diluted weighted-average share count constant.",
+      "zh": "模型固定采用本季已披露的加权平均摊薄股数。"
+    }
+  },
+  "capital": null,
+  "source_ids": [
+    "filing"
+  ],
+  "additional_sources": [
+    {
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json",
+      "label": {
+        "en": "SEC company facts · financial and share disclosures",
+        "zh": "SEC 公司财务数据：财务和股数披露"
+      }
+    }
+  ],
+  "method_note": {
+    "en": "Growth, normalized net margin and forward P/E are research assumptions. Multiples reflect the expected persistence of earnings and company-specific risk. The denominator is held constant across scenarios.",
+    "zh": "增长、常态净利率和远期市盈率均为研究假设。倍数反映对盈利持续性和公司特有风险的判断。三个情景使用相同股数。"
+  },
+  "scenarios": [
+    {
+      "case": "bear",
+      "revenue_growth": 0.1,
+      "net_margin": 0.22,
+      "multiple": 19,
+      "rationale": {
+        "en": "AI search monetization trails usage while cloud depreciation rises.",
+        "zh": "AI 搜索变现慢于使用增长，云业务折旧上升。"
+      }
+    },
+    {
+      "case": "base",
+      "revenue_growth": 0.17,
+      "net_margin": 0.27,
+      "multiple": 25,
+      "rationale": {
+        "en": "Search monetization holds and cloud backlog converts into recognized sales.",
+        "zh": "搜索变现保持稳定，云积压订单逐步转化为收入。"
+      }
+    },
+    {
+      "case": "bull",
+      "revenue_growth": 0.23,
+      "net_margin": 0.31,
+      "multiple": 31,
+      "rationale": {
+        "en": "AI search and cloud both grow without proportional cost increases.",
+        "zh": "AI 搜索与云业务同步增长，成本增幅较低。"
+      }
+    }
+  ]
+}

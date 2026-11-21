@@ -41,8 +41,10 @@ test('valuation displays the same scenario prices in both languages and follows 
     assert.match(chinese.textContent, /隐含每股价值/);
     assert.deepEqual([...chinese.querySelectorAll('.valuation-result td')].map(cell => cell.textContent), ['US$181', 'US$296', 'US$462']);
     p.document.querySelector('[data-company="0000320193"]').click();
-    assert.equal(p.document.querySelector('.valuation-table'), null);
-    assert.match(p.document.querySelector('.valuation').textContent, /暂未发布估值/);
+    assert.match(p.document.querySelector('.valuation-summary strong').textContent, /249/);
+    p.document.querySelector('[data-company="0002130357"]').click();
+    assert.match(p.document.querySelector('.valuation-table').textContent, /企业价值/);
+    assert.match(p.document.querySelector('.valuation-summary strong').textContent, /89/);
   } finally { p.w.close(); }
 });
 

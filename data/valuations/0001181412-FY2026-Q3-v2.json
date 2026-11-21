@@ -1,0 +1,80 @@
+{
+  "report_id": "0001181412-FY2026-Q3",
+  "revision": 2,
+  "method": "forward_ev_sales",
+  "as_of": "2026-11-20",
+  "currency": "USD",
+  "revenue_anchor": {
+    "amount": 36110666667,
+    "kind": "annualized_ytd",
+    "description": {
+      "en": "Annualized reported consolidated year-to-date sales. Acquisition timing and the mix of Starlink, launch and compute operations limit comparability with a normal trailing year.",
+      "zh": "对已报告的合并年初至今营收做年化处理。并购时点、星链、发射及算力业务组合影响其与普通滚动年度的可比性。"
+    }
+  },
+  "shares": {
+    "count": 13581063709,
+    "basis": "outstanding",
+    "description": {
+      "en": "Uses the sum of Class A and Class B common shares on the latest filing cover. Future option and award dilution is outside the share count.",
+      "zh": "采用最新申报封面披露的 A 类和 B 类普通股合计；股数未计入未来期权和奖励稀释。"
+    }
+  },
+  "capital": {
+    "cash": 89855000000,
+    "debt": 38844000000,
+    "other_claims": 0,
+    "description": {
+      "en": "Current cash and marketable securities are added and reported debt plus finance leases are deducted at carrying value.",
+      "zh": "加计期末现金与可交易证券，按账面值扣除已披露债务与融资租赁。"
+    }
+  },
+  "source_ids": [
+    "filing"
+  ],
+  "additional_sources": [
+    {
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001181412.json",
+      "label": {
+        "en": "SEC company facts · financial and share disclosures",
+        "zh": "SEC 公司财务数据：财务和股数披露"
+      }
+    }
+  ],
+  "method_note": {
+    "en": "Revenue growth and EV / revenue are research assumptions reflecting expected economics and risk. The equity bridge uses disclosed carrying values. The multiple is sensitive to future margins and funding requirements.",
+    "zh": "营收增速和企业价值／营收倍数是反映业务预期与风险的研究假设。由企业价值换算至股权价值时采用披露账面值。倍数对未来利润率与资金需求敏感。"
+  },
+  "scenarios": [
+    {
+      "case": "bear",
+      "revenue_growth": 0.25,
+      "net_margin": null,
+      "multiple": 11,
+      "rationale": {
+        "en": "Satellite capacity grows steadily while compute spending weighs on returns.",
+        "zh": "卫星产能稳步增长，算力支出拖累资本回报。"
+      }
+    },
+    {
+      "case": "base",
+      "revenue_growth": 0.55,
+      "net_margin": null,
+      "multiple": 18,
+      "rationale": {
+        "en": "Starlink scales and contracted compute capacity converts into billable service.",
+        "zh": "星链扩大规模，已签约算力产能转化为可计费服务。"
+      }
+    },
+    {
+      "case": "bull",
+      "revenue_growth": 0.9,
+      "net_margin": null,
+      "multiple": 25,
+      "rationale": {
+        "en": "Satellite and infrastructure utilization rise faster than financing needs.",
+        "zh": "卫星与算力设施利用率提升快于融资需求。"
+      }
+    }
+  ]
+}

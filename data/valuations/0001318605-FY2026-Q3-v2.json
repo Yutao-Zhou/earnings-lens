@@ -1,0 +1,72 @@
+{
+  "report_id": "0001318605-FY2026-Q3",
+  "revision": 2,
+  "method": "forward_pe",
+  "as_of": "2026-11-20",
+  "currency": "USD",
+  "revenue_anchor": {
+    "amount": 103570000000,
+    "kind": "ttm",
+    "description": {
+      "en": "Trailing 12-month revenue (USD billions) combines the last full year (94.827) with this year's reported year-to-date revenue (78.669) less the matching prior-year period (69.926).",
+      "zh": "最近十二个月营收以十亿 USD 计：上个完整财年 94.827，加本财年累计 78.669，减去上年同期累计 69.926。"
+    }
+  },
+  "shares": {
+    "count": 3953000000,
+    "basis": "outstanding",
+    "description": {
+      "en": "The model holds disclosed period-end common shares outstanding constant. Additional future dilution may change per-share value.",
+      "zh": "模型固定采用已披露的期末流通普通股数。未来进一步稀释可能改变每股价值。"
+    }
+  },
+  "capital": null,
+  "source_ids": [
+    "filing"
+  ],
+  "additional_sources": [
+    {
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001318605.json",
+      "label": {
+        "en": "SEC company facts · financial and share disclosures",
+        "zh": "SEC 公司财务数据：财务和股数披露"
+      }
+    }
+  ],
+  "method_note": {
+    "en": "Growth, normalized net margin and forward P/E are research assumptions. Multiples reflect the expected persistence of earnings and company-specific risk. The denominator is held constant across scenarios.",
+    "zh": "增长、常态净利率和远期市盈率均为研究假设。倍数反映对盈利持续性和公司特有风险的判断。三个情景使用相同股数。"
+  },
+  "scenarios": [
+    {
+      "case": "bear",
+      "revenue_growth": 0,
+      "net_margin": 0.045,
+      "multiple": 22,
+      "rationale": {
+        "en": "Vehicle pricing remains under pressure and energy growth only offsets some weakness.",
+        "zh": "整车定价持续受压，储能增长只能抵消部分弱势。"
+      }
+    },
+    {
+      "case": "base",
+      "revenue_growth": 0.13,
+      "net_margin": 0.085,
+      "multiple": 34,
+      "rationale": {
+        "en": "Deliveries and storage grow, with a gradual recovery in operating leverage.",
+        "zh": "交付量和储能增长，经营杠杆逐步恢复。"
+      }
+    },
+    {
+      "case": "bull",
+      "revenue_growth": 0.3,
+      "net_margin": 0.13,
+      "multiple": 52,
+      "rationale": {
+        "en": "A stronger vehicle and energy mix supports higher earnings from deployed products.",
+        "zh": "汽车和能源组合改善，提高已商业化产品的盈利。"
+      }
+    }
+  ]
+}
