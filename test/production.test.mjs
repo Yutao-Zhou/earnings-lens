@@ -6,7 +6,7 @@ import {validateReport} from '../lib/validation.mjs';
 const dataset=await loadDataset();
 test('the active site contains real reports and the requested watchlist',()=>{
   assert.equal(dataset.mode,'production');
-  assert.deepEqual(dataset.companies.map(c=>c.ticker),['NVDA','MSFT','AAPL','AMZN','GOOGL','META','TSLA','SPCX','AMD','INTC','MU','ASML','GM','PLTR','ORCL','COST','ANT','TTWO']);
+  assert.deepEqual(dataset.companies.map(c=>c.ticker),['NVDA','MSFT','AAPL','AMZN','GOOGL','META','TSLA','SPCX','AMD','INTC','MU','ASML','GM','PLTR','ORCL','COST','ANT','TTWO','CPRT']);
   for(const company of dataset.companies)assert.ok(dataset.reports.some(r=>r.company.id===company.id));
   assert.ok(dataset.reports.length>=1);
   assert.ok(dataset.reports.every(report=>report.data_kind==='production'));
@@ -84,4 +84,16 @@ test('Take-Two separates GAAP revenue, operating metrics and management outlook'
     ['FY2027', 'GAAP', 7980e6, 8180e6], ['FY2027', 'operational', 8000e6, 8200e6],
     ['FY2027 Q3', 'GAAP', 3270e6, 3420e6], ['FY2027 Q3', 'operational', 3350e6, 3500e6],
   ]);
+});
+
+test('Copart uses standalone Q4 metrics and a full-year valuation anchor', () => {
+  const report = dataset.reports.find(item => item.report_id === '0000900075-FY2026-Q4' && item.revision === 1);
+  assert.ok(report);
+  const metric = key => report.metrics.find(item => item.key === key);
+  assert.equal(report.period.end, '2026-07-31');
+  assert.equal(metric('revenue').value, 1152439000);
+  assert.equal(metric('gross_margin').value, 481449 / 1152439 * 100);
+  assert.equal(metric('diluted_eps').value, 0.35);
+  assert.equal(metric('free_cash_flow').value, 357541000 - 78810000);
+  assert.equal(dataset.valuations[`${report.report_id}@${report.revision}`].revenue_anchor.amount, 4666209000);
 });

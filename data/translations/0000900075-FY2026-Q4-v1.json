@@ -1,0 +1,84 @@
+{
+  "report_id": "0000900075-FY2026-Q4",
+  "revision": 1,
+  "en": {
+    "summary": "Copart grew fiscal fourth-quarter revenue by 2.4% year over year, while gross margin fell 3.53 percentage points and quarterly free cash flow declined 20.6%. Vehicle sales contributed about half of the revenue increase. The October acquisition of ACV Auctions expands Copart’s wholesale dealer auction business. Later filings will show the financial impact.",
+    "findings": [
+      "Revenue rose 2.4% to $1.152 billion. Service revenue rose 1.4% to $969.5 million and vehicle sales rose 8.3% to $182.9 million. Vehicle sales contributed $14.0 million, roughly half the increase in total revenue.",
+      "GAAP gross margin fell from 45.30% to 41.78%, and operating income declined 10.6% to $368.9 million. Net income attributable to Copart fell 17.4%, and diluted EPS dropped from $0.41 to $0.35. Watch whether faster service revenue growth helps margins recover.",
+      "Fourth-quarter operating cash flow was $357.5 million and cash capital purchases were $78.8 million. The difference gives $278.7 million of calculated free cash flow, down 20.6%. Lower capital spending cushioned the decline in operating cash flow.",
+      "Vehicle sales grew faster than service revenue while consolidated gross margin declined. Track the sales mix and processing costs in the next quarter to judge how much of the margin movement came from mix.",
+      "The annual filing links salvage supply to weather. Storms can also strain vehicle transport and yard capacity. Hurricane-related revenue lifted the FY2025 U.S. service revenue comparison, so track volume and revenue per vehicle separately when assessing a recovery.",
+      "Copart completed the ACV Auctions acquisition on October 16, after quarter-end. Wholesale dealer auctions can broaden vehicle sourcing, while cash outlays, integration costs and mix changes could weigh on near-term earnings. Check ACV’s contribution in the first consolidated quarter."
+    ],
+    "segments": [
+      {
+        "name": "U.S. service business",
+        "text": "FY2026 U.S. service revenue fell about $63.3 million. Management cited the prior year’s one-time revenue from Hurricanes Helene and Milton and lower volume, partly offset by higher revenue per vehicle. Normalized insurance vehicle supply and revenue per vehicle will help explain the next comparison."
+      },
+      {
+        "name": "International service business",
+        "text": "FY2026 international service revenue increased about $64.1 million, including $21.9 million of favorable foreign exchange. Management attributed the remaining growth primarily to higher volume and revenue per vehicle. Watch whether both can continue growing enough to cover local operating costs."
+      }
+    ],
+    "follow_ups": [
+      {
+        "question": "Can U.S. service revenue return to growth?",
+        "update": "Compare vehicle volume and revenue per vehicle separately and account for the prior year’s hurricane-related revenue.",
+        "next_check": "Next official earnings disclosure or filing."
+      },
+      {
+        "question": "Can margins and cash conversion recover?",
+        "update": "Compare service and vehicle sales mix, yard processing costs and operating cash flow, then check cash capital purchases.",
+        "next_check": "Next official earnings disclosure or filing."
+      },
+      {
+        "question": "How will ACV’s initial consolidation change growth and margins?",
+        "update": "Check ACV’s disclosed revenue contribution, transaction costs and cash impact alongside results from the existing business.",
+        "next_check": "Next official earnings disclosure or filing."
+      }
+    ],
+    "guidance": [],
+    "limitations": [
+      "Standalone fourth-quarter cash flow is full-year cash flow less the first nine months. Management’s volume, yield and currency explanations cover the full fiscal year.",
+      "Financial values and guidance come from the verified reporting packet. Business commentary interprets the cited disclosures.",
+      "No pre-release consensus snapshot was preserved."
+    ],
+    "metrics": [
+      {
+        "key": "revenue",
+        "label": "Revenue"
+      },
+      {
+        "key": "gross_margin",
+        "label": "GAAP gross margin",
+        "definition": "GAAP gross profit divided by quarterly revenue."
+      },
+      {
+        "key": "diluted_eps",
+        "label": "GAAP diluted EPS"
+      },
+      {
+        "key": "net_income",
+        "label": "Net income attributable to stockholders"
+      },
+      {
+        "key": "operating_income",
+        "label": "GAAP operating income"
+      },
+      {
+        "key": "operating_cash_flow",
+        "label": "Operating cash flow"
+      },
+      {
+        "key": "cash_capex",
+        "label": "Cash capital purchases"
+      },
+      {
+        "key": "free_cash_flow",
+        "label": "Calculated free cash flow",
+        "definition": "Standalone quarterly operating cash flow less cash capital purchases."
+      }
+    ]
+  }
+}

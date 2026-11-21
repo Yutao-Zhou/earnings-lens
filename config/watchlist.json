@@ -216,6 +216,18 @@
         "How do new releases and recurrent consumer spending affect bookings and reported revenue?",
         "How will the launch slate, software investment and deferred revenue affect cash generation?"
       ]
+    },
+    {
+      "id": "0000900075",
+      "cik": "0000900075",
+      "ticker": "CPRT",
+      "name": "Copart",
+      "enabled": true,
+      "ir_url": "https://www.copart.com/investorrelations",
+      "research_questions": [
+        "How do insurer auction volumes, vehicle mix, and proceeds per unit affect service revenue?",
+        "How do yard investment and integration of the wholesale platform affect margins and cash generation?"
+      ]
     }
   ]
 }

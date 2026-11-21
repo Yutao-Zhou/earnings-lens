@@ -1,0 +1,509 @@
+{
+  "schema_version": "1.0",
+  "data_kind": "production",
+  "report_id": "0000900075-FY2026-Q4",
+  "revision": 1,
+  "revision_reason": "initial",
+  "supersedes_revision": null,
+  "validation_status": "passed",
+  "company": {
+    "id": "0000900075",
+    "cik": "0000900075",
+    "ticker": "CPRT",
+    "name": "Copart"
+  },
+  "period": {
+    "fiscal_year": 2026,
+    "fiscal_period": "Q4",
+    "start": "2026-05-01",
+    "end": "2026-07-31"
+  },
+  "published_at": "2026-09-10T00:00:00-07:00",
+  "published_at_precision": "date",
+  "as_of": "2026-11-21T06:44:16.856Z",
+  "analyzed_at": "2026-11-21T06:44:16.856Z",
+  "coverage": {
+    "earnings_release": "available",
+    "regulatory_filing": "available",
+    "transcript": "pending",
+    "supplemental_financials": "available"
+  },
+  "sources": [
+    {
+      "id": "filing",
+      "title": "Copart 10-K — period ended 2026-07-31",
+      "type": "regulatory_filing",
+      "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+      "published_at": "2026-09-29T00:00:00-07:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-21T06:40:13.886Z"
+    },
+    {
+      "id": "facts",
+      "title": "Official quarterly financial tables",
+      "type": "supplemental_financials",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000900075.json",
+      "published_at": "2026-09-29T00:00:00-07:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-21T06:40:15.942Z"
+    },
+    {
+      "id": "release",
+      "title": "Copart quarterly earnings release",
+      "type": "earnings_release",
+      "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526387902/cprt-ex99_1.htm",
+      "published_at": "2026-09-10T00:00:00-07:00",
+      "published_at_precision": "date",
+      "fetched_at": "2026-11-21T06:40:16.304Z"
+    },
+    {
+      "id": "acv-closing",
+      "title": "Copart 8-K — completion of the ACV Auctions acquisition",
+      "type": "regulatory_filing",
+      "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526423478/d129535d8k.htm",
+      "published_at": "2026-10-16T09:59:35-04:00",
+      "published_at_precision": "second",
+      "fetched_at": "2026-11-21T06:44:16.856Z"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "metric-revenue",
+      "source_id": "facts",
+      "locator": "Consolidated financial tables; revenue; 2026-05-01 to 2026-07-31; comparison 2025-05-01 to 2025-07-31",
+      "quote": "1,152.439"
+    },
+    {
+      "id": "metric-gross_margin",
+      "source_id": "release",
+      "locator": "Quarterly consolidated income statement: gross profit divided by total service revenues and vehicle sales.",
+      "quote": "41.7765; 45.3044"
+    },
+    {
+      "id": "metric-diluted_eps",
+      "source_id": "release",
+      "locator": "Quarterly consolidated income statement: diluted net income per common share.",
+      "quote": "0.3500; 0.4100"
+    },
+    {
+      "id": "metric-net_income",
+      "source_id": "facts",
+      "locator": "Consolidated financial tables; net_income; 2026-05-01 to 2026-07-31; comparison 2025-05-01 to 2025-07-31",
+      "quote": "327.423"
+    },
+    {
+      "id": "metric-operating_income",
+      "source_id": "facts",
+      "locator": "Consolidated financial tables; operating_income; 2026-05-01 to 2026-07-31; comparison 2025-05-01 to 2025-07-31",
+      "quote": "368.904"
+    },
+    {
+      "id": "metric-operating_cash_flow",
+      "source_id": "facts",
+      "locator": "Consolidated financial tables; operating_cash_flow; 2026-05-01 to 2026-07-31; comparison 2025-05-01 to 2025-07-31",
+      "quote": "357.541"
+    },
+    {
+      "id": "metric-cash_capex",
+      "source_id": "facts",
+      "locator": "Consolidated financial tables; cash_capex; 2026-05-01 to 2026-07-31; comparison 2025-05-01 to 2025-07-31",
+      "quote": "78.81"
+    },
+    {
+      "id": "metric-free_cash_flow",
+      "source_id": "facts",
+      "locator": "Consolidated financial tables; free_cash_flow; 2026-05-01 to 2026-07-31; comparison 2025-05-01 to 2025-07-31",
+      "quote": "278.731"
+    },
+    {
+      "id": "analysis-filing-17",
+      "source_id": "filing",
+      "locator": "Issuer disclosure. Search the official document for this excerpt.",
+      "quote": "Mild weather conditions tend to result in a decrease in the available supply of salvage vehicles because traffic"
+    },
+    {
+      "id": "quarter-sales-mix",
+      "source_id": "release",
+      "locator": "Consolidated statements of income, three months ended July 31, 2026 and 2025, Service revenues and Vehicle sales",
+      "quote": "969,544; 956,209; 182,895; 168,888"
+    },
+    {
+      "id": "annual-service-us",
+      "source_id": "filing",
+      "locator": "Item 7, Results of Operations, Service Revenues, United States",
+      "quote": "a decrease in the U.S. of $(63.3) million"
+    },
+    {
+      "id": "annual-service-international",
+      "source_id": "filing",
+      "locator": "Item 7, Results of Operations, Service Revenues, International",
+      "quote": "positive fluctuations in currency exchange rates of $21.9 million"
+    },
+    {
+      "id": "acv-close",
+      "source_id": "acv-closing",
+      "locator": "Item 2.01, Completion of Acquisition or Disposition of Assets",
+      "quote": "on October 16, 2026, Parent completed the acquisition of ACV"
+    }
+  ],
+  "metrics": [
+    {
+      "key": "revenue",
+      "label": "营业收入",
+      "value": 1152439000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-05-01",
+      "period_end": "2026-07-31",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-revenue"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 1125097000,
+          "baseline_start": "2025-05-01",
+          "baseline_end": "2025-07-31",
+          "baseline_evidence_ids": [
+            "metric-revenue"
+          ],
+          "change_pct": 2.430190463577797,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "gross_margin",
+      "label": "GAAP 毛利率",
+      "value": 41.77652786828631,
+      "unit": "percent",
+      "currency": null,
+      "basis": "derived",
+      "period_type": "duration",
+      "period_start": "2026-05-01",
+      "period_end": "2026-07-31",
+      "missing_reason": null,
+      "definition": "GAAP 毛利金额除以同季收入。",
+      "evidence_ids": [
+        "metric-gross_margin"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 45.30436042403455,
+          "baseline_start": "2025-05-01",
+          "baseline_end": "2025-07-31",
+          "baseline_evidence_ids": [
+            "metric-gross_margin"
+          ],
+          "change_pct": null,
+          "change_pp": -3.5278325557482404,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "diluted_eps",
+      "label": "GAAP 摊薄每股收益",
+      "value": 0.35,
+      "unit": "currency_per_share",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-05-01",
+      "period_end": "2026-07-31",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-diluted_eps"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 0.41,
+          "baseline_start": "2025-05-01",
+          "baseline_end": "2025-07-31",
+          "baseline_evidence_ids": [
+            "metric-diluted_eps"
+          ],
+          "change_pct": -14.634146341463417,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "net_income",
+      "label": "归属股东净利润",
+      "value": 327423000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-05-01",
+      "period_end": "2026-07-31",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-net_income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 396354000,
+          "baseline_start": "2025-05-01",
+          "baseline_end": "2025-07-31",
+          "baseline_evidence_ids": [
+            "metric-net_income"
+          ],
+          "change_pct": -17.391271439168023,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "operating_income",
+      "label": "GAAP 营业利润",
+      "value": 368904000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-05-01",
+      "period_end": "2026-07-31",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-operating_income"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 412591000,
+          "baseline_start": "2025-05-01",
+          "baseline_end": "2025-07-31",
+          "baseline_evidence_ids": [
+            "metric-operating_income"
+          ],
+          "change_pct": -10.588452002103777,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "operating_cash_flow",
+      "label": "经营活动现金流",
+      "value": 357541000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-05-01",
+      "period_end": "2026-07-31",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-operating_cash_flow"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 438476000,
+          "baseline_start": "2025-05-01",
+          "baseline_end": "2025-07-31",
+          "baseline_evidence_ids": [
+            "metric-operating_cash_flow"
+          ],
+          "change_pct": -18.458250850673696,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "cash_capex",
+      "label": "现金资本购置",
+      "value": 78810000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "GAAP",
+      "period_type": "duration",
+      "period_start": "2026-05-01",
+      "period_end": "2026-07-31",
+      "missing_reason": null,
+      "definition": null,
+      "evidence_ids": [
+        "metric-cash_capex"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 87641000,
+          "baseline_start": "2025-05-01",
+          "baseline_end": "2025-07-31",
+          "baseline_evidence_ids": [
+            "metric-cash_capex"
+          ],
+          "change_pct": -10.076334135849663,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    },
+    {
+      "key": "free_cash_flow",
+      "label": "自由现金流（计算值）",
+      "value": 278731000,
+      "unit": "currency",
+      "currency": "USD",
+      "basis": "derived",
+      "period_type": "duration",
+      "period_start": "2026-05-01",
+      "period_end": "2026-07-31",
+      "missing_reason": null,
+      "definition": "单季经营现金流减现金资本购置。",
+      "evidence_ids": [
+        "metric-free_cash_flow"
+      ],
+      "comparisons": [
+        {
+          "type": "yoy",
+          "baseline_value": 350835000,
+          "baseline_start": "2025-05-01",
+          "baseline_end": "2025-07-31",
+          "baseline_evidence_ids": [
+            "metric-free_cash_flow"
+          ],
+          "change_pct": -20.55211139139481,
+          "change_pp": null,
+          "unavailable_reason": null
+        }
+      ]
+    }
+  ],
+  "guidance": [],
+  "segments": [
+    {
+      "name": "美国服务业务",
+      "text": "FY2026 美国服务收入同比减少约 6,330 万美元。管理层指出，上财年 Helene 和 Milton 飓风带来一次性收入，本财年处理量下降，单车收入上升抵消了部分影响。追踪常态保险车供给和单车变现能力比只看全年增速更有信息量。",
+      "evidence_ids": [
+        "annual-service-us"
+      ]
+    },
+    {
+      "name": "国际服务业务",
+      "text": "FY2026 国际服务收入同比增加约 6,410 万美元，其中约 2,190 万美元来自有利汇率。剔除汇率后，管理层将增长主要归因于处理量和单车收入同时上升。后续观察量价增长能否继续覆盖当地运营成本。",
+      "evidence_ids": [
+        "annual-service-international"
+      ]
+    }
+  ],
+  "follow_ups": [
+    {
+      "id": "next-disclosure-1",
+      "status": "monitoring",
+      "question": "美国服务收入能否恢复增长？",
+      "update": "将处理量、单车收入与上年灾害相关基数分别对比。",
+      "next_check": "下一次官方业绩公告或申报文件。",
+      "evidence_ids": [
+        "annual-service-us"
+      ]
+    },
+    {
+      "id": "next-disclosure-2",
+      "status": "monitoring",
+      "question": "毛利率和现金转化能否恢复？",
+      "update": "对照服务与整车销售占比、场地处理成本和经营现金流，再核对资本开支。",
+      "next_check": "下一次官方业绩公告或申报文件。",
+      "evidence_ids": [
+        "quarter-sales-mix",
+        "metric-gross_margin",
+        "metric-free_cash_flow"
+      ]
+    },
+    {
+      "id": "next-disclosure-3",
+      "status": "monitoring",
+      "question": "ACV 首次并表会如何改变增长和利润率？",
+      "update": "核对 ACV 披露的收入贡献、并购费用和现金影响，并将其与 Copart 原业务表现区分。",
+      "next_check": "下一次官方业绩公告或申报文件。",
+      "evidence_ids": [
+        "acv-close"
+      ]
+    }
+  ],
+  "limitations": [
+    "单季现金流由 10-K 全年金额减去前三季累计金额得出。管理层对量价和汇率的解释为全年口径。",
+    "财务数值与数值指引来自已核验的财报数据，业务分析根据引用的披露材料解读。",
+    "未保留披露前市场一致预期快照。"
+  ],
+  "summary": {
+    "text": "Copart 第四财季营收同比增长 2.4%，毛利率下降 3.53 个百分点，单季自由现金流下降 20.6%。整车销售贡献约一半的新增营收。10 月交割的 ACV Auctions 将扩大经销商批发拍卖业务，收购影响有待后续财报验证。",
+    "evidence_ids": [
+      "metric-revenue",
+      "metric-gross_margin",
+      "metric-free_cash_flow",
+      "quarter-sales-mix",
+      "acv-close"
+    ]
+  },
+  "findings": [
+    {
+      "kind": "fact",
+      "text": "营收为 11.52 亿美元，同比增长 2.4%。服务收入为 9.70 亿美元，增长 1.4%；整车销售收入为 1.83 亿美元，增长 8.3%。整车销售贡献约 1,401 万美元，占新增营收约一半。",
+      "evidence_ids": [
+        "metric-revenue",
+        "quarter-sales-mix"
+      ]
+    },
+    {
+      "kind": "fact",
+      "text": "GAAP 毛利率从 45.30% 降至 41.78%，营业利润同比下降 10.6% 至 3.69 亿美元。归属母公司净利润下降 17.4%，摊薄 EPS 从 0.41 美元降至 0.35 美元。下一季要看服务收入恢复能否带动毛利率回升。",
+      "evidence_ids": [
+        "metric-gross_margin",
+        "metric-operating_income",
+        "metric-net_income",
+        "metric-diluted_eps"
+      ]
+    },
+    {
+      "kind": "fact",
+      "text": "单季经营现金流和现金资本开支分别为 3.58 亿及 7,881 万美元。相减得自由现金流 2.79 亿美元，同比下降 20.6%。资本开支同比下降，经营现金流减少仍拖累了自由现金流。",
+      "evidence_ids": [
+        "metric-operating_cash_flow",
+        "metric-cash_capex",
+        "metric-free_cash_flow"
+      ]
+    },
+    {
+      "kind": "inference",
+      "text": "整车销售比服务收入增长更快，且毛利率同步下降。后续值得对照两类收入的占比和处理成本，判断利润率变化有多少来自业务组合。",
+      "evidence_ids": [
+        "quarter-sales-mix",
+        "metric-gross_margin"
+      ]
+    },
+    {
+      "kind": "risk",
+      "text": "10-K 提到灾害相关车源会影响年度同比，也会增加拖运和场地的调度压力。FY2025 的飓风相关收入抬高了美国服务业务的基数，判断恢复速度时应分别观察成交量和单车收入。",
+      "evidence_ids": [
+        "analysis-filing-17",
+        "annual-service-us"
+      ]
+    },
+    {
+      "kind": "risk",
+      "text": "Copart 在季度结束后于 10 月 16 日完成 ACV Auctions 收购。经销商批发拍卖会带来更多车源，但现金支出、整合成本和业务组合变化可能压低短期盈利。首个并表季度应优先核对 ACV 的贡献。",
+      "evidence_ids": [
+        "acv-close"
+      ]
+    }
+  ]
+}
