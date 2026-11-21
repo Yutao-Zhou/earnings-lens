@@ -1,6 +1,6 @@
 import test from 'node:test';import assert from 'node:assert/strict';import {readFile}from 'node:fs/promises';import {JSDOM,VirtualConsole}from 'jsdom';import {renderSite}from '../lib/render.mjs';import {loadDataset,projectRoot}from '../lib/data.mjs';import {validateTranslation}from '../lib/localization.mjs';
 import {periodsFor,revisionsFor} from '../lib/catalog.mjs';
-const dataset=await loadDataset(projectRoot);const assets=await Promise.all(['src/preferences.js','src/ui.js','src/analytics.js','lib/catalog.mjs','src/app.js'].map(p=>readFile(new URL('../'+p,import.meta.url),'utf8')));const js=`(()=>{${assets.join('\n').replace(/^export /gm,'')}})();`;
+const dataset=await loadDataset(projectRoot);const assets=await Promise.all(['src/preferences.js','src/ui.js','src/analytics.js','lib/catalog.mjs','lib/valuation.mjs','src/valuation.js','src/app.js'].map(p=>readFile(new URL('../'+p,import.meta.url),'utf8')));const js=`(()=>{${assets.join('\n').replace(/^export /gm,'')}})();`;
 function latestReport(companyId) {
   const period = periodsFor(dataset.reports, companyId)[0];
   return revisionsFor(dataset.reports, period.report_id)[0];
@@ -28,6 +28,23 @@ test('analytics starts at consent with the currently selected report and stops a
 });
 test('all production revisions have complete translations that cannot replace metric values',()=>{for(const r of dataset.reports){const t={report_id:r.report_id,revision:r.revision,en:dataset.translations[`${r.report_id}@${r.revision}`].en};assert.deepEqual(validateTranslation(r,t),[]);const poison=structuredClone(t);poison.en.metrics[0].value=7;assert.ok(validateTranslation(r,poison).length);}});
 test('announcement dismissal persists for a release and a new release can appear',()=>{if(!dataset.announcements.length)return;const p=page();try{assert.ok(p.document.querySelector('.announcement-bar'));p.document.querySelector('.announcement-dismiss').click();assert.equal(p.document.querySelector('.announcement-bar'),null);assert.equal(p.w.localStorage.getItem('earnings-lens.dismissed-announcement'),dataset.announcements[0].id);}finally{p.w.close();}});
+
+test('valuation displays the same scenario prices in both languages and follows the report', () => {
+  const p = page({ url: 'https://yutaozhou.com/earnings-lens/#company=0001045810&report=0001045810-FY2027-Q3&tab=valuation' });
+  try {
+    assert.deepEqual(p.errors, []);
+    const table = p.document.querySelector('.valuation-table');
+    assert.deepEqual([...table.querySelectorAll('.valuation-result td')].map(cell => cell.textContent), ['$181', '$296', '$462']);
+    assert.match(table.textContent, /Assumed forward P\/E/);
+    p.document.getElementById('language-zh').click();
+    const chinese = p.document.querySelector('.valuation-table');
+    assert.match(chinese.textContent, /隐含每股价值/);
+    assert.deepEqual([...chinese.querySelectorAll('.valuation-result td')].map(cell => cell.textContent), ['US$181', 'US$296', 'US$462']);
+    p.document.querySelector('[data-company="0000320193"]').click();
+    assert.equal(p.document.querySelector('.valuation-table'), null);
+    assert.match(p.document.querySelector('.valuation').textContent, /暂未发布估值/);
+  } finally { p.w.close(); }
+});
 
 test('legacy revision links show the latest analysis without a revision control',()=>{const r=dataset.reports.filter(r=>r.company.ticker==='NVDA').sort((a,b)=>b.revision-a.revision)[0];const p=page({url:`https://yutaozhou.com/earnings-lens/#company=${r.company.id}&report=${r.report_id}&revision=1`});try{assert.deepEqual(p.errors,[]);assert.equal(p.document.getElementById('revision-select'),null);assert.match(p.document.querySelector('.rail-footnote').textContent,/Analyzed/);assert.equal(p.document.querySelector('#theme-select option[value="auto"]').textContent,'Auto');assert.equal(p.events[0][1].path.endsWith(`/v${r.revision}`),true);p.document.getElementById('tab-history').click();assert.ok(!p.w.location.hash.includes('revision='));assert.ok(!p.document.querySelector('table thead').textContent.includes('Revision'));assert.doesNotMatch(p.document.querySelector('svg').getAttribute('aria-label'),/[\u4e00-\u9fff]/);}finally{p.w.close();}});
 

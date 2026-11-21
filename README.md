@@ -52,6 +52,12 @@ The preview listens only on `127.0.0.1:4173`. It is a development tool, not a ru
 
 The active dataset contains verified production reports. External content production submits versioned report JSON and a validated English companion through the same publication contract. Material coverage and information cutoffs appear in each report. Research prompts, orchestration, operating state and plans are maintained privately.
 
+## Valuation snapshots
+
+An optional `data/valuations/<report-id>-v<revision>.json` file binds a bilingual valuation to a single report revision. The first model starts from fiscal-year revenue made up of reported results and a verified guidance midpoint. Each scenario supplies forecast growth, net margin and a forward P/E, with a shared diluted share assumption. The build validates the source references, guidance, and scenario inputs. The page calculates EPS and per-share value from those inputs and renders them from the embedded dataset.
+
+Add a new snapshot after reviewing its assumptions against the underlying release. Reports without a snapshot display an unavailable state. A new report or report revision requires its own snapshot.
+
 ## GitHub Pages publication
 
 This public repository hosts the website directly through GitHub Actions and GitHub Pages. Pushes to `main` run validation, tests, and the static build, then deploy only `dist/`. The [GitHub Pages project URL](https://yutao-zhou.github.io/earnings-lens/) redirects to the account's existing custom domain at [yutaozhou.com/earnings-lens](https://yutaozhou.com/earnings-lens/). See [GitHub Pages Deployment](docs/deployment.md) for setup and verification.

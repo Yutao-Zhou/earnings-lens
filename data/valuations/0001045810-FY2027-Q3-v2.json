@@ -1,0 +1,55 @@
+{
+  "report_id": "0001045810-FY2027-Q3",
+  "revision": 2,
+  "method": "forward_pe",
+  "as_of": "2026-11-20",
+  "forecast_year": 2028,
+  "currency": "USD",
+  "revenue_anchor": {
+    "reported": 293681000000,
+    "guidance_midpoint": 130000000000,
+    "guidance_evidence_id": "guidance",
+    "description": {
+      "en": "The FY2027 revenue starting point is $423.681 billion, combining $293.681 billion reported for the first nine months and the $130 billion midpoint of Q4 management guidance. Q4 is an estimate. Each scenario forecasts FY2028 from that same starting point.",
+      "zh": "FY2027 营收起点为 4,236.81 亿美元，由前九个月实际营收 2,936.81 亿美元与第四季度管理层指引中点 1,300 亿美元相加。第四季度仍为估计值。三个情景均以此为起点预测 FY2028。"
+    }
+  },
+  "diluted_shares": 24186000000,
+  "source_ids": ["release", "supplement"],
+  "method_note": {
+    "en": "The model holds diluted shares flat at the reported Q3 weighted average of 24.186 billion. FY2028 growth and net margins are research assumptions. All three margins allow for some compression from Q3. The forward P/E assumptions of 20×, 26× and 32× reflect different views of earnings durability and risk.",
+    "zh": "模型将摊薄股数固定为第三季度已披露的加权平均股数 241.86 亿股。FY2028 增速和净利率均为研究假设，三种情景均考虑净利率较第三季度回落。远期市盈率取 20、26 和 32 倍，反映对盈利持续性及风险的不同判断。"
+  },
+  "scenarios": [
+    {
+      "case": "bear",
+      "revenue_growth": 0.15,
+      "net_margin": 0.45,
+      "multiple": 20,
+      "rationale": {
+        "en": "Cloud customers slow capacity additions, and pricing and product mix compress margins. Less visibility into repeat orders supports a lower multiple.",
+        "zh": "云客户放缓扩建，定价和产品组合压缩利润率。后续订单可见度下降，对应较低的估值倍数。"
+      }
+    },
+    {
+      "case": "base",
+      "revenue_growth": 0.30,
+      "net_margin": 0.50,
+      "multiple": 26,
+      "rationale": {
+        "en": "Data-center deployments continue to expand, with growth slowing from the current pace as the revenue base rises. Product transitions and system mix bring net margin toward 50%.",
+        "zh": "数据中心部署继续扩大，但较高的营收基数使增长降速。产品换代和系统销售组合使净利率回落至约 50%。"
+      }
+    },
+    {
+      "case": "bull",
+      "revenue_growth": 0.50,
+      "net_margin": 0.55,
+      "multiple": 32,
+      "rationale": {
+        "en": "AI deployments broaden and new platforms ramp on schedule, supporting growth with less margin compression. More durable demand supports a higher multiple.",
+        "zh": "AI 基础设施部署范围扩大，新平台按期放量，营收增速较高且利润率回落较少。需求更具持续性，对应较高的估值倍数。"
+      }
+    }
+  ]
+}

@@ -1,5 +1,17 @@
 [
   {
+    "id": "2026-11-20-valuation-pilot",
+    "date": "2026-11-20",
+    "en": {
+      "title": "Valuation scenarios",
+      "text": "The Valuation tab starts with NVIDIA. Compare three per-share estimates and inspect the assumptions behind each one."
+    },
+    "zh": {
+      "title": "新增估值情景",
+      "text": "「估值」标签从英伟达开始。可对比三种情景的每股估值，并查看各自的计算假设。"
+    }
+  },
+  {
     "id": "2026-11-18-take-two",
     "date": "2026-11-18",
     "en": {
